@@ -3,9 +3,10 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@import 'tailwindcss';
 
 @theme {
-    --font-inter: "Inter", sans-serif;
+  --font-inter: 'Inter', sans-serif;
 }
 
 @theme inline {
