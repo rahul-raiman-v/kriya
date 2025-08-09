@@ -37,8 +37,6 @@
     "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11",
-    "three": "^0.179.1",
-    "tsparticles": "^3.9.1",
     "zustand": "^5.0.7"
   },
   "devDependencies": {
