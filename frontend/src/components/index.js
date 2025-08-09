@@ -1,2 +1,2 @@
 export * from './sampleComponent';
-export * from './teamsCard';
+export * from './speakersComp';

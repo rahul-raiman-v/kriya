@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { Play, Linkedin, Twitter, Globe, MapPin, DollarSign, Users, Building2, ChevronLeft, ChevronRight, ExternalLink, Award, TrendingUp } from 'lucide-react';
+import { Play, Linkedin, Twitter, Globe, MapPin, Users, Building2, ExternalLink, Award, TrendingUp, UserCheck } from 'lucide-react';
 import './styles.css' ;
+// import { useNavigate } from 'react-router-dom';
 
-const EntrepreneurEventPage = () => {
+
+const EntrepreneurEventPage = ({speakers}) => {
+
+  // const navigate = useNavigate();
+  
   const [currentVideo, setCurrentVideo] = useState(0);
   const [selectedFilter, setSelectedFilter] = useState('All');
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -20,112 +25,8 @@ const EntrepreneurEventPage = () => {
     setSelectedSpeaker(null);
   };
 
-  // Your actual data from JSON
-  const speakers = [
-    {
-      "name": "Kevin Scott",
-      "title": "Chief Technology Officer",
-      "organization": "Microsoft",
-      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFtp-0LsoG-J5B5m4iuem1H7qnl3R4F4q7Vw&s",
-      "about": "Kevin Scott is the CTO at Microsoft, previously Senior VP of Engineering and Operations at LinkedIn where he helped scale the platform significantly.",
-      "expertise": ["Engineering Leadership", "Infrastructure Scaling"],
-      "achievements": [
-        "Scaled LinkedIn ahead of its IPO",
-        "Authored 'Reprogramming the American Dream'",
-        "Founded nonprofit Behind the Tech"
-      ],
-      "links": {
-        "wikipedia": "Kevin Scott Wikipedia",
-        "linkedin": "sdfsd",
-        "twitter": ""
-      },
-      "industry": "Tech",
-      "isKeynote": true,
-      "quote": "The future of technology is about democratizing opportunity and empowering every person to achieve more."
-    },
-    {
-      "name": "Li Fan",
-      "title": "Chief Technology Officer",
-      "organization": "Circle",
-      "avatarUrl": "https://cdn.prod.website-files.com/67116d0daddc92483c812ead/67116d0daddc92483c812fc6_LiFan-sq-web_500.jpeg",
-      "about": "Li Fan is a computer scientist and CTO at Circle, previously held senior engineering roles at Google, Baidu, Pinterest, and Lime.",
-      "expertise": ["Computer Vision", "Engineering Leadership", "Big Data Infrastructure"],
-      "achievements": [
-        "Led engineering teams at major tech firms",
-        "Recognized as one of most important engineers globally"
-      ],
-      "links": {
-        "wikipedia": "Li Fan Wikipedia",
-        "linkedin": "sdfsd",
-        "twitter": ""
-      },
-      "industry": "FinTech",
-      "isKeynote": true,
-      "quote": "Innovation in financial technology requires both technical excellence and deep understanding of human trust."
-    },
-    {
-      "name": "Sandra \"Sandy\" Carter",
-      "title": "Chief Operating Officer",
-      "organization": "Unstoppable Domains",
-      "avatarUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sandy_Carter%2C_IBM.jpg/250px-Sandy_Carter%2C_IBM.jpg",
-      "about": "Sandy Carter is a businesswoman, speaker, and author. Former GM at IBM and VP at Amazon Web Services; now COO at Unstoppable Domains.",
-      "expertise": ["Business Operations", "Tech Marketing", "Leadership"],
-      "achievements": [
-        "Held senior roles at IBM and AWS",
-        "Accomplished public speaker"
-      ],
-      "links": {
-        "wikipedia": "Sandy Carter Wikipedia",
-        "linkedin": "sdfsd",
-        "twitter": ""
-      },
-      "industry": "Web3",
-      "isKeynote": false
-    },
-    {
-      "name": "Padmasree Warrior",
-      "title": "Founder & CEO",
-      "organization": "Fable",
-      "avatarUrl": "https://media.bizj.us/view/img/12417621/2023-bol-cover-in-frame*900xx673-380-271-144.jpg",
-      "about": "Padmasree Warrior is a technology executive, formerly CTO at Cisco and Motorola, and CEO of Nio USA. She now leads Fable, a curated reading platform for mental wellness.",
-      "expertise": ["Technology Leadership", "Executive Strategy", "Product Innovation"],
-      "achievements": [
-        "CTO at Cisco & Motorola",
-        "Founded and leading Fable",
-        "Board member at Microsoft and Spotify"
-      ],
-      "links": {
-        "wikipedia": "Padmasree Warrior Wikipedia",
-        "linkedin": "sdfsd",
-        "twitter": ""
-      },
-      "industry": "HealthTech",
-      "isKeynote": true,
-      "quote": "True innovation happens when technology meets human empathy and understanding."
-    },
-    {
-      "name": "Samina Virk",
-      "title": "U.S. CEO & Chief Marketing Officer",
-      "organization": "Vestiaire Collective",
-      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjCC3zOTukHXFxeJQRtF3i3dkIWQhGmdQa3w&s",
-      "about": "Samina Virk serves as both U.S. CEO and CMO of Vestiaire Collective. Her career spans digital agencies, eBay, Target, and scaling luxury-resale operations in the U.S.",
-      "expertise": ["E-commerce Strategy", "Digital Marketing", "Business Scaling"],
-      "achievements": [
-        "Launched eBay's fashion vertical",
-        "Scaled U.S. business for Vestiaire Collective as CEO and CMO"
-      ],
-      "links": {
-        "news": "Podcast feature on WhoWhatWear",
-        "linkedin": "https://www.linkedin.com/in/saminavirk/",
-        "twitter": ""
-      },
-      "industry": "E-commerce",
-      "isKeynote": false
-    }
-  ];
-
   const keynote = speakers.filter(s => s.isKeynote);
-  const regularSpeakers = speakers.filter(s => !s.isKeynote);
+  const regularSpeakers = speakers;
   
   const industries = ['All', ...new Set(speakers.map(s => s.industry))];
   
@@ -153,7 +54,7 @@ const EntrepreneurEventPage = () => {
   ];
 
   const stats = {
-    totalFunding: "$2.3B",
+    totalJobs: "2.3M",
     countries: 12,
     industries: 18,
     companies: 25
@@ -191,9 +92,9 @@ const EntrepreneurEventPage = () => {
                 </div>
                 <button 
                   onClick={closeModal}
-                  className="text-gray-500 hover:text-gray-700 transition-colors p-3 rounded-full hover:bg-gray-100 flex-shrink-0"
+                  className="self-start text-gray-500 hover:text-gray-700 transition-colors p-3 rounded-full hover:bg-gray-100 flex-shrink-0"
                 >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 hover:cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
@@ -207,6 +108,7 @@ const EntrepreneurEventPage = () => {
                   {selectedSpeaker.links.linkedin && (
                     <a 
                       href={selectedSpeaker.links.linkedin}
+                      target='_blank'
                       className="p-3 bg-blue-50 hover:bg-blue-100 rounded-full border border-blue-200 hover:border-blue-300 transition-all duration-300 group"
                     >
                       <Linkedin size={20} className="text-blue-600 group-hover:scale-110 transition-transform" />
@@ -214,7 +116,8 @@ const EntrepreneurEventPage = () => {
                   )}
                   {selectedSpeaker.links.twitter && (
                     <a 
-                      href="#"
+                      href={selectedSpeaker.links.twitter}
+                      target='_blank'
                       className="p-3 bg-sky-50 hover:bg-sky-100 rounded-full border border-sky-200 hover:border-sky-300 transition-all duration-300 group"
                     >
                       <Twitter size={20} className="text-sky-600 group-hover:scale-110 transition-transform" />
@@ -222,7 +125,8 @@ const EntrepreneurEventPage = () => {
                   )}
                   {(selectedSpeaker.links.wikipedia || selectedSpeaker.links.news) && (
                     <a 
-                      href="#"
+                      href={selectedSpeaker.links.wikipedia || selectedSpeaker.links.news}
+                      target='_blank'
                       className="p-3 bg-green-50 hover:bg-green-100 rounded-full border border-green-200 hover:border-green-300 transition-all duration-300 group"
                     >
                       <ExternalLink size={20} className="text-green-600 group-hover:scale-110 transition-transform" />
@@ -309,24 +213,7 @@ const EntrepreneurEventPage = () => {
       )}
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
-        <div className="relative container mx-auto px-6 py-20">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Meet the Visionaries
-            </h1>
-            <p className="text-2xl text-purple-700 mb-4 font-semibold">
-              Innovators, Dreamers, and Game Changers
-            </p>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Join us as we bring together the most influential entrepreneurs, tech leaders, and innovators 
-              who are shaping the future of business and technology. Get inspired by their journeys, 
-              insights, and vision for tomorrow.
-            </p>
-          </div>
-        </div>
-      </div>
+      <HeroSection />
 
       {/* Fun Stats */}
       <div className="bg-white/60 backdrop-blur-sm border-y border-gray-200">
@@ -334,10 +221,10 @@ const EntrepreneurEventPage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <DollarSign className="text-green-600 mr-2" size={24} />
-                <span className="text-3xl font-bold text-gray-800">{stats.totalFunding}</span>
+                <UserCheck className="text-green-600 mr-2" size={28} />
+                <span className="text-3xl font-bold text-gray-800">{stats.totalJobs}</span>
               </div>
-              <p className="text-gray-600">Combined Funding Raised</p>
+              <p className="text-gray-600">Jobs Created</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
@@ -440,7 +327,7 @@ const EntrepreneurEventPage = () => {
             <button
               key={industry}
               onClick={() => setSelectedFilter(industry)}
-              className={`px-6 py-2 rounded-full transition-all duration-300 ${
+              className={`hover:cursor-pointer px-6 py-2 rounded-full transition-all duration-300 ${
                 selectedFilter === industry
                   ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300 shadow-sm'
@@ -458,27 +345,9 @@ const EntrepreneurEventPage = () => {
         
         {/* No Speakers Found Message */}
         {filteredSpeakers.length === 0 ? (
-          <div className="text-center py-16">
-            <div className="max-w-md mx-auto">
-              <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users size={40} className="text-gray-400" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                No speakers found
-              </h3>
-              <p className="text-gray-600 text-lg mb-6">
-                We don't have any featured speakers in <span className="font-semibold text-purple-600">"{selectedFilter}"</span> at the moment.
-              </p>
-              <button 
-                onClick={() => setSelectedFilter('All')}
-                className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
-              >
-                View All Speakers
-              </button>
-            </div>
-          </div>
+          <NoSpeakerFound selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {filteredSpeakers.map((speaker) => (
               <div 
                 key={speaker.name}
@@ -487,8 +356,8 @@ const EntrepreneurEventPage = () => {
                 onMouseLeave={() => setHoveredCard(null)}
               >
                 {/* Base Card - Fixed Height */}
-                <div className="relative bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-300 flex flex-col p-6 h-56 shadow-md hover:shadow-lg">
-                  <div className="relative flex-1">
+                <div className="flex flex-col justify-between gap-4 bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-300 flex flex-col p-6 h-full shadow-md hover:shadow-lg">
+                  <div className="">
                     <div className="flex items-center space-x-4 mb-4">
                       <img 
                         src={speaker.avatarUrl} 
@@ -519,7 +388,7 @@ const EntrepreneurEventPage = () => {
                   </div>
                   <div className='text-right'>
                       <button 
-                        className="text-purple-600 hover:text-purple-500 text-sm font-medium transition-colors pointer-events-auto"
+                        className="text-purple-600 hover:text-purple-500 text-sm font-medium transition-colors hover:cursor-pointer pointer-events-auto"
                         onClick={() => openModal(speaker)}
                       >
                         More Details →
@@ -581,24 +450,82 @@ const EntrepreneurEventPage = () => {
       </div>
 
       {/* Networking CTA */}
-      <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-y border-purple-200">
-        <div className="container mx-auto px-6 py-16 text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">Ready to Connect?</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Don't miss the opportunity to network with these incredible entrepreneurs and industry leaders.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-              Join Networking App
-            </button>
-            <button className="px-8 py-4 border border-purple-500 text-purple-600 font-semibold rounded-lg hover:bg-purple-50 transition-all duration-300">
-              View Event Schedule
-            </button>
-          </div>
-        </div>
-      </div>
+      <NetworkingCTA />
     </div>
   );
 };
 
 export default EntrepreneurEventPage;
+
+export const HeroSection = () => {
+  return (
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
+        <div className="relative container mx-auto px-6 py-20">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Meet the Visionaries
+            </h1>
+            <p className="text-2xl text-purple-700 mb-4 font-semibold">
+              Innovators, Dreamers, and Game Changers
+            </p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Join us as we bring together the most influential entrepreneurs, tech leaders, and innovators 
+              who are shaping the future of business and technology. Get inspired by their journeys, 
+              insights, and vision for tomorrow.
+            </p>
+          </div>
+        </div>
+      </div>
+  )
+}
+
+export const NoSpeakerFound = ({ selectedFilter , setSelectedFilter }) => {
+  return (
+    <div className="text-center pb-12">
+      <div className="max-w-md mx-auto">
+        <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <Users size={40} className="text-gray-400" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-800 mb-4">
+          No speakers found
+        </h3>
+        <p className="text-gray-600 text-lg mb-6">
+          We don't have any featured speakers in <span className="font-semibold text-purple-600">"{selectedFilter}"</span> at the moment.
+        </p>
+        <button 
+          onClick={() => setSelectedFilter('All')}
+          className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          View All Speakers
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export const NetworkingCTA = () => {
+  return (
+    <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-y border-purple-200">
+      <div className="container mx-auto px-6 py-16 text-center">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">Ready to Connect?</h2>
+        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Don't miss the opportunity to network with these incredible entrepreneurs and industry leaders.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button 
+          className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 hover:cursor-pointer transition-all duration-300"
+          >
+            Join Networking App
+          </button>
+          <button 
+          className="px-8 py-4 border border-purple-500 text-purple-600 font-semibold rounded-lg hover:bg-purple-50 hover:cursor-pointer transition-all duration-300"
+          // onClick={() => navigate('/events')}
+          >
+            View Event Schedule
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}

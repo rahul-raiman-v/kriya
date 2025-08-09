@@ -1,2 +1,2 @@
 export * from './homePage';
-export * from './teamsPage';
+export * from './speakersPage';
