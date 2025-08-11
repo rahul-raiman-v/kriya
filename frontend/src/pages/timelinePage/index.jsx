@@ -2,6 +2,7 @@ import { TimelineBackground, TimelineComponent } from '../../components';
 import React from 'react';
 
 
+
 export const TimelinePage = () => {
   const items = [
     {
@@ -69,13 +70,43 @@ export const TimelinePage = () => {
     },
 
   ];
+
+  const containerRef = React.useRef(null);
+  const scrollInterval = React.useRef(null);
+  const [hoveredIndex, setHoveredIndex] = React.useState(null);
+
+  React.useEffect(() => {
+    // Start auto-scrolling if no item is hovered
+    if (hoveredIndex === null) {
+      scrollInterval.current = setInterval(() => {
+        if (containerRef.current) {
+          containerRef.current.scrollTop += 1;
+          // Optional: reset to top if reach bottom
+          if (
+            containerRef.current.scrollTop + containerRef.current.clientHeight >=
+            containerRef.current.scrollHeight
+          ) {
+            containerRef.current.scrollTop = 0;
+          }
+        }
+      }, 30);
+    } else {
+      // If hovering on an item, scroll to top immediately and stop auto scroll
+      if (containerRef.current) {
+        containerRef.current.scrollTop = 0;
+      }
+      clearInterval(scrollInterval.current);
+    }
+
+    return () => clearInterval(scrollInterval.current);
+  }, [hoveredIndex]);
+
   return (
     <div className="p-3 relative">
       <div className='fixed inset-0 w-full h-full'>
         <TimelineBackground/>
-     </div>
-
-      <TimelineComponent items={items} />
+      </div>
+      <TimelineComponent items={items} ref={containerRef}/>
     </div>
   );
 };

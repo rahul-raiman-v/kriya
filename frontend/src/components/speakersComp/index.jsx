@@ -254,7 +254,7 @@ const EntrepreneurEventPage = ({speakers}) => {
       {/* Keynote Speakers */}
       <div className="container mx-auto px-6 py-16">
         <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Keynote Speakers</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {keynote.map((speaker) => (
             <div key={speaker.name} className="group">
               <div className="relative bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-2xl">

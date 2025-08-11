@@ -3,10 +3,10 @@ import React from 'react';
 
 
 
-export const TimelineComponent = ({items=[]}) => {
+export const TimelineComponent = ({items=[],ref}) => {
   return (
-	<div >
-		<Timeline position="alternate">
+	<div className='h-screen overflow-auto' ref={ref}>
+		<Timeline position="alternate" >
 		{items.map((item)=>{
 			return(
 			<TimelineItem key={item.date}>
@@ -17,9 +17,9 @@ export const TimelineComponent = ({items=[]}) => {
 				<TimelineContent>
 				<div className='border border-gray-300 p-3 rounded-md flex gap-3 mt-10 mb-5 shadow-lg backdrop-blur-lg'>
 					<div className='flex flex-col gap-y-1 '>
-					<p className=' text-neutral-50 font-medium text-left'>{item.time}</p>
-					<p className='text-lg text-yellow-50 font-semibold text-left'>{item.title}</p>
-					<p className=' font-semibold text-teal-50 text-left'>{item?.description}</p>
+					<p className=' text-white font-medium text-left'>{item.time}</p>
+					<p className='text-lg text-white font-semibold text-left'>{item.title}</p>
+					<p className=' font-semibold text-white text-left'>{item?.description}</p>
 					</div>
 					<img src={item.image} alt="" className='w-60 h-40 aspect-auto rounded-lg'/>
 				</div>
