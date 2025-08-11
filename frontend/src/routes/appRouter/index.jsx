@@ -1,13 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HomePage } from '../../pages/homePage';
 import { routes, PrivateRouter, PublicRouter } from '..';
-import { HomePage } from '../../pages';
 
 export const AppRouter = () => {
   return (
     <Router>
-      <Routes>
-        <Route path={routes.home} element={<HomePage />} />
-      </Routes>
+      <Switch>
+        <Route exact path={routes.home} component={HomePage} />
+      </Switch>
     </Router>
   );
 };
