@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import { Layout } from '../../components/layout';
 import { routes, PrivateRouter, PublicRouter } from '..';
-import { HomePage, TimelinePage , SpeakersPage, EventsPage} from '../../pages';
+import { HomePage, TimelinePage , SpeakersPage, EventsPage, PageNotFound} from '../../pages';
 
-import { Layout } from '../../components';
+import { BrowserRouter as Router , Route, Routes } from 'react-router';
 
 export const AppRouter = () => {
   return (
@@ -11,8 +11,9 @@ export const AppRouter = () => {
         <Route path={routes.home} element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path={routes.timeline} element={<TimelinePage/>}/>
-          <Route path={routes.speakers} element={<SpeakersPage />} />
           <Route path={routes.events} element={<EventsPage />} />
+          <Route path={routes.speakers} element={<SpeakersPage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </Router>
