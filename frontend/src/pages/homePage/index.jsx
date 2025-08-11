@@ -87,74 +87,7 @@ export const HomePage = () => {
 
         <div className="relative z-10 flex flex-col min-h-screen">
           {/* Sticky Header Navigation with Glassmorphism */}
-          <header className="sticky top-0 z-50 w-full glass-morphism">
-            <div className="container mx-auto px-6 py-4">
-              <div className="flex justify-between items-center">
-                <div className="text-2xl md:text-3xl font-bold tracking-wider text-gradient slide-in-left">
-                  BIT TECH FORUM
-                </div>
-
-                <nav className="hidden md:flex flex-grow justify-center items-center space-x-8">
-                  {navLinks.map((link, index) => (
-                    <a
-                      key={link.name}
-                      href={link.href}
-                      className={`transition-all duration-300 hover:scale-105 ${
-                        index === 0
-                          ? 'text-pink-600 font-semibold'
-                          : 'text-gray-600 hover:text-pink-600'
-                      }`}
-                    >
-                      {link.name}
-                    </a>
-                  ))}
-                </nav>
-
-                {/* Mobile menu button */}
-                <div className="md:hidden">
-                  <button
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="text-gray-700 focus:outline-none hover:text-pink-600 transition-colors duration-300"
-                    aria-label="Toggle menu"
-                  >
-                    <svg
-                      className="w-6 h-6"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d={
-                          isMenuOpen
-                            ? 'M6 18L18 6M6 6l12 12'
-                            : 'M4 6h16M4 12h16m-7 6h7'
-                        }
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              {/* Mobile menu */}
-              {isMenuOpen && (
-                <nav className="md:hidden mt-4 glass-morphism rounded-xl p-6 slide-in-right">
-                  {navLinks.map((link) => (
-                    <a
-                      key={link.name}
-                      href={link.href}
-                      className="block text-gray-600 hover:text-pink-600 py-3 text-center transition-colors duration-300"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.name}
-                    </a>
-                  ))}
-                </nav>
-              )}
-            </div>
-          </header>
+          
 
           {/* Hero Section with Gradient Background */}
           <section className="flex-grow flex items-center justify-center relative">
