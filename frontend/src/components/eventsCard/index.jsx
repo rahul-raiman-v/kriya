@@ -69,7 +69,7 @@ export function EventsCard({
           <img
             src={eventImage}
             alt={eventTitle}
-            className="rounded-xl w-full h-full object-contain"
+            className="w-full h-full object-cover rounded-xl"
           />
         </div>
       )}

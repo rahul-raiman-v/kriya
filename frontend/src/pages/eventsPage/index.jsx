@@ -1,11 +1,15 @@
 import React from 'react';
 import { EventsCard , GuestLectureCard } from '../../components';
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 const stats = [
-     {
-     id: 'events',
-     title: 'Events',
-     img: '/CalendarLogo.png',
+  {
+    id: 'events',
+    title: 'Events',
+    img: '/CalendarLogo.png',
     highlight: false,
     events: [
       {
@@ -41,7 +45,22 @@ const stats = [
           {
             id: 'contact',
             title: 'Contact',
-            content: 'Email: info@kriya.com, Phone: 1234567890',
+            content:[{
+              id:'person1',
+              name:'Person 1',
+              designation:'Designation 1',
+              email:'person1@example.com',
+              phone:'1234567890',
+              img:'https://via.placeholder.com/150'
+            },
+            {
+              id:'person2',
+              name:'Person 2',
+              designation:'Designation 2',
+              email:'person2@example.com',
+              phone:'1234567890',
+              img:'https://via.placeholder.com/150'
+            }]
           },
         ],
       },
@@ -78,16 +97,31 @@ const stats = [
           {
             id: 'contact',
             title: 'Contact',
-            content: 'Email: info@kriya.com, Phone: 1234567890',
+            content:[{
+              id:'person1',
+              name:'Person 1',
+              designation:'Designation 1',
+              email:'person1@example.com',
+              phone:'1234567890',
+              img:'https://via.placeholder.com/150'
+            },
+            {
+              id:'person2',
+              name:'Person 2',
+              designation:'Designation 2',
+              email:'person2@example.com',
+              phone:'1234567890',
+              img:'https://via.placeholder.com/150'
+            }]
           },
         ],
       },
     ],
   },
-     {
-     id: 'workshop',
-     title: 'Workshop',
-     img: '/WorkshopLogo.png',
+  {
+    id: 'workshop',
+    title: 'Workshop',
+    img: '/WorkshopLogo.png',
     highlight: false,
     events: [
       {
@@ -113,7 +147,22 @@ const stats = [
           {
             id: 'contact',
             title: 'Contact',
-            content: 'Email: info@kriya.com, Phone: 1234567890',
+            content:[{
+              id:'person1',
+              name:'Person 1',
+              designation:'Designation 1',
+              email:'person1@example.com',
+              phone:'1234567890',
+              img:'https://via.placeholder.com/150'
+            },
+            {
+              id:'person2',
+              name:'Person 2',
+              designation:'Designation 2',
+              email:'person2@example.com',
+              phone:'1234567890',
+              img:'https://via.placeholder.com/150'
+            }],
           },
           {
             id: 'speakers',
@@ -124,10 +173,10 @@ const stats = [
       },
     ],
   },
-     {
-     id: 'guest-lecture',
-     title: 'Guest Lecture',
-     img: '/GuestLectureLogo.png',
+  {
+    id: 'guest-lecture',
+    title: 'Guest Lecture',
+    img: '/GuestLectureLogo.png',
     highlight: false,
     events: [
       {
@@ -142,7 +191,7 @@ const stats = [
         date: 'July 14, 2025',
         venue: 'BIT Main Auditorium',
         time: '12:00 PM',
-        img: 'https://i.pinimg.com/736x/eb/b9/e7/ebb9e7da0712cff92a7f8fd64d12e8fc.jpg',
+        img: './GuestLecturerImg.png',
         highlight: true,
       },
       {
@@ -157,25 +206,23 @@ const stats = [
         venue: 'BIT Main Auditorium',
         duration: '45 mins',
         time: '12:00 PM',
-        img: 'https://i.pinimg.com/736x/eb/b9/e7/ebb9e7da0712cff92a7f8fd64d12e8fc.jpg',
+        img: './GuestLecturerImg.png',
         highlight: false,
       },
     ],
   },
 ];
 
-
+// (Removed duplicate allEvents; handled inside component)
 
 export const EventsPage = () => {
-  const [selectedEventId, setSelectedEventId] = React.useState('events');
-  const [isTransitioning, setIsTransitioning] = React.useState(false);
+  const [selectedEventId, setSelectedEventId] = React.useState('all');
   const [searchQuery, setSearchQuery] = React.useState('');
   const [searchResults, setSearchResults] = React.useState([]);
   const [isSearching, setIsSearching] = React.useState(false);
-  const selectedCategory = stats.find((item) => item.id === selectedEventId);
-
-  // Get all events from all categories for carousel
-  const allEvents = stats.flatMap(category => 
+  
+  // Build augmented events list with category metadata
+  const allEventsAugmented = stats.flatMap(category => 
     category.events.map(event => ({
       ...event,
       categoryTitle: category.title,
@@ -183,64 +230,28 @@ export const EventsPage = () => {
     }))
   );
 
-  // Create extended array for infinite scroll effect
-  const extendedEvents = [...allEvents, ...allEvents, ...allEvents];
-  const startIndex = allEvents.length;
-  const [currentSlide, setCurrentSlide] = React.useState(startIndex);
+  // Add a synthetic "All" category at the beginning
+  const allCategoryIcon = (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-20 h-20 text-indigo-600">
+      <path d="M3 5.25A2.25 2.25 0 0 1 5.25 3h3.5A2.25 2.25 0 0 1 11 5.25v3.5A2.25 2.25 0 0 1 8.75 11h-3.5A2.25 2.25 0 0 1 3 8.75v-3.5Zm9.5 0A2.25 2.25 0 0 1 14.75 3h3.5A2.25 2.25 0 0 1 20.5 5.25v3.5A2.25 2.25 0 0 1 18.25 11h-3.5A2.25 2.25 0 0 1 12.5 8.75v-3.5Zm-9.5 9.5A2.25 2.25 0 0 1 5.25 12h3.5A2.25 2.25 0 0 1 11 14.25v3.5A2.25 2.25 0 0 1 8.75 20h-3.5A2.25 2.25 0 0 1 3 17.75v-3.5Zm9.5 0A2.25 2.25 0 0 1 14.75 12h3.5A2.25 2.25 0 0 1 20.5 14.25v3.5A2.25 2.25 0 0 1 18.25 20h-3.5A2.25 2.25 0 0 1 12.5 17.75v-3.5Z"/>
+    </svg>
+  );
 
-  // Auto-advance carousel
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => {
-        const nextSlide = prev + 1;
-        if (nextSlide >= startIndex + allEvents.length) {
-          // Reset to middle section without animation
-          setTimeout(() => {
-            setIsTransitioning(false);
-            setCurrentSlide(startIndex);
-          }, 700);
-          setIsTransitioning(true);
-          return nextSlide;
-        }
-        return nextSlide;
-      });
-    }, 3000);
-    return () => clearInterval(timer);
-  }, [allEvents.length, startIndex]);
+  const categoriesWithAll = [
+    {
+      id: 'all',
+      title: 'All',
+      img: allCategoryIcon,
+      highlight: false,
+      events: allEventsAugmented,
+    },
+    ...stats,
+  ];
 
-  const nextSlide = () => {
-    const nextSlide = currentSlide + 1;
-    if (nextSlide >= startIndex + allEvents.length) {
-      // Reset to middle section without animation
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentSlide(startIndex);
-      }, 700);
-      setIsTransitioning(true);
-      setCurrentSlide(nextSlide);
-    } else {
-      setCurrentSlide(nextSlide);
-    }
-  };
+  const selectedCategory = categoriesWithAll.find((item) => item.id === selectedEventId);
 
-  const prevSlide = () => {
-    const prevSlide = currentSlide - 1;
-    if (prevSlide < startIndex) {
-      // Reset to middle section without animation
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentSlide(startIndex + allEvents.length - 1);
-      }, 700);
-      setIsTransitioning(true);
-      setCurrentSlide(prevSlide);
-    } else {
-      setCurrentSlide(prevSlide);
-    }
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(startIndex + index);
-  };
+  // Get all events from all categories for carousel (augmented)
+  const allEvents = allEventsAugmented;
 
   // Search functionality
   const handleSearch = (query) => {
@@ -285,15 +296,6 @@ export const EventsPage = () => {
     // Set the selected category
     setSelectedEventId(event.categoryId);
     
-    // Find the event in the carousel and go to it
-    const eventIndex = allEvents.findIndex(e => 
-      e.id === event.id && e.categoryId === event.categoryId
-    );
-    
-    if (eventIndex !== -1) {
-      setCurrentSlide(startIndex + eventIndex);
-    }
-    
     // Clear search
     setSearchQuery('');
     setSearchResults([]);
@@ -313,132 +315,94 @@ export const EventsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-6">
-             {/* Header Section */}
-       <div className="text-center mb-12">
-         <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-           Events & Activities
-         </h1>
-         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-           Discover exciting events, workshops, and guest lectures happening at our institution
-         </p>
-       </div>
+      {/* Header Section */}
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+          Events & Activities
+        </h1>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Discover exciting events, workshops, and guest lectures happening at our institution
+        </p>
+      </div>
 
-      {/* Events Carousel */}
-      <div className="w-full max-w-7xl mx-auto mb-16">
-        <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/20">
-          {/* Carousel Container */}
-          <div className="relative h-96 bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-900">
-                         {/* Slides */}
-             <div 
-               className={`flex transition-transform duration-700 ease-in-out h-full ${
-                 isTransitioning ? 'transition-none' : ''
-               }`}
-               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-             >
-               {extendedEvents.map((event, index) => (
-                 <div key={`${event.categoryId}-${event.id}-${index}`} className="w-full flex-shrink-0 flex items-center justify-center">
-                  <div className="flex items-center justify-center w-full h-full p-8">
-                    {/* Event Image */}
-                    <div className="w-1/2 flex justify-center">
-                      <div className="relative group">
-                        <img 
-                          src={event.img} 
-                          alt={event.eventTitle}
-                          className="w-72 h-56 object-cover rounded-2xl shadow-2xl transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-                      </div>
-                    </div>
-                    
-                    {/* Event Details */}
-                    <div className="w-1/2 text-white pl-8">
-                      <div className="mb-4">
-                        <span className="inline-block px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-sm font-semibold rounded-full shadow-lg">
-                          {event.categoryTitle}
-                        </span>
-                      </div>
-                      <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200">
-                        {event.eventTitle}
-                      </h2>
-                      
-                      {/* Event specific details */}
-                      {event.categoryId === 'guest-lecture' ? (
-                        <>
-                          <p className="text-lg text-gray-200 mb-3">
-                            <span className="font-semibold text-pink-300">Speaker:</span> {event.speakerName}
-                          </p>
-                          <p className="text-lg text-gray-200 mb-3">
-                            <span className="font-semibold text-pink-300">Topic:</span> {event.talkTitle}
-                          </p>
-                          <p className="text-lg text-gray-200 mb-3">
-                            <span className="font-semibold text-pink-300">Duration:</span> {event.duration}
-                          </p>
-                        </>
-                      ) : (
-                        <>
-                          {event.eventType && (
-                            <p className="text-lg text-gray-200 mb-3">
-                              <span className="font-semibold text-pink-300">Type:</span> {event.eventType}
-                            </p>
-                          )}
-                        </>
-                      )}
-                      
-                      <p className="text-lg text-gray-200 mb-3">
-                        <span className="font-semibold text-pink-300">Date:</span> {event.date}
-                      </p>
-                      <p className="text-lg text-gray-200 mb-3">
-                        <span className="font-semibold text-pink-300">Venue:</span> {event.venue}
-                      </p>
-                      {/* {event.time && (
-                        <p className="text-lg text-gray-200 mb-3">
-                          <span className="font-semibold text-pink-300">Time:</span> {event.time}
+       <div className="w-full max-w-8xl mx-auto mb-16 items-center justify-center">
+        <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/20 items-center justify-center">
+          <Swiper
+            modules={[Autoplay, Navigation, Pagination]}
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            navigation={true}
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            className="mySwiper"
+          >
+            {allEvents.map((event) => (
+              <SwiperSlide key={event.id}>
+                <div className="flex p-6 relative h-98 bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-900 items-center justify-center rounded-3xl shadow-lg gap-7">
+                  {/* Image */}
+                  <img
+                    src={event.img}
+                    alt={event.eventTitle}
+                    className="w-full md:w-1/3 h-full object-fit rounded-lg"
+                  />
+
+                  {/* Event Details */}
+                  <div className="w-1/2 text-white pl-8 flex flex-col justify-center">
+                  {/* Category Tag */}
+                  <div className="mb-5">
+                    <span className="inline-block px-5 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-sm font-semibold rounded-full shadow-lg tracking-wide">
+                      {event.categoryTitle}
+                    </span>
+                  </div>
+
+                  {/* Event Title */}
+                  <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200 leading-snug">
+                    {event.eventTitle}
+                  </h2>
+
+                  {/* Event Specific Details */}
+                  <div className="space-y-3 text-lg text-gray-200">
+                    {event.categoryId === 'guest-lecture' ? (
+                      <>
+                        <p>
+                          <span className="font-semibold text-pink-300">Speaker:</span> {event.speakerName || 'TBA'}
                         </p>
-                      )} */}
+                        <p>
+                          <span className="font-semibold text-pink-300">Topic:</span> {event.talkTitle || 'TBA'}
+                        </p>
+                        <p>
+                          <span className="font-semibold text-pink-300">Duration:</span> {event.duration || 'TBA'}
+                        </p>
+                      </>
+                    ) : (
+                      event.eventType && (
+                        <p>
+                          <span className="font-semibold text-pink-300">Type:</span> {event.eventType}
+                        </p>
+                      )
+                    )}
+
+                    {/* Common Details */}
+                    <p>
+                      <span className="font-semibold text-pink-300">Date:</span> {event.date}
+                    </p>
+                    <p>
+                      <span className="font-semibold text-pink-300">Venue:</span> {event.venue}
+                    </p>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
-
-            {/* Navigation Arrows */}
-            <button
-              onClick={prevSlide}
-              className="absolute left-6 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20 hover:scale-110"
-              aria-label="Previous slide"
-            >
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
-              onClick={nextSlide}
-              className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm border border-white/20 hover:scale-110"
-              aria-label="Next slide"
-            >
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-
-                         {/* Dots Indicator */}
-             <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
-               {allEvents.map((_, index) => (
-                 <button
-                   key={index}
-                   onClick={() => goToSlide(index)}
-                   className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                     (currentSlide - startIndex) === index 
-                       ? 'bg-gradient-to-r from-pink-500 to-purple-600 scale-125 shadow-lg' 
-                       : 'bg-white/50 hover:bg-white/75 hover:scale-110'
-                   }`}
-                   aria-label={`Go to slide ${index + 1}`}
-                 />
-               ))}
-             </div>
-          </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
+
 
       {/* Category Cards Section */}
       <div className="w-full max-w-7xl mx-auto mb-16">
@@ -452,10 +416,10 @@ export const EventsPage = () => {
           role="tablist"
           aria-label="Event categories"
         >
-          {stats.map((item) => (
+          {categoriesWithAll.map((item) => (
             <button
               key={item.id}
-              className={`group relative flex justify-between items-center w-96 h-48 p-6 rounded-2xl border cursor-pointer transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 ${
+              className={`group relative flex justify-between items-center w-74 h-48 p-6 rounded-2xl border cursor-pointer transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 ${
                 selectedEventId === item.id
                   ? 'border-blue-500 shadow-2xl shadow-blue-500/25'
                   : 'border-transparent hover:border-gray-300 shadow-xl hover:shadow-2xl'
@@ -493,7 +457,9 @@ export const EventsPage = () => {
                {selectedCategory.title} - Available Events
              </h2>
              <p className="text-gray-600 mb-8">
-               Explore all {selectedCategory.events.length} {selectedCategory.title.toLowerCase()} below
+               {selectedCategory.id === 'all'
+                 ? `Explore all ${selectedCategory.events.length} events below`
+                 : `Explore all ${selectedCategory.events.length} ${selectedCategory.title.toLowerCase()} below`}
              </p>
              
              {/* Search Bar */}
@@ -512,34 +478,38 @@ export const EventsPage = () => {
                    </svg>
                  </div>
                  
-                 {/* Search Results Dropdown */}
-                 {isSearching && searchResults.length > 0 && (
-                   <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 max-h-96 overflow-y-auto z-50">
-                     {searchResults.map((result, index) => (
-                       <div
-                         key={`${result.categoryId}-${result.id}-${index}`}
-                         onClick={() => goToEvent(result)}
-                         className="px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0 transition-colors duration-200"
-                       >
-                         <div className="flex items-center space-x-3">
-                           <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center">
-                             <span className="text-indigo-600 font-semibold text-sm">
-                               {result.categoryTitle.charAt(0)}
-                             </span>
-                           </div>
-                           <div className="flex-1 min-w-0">
-                             <p className="text-sm font-semibold text-gray-900 truncate">
-                               {result.eventTitle}
-                             </p>
-                             <p className="text-xs text-gray-500 truncate">
-                               {result.categoryTitle} • {result.date} • {result.venue}
-                             </p>
-                           </div>
-                         </div>
-                       </div>
-                     ))}
-                   </div>
-                 )}
+                  {/* Search Results Dropdown */}
+                  {isSearching && searchResults.length > 0 && (
+                    <div
+                      className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 max-h-96 overflow-y-auto z-50"
+                      role="listbox"
+                    >
+                      {searchResults.map((result, index) => (
+                        <button
+                          key={`${result.categoryId}-${result.id}-${index}`}
+                          onClick={() => goToEvent(result)}
+                          className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-100 last:border-b-0 transition-colors duration-200 focus:outline-none focus:bg-gray-100"
+                          role="option"
+                        >
+                          <div className="flex items-center space-x-3">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center">
+                              <span className="text-indigo-600 font-semibold text-sm">
+                                {result.categoryTitle.charAt(0)}
+                              </span>
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <p className="text-sm font-semibold text-gray-900 truncate">
+                                {result.eventTitle}
+                              </p>
+                              <p className="text-xs text-gray-500 truncate">
+                                {result.categoryTitle} • {result.date} • {result.venue}
+                              </p>
+                            </div>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  )}
                  
                  {/* No Results Message */}
                  {isSearching && searchQuery.trim() && searchResults.length === 0 && (
@@ -552,43 +522,75 @@ export const EventsPage = () => {
            </div>
           
           <div className="flex flex-col gap-8">
-            {selectedCategory.id === 'guest-lecture'
+            {selectedCategory.id === 'all'
               ? selectedCategory.events.map((event) => (
-                  <div 
-                    key={event.id} 
+                  <div
+                    key={`${event.categoryId}-${event.id}`}
                     id={`event-${event.id}`}
                     className="transform hover:scale-[1.02] transition-transform duration-300"
                   >
-                    <GuestLectureCard
-                      eventTitle={event.eventTitle}
-                      speakerName={event.speakerName}
-                      speakerDesignation={event.speakerDesignation}
-                      talkTitle={event.talkTitle}
-                      talkDescription={event.talkDescription}
-                      duration={event.duration}
-                      date={event.date}
-                      venue={event.venue}
-                      time={event.time}
-                      eventImage={event.img}
-                      buttonLabel="Join now"
-                    />
+                    {event.categoryId === 'guest-lecture' ? (
+                      <GuestLectureCard
+                        eventTitle={event.eventTitle}
+                        speakerName={event.speakerName}
+                        speakerDesignation={event.speakerDesignation}
+                        talkTitle={event.talkTitle}
+                        talkDescription={event.talkDescription}
+                        duration={event.duration}
+                        date={event.date}
+                        venue={event.venue}
+                        time={event.time}
+                        eventImage={event.img}
+                        buttonLabel="Register now"
+                      />
+                    ) : (
+                      <EventsCard
+                        eventTabs={event.tabs}
+                        eventTitle={event.eventTitle}
+                        eventDate={event.date}
+                        eventVenue={event.venue}
+                        eventImage={event.img}
+                      />
+                    )}
                   </div>
                 ))
-                  : selectedCategory.events.map((event) => (
-                   <div 
-                     key={event.id} 
-                     id={`event-${event.id}`}
-                     className="transform hover:scale-[1.02] transition-transform duration-300"
-                   >
-                     <EventsCard
-                       eventTabs={event.tabs}
-                       eventTitle={event.eventTitle}
-                       eventDate={event.date}
-                       eventVenue={event.venue}
-                       eventImage={event.img}
-                     />
-                   </div>
-                 ))}
+              : selectedCategory.id === 'guest-lecture'
+                ? selectedCategory.events.map((event) => (
+                    <div
+                      key={event.id}
+                      id={`event-${event.id}`}
+                      className="transform hover:scale-[1.02] transition-transform duration-300"
+                    >
+                      <GuestLectureCard
+                        eventTitle={event.eventTitle}
+                        speakerName={event.speakerName}
+                        speakerDesignation={event.speakerDesignation}
+                        talkTitle={event.talkTitle}
+                        talkDescription={event.talkDescription}
+                        duration={event.duration}
+                        date={event.date}
+                        venue={event.venue}
+                        time={event.time}
+                        eventImage={event.img}
+                        buttonLabel="Join now"
+                      />
+                    </div>
+                  ))
+                : selectedCategory.events.map((event) => (
+                    <div
+                      key={event.id}
+                      id={`event-${event.id}`}
+                      className="transform hover:scale-[1.02] transition-transform duration-300"
+                    >
+                      <EventsCard
+                        eventTabs={event.tabs}
+                        eventTitle={event.eventTitle}
+                        eventDate={event.date}
+                        eventVenue={event.venue}
+                        eventImage={event.img}
+                      />
+                    </div>
+                  ))}
           </div>
         </div>
       )}
