@@ -4,6 +4,7 @@
       "title": "Founder & CEO",
       "organization": "GUVI Geek Network",
       "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
+      "carouselUrl": "https://i.ytimg.com/vi/EDjmHoAd50A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfeCAlIwOd_q5xdJixrBXx_KVsIA",
       "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
       "expertise": [
         "EdTech Leadership",
@@ -32,6 +33,7 @@
       "title": "Chief Technology Officer",
       "organization": "Microsoft",
       "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFtp-0LsoG-J5B5m4iuem1H7qnl3R4F4q7Vw&s",
+      "carouselUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Kevin_Scott.jpg",
       "about": "Kevin Scott is the CTO at Microsoft, previously Senior VP of Engineering and Operations at LinkedIn where he helped scale the platform significantly.",
       "expertise": ["Engineering Leadership", "Infrastructure Scaling"],
       "achievements": [
@@ -53,6 +55,7 @@
       "title": "Chief Technology Officer",
       "organization": "Circle",
       "avatarUrl": "https://cdn.prod.website-files.com/67116d0daddc92483c812ead/67116d0daddc92483c812fc6_LiFan-sq-web_500.jpeg",
+      "carouselUrl": "https://media.licdn.com/dms/image/v2/D5605AQH6vkO8eylhXg/videocover-low/B56ZdAYM1DH8Bs-/0/1749131789411?e=2147483647&v=beta&t=bp6TyWg4DIDZER1XDZyLp5COvK-12jUlLU7_NJwPIeE",
       "about": "Li Fan is a computer scientist and CTO at Circle, previously held senior engineering roles at Google, Baidu, Pinterest, and Lime.",
       "expertise": ["Computer Vision", "Engineering Leadership", "Big Data Infrastructure"],
       "achievements": [
@@ -73,6 +76,7 @@
       "title": "Chief Operating Officer",
       "organization": "Unstoppable Domains",
       "avatarUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sandy_Carter%2C_IBM.jpg/250px-Sandy_Carter%2C_IBM.jpg",
+      "carouselUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpix6NDI7R24BA6DITXm4T1FtW4rYQrOgw2A&s",
       "about": "Sandy Carter is a businesswoman, speaker, and author. Former GM at IBM and VP at Amazon Web Services; now COO at Unstoppable Domains.",
       "expertise": ["Business Operations", "Tech Marketing", "Leadership"],
       "achievements": [
@@ -92,6 +96,7 @@
       "title": "Founder & CEO",
       "organization": "Fable",
       "avatarUrl": "https://www.boomlive.in/wp-content/uploads/2015/02/Padmasree-Warrior.jpg",
+      "carouselUrl": "https://thestoryexchange.org/app/uploads/2021/12/padmasree-warrior-raises-20m-fable.jpg",
       "about": "Padmasree Warrior is a technology executive, formerly CTO at Cisco and Motorola, and CEO of Nio USA. She now leads Fable, a curated reading platform for mental wellness.",
       "expertise": ["Technology Leadership", "Executive Strategy", "Product Innovation"],
       "achievements": [
@@ -113,6 +118,7 @@
       "title": "U.S. CEO & Chief Marketing Officer",
       "organization": "Vestiaire Collective",
       "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjCC3zOTukHXFxeJQRtF3i3dkIWQhGmdQa3w&s",
+      "carouselUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZrXM1G-OrHRnqYc02lnFMl3DoYbl-69zXQ&s",
       "about": "Samina Virk serves as both U.S. CEO and CMO of Vestiaire Collective. Her career spans digital agencies, eBay, Target, and scaling luxury-resale operations in the U.S.",
       "expertise": ["E-commerce Strategy", "Digital Marketing", "Business Scaling"],
       "achievements": [
