@@ -1,5 +1,6 @@
 import React from 'react';
 import { Play, Linkedin, Twitter, Globe, MapPin, Users, Building2, ExternalLink, Award, TrendingUp, UserCheck } from 'lucide-react';
+import { useNavigate } from 'react-router';
 import './styles.css' ;
 
 
@@ -372,6 +373,9 @@ export const NoSpeakerFound = ({ selectedFilter , setSelectedFilter }) => {
 }
 
 export const NetworkingCTA = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-y border-purple-200">
       <div className="container mx-auto px-6 py-16 text-center">
@@ -382,12 +386,7 @@ export const NetworkingCTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
           className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 hover:cursor-pointer transition-all duration-300"
-          >
-            Join Networking App
-          </button>
-          <button 
-          className="px-8 py-4 border border-purple-500 text-purple-600 font-semibold rounded-lg hover:bg-purple-50 hover:cursor-pointer transition-all duration-300"
-          // onClick={() => navigate('/events')}
+          onClick={() =>  navigate('/events')}
           >
             View Event Schedule
           </button>

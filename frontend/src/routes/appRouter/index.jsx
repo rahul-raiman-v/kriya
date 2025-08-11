@@ -3,7 +3,6 @@ import { routes, PrivateRouter, PublicRouter } from '..';
 import { HomePage , SpeakersPage, EventsPage} from '../../pages';
 import { BrowserRouter as Router , Route, Routes } from 'react-router';
 
-
 export const AppRouter = () => {
   return (
     <Router>
@@ -12,6 +11,7 @@ export const AppRouter = () => {
           <Route index element={<HomePage />} />
           <Route path={routes.events} element={<EventsPage />} />
           <Route path={routes.speakers} element={<SpeakersPage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </Router>
