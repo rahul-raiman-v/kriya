@@ -16,7 +16,7 @@ export const TimelineComponent = ({items=[],ref,setIsPaused}) => {
 				<TimelineConnector style={{ width: "7px", background:"#2987D8",}} />
 				</TimelineSeparator>
 				<TimelineContent>
-				<div className='border border-gray-300 p-3 rounded-md flex gap-3 mt-10 mb-5 shadow-lg backdrop-blur-lg cursor-pointer' onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
+				<div className='border border-gray-300 p-4 bg-white rounded-md flex gap-3 mt-10 mb-5 shadow-lg backdrop-blur-lg cursor-pointer' onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
 					<div className='flex flex-col gap-y-1 '>
 					<div className='flex items-center gap-x-3'>
 						<div className='flex items-center gap-x-1'>
@@ -32,7 +32,7 @@ export const TimelineComponent = ({items=[],ref,setIsPaused}) => {
 					<p className='text-lg text-gray-700 font-semibold text-left'>{item.title}</p>
 					<p className=' font-semibold text-gray-700 text-left'>{item?.description}</p>
 					</div>
-					<img src={item.image} alt="" className='w-60 h-40 aspect-auto rounded-lg'/>
+					<img src={ "/registration.jpg"} alt="" className='w-60 h-40 aspect-auto rounded-lg'/>
 				</div>
 				</TimelineContent>
 			</TimelineItem>
