@@ -4,4 +4,5 @@ export * from './publicRouter';
 
 export const routes = {
   home: '/',
+  speakers: '/speakers',
 };
