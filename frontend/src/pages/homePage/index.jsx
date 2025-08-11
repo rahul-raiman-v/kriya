@@ -87,7 +87,7 @@ export const HomePage = () => {
 
         <div className="relative z-10 flex flex-col min-h-screen">
           {/* Sticky Header Navigation with Glassmorphism */}
-          
+
 
           {/* Hero Section with Gradient Background */}
           <section className="flex-grow flex items-center justify-center relative">
@@ -129,7 +129,7 @@ export const HomePage = () => {
                   <div className="relative w-full max-w-lg h-96 md:h-[500px] p-6">
                     <div className="absolute inset-0 bg-gradient-to-r from-pink-200 to-purple-200 rounded-3xl blur-3xl opacity-30 animate-pulse" />
                     <div
-                      className="relative z-10 w-full h-full p-4 animate-bounce"
+                      className="relative z-10 w-full h-full p-4 animate-bounce-small"
                       style={{ animationDuration: '1.60s' }} // make it twice as fast
                     >
                       <img
@@ -153,7 +153,7 @@ export const HomePage = () => {
               >
                 <div className="space-y-4">
                   <h2 className="text-3xl md:text-4xl font-bold text-gradient">
-                    Tech Innovation Summit 2025
+                    KRIYA 1.0 – Igniting the Entrepreneurial Spirit
                   </h2>
 
                   <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-600">
@@ -169,7 +169,7 @@ export const HomePage = () => {
                           clipRule="evenodd"
                         />
                       </svg>
-                      <span className="font-medium">March 15-17, 2025</span>
+                      <span className="font-medium">September 09-11, 2025</span>
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -192,18 +192,11 @@ export const HomePage = () => {
                 </div>
 
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-                  The objective of KRIYA 1.0 is to provide an immersive
-                  entrepreneurial experience that enables participants to
-                  explore the innovation journey from ideation to execution.
-                  KRIYA 1.0 aims to cultivate a startup mindset, foster
-                  cross-disciplinary collaboration, and encourage the launch of
-                  viable student-led ventures. KRIYA 1.0 focuses on sparking
-                  creativity through design thinking, team formation, and
-                  problem discovery. It emphasizes business model development,
-                  financial literacy, and startup pitching. The event also marks
-                  the inauguration of the “Technology Transfer Office (TTO) and
-                  IPR Management Cell” to promote innovation, protection, and
-                  commercialization.
+                  KRIYA 1.0 offers an immersive entrepreneurial journey, guiding participants
+                  from ideation to execution. It aims to instill a startup mindset, spark
+                  creativity, and enhance problem-solving through real-world challenges. By
+                  fostering cross-disciplinary collaboration and hands-on learning, KRIYA 1.0
+                  empowers students to design innovative solutions and launch viable ventures.
                 </p>
 
                 <div className="pt-6">
@@ -277,7 +270,7 @@ export const HomePage = () => {
           <footer className="relative z-20 py-8 px-6 border-t border-gray-200">
             <div className="container mx-auto text-center">
               <p className="text-gray-600">
-                © 2025 BIT Tech Forum. Empowering Future Innovators.
+                © 2025 KRIYA 1.0 Empowering Future Innovators.
               </p>
             </div>
           </footer>

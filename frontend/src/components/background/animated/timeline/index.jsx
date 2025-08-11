@@ -1,7 +1,7 @@
 import React from 'react';
 import * as THREE from 'three';
 
-export function TimelineBackground() {
+export function   TimelineBackground() {
   const mountRef = React.useRef(null);
 
   React.useEffect(() => {
