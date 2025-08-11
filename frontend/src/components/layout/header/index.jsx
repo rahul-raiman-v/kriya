@@ -78,13 +78,13 @@ export const Header = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             {/* Logo with hover effect */}
-            <button
+            <a
               onClick={() => handleNavigate('/')}
               className="text-2xl md:text-3xl font-bold tracking-wider text-gradient slide-in-left hover:scale-105 transition-transform duration-300 focus:outline-none rounded-lg px-2 py-1"
               aria-label="Go to home page"
             >
               KRIYA 1.0
-            </button>
+            </a>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex flex-grow justify-center items-center space-x-8">
@@ -102,7 +102,7 @@ export const Header = () => {
                   {link.name}
                   {/* Animated underline */}
                   <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-pink-500 to-purple-600 transform transition-transform duration-300 ${
-                    isActive(link.path) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                    isActive(link.path) ? 'scale-x-100' : 'scale-x-0'
                   }`}></span>
                 </button>
               ))}
@@ -116,7 +116,7 @@ export const Header = () => {
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={isMenuOpen}
               >
-                <div className="w-6 h-6 relative">
+                <div className="w-6 h-6 relative -ml-3 mr-3">
                   <span className={`absolute h-0.5 w-6 bg-current transform transition-all duration-300 ${
                     isMenuOpen ? 'rotate-45 top-3' : 'top-1'
                   }`}></span>
@@ -167,7 +167,7 @@ export const Header = () => {
       {/* Mobile menu backdrop */}
       {isMenuOpen && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-20 z-40 md:hidden transition-opacity duration-300"
+          className="fixed inset-0 bg-opacity-20 z-40 md:hidden transition-opacity duration-300"
           onClick={() => setIsMenuOpen(false)}
           aria-hidden="true"
         ></div>
