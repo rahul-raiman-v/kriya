@@ -1,7 +1,6 @@
 import { TimelineBackground, TimelineComponent } from '../../components';
 import React from 'react';
 
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 
 export const TimelinePage = () => {
@@ -71,13 +70,41 @@ export const TimelinePage = () => {
     },
 
   ];
+
+  const containerRef = React.useRef(null);
+  const scrollInterval = React.useRef(null);
+  const [isPaused, setIsPaused] = React.useState(false);
+
+  React. useEffect(() => {
+    if (!isPaused) {
+      scrollInterval.current = setInterval(() => {
+        if (containerRef.current) {
+          containerRef.current.scrollTop += 1;
+
+          // If reached bottom → go back to top
+          if (
+            containerRef.current.scrollTop + containerRef.current.clientHeight >=
+            containerRef.current.scrollHeight
+          ) {
+            containerRef.current.scrollTop = 0;
+          }
+        }
+      }, 20);
+    } else {
+      clearInterval(scrollInterval.current);
+    }
+
+    return () => clearInterval(scrollInterval.current);
+  }, [isPaused]);
+
+
   return (
     <div className="p-3 relative">
       <div className='fixed inset-0 w-full h-full'>
         <TimelineBackground/>
-     </div>
-
-      <TimelineComponent items={items} />
+      </div>
+      <TimelineComponent items={items} ref={containerRef} setIsPaused={setIsPaused}/>
+      <div className="pointer-events-none absolute bottom-0 left-0 h-1/2 w-full bg-gradient-to-t from-black/100 to-transparent" />
     </div>
   );
 };
