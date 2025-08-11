@@ -6,5 +6,5 @@
       "@/components" : ["src/components/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "public/assets"]
 }
