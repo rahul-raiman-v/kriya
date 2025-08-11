@@ -14,10 +14,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/lab": "^7.0.0-beta.16",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@react-three/drei": "^10.6.1",
+    "@react-three/fiber": "^9.3.0",
+    "@splinetool/react-spline": "^4.1.0",
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.11.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gsap": "^3.13.0",
     "lucide-react": "^0.539.0",
     "motion": "^12.23.12",
     "prop-types": "^15.8.1",
@@ -25,8 +33,13 @@
     "react-dom": "^19.1.1",
     "react-router": "^7.8.0",
     "swiper": "^11.2.10",
+    "react-router-dom": "^5.3.4",
+    "react-simple-typewriter": "^5.0.1",
+    "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11",
+    "three": "^0.179.1",
+    "tsparticles": "^3.9.1",
     "zustand": "^5.0.7"
   },
   "devDependencies": {

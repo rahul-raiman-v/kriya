@@ -1,5 +1,33 @@
 [
     {
+      "name": "Arun Prakash",
+      "title": "Founder & CEO",
+      "organization": "GUVI Geek Network",
+      "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
+      "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
+      "expertise": [
+        "EdTech Leadership",
+        "Technology Innovation",
+        "Vernacular Learning",
+        "Community Building"
+      ],
+      "achievements": [
+        "Led GUVI to achieve two Guinness World Records for AI coding lessons and online programming participation",
+        "Invited to Oxford University in 2024 to speak on 'How Vernacular learning is transforming Technology learning'",
+        "Recognized as a Youth Icon at the IYONS International Summit",
+        "Awarded Leading Social Entrepreneur Award by Action for India in 2019",
+        "GUVI awarded 'Most Trusted Vernacular EduTech Award' by ZEE Digital"
+      ],
+      "links": {
+        "wikipedia": "http://en.wikipedia.org/wiki/GUVI",
+        "linkedin": "https://www.linkedin.com/in/arunprakashm/?originalSubdomain=in",
+        "twitter": "https://x.com/arunprakashguvi"
+      },
+      "industry": "EdTech",
+      "isKeynote": true,
+      "quote": "Technology should be accessible to everyone, regardless of language or background."
+    },
+    {
       "name": "Kevin Scott",
       "title": "Chief Technology Officer",
       "organization": "Microsoft",
