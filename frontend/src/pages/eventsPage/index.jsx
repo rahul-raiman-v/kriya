@@ -324,6 +324,16 @@ export const EventsPage = () => {
           Discover exciting events, workshops, and guest lectures happening at our institution
         </p>
       </div>
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-blue-50 to-purple-100 p-6">
+             {/* Header Section */}
+       <div className="text-center mb-12">
+         <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+           Events & Activities
+         </h1>
+         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+           Discover exciting events, workshops, and guest lectures happening at our institution
+         </p>
+       </div>
 
        <div className="w-full max-w-8xl mx-auto mb-16 items-center justify-center">
         <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/20 items-center justify-center">
