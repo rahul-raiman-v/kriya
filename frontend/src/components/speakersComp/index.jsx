@@ -3,7 +3,7 @@ import { Play, Linkedin, Twitter, Globe, MapPin, Users, Building2, ExternalLink,
 import './styles.css' ;
 
 
-const EntrepreneurEventPage = ({speakers}) => {
+const EntrepreneurSpeakersPage = ({speakers}) => {
 
   const [selectedFilter, setSelectedFilter] = React.useState('All');
   const [selectedSpeaker, setSelectedSpeaker] = React.useState(null);
@@ -322,7 +322,7 @@ const EntrepreneurEventPage = ({speakers}) => {
   );
 };
 
-export default EntrepreneurEventPage;
+export default EntrepreneurSpeakersPage;
 
 export const HeroSection = () => {
   return (
