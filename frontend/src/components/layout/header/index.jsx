@@ -72,7 +72,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+      <header className={`sticky top-0 z-50 w-full transition-all duration-300 backdrop-blur-xs ${
         isScrolled ? 'glass-morphism-dark shadow-lg' : 'glass-morphism'
       }`}>
         <div className="container mx-auto px-6 py-4">
@@ -80,7 +80,7 @@ export const Header = () => {
             {/* Logo with hover effect */}
             <a
               onClick={() => handleNavigate('/')}
-              className="text-2xl md:text-3xl font-bold tracking-wider text-gradient slide-in-left hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 rounded-lg px-2 py-1 hover:cursor-pointer"
+              className="text-2xl md:text-3xl font-bold tracking-wider text-gradient slide-in-left hover:scale-105 transition-transform duration-300 focus:outline-none rounded-lg px-2 py-1"
               aria-label="Go to home page"
             >
               KRIYA 1.0
@@ -92,7 +92,7 @@ export const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => handleNavigate(link.path)}
-                  className={`relative transition-all duration-300 hover:scale-105 focus:outline-none px-3 py-2 ${
+                  className={`relative transition-all duration-300 hover:scale-105 focus:outline-none  rounded-lg px-3 py-2 ${
                     isActive(link.path)
                       ? "text-pink-600 font-semibold"
                       : "text-gray-600 hover:text-pink-600"
