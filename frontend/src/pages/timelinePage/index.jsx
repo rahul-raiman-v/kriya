@@ -1,8 +1,6 @@
 import { TimelineBackground, TimelineComponent } from '../../components';
 import React from 'react';
 
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
-
 
 export const TimelinePage = () => {
   const items = [
