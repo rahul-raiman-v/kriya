@@ -12,7 +12,7 @@ export const AppRouter = () => {
           <Route index element={<HomePage />} />
           <Route path={routes.events} element={<EventsPage />} />
           <Route path={routes.speakers} element={<SpeakersPage />} />
-          <Route path={routes.timeline} element={<TimelinePage />} />
+          <Route path={routes.timeline} element={<TimelinePage />} /> 
         </Route>
       </Routes>
     </Router>
