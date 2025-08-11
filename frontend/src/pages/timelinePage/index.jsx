@@ -73,15 +73,15 @@ export const TimelinePage = () => {
 
   const containerRef = React.useRef(null);
   const scrollInterval = React.useRef(null);
-  const [hoveredIndex, setHoveredIndex] = React.useState(null);
+  const [isPaused, setIsPaused] = React.useState(false);
 
-  React.useEffect(() => {
-    // Start auto-scrolling if no item is hovered
-    if (hoveredIndex === null) {
+  React. useEffect(() => {
+    if (!isPaused) {
       scrollInterval.current = setInterval(() => {
         if (containerRef.current) {
           containerRef.current.scrollTop += 1;
-          // Optional: reset to top if reach bottom
+
+          // If reached bottom → go back to top
           if (
             containerRef.current.scrollTop + containerRef.current.clientHeight >=
             containerRef.current.scrollHeight
@@ -89,24 +89,22 @@ export const TimelinePage = () => {
             containerRef.current.scrollTop = 0;
           }
         }
-      }, 30);
+      }, 20);
     } else {
-      // If hovering on an item, scroll to top immediately and stop auto scroll
-      if (containerRef.current) {
-        containerRef.current.scrollTop = 0;
-      }
       clearInterval(scrollInterval.current);
     }
 
     return () => clearInterval(scrollInterval.current);
-  }, [hoveredIndex]);
+  }, [isPaused]);
+
 
   return (
     <div className="p-3 relative">
       <div className='fixed inset-0 w-full h-full'>
         <TimelineBackground/>
       </div>
-      <TimelineComponent items={items} ref={containerRef}/>
+      <TimelineComponent items={items} ref={containerRef} setIsPaused={setIsPaused}/>
+      <div className="pointer-events-none absolute bottom-0 left-0 h-1/2 w-full bg-gradient-to-t from-black/100 to-transparent" />
     </div>
   );
 };

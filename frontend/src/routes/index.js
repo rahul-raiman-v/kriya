@@ -5,4 +5,6 @@ export * from './publicRouter';
 export const routes = {
   home: '/',
   speakers: '/speakers',
+  timeline:"/timeline",
+  events:"/events",
 };
