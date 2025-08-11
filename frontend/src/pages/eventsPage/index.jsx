@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { EventsCard } from '../../components/eventsCard';
-import { GuestLectureCard } from '../../components/guestLectureCard';
+import React from 'react';
+import { EventsCard , GuestLectureCard } from '../../components';
 
 const stats = [
      {
@@ -168,11 +167,11 @@ const stats = [
 
 
 export const EventsPage = () => {
-  const [selectedEventId, setSelectedEventId] = useState('events');
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [isSearching, setIsSearching] = useState(false);
+  const [selectedEventId, setSelectedEventId] = React.useState('events');
+  const [isTransitioning, setIsTransitioning] = React.useState(false);
+  const [searchQuery, setSearchQuery] = React.useState('');
+  const [searchResults, setSearchResults] = React.useState([]);
+  const [isSearching, setIsSearching] = React.useState(false);
   const selectedCategory = stats.find((item) => item.id === selectedEventId);
 
   // Get all events from all categories for carousel
@@ -187,10 +186,10 @@ export const EventsPage = () => {
   // Create extended array for infinite scroll effect
   const extendedEvents = [...allEvents, ...allEvents, ...allEvents];
   const startIndex = allEvents.length;
-  const [currentSlide, setCurrentSlide] = useState(startIndex);
+  const [currentSlide, setCurrentSlide] = React.useState(startIndex);
 
   // Auto-advance carousel
-  useEffect(() => {
+  React.useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => {
         const nextSlide = prev + 1;
