@@ -261,7 +261,7 @@ const EntrepreneurEventPage = ({speakers}) => {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative p-8">
-                  <div className="flex items-start space-x-6">
+                  <div className="flex flex-col md:flex-row items-start gap-6 md:space-x-6 ">
                     <div className="relative">
                       <img 
                         src={speaker.avatarUrl} 
