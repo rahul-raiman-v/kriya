@@ -207,7 +207,7 @@ export const HomePage = () => {
                 </p>
 
                 <div className="pt-6">
-                  <button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-4 px-12 rounded-full transition-all duration-300 button-glow transform hover:scale-105 shadow-lg">
+                  <button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-4 px-12 rounded-xl transition-all duration-300 button-glow transform hover:scale-105 shadow-lg">
                     Register Now
                   </button>
                 </div>
@@ -222,10 +222,10 @@ export const HomePage = () => {
                 {/* Left - About Content */}
                 <div className="space-y-6 slide-in-left">
                   <h3 className="text-3xl md:text-4xl font-bold text-gradient">
-                    About BIT Tech Forum
+                    About KRIYA 1.0
                   </h3>
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    BIT Tech Forum is a student-driven initiative at Bannari
+                    KRIYA 1.0 is a student-driven initiative at Bannari
                     Amman Institute of Technology. We aim to inspire innovation,
                     build real-world tech skills, and foster collaboration among
                     curious minds passionate about technology and its
