@@ -1,0 +1,102 @@
+[
+    {
+      "name": "Kevin Scott",
+      "title": "Chief Technology Officer",
+      "organization": "Microsoft",
+      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFtp-0LsoG-J5B5m4iuem1H7qnl3R4F4q7Vw&s",
+      "about": "Kevin Scott is the CTO at Microsoft, previously Senior VP of Engineering and Operations at LinkedIn where he helped scale the platform significantly.",
+      "expertise": ["Engineering Leadership", "Infrastructure Scaling"],
+      "achievements": [
+        "Scaled LinkedIn ahead of its IPO",
+        "Authored 'Reprogramming the American Dream'",
+        "Founded nonprofit Behind the Tech"
+      ],
+      "links": {
+        "wikipedia": "https://en.wikipedia.org/wiki/Kevin_Scott_(computer_scientist)",
+        "linkedin": "https://www.linkedin.com/in/jkevinscott/",
+        "twitter": "https://x.com/kevin_scott?lang=en"
+      },
+      "industry": "Tech",
+      "isKeynote": true,
+      "quote": "The future of technology is about democratizing opportunity and empowering every person to achieve more."
+    },
+    {
+      "name": "Li Fan",
+      "title": "Chief Technology Officer",
+      "organization": "Circle",
+      "avatarUrl": "https://cdn.prod.website-files.com/67116d0daddc92483c812ead/67116d0daddc92483c812fc6_LiFan-sq-web_500.jpeg",
+      "about": "Li Fan is a computer scientist and CTO at Circle, previously held senior engineering roles at Google, Baidu, Pinterest, and Lime.",
+      "expertise": ["Computer Vision", "Engineering Leadership", "Big Data Infrastructure"],
+      "achievements": [
+        "Led engineering teams at major tech firms",
+        "Recognized as one of most important engineers globally"
+      ],
+      "links": {
+        "wikipedia": "https://en.wikipedia.org/wiki/Li_Fan_(engineer)",
+        "linkedin": "https://www.linkedin.com/in/li-fan-52869322/",
+        "twitter": "https://x.com/circle"
+      },
+      "industry": "FinTech",
+      "isKeynote": true,
+      "quote": "Innovation in financial technology requires both technical excellence and deep understanding of human trust."
+    },
+    {
+      "name": "Sandra \"Sandy\" Carter",
+      "title": "Chief Operating Officer",
+      "organization": "Unstoppable Domains",
+      "avatarUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sandy_Carter%2C_IBM.jpg/250px-Sandy_Carter%2C_IBM.jpg",
+      "about": "Sandy Carter is a businesswoman, speaker, and author. Former GM at IBM and VP at Amazon Web Services; now COO at Unstoppable Domains.",
+      "expertise": ["Business Operations", "Tech Marketing", "Leadership"],
+      "achievements": [
+        "Held senior roles at IBM and AWS",
+        "Accomplished public speaker"
+      ],
+      "links": {
+        "wikipedia": "https://en.wikipedia.org/wiki/Sandy_Carter",
+        "linkedin": "https://www.linkedin.com/in/sandyacarter/",
+        "twitter": "https://x.com/unstoppableweb"
+      },
+      "industry": "Web3",
+      "isKeynote": false
+    },
+    {
+      "name": "Padmasree Warrior",
+      "title": "Founder & CEO",
+      "organization": "Fable",
+      "avatarUrl": "https://www.boomlive.in/wp-content/uploads/2015/02/Padmasree-Warrior.jpg",
+      "about": "Padmasree Warrior is a technology executive, formerly CTO at Cisco and Motorola, and CEO of Nio USA. She now leads Fable, a curated reading platform for mental wellness.",
+      "expertise": ["Technology Leadership", "Executive Strategy", "Product Innovation"],
+      "achievements": [
+        "CTO at Cisco & Motorola",
+        "Founded and leading Fable",
+        "Board member at Microsoft and Spotify"
+      ],
+      "links": {
+        "wikipedia": "https://en.wikipedia.org/wiki/Padmasree_Warrior",
+        "linkedin": "https://www.linkedin.com/in/padmasree-warrior-9917a26b/",
+        "twitter": "https://x.com/padmasree"
+      },
+      "industry": "HealthTech",
+      "isKeynote": true,
+      "quote": "True innovation happens when technology meets human empathy and understanding."
+    },
+    {
+      "name": "Samina Virk",
+      "title": "U.S. CEO & Chief Marketing Officer",
+      "organization": "Vestiaire Collective",
+      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjCC3zOTukHXFxeJQRtF3i3dkIWQhGmdQa3w&s",
+      "about": "Samina Virk serves as both U.S. CEO and CMO of Vestiaire Collective. Her career spans digital agencies, eBay, Target, and scaling luxury-resale operations in the U.S.",
+      "expertise": ["E-commerce Strategy", "Digital Marketing", "Business Scaling"],
+      "achievements": [
+        "Launched eBay's fashion vertical",
+        "Scaled U.S. business for Vestiaire Collective as CEO and CMO"
+      ],
+      "links": {
+        "news": "https://www.bbc.com/culture/article/20240911-vestiairie-collective-vintage-and-the-rise-of-archival-fashion",
+        "linkedin": "https://www.linkedin.com/in/saminavirk/",
+        "twitter": "https://x.com/vestiaireco?lang=en"
+      },
+      "industry": "E-commerce",
+      "isKeynote": false
+    }
+  ]
