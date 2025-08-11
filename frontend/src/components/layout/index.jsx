@@ -1,12 +1,14 @@
 import React from 'react'
-import { Header } from './header'
 import { Outlet } from 'react-router'
+import { Header } from './header'
 
 export const Layout = () => {
   return (
-    <div className='w-full h-screen'>
-      <Header/>
-      <Outlet/>
+    <div>
+        <Header/>
+        <div>
+            <Outlet/>
+        </div>
     </div>
   )
 }
