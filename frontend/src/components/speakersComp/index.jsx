@@ -8,6 +8,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import './swiper.css';
 
 
 const EntrepreneurSpeakersPage = ({speakers}) => {
@@ -208,11 +209,12 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
             </p>
           </div>
         </div>
-        <div className="container mx-auto px-6 py-10 mb-12 h-85 md:h-95">
+        <div className="container mx-auto py-10 mb-4 md:mb-12 h-85 md:h-95">
           <Swiper
-            spaceBetween={24}
+            spaceBetween={20}
             loop={true}
-            modules={[Autoplay]}
+            modules={[Autoplay, Navigation]}
+            navigation={true}
             className="mySwiper"
             autoplay={{
               delay: 1500,
@@ -222,44 +224,48 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
             slidesPerView="auto"
             breakpoints={{
               320: { slidesPerView: 1 },
-              770: { slidesPerView: 2 },
+              770: { slidesPerView: 2.2 },
             }}
           >
           {regularSpeakers.map((speaker) => (
-            <SwiperSlide key={speaker.name} className='!rounded-xl'>
+            <SwiperSlide key={speaker.name} className="relative md:!transform md:!overflow-x-hidden md:!skew-x-[-15deg]">
+              {/* The outer container is the parallelogram and is skewed */}
+              <div className="h-full">
+                {/* The inner container is counter-skewed to keep content straight */}
+                <div className="flex flex-col gap-4 bg-white overflow-hidden border-none transition-all duration-300 h-full shadow-md hover:shadow-lg">
+                  <div
+                    className="relative w-full md:w-[120%] md:-ml-[10%] h-84 bg-center bg-cover no-repeat md:transform md:skew-x-[15deg]"
+                    style={{ backgroundImage: `url(${speaker?.carouselUrl})` }}
+                  >
 
-              {/* Base Card - Fixed Height */}
-              <div className="flex flex-col gap-4 bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-300 flex flex-col h-full shadow-md hover:shadow-lg">
-                <div
-                  className="relative w-full h-84 rounded-xl overflow-hidden bg-center bg-cover no-repeat"
-                  style={{ backgroundImage: `url(${speaker?.carouselUrl})` }}
-                >
-                  {/* Gradient overlay for better text contrast */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    {/* Gradient overlay for better text contrast */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
-                  {/* Text content at the bottom */}
-                  <div className="absolute bottom-0 w-full p-4 text-white text-start">
-                    <h3 className="text-xl font-semibold mb-1 group-hover:text-purple-300 transition-colors">
-                      {speaker.name}
-                    </h3>
-                    <p className="text-sm font-semibold text-purple-300">{speaker.title}</p>
-                    <p className="text-sm font-medium">{speaker.organization}</p>
+                    {/* Text content at the bottom */}
+                    <div className="absolute bottom-0 w-full p-4 text-white text-start md:ml-15">
+                      <h3 className="text-xl font-semibold mb-1 group-hover:text-purple-300 transition-colors">
+                        {speaker.name}
+                      </h3>
+                      <p className="text-sm font-semibold text-purple-300">
+                        {speaker.title}
+                      </p>
+                      <p className="text-sm font-medium">{speaker.organization}</p>
 
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {speaker.expertise.slice(0, 2).map((skill, index) => (
-                        <span
-                          key={index}
-                          className="px-2 py-1 bg-white/30 text-white rounded text-xs border border-white/40 backdrop-blur-sm"
-                        >
-                          {skill}
-                        </span>
-                      ))}
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {speaker.expertise.slice(0, 2).map((skill, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1 bg-white/30 text-white rounded text-xs border border-white/40 backdrop-blur-sm"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
-            
           ))}
           </Swiper>
         </div>
