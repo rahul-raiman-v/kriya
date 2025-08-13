@@ -287,7 +287,7 @@ const stats = [
   events: [
       {
       id: 'guestlecture1',
-      eventTitle: 'Guest Lecture',
+      eventTitle: 'AI and Machine Learning',
       speakerName: 'Dr Priya Sharma',
       speakerDesignation: 'Professor of Computer Science, Google',
       talkTitle: 'AI and Machine Learning',
@@ -329,7 +329,7 @@ const stats = [
       },
       {
       id: 'guestlecture2',
-      eventTitle: 'Guest Lecture 2',
+      eventTitle: 'AI and Machine Learning',
       speakerName: 'Dr Arya Sharma',
       speakerDesignation: 'Professor of Computer Science, IBM',
       talkTitle: 'AI and Machine Learning',
@@ -372,6 +372,8 @@ const stats = [
   ],
   },
 ];
+
+
 
 
 export const EventsPage = () => {
@@ -486,7 +488,7 @@ export const EventsPage = () => {
        
       {/* {Swiper} */}
       <div className="w-full max-w-7xl mx-auto mb-16 px-4 sm:px-6 lg:px-8">
-        <div className="w-full relative overflow-hidden shadow-2xl rounded-3xl border border-white/20">
+        <div className="w-full relative rounded-3xl overflow-hidden shadow-2xl  border border-white/0">
           <Swiper
             modules={[Autoplay, Navigation, Pagination]}
             slidesPerView={1}
@@ -503,14 +505,14 @@ export const EventsPage = () => {
           >
             {allEvents.map((event) => (
               <SwiperSlide key={event.id}>
-                <div className="w-full border border-white/20 rounded-3xl p-4 sm:p-6 lg:p-8 relative min-h-[400px] sm:min-h-[450px] lg:h-98 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex flex-col lg:flex-row items-center justify-center shadow-lg gap-4 sm:gap-6 lg:gap-8">
+                <div className="w-full border rounded-3xl border-grey-700 p-4 sm:p-6 lg:p-8 relative min-h-[400px] sm:min-h-[450px] lg:h-98 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex flex-col lg:flex-row items-center justify-center shadow-lg gap-4 sm:gap-6 lg:gap-8">
                   
                   {/* Image */}
                   <div className="w-full lg:w-1/3 h-48 sm:h-64 lg:h-80 flex-shrink-0 order-1 lg:order-1">
                     <img
                       src={event.img}
                       alt={event.eventTitle}
-                      className="w-full h-full object-cover rounded-lg shadow-md"
+                      className="w-full h-full object-cover rounded-lg shadow-md" loading='lazy'
                     />
                   </div>
 
@@ -535,12 +537,6 @@ export const EventsPage = () => {
                         <>
                           <p className="text-center lg:text-left">
                             <span className="font-semibold text-blue-600">Speaker:</span> {event.speakerName || 'TBA'}
-                          </p>
-                          <p className="text-center lg:text-left">
-                            <span className="font-semibold text-blue-600">Topic:</span> {event.talkTitle || 'TBA'}
-                          </p>
-                          <p className="text-center lg:text-left">
-                            <span className="font-semibold text-blue-600">Duration:</span> {event.duration || 'TBA'}
                           </p>
                         </>
                       ) : (
@@ -568,21 +564,25 @@ export const EventsPage = () => {
       </div>
 
       {/* Category Cards Section */}
-      <div className="w-full max-w-7xl mx-auto mb-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Choose Your Category</h2>
-          <p className="text-gray-600">Select a category to explore available events</p>
+      <div className="w-full max-w-7xl mx-auto mb-8 sm:mb-12 lg:mb-16 px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 sm:mb-3 lg:mb-4">
+            Choose Your Category
+          </h2>
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600">
+            Select a category to explore available events
+          </p>
         </div>
         
         <div
-          className="flex flex-wrap justify-center gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 justify-items-center"
           role="tablist"
           aria-label="Event categories"
         >
           {categoriesWithAll.map((item) => (
             <button
               key={item.id}
-              className={`group relative flex justify-between items-center w-74 h-48 p-6 rounded-2xl border cursor-pointer transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 ${
+              className={`group relative flex flex-col sm:flex-row sm:justify-between items-center w-full max-w-sm sm:max-w-none sm:w-full lg:w-74 h-auto sm:h-40 lg:h-48 p-4 sm:p-5 lg:p-6 rounded-xl sm:rounded-2xl border cursor-pointer transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 sm:hover:-translate-y-2 ${
                 selectedEventId === item.id
                   ? 'border-blue-500 shadow-2xl shadow-blue-500/25'
                   : 'border-transparent hover:border-gray-300 shadow-xl hover:shadow-2xl'
@@ -590,20 +590,32 @@ export const EventsPage = () => {
               onClick={() => setSelectedEventId(item.id)}
             >
               {/* Background Pattern */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
-              <div className="relative z-10 flex justify-between items-center w-full">
-                  <div>
-                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
-                   <p className="text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
-                     {item.events.length}
-                   </p>
-                 </div>
-                <div className="w-28 h-28 flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-4 group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300">
+              <div className="relative z-10 flex flex-col sm:flex-row sm:justify-between items-center w-full gap-3 sm:gap-4">
+                
+                {/* Content Section */}
+                <div className="text-center sm:text-left order-2 sm:order-1 flex-1">
+                  <h3 className="text-lg sm:text-xl lg:text-xl font-semibold text-gray-800 mb-1 sm:mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-3xl sm:text-4xl lg:text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                    {item.events.length}
+                  </p>
+                </div>
+                
+                {/* Icon Section */}
+                <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl sm:rounded-2xl p-2 sm:p-3 lg:p-4 group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300 order-1 sm:order-2 flex-shrink-0">
                   {typeof item.img === 'string' ? (
-                    <img src={item.img} alt="" className="w-20 h-20 object-contain" />
+                    <img 
+                      src={item.img} 
+                      alt="" 
+                      className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 object-contain" 
+                    />
                   ) : (
-                    item.img
+                    <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 flex items-center justify-center">
+                      {item.img}
+                    </div>
                   )}
                 </div>
               </div>
