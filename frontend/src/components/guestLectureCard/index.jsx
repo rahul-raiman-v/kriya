@@ -130,7 +130,7 @@ export const GuestLectureCard = ({
                 className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${
                   activeTab === tab.title
                     ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md transform scale-105"
-                    : "border border-gray-300 text-gray-700 hover:bg-gradient-to-r hover:from-pink-100 hover:to-purple-100 hover:border-purple-300"
+                    : "border border-gray-300 text-gray-700"
                 }`}
                 onClick={() => setActiveTab(tab.title)}
                 aria-selected={activeTab === tab.title}
@@ -149,7 +149,7 @@ export const GuestLectureCard = ({
 
         {/* Register Button */}
         <button
-          className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-5 sm:px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition w-fit text-sm sm:text-base"
+          className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-5 sm:px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition w-fit text-sm sm:text-base"
           onClick={() => navigate("/combo")}
         >
           {buttonLabel}
