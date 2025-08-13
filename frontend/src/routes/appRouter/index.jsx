@@ -19,5 +19,5 @@ export const AppRouter = () => {
         </Route>
       </Routes>
     </Router>
-  );
+  );
 };

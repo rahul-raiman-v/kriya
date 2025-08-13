@@ -1,14 +1,12 @@
 import React from 'react';
 import { Play, Linkedin, Twitter, Globe, MapPin, Users, Building2, ExternalLink, Award, TrendingUp, UserCheck } from 'lucide-react';
 import { useNavigate } from 'react-router';
-import './styles.css' ;
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import './swiper.css';
+import './styles.css' ;
 
 
 const EntrepreneurSpeakersPage = ({speakers}) => {
