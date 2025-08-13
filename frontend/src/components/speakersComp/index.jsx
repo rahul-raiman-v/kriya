@@ -217,7 +217,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
             loop={true}
             modules={[Autoplay, Navigation]}
             navigation={true}
-            className="mySwiper"
+            className="mySwiper !rounded-none"
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,
@@ -230,11 +230,11 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
             }}
           >
           {regularSpeakers.map((speaker) => (
-            <SwiperSlide key={speaker.name} className="relative md:!transform md:!overflow-x-hidden md:!skew-x-[-15deg]">
+            <SwiperSlide key={speaker.name} className="relative md:!transform md:!overflow-x-hidden md:!skew-x-[-15deg] !rounded-none">
               {/* The outer container is the parallelogram and is skewed */}
-              <div className="h-full">
+              <div className="h-full  !rounded-none">
                 {/* The inner container is counter-skewed to keep content straight */}
-                <div className="flex flex-col gap-4 bg-white overflow-hidden border-none transition-all duration-300 h-full shadow-md hover:shadow-lg">
+                <div className="flex flex-col gap-4 bg-white overflow-hidden border-none transition-all duration-300 h-full shadow-md hover:shadow-lg  !rounded-none">
                   <div
                     className="relative w-full md:w-[120%] md:-ml-[10%] h-84 bg-center bg-cover no-repeat md:transform md:skew-x-[15deg]"
                     style={{ backgroundImage: `url(${speaker?.carouselUrl})` }}
