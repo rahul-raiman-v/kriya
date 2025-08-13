@@ -483,15 +483,16 @@ export const EventsPage = () => {
            Discover exciting events, workshops, and guest lectures happening at our institution
          </p>
        </div>
-
-       <div className="w-full max-w-8xl mx-auto mb-16 items-center justify-center">
-        <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/20 items-center justify-center">
+       
+      {/* {Swiper} */}
+      <div className="w-full max-w-7xl mx-auto mb-16 px-4 sm:px-6 lg:px-8">
+        <div className="w-full relative overflow-hidden shadow-2xl rounded-3xl border border-white/20">
           <Swiper
             modules={[Autoplay, Navigation, Pagination]}
             slidesPerView={1}
             spaceBetween={30}
             loop={true}
-            navigation={true}
+            navigation={false}
             pagination={{ clickable: true }}
             autoplay={{
               delay: 3000,
@@ -502,57 +503,61 @@ export const EventsPage = () => {
           >
             {allEvents.map((event) => (
               <SwiperSlide key={event.id}>
-                <div className="flex p-6 relative h-98 bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-900 items-center justify-center rounded-3xl shadow-lg gap-7">
+                <div className="w-full border border-white/20 rounded-3xl p-4 sm:p-6 lg:p-8 relative min-h-[400px] sm:min-h-[450px] lg:h-98 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex flex-col lg:flex-row items-center justify-center shadow-lg gap-4 sm:gap-6 lg:gap-8">
+                  
                   {/* Image */}
-                  <img
-                    src={event.img}
-                    alt={event.eventTitle}
-                    className="w-full md:w-1/3 h-full object-fit rounded-lg"
-                  />
-
-                  {/* Event Details */}
-                  <div className="w-1/2 text-white pl-8 flex flex-col justify-center">
-                  {/* Category Tag */}
-                  <div className="mb-5">
-                    <span className="inline-block px-5 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-sm font-semibold rounded-full shadow-lg tracking-wide">
-                      {event.categoryTitle}
-                    </span>
+                  <div className="w-full lg:w-1/3 h-48 sm:h-64 lg:h-80 flex-shrink-0 order-1 lg:order-1">
+                    <img
+                      src={event.img}
+                      alt={event.eventTitle}
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
                   </div>
 
-                  {/* Event Title */}
-                  <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200 leading-snug">
-                    {event.eventTitle}
-                  </h2>
+                  {/* Event Details */}
+                  <div className="w-full lg:w-2/3 text-gray-800 flex flex-col justify-start order-2 lg:order-2 lg:pl-8">
+                    
+                    {/* Category Tag */}
+                    <div className="mb-3 sm:mb-4 lg:mb-5 flex justify-center lg:justify-start">
+                      <span className="inline-block px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs sm:text-sm font-semibold rounded-full shadow-lg tracking-wide">
+                        {event.categoryTitle}
+                      </span>
+                    </div>
 
-                  {/* Event Specific Details */}
-                  <div className="space-y-3 text-lg text-gray-200">
-                    {event.categoryId === 'guest-lecture' ? (
-                      <>
-                        <p>
-                          <span className="font-semibold text-pink-300">Speaker:</span> {event.speakerName || 'TBA'}
-                        </p>
-                        <p>
-                          <span className="font-semibold text-pink-300">Topic:</span> {event.talkTitle || 'TBA'}
-                        </p>
-                        <p>
-                          <span className="font-semibold text-pink-300">Duration:</span> {event.duration || 'TBA'}
-                        </p>
-                      </>
-                    ) : (
-                      event.eventType && (
-                        <p>
-                          <span className="font-semibold text-pink-300">Type:</span> {event.eventType}
-                        </p>
-                      )
-                    )}
+                    {/* Event Title */}
+                    <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-3 sm:mb-4 lg:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600 leading-snug text-center lg:text-left">
+                      {event.eventTitle}
+                    </h2>
 
-                    {/* Common Details */}
-                    <p>
-                      <span className="font-semibold text-pink-300">Date:</span> {event.date}
-                    </p>
-                    <p>
-                      <span className="font-semibold text-pink-300">Venue:</span> {event.venue}
-                    </p>
+                    {/* Event Specific Details */}
+                    <div className="space-y-2 sm:space-y-3 text-sm sm:text-base lg:text-lg text-gray-700">
+                      {event.categoryId === 'guest-lecture' ? (
+                        <>
+                          <p className="text-center lg:text-left">
+                            <span className="font-semibold text-blue-600">Speaker:</span> {event.speakerName || 'TBA'}
+                          </p>
+                          <p className="text-center lg:text-left">
+                            <span className="font-semibold text-blue-600">Topic:</span> {event.talkTitle || 'TBA'}
+                          </p>
+                          <p className="text-center lg:text-left">
+                            <span className="font-semibold text-blue-600">Duration:</span> {event.duration || 'TBA'}
+                          </p>
+                        </>
+                      ) : (
+                        event.eventType && (
+                          <p className="text-center lg:text-left">
+                            <span className="font-semibold text-blue-600">Type:</span> {event.eventType}
+                          </p>
+                        )
+                      )}
+
+                      {/* Common Details */}
+                      <p className="text-center lg:text-left">
+                        <span className="font-semibold text-blue-600">Date:</span> {event.date}
+                      </p>
+                      <p className="text-center lg:text-left">
+                        <span className="font-semibold text-blue-600">Venue:</span> {event.venue}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -561,7 +566,6 @@ export const EventsPage = () => {
           </Swiper>
         </div>
       </div>
-
 
       {/* Category Cards Section */}
       <div className="w-full max-w-7xl mx-auto mb-16">
@@ -589,7 +593,7 @@ export const EventsPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <div className="relative z-10 flex justify-between items-center w-full">
-                                 <div>
+                  <div>
                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
                    <p className="text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
                      {item.events.length}
@@ -623,7 +627,7 @@ export const EventsPage = () => {
              
              {/* Search Bar */}
              <div className="flex justify-center mb-8">
-               <div className="relative w-96">
+               <div className="relative w-96 text-black">
                  <input
                    type="text"
                    value={searchQuery}

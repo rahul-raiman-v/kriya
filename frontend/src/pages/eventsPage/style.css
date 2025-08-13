@@ -1,34 +1,45 @@
-/* Hide default icon and replace with custom arrow */
-.swiper-button-next,
+.mySwiper {
+  border-radius: 1.5rem; /* equivalent to rounded-3xl */
+  overflow: hidden;
+}
+
+.mySwiper .swiper-wrapper {
+  border-radius: 1.5rem;
+}
+
+.mySwiper .swiper-slide {
+  border-radius: 1.5rem;
+}
+
+
+/* .swiper-button-next,
 .swiper-button-prev {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  backdrop-filter: blur(4px);
-  display: flex;
+  border-radius: 100%;
+  backdrop-filter: blur(10px);
   align-items: center;
   justify-content: center;
-}
+} */
 
-.swiper-button-next::after,
+/* .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 18px; /* Arrow size */
+  font-size: 14px;
   font-weight: bold;
   color: white;
-}
+} */
 
-/* Custom arrow symbols */
-.swiper-button-prev::after {
-  content: '←';
-}
+/* Smaller on small screens */
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
 
-.swiper-button-next::after {
-  content: '→';
-}
-
-/* Hover effect */
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 10px;
+  }
 }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { CalendarDays, MapPin } from 'lucide-react';
 import { MinCard } from '../../components';
 import './style.css';
+import { useNavigate } from 'react-router';
 
 export function EventsCard({
   eventTabs = [],
@@ -11,6 +12,8 @@ export function EventsCard({
   eventVenue = 'Venue not specified',
   eventImage = '',
 }) {
+
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(eventTabs[0]?.title || '');
 
   const activeTabData = eventTabs.find((tab) => tab.title === activeTab);
@@ -97,20 +100,22 @@ export function EventsCard({
 
         {/* Tab Content */}
         <div className="flex-1 mb-6">
-          <div className="bg-gray-50 rounded-xl p-4 min-h-[150px] max-h-[300px] overflow-y-auto no-scrollbar">
+          <div className="bg-gray-50 rounded-xl p-4 min-h-[150px] max-h-[300px] text-gray-900 text-[20px] overflow-y-auto no-scrollbar">
             {renderTabContent()}
           </div>
         </div>
         
         {/* Register Button */}
-        <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md">
+        <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+          onClick={() => navigate("/combo")}
+        >
           Register Now
         </button>
       </div>
 
       {/* Right Side - Image */}
       {eventImage && (
-        <div className="lg:w-1/3 min-h-[200px]">
+        <div className="max-w-[500px] max-h-[400px] min-h-[200px]">
           <img
             src={eventImage}
             alt={eventTitle}
@@ -130,7 +135,7 @@ EventsCard.propTypes = {
       title: PropTypes.string.isRequired,
       content: PropTypes.oneOfType([
         PropTypes.string,
-        PropTypes.arrayOf(PropTypes.object), // More flexible for different content types
+        PropTypes.arrayOf(PropTypes.object),
       ]),
     })
   ),
