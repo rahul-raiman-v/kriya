@@ -8,6 +8,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import './styles.css' ;
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import './swiper.css';
+
 
 const EntrepreneurSpeakersPage = ({speakers}) => {
 
@@ -40,13 +47,6 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
     { id: 3, title: "Sandy Carter on Digital Transformation", thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop" , link : "https://www.youtube.com/watch?v=LhiMt84U5Ks" }
   ];
 
-  const stats = {
-    totalJobs: "2.3M",
-    countries: 12,
-    industries: 18,
-    companies: 25
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
 
@@ -70,7 +70,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
                   <img 
                     src={selectedSpeaker.avatarUrl} 
                     alt={selectedSpeaker.name}
-                    className="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200"
+                    className="w-24 h-24 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-purple-200"
                   />
                   <div>
                     <h2 className="text-3xl font-bold text-gray-800 mb-1">{selectedSpeaker.name}</h2>
@@ -80,7 +80,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
                 </div>
                 <button 
                   onClick={closeModal}
-                  className="self-start text-gray-500 hover:text-gray-700 transition-colors p-3 rounded-full hover:bg-gray-100 flex-shrink-0"
+                  className="self-start text-gray-500 hover:text-gray-700 transition-colors p-3 rounded-full hover:bg-gray-100 flex-shrink-0 w-fit"
                 >
                   <svg className="w-6 h-6 hover:cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -125,7 +125,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
             </div>
 
             {/* Scrollable Content */}
-            <div className="overflow-y-auto flex-1 custom-scrollbar" style={{ maxHeight: 'calc(90vh - 200px)' }}>
+            <div className="overflow-y-auto flex-1 custom-scrollbar !pb-14" style={{ maxHeight: 'calc(90vh - 200px)' }}>
               <div className="p-8">
                 {/* About Section */}
                 <div className="mb-8">
@@ -155,7 +155,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
 
                 {/* Expertise */}
                 <div className='mb-8'>
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-2">
                     <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
                       <TrendingUp size={20} className="text-white" />
                     </div>
@@ -163,7 +163,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
                   </div>
                   <div className="space-y-3 pl-16">
                     {selectedSpeaker.expertise.map((skill, index) => (
-                      <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-300 transition-colors">
+                      <div key={index} className="flex items-center p-3 bg-gray-50 rounded-lg border-none transition-colors">
                         <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-4"></div>
                         <span className="text-gray-700 font-medium">{skill}</span>
                       </div>
@@ -173,7 +173,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
 
                 {/* Achievements */}
                 <div className='mb-8'>
-                  <div className="flex items-center mb-6">
+                  <div className="flex items-center mb-2">
                     <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
                       <Award size={20} className="text-white" />
                     </div>
@@ -181,9 +181,9 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
                   </div>
                   <div className="space-y-4 pl-16">
                     {selectedSpeaker.achievements.map((achievement, index) => (
-                      <div key={index} className="flex items-start p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-300 transition-colors">
-                        <div className="w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                          <span className="text-white text-sm font-bold">{index + 1}</span>
+                      <div key={index} className="flex items-start p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-300 transition-colors">
+                        <div className="w-5 h-5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                          <span className="text-white text-[12px] font-bold">{index + 1}</span>
                         </div>
                         <p className="text-gray-700 leading-relaxed">{achievement}</p>
                       </div>
@@ -198,49 +198,89 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
       )}
 
       {/* Hero Section */}
-      <HeroSection />
-
-      {/* Fun Stats */}
-      <div className="bg-white/60 backdrop-blur-sm border-y border-gray-200">
-        <div className="container mx-auto px-6 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <UserCheck className="text-green-600 mr-2" size={28} />
-                <span className="text-3xl font-bold text-gray-800">{stats.totalJobs}</span>
-              </div>
-              <p className="text-gray-600">Jobs Created</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <MapPin className="text-blue-600 mr-2" size={24} />
-                <span className="text-3xl font-bold text-gray-800">{stats.countries}</span>
-              </div>
-              <p className="text-gray-600">Countries Represented</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <Building2 className="text-purple-600 mr-2" size={24} />
-                <span className="text-3xl font-bold text-gray-800">{stats.industries}</span>
-              </div>
-              <p className="text-gray-600">Industries Covered</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <Users className="text-pink-600 mr-2" size={24} />
-                <span className="text-3xl font-bold text-gray-800">{stats.companies}</span>
-              </div>
-              <p className="text-gray-600">Companies Founded</p>
-            </div>
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
+        <div className="relative container mx-auto px-6 py-2 mt-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Meet the Visionaries
+            </h1>
+            <p className="text-2xl text-purple-700 mb-4 font-semibold">
+              Innovators, Dreamers, and Game Changers
+            </p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Join us as we bring together the most influential entrepreneurs, tech leaders, and innovators 
+              who are shaping the future of business and technology.
+            </p>
           </div>
         </div>
-      </div>
+        <div className="container mx-auto py-10 mb-4 md:mb-12 h-85 md:h-95">
+          <Swiper
+            spaceBetween={20}
+            loop={true}
+            modules={[Autoplay, Navigation]}
+            navigation={true}
+            className="mySwiper"
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            slidesPerView="auto"
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              770: { slidesPerView: 2.2 },
+            }}
+          >
+          {regularSpeakers.map((speaker) => (
+            <SwiperSlide key={speaker.name} className="relative md:!transform md:!overflow-x-hidden md:!skew-x-[-15deg]">
+              {/* The outer container is the parallelogram and is skewed */}
+              <div className="h-full">
+                {/* The inner container is counter-skewed to keep content straight */}
+                <div className="flex flex-col gap-4 bg-white overflow-hidden border-none transition-all duration-300 h-full shadow-md hover:shadow-lg">
+                  <div
+                    className="relative w-full md:w-[120%] md:-ml-[10%] h-84 bg-center bg-cover no-repeat md:transform md:skew-x-[15deg]"
+                    style={{ backgroundImage: `url(${speaker?.carouselUrl})` }}
+                  >
 
-      {/* Keynote Speakers */}
-      <KeynoteSpeakers keynote = {keynote} />
+                    {/* Gradient overlay for better text contrast */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
 
+                    {/* Text content at the bottom */}
+                    <div className="absolute bottom-0 w-full p-4 text-white text-start md:ml-15">
+                      <h3 className="text-xl font-semibold mb-1 group-hover:text-purple-300 transition-colors">
+                        {speaker.name}
+                      </h3>
+                      <p className="text-sm font-semibold text-purple-300">
+                        {speaker.title}
+                      </p>
+                      <p className="text-sm font-medium">{speaker.organization}</p>
+
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {speaker.expertise.slice(0, 2).map((skill, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1 bg-white/30 text-white rounded text-xs border border-white/40 backdrop-blur-sm"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          </Swiper>
+        </div>
+       </div>
+
+      {/* Speaker Cards Grid */}
+      
+      
       {/* Industry Filter */}
-      <div className="container mx-auto px-6 mb-8">
+      <div className="container mx-auto px-6 mt-12">
         <div className="flex flex-wrap justify-center gap-3">
           {industries.map((industry) => (
             <button
@@ -256,76 +296,89 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
             </button>
           ))}
         </div>
-      </div>
+      </div>
 
-      {/* Speaker Cards Grid */}
-      <div className="container mx-auto px-6 py-8">
-        <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Featured Speakers</h2>
-        
-        {/* No Speakers Found Message */}
-        {filteredSpeakers.length === 0 ? (
+      {/* Keynote Speakers */}
+      {filteredSpeakers.length === 0 ? (
           <NoSpeakerFound selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
         ) : (
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={30}
-              Navigation={true}
-              loop={true}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Autoplay, Navigation, Pagination]}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }}
-              className="mySwiper"
-            >
-            {regularSpeakers.map((speaker) => (
-              <SwiperSlide key={speaker.name}>
-                <div 
-                className="group relative"
-              >
-                {/* Base Card - Fixed Height */}
-                <div className="flex flex-col justify-between gap-4 bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-300 flex flex-col p-6 h-full shadow-md hover:shadow-lg">
-                  <div className="">
-                    <div className="flex items-center space-x-4 mb-4">
+      <div className="container mx-auto px-6 py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {filteredSpeakers.map((speaker) => (
+            <div key={speaker.name} className="group">
+              <div className="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="relative p-8 h-full">
+                  <div className="flex flex-col md:flex-row items-start gap-6 md:space-x-6 h-full">
+                    <div className="relative">
                       <img 
                         src={speaker.avatarUrl} 
                         alt={speaker.name}
-                        className="w-16 h-16 rounded-full object-cover ring-2 ring-purple-200"
+                        className="w-24 h-24 rounded-full object-cover ring-4 ring-purple-200 group-hover:ring-purple-300 transition-all duration-300"
                       />
-                      <div className="flex-1 min-w-0">
-                        <h3 className="text-xl font-semibold text-gray-800 mb-1 group-hover:text-purple-600 transition-colors">
-                          {speaker.name}
-                        </h3>
-                        <p className="text-purple-600 text-sm font-semibold">{speaker.title}</p>
-                        <p className="text-gray-600 text-sm font-medium">{speaker.organization}</p>
-                      </div>
-                      <div className="text-right">
-                        <span className="inline-block px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs border border-purple-200">
-                          {speaker.industry}
-                        </span>
+                      <div className="absolute -top-2 -right-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-1">
+                        <Award size={16} className="text-white" />
                       </div>
                     </div>
                     
-                    <div className="flex flex-wrap gap-2">
-                      {speaker.expertise.slice(0, 2).map((skill, index) => (
-                        <span key={index} className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">
-                          {skill}
-                        </span>
-                      ))}
+                    <div className="flex flex-col flex-1 min-w-0 h-full">
+                      <div className='flex-1'>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-1 group-hover:text-purple-600 transition-colors">
+                        {speaker.name}
+                      </h3>
+                      <p className="text-lg text-purple-600 mb-1 font-semibold">{speaker.title}</p>
+                      <p className="text-gray-700 mb-4 font-semibold">{speaker.organization}</p>
+                      
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {speaker.expertise.slice(0, 2).map((skill, index) => (
+                          <span key={index} className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm border border-purple-200">
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+
+                      {speaker.quote && (
+                        <blockquote className="italic text-gray-600 border-l-4 border-purple-400 pl-4 mb-4 group-hover:border-purple-500 transition-colors">
+                          "{speaker.quote}"
+                        </blockquote>
+                      )}
+
+                      <div className="flex space-x-3">
+                        {speaker.links.linkedin && (
+                          <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors">
+                            <Linkedin size={20} />
+                          </a>
+                        )}
+                        {speaker.links.twitter && (
+                          <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+                            <Twitter size={20} />
+                          </a>
+                        )}
+                        {speaker.links.wikipedia && (
+                          <a href="#" className="text-gray-500 hover:text-green-600 transition-colors">
+                            <Globe size={20} />
+                          </a>
+                        )}
+                      </div>
+                      </div>
+                      <div className='mt-auto text-right'>
+                        <button 
+                          className="text-purple-600 hover:text-purple-500 text-sm font-medium transition-colors hover:cursor-pointer pointer-events-auto"
+                          onClick={() => openModal(speaker)}
+                        >
+                          More Details →
+                        </button>
+                      </div>
                     </div>
-                  </div>  
+                  </div>
                 </div>
               </div>
-              </SwiperSlide>
-             
-            ))}
-            </Swiper>
-        )}
+            </div>
+          ))}
+        </div>
       </div>
+      )}
 
       {/* Video Section */}
       <VideoSection videos={videos} />
@@ -343,7 +396,7 @@ export const HeroSection = () => {
   return (
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
-        <div className="relative container mx-auto px-6 py-20">
+        <div className="relative container mx-auto px-6 py-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Meet the Visionaries
@@ -353,11 +406,11 @@ export const HeroSection = () => {
             </p>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Join us as we bring together the most influential entrepreneurs, tech leaders, and innovators 
-              who are shaping the future of business and technology. Get inspired by their journeys, 
-              insights, and vision for tomorrow.
+              who are shaping the future of business and technology.
             </p>
           </div>
         </div>
+
       </div>
   )
 }
@@ -435,78 +488,6 @@ export const VideoSection = ({videos}) => {
             </div>
           ))}
         </div>
-      </div>
-    </div>
-  )
-}
-
-export const KeynoteSpeakers = ({keynote}) => {
-  return (
-    <div className="container mx-auto px-6 py-16">
-      <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Keynote Speakers</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {keynote.map((speaker) => (
-          <div key={speaker.name} className="group">
-            <div className="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              <div className="relative p-8">
-                <div className="flex flex-col md:flex-row items-start gap-6 md:space-x-6 ">
-                  <div className="relative">
-                    <img 
-                      src={speaker.avatarUrl} 
-                      alt={speaker.name}
-                      className="w-24 h-24 rounded-full object-cover ring-4 ring-purple-200 group-hover:ring-purple-300 transition-all duration-300"
-                    />
-                    <div className="absolute -top-2 -right-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-1">
-                      <Award size={16} className="text-white" />
-                    </div>
-                  </div>
-                  
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-1 group-hover:text-purple-600 transition-colors">
-                      {speaker.name}
-                    </h3>
-                    <p className="text-lg text-purple-600 mb-1 font-semibold">{speaker.title}</p>
-                    <p className="text-gray-700 mb-4 font-semibold">{speaker.organization}</p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {speaker.expertise.slice(0, 2).map((skill, index) => (
-                        <span key={index} className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm border border-purple-200">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-
-                    {speaker.quote && (
-                      <blockquote className="italic text-gray-600 border-l-4 border-purple-400 pl-4 mb-4 group-hover:border-purple-500 transition-colors">
-                        "{speaker.quote}"
-                      </blockquote>
-                    )}
-
-                    <div className="flex space-x-3">
-                      {speaker.links.linkedin && (
-                        <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors">
-                          <Linkedin size={20} />
-                        </a>
-                      )}
-                      {speaker.links.twitter && (
-                        <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
-                          <Twitter size={20} />
-                        </a>
-                      )}
-                      {speaker.links.wikipedia && (
-                        <a href="#" className="text-gray-500 hover:text-green-600 transition-colors">
-                          <Globe size={20} />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   )
