@@ -3,6 +3,7 @@ import { CalendarDays, MapPin } from "lucide-react";
 import PropTypes from "prop-types";
 import {ContactCard} from "../../components"; // Adjust path as needed
 import { cn } from "../../lib";
+import { useNavigate } from "react-router";
 
 export const GuestLectureCard = ({
   eventTabs = [],
@@ -19,6 +20,9 @@ export const GuestLectureCard = ({
   isSelected = false,
 }) => {
   // Build tabs array with description and contact (using memo for performance)
+
+  const navigate = useNavigate();
+
   const tabs = useMemo(() => {
     const baseTabs = [
       {
@@ -111,7 +115,9 @@ export const GuestLectureCard = ({
         </div>
 
         {/* Register Button */}
-        <button className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition w-fit">
+        <button className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition w-fit"
+          onClick={() => navigate("/combo")}
+        >
           {buttonLabel}
         </button>
       </div>

@@ -7,5 +7,6 @@ export const routes = {
   speakers: '/speakers',
   timeline:"/timeline",
   events:"/events",
-  
+  combo: "/combo",
+  comboDetail: "/combo-detail",
 };
