@@ -1,4 +1,3 @@
-import { useTimelineStore } from '../../store';
 import { TimelineComponent } from '../../components';
 import React from 'react';
 
