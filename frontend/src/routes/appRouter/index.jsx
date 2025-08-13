@@ -1,6 +1,6 @@
 import { Layout } from '../../components';
 import { routes } from '..';
-import { HomePage, SpeakersPage, EventsPage, PageNotFound, TeamsPage, ComboPage, ComboDetail} from '../../pages';
+import { HomePage, SpeakersPage, EventsPage, PageNotFound, TeamsPage, ComboPage, ComboDetail, DevelopersPage} from '../../pages';
 
 import { BrowserRouter as Router , Route, Routes } from 'react-router';
 import React from 'react';
@@ -26,6 +26,7 @@ export const AppRouter = () => {
           <Route path={routes.teams} element={<TeamsPage />} />
           <Route path={routes.combo} element={<ComboPage />} />
           <Route path={routes.comboDetail} element={<ComboDetail />} />
+          <Route path={routes.developers} element={<DevelopersPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

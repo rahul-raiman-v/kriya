@@ -18,6 +18,8 @@ import {
   Linkedin,
 } from 'lucide-react';
 
+import { useNavigate} from "react-router"
+
 React.lazy(() => import('lucide-react'));
 
 React.lazy(() => import('react-simple-typewriter'));
@@ -86,6 +88,7 @@ export const HomePage = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
+  const router = useNavigate();
 
   // Scroll effect
   React.useEffect(() => {
@@ -192,6 +195,58 @@ export const HomePage = () => {
         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face',
     },
   ];
+    const developers = [
+      {
+        id: 1,
+        name:"Rahul P",
+        designation:"Frontend Developer",
+        image:"https://media.licdn.com/dms/image/v2/D5603AQFLAsMFCY02pA/profile-displayphoto-scale_400_400/B56Zh_9s15HcAk-/0/1754493539086?e=1758153600&v=beta&t=qe2o65Q3QcGwL3t6QN9doIlE3kdhfQgeMrW1v2AXyKs",
+        phone:"+91 9361212442",
+        email:"rahul.cs23@bitsathy.ac.in"
+      },
+      {
+        id: 2,
+        name:"Bhadri Prabhu K",
+        designation:"Frontend Developer",
+        image:"https://media.licdn.com/dms/image/v2/D4E03AQFY5FVbS7txjg/profile-displayphoto-shrink_400_400/B4EZZcsIjQHQAg-/0/1745311796057?e=1758153600&v=beta&t=m2g-oj0gWtaR2ud6g9RoMNHr4qyvCAeb0mputI6XjIU",
+        phone:"+91 8825728740",
+        email:"bhadrikeshav0612@gmail.com"
+      },
+      {
+        id: 3,
+        name:"Dharshan S",
+        designation:"Frontend Developer",
+        image:"https://media.licdn.com/dms/image/v2/D5603AQFliUBlxW7wew/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725974097274?e=1758153600&v=beta&t=zaZFr7sX9A_sEa88oeHu7fnKBWQqWbLUQM00bg5e6Nk",
+        phone:"+91 9080155375",
+        email:"voicepython1@gmail.com"
+      },
+      {
+        id: 4,
+        name:"Tridev Balaji R",
+        designation:"Backend Developer",
+        image:"https://media.licdn.com/dms/image/v2/D4D03AQFtjCnG--wagg/profile-displayphoto-scale_400_400/B4DZf0_bf5GgAk-/0/1752161960319?e=1758153600&v=beta&t=HtcIwpFSroZDNL4DHqgwMXCEGWfQAqhqqonrdnlzgHc",
+        phone:"+91 6379269278",
+        email:"tridev.2416@gmail.com"
+      },
+      {
+        id: 5,
+        name:"Raksith S S",
+        designation:"Frontend Developer",
+        image:"https://media.licdn.com/dms/image/v2/D5603AQHb3uPPbiq97w/profile-displayphoto-shrink_400_400/B56ZRvKY1aHsAk-/0/1737031782713?e=1758153600&v=beta&t=ZBCcrSykdg-r2AVuKigQCboNah_4JGBZqzRpo6DXpwk",
+        phone:"+91 ",
+        email:"raksith.cs23@bitsathy.ac.in"
+      },
+      {
+        id: 6,
+        name:"Deepak G S",
+        designation:"Frontend Developer",
+        image:"https://media.licdn.com/dms/image/v2/D4D03AQF6Nz6BUWet2g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729308032708?e=1758153600&v=beta&t=8mhvPE4vfZKaYq9lyh3YEqRUYryCmdBTCCDY3pPbiMU",
+        phone:"+91 ",
+        email:"deepak.cs23@bitsathy.ac.in"
+      },
+      
+    ]
+
 
   return (
     <div
@@ -521,19 +576,27 @@ export const HomePage = () => {
                   href="#"
                   className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
                 >
-                  <Instagram size={22} />
+                  <Instagram size={24} />
                 </a>
                 <a
                   href="#"
                   className="bg-gradient-to-tr from-blue-400 to-blue-600 text-white p-4 rounded-full shadow-lg hover:shadow-blue-300 transition-all duration-300"
                 >
-                  <Twitter size={22} />
+                  <Twitter size={24} />
                 </a>
                 <a
                   href="#"
                   className="bg-gradient-to-tr from-blue-700 to-indigo-900 text-white p-4 rounded-full shadow-lg hover:shadow-indigo-300 transition-all duration-300"
                 >
-                  <Linkedin size={22} />
+                  <Linkedin size={24} />
+                </a>
+                <a
+                  onClick={()=> {
+                    window.open("https://codecirclebitsathy.netlify.app/","_blank")
+                    }}
+                  className=""
+                >
+                  <img src="https://codecirclebitsathy.netlify.app/images/codecirclelogo.png" alt="" className='size-14 rounded-full' />
                 </a>
               </div>
             </div>
@@ -551,6 +614,10 @@ export const HomePage = () => {
             <span className="text-indigo-400 font-medium">
               {' '}
               Empowering Future Innovators
+            </span> |
+            <span className="text-white cursor-pointer font-medium hover:underline" onClick={()=> router('/developers')}>
+              {' '} 
+              Developers
             </span>
           </p>
           {/* </div> */}

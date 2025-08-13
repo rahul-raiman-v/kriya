@@ -8,4 +8,5 @@ export const routes = {
   teams:"/teams",
   combo: "/combo",
   comboDetail: "/combo-detail",
+  developers:"/developers"
 };

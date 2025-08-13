@@ -176,38 +176,41 @@ export const TeamsPage = () => {
   const students = [
     {
       id: 1,
-      name:"Kirupa Sankar M",
-      designation:"Ideathon",
-      image:"https://www.bitsathy.ac.in/wp-content/uploads/Dr-Kirupa-Sankar-M.png",
-      phone:"+91 9994624674",
-      email:"kirupasankarm@bitsathy.ac.in"
+      name:"Surya Raj S",
+      designation:"Overall Incharge",
+      image:"https://codecirclebitsathy.netlify.app/images/team/surya.jpg",
+      phone:"+91 8072137522",
+      email:"VICE PRESIDENT"
     },
     {
       id: 2,
-      name:"Vaidhyanathan B",
-      designation:"Hackthon",
-      image:"https://www.bitsathy.ac.in/wp-content/uploads/Vaidhyanathan-B.jpg",
-      phone:"+91 7395887646",
-      email:"vaidhyanathan@bitsathy.ac.in"
+      name:"Ahill Pranav M",
+      designation:"Overall Incharge",
+      image:"https://res.cloudinary.com/dsz2br3qg/image/upload/v1755083167/IMG_4528_1_afbily.jpg",
+      phone:"+91 9940911411",
+      email:"PEOPLE MANAGEMENT COORDINATOR"
     },
     {
       id: 3,
-      name:"Prathap M R",
-      designation:"Problem Solving",
-      image:"https://www.bitsathy.ac.in/wp-content/uploads/Mr-Prathap-M-R.jpg",
-      phone:"+91 8344480485",
-      email:"prathap@bitsathy.ac.in"
+      name:"Swetha Gayathri V",
+      designation:"Overall Incharge",
+      image:"https://codecirclebitsathy.netlify.app/images/team/swetha.jpg",
+      phone:"+91 9342896561",
+      email:"JOINT SECRETARY"
     },
     {
       id: 4,
-      name:"Kalaiyarasi M",
-      designation:"Product Expo",
-      image:"https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Kalaiyarasi-M.png",
-      phone:"+91 9842981160",
-      email:"kalaiyarasim@bitsathy.ac.in"
+      name:"Preethika S",
+      designation:"Overall Incharge",
+      image:"https://codecirclebitsathy.netlify.app/images/team/preethika.png",
+      phone:"+91 6381878288",
+      email:"EVENT COORDINATOR OF CLUB"
     },
     
   ]
+
+
+
 
   
     
@@ -229,7 +232,7 @@ export const TeamsPage = () => {
           <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
             {spocs.map((item)=>{
                 return (
-                    <TeamsCard key={item.id} {...item}/>
+                    <TeamsCard key={item.id} {...item} variant={"chairman"}/>
                 )
             })}
           </div>
@@ -249,7 +252,7 @@ export const TeamsPage = () => {
           <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5'>
             {students.map((item)=>{
                 return (
-                    <TeamsCard key={item.id} {...item}/>
+                    <TeamsCard key={item.id} {...item} variant={"code"}/>
                 )
             })}
           </div>
