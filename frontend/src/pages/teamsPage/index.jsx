@@ -35,7 +35,7 @@ export const TeamsPage = () => {
     {
       id: 1,
       name: 'Dr Balakrishnaraja R',
-      designation: 'Finance',
+      designation: '',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Dr.Balakrishnaraja-R.jpg',
       phone: '+91 9443719535',
@@ -44,7 +44,7 @@ export const TeamsPage = () => {
     {
       id: 2,
       name: 'Dr Sasikumar C',
-      designation: 'Hospitality - Guest',
+      designation: '',
       image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Sasikumar-C.png',
       phone: '+91 9443579022',
       email: 'sasikumarc@bitsathy.ac.in',
@@ -52,7 +52,7 @@ export const TeamsPage = () => {
     {
       id: 3,
       name: 'Dr Sivaraman P',
-      designation: 'Hospitality - Participants',
+      designation: '',
       image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Sivaraman-P.png',
       phone: '+91 9842818251',
       email: 'sivaramanpsr@bitsathy.ac.in',
@@ -60,7 +60,7 @@ export const TeamsPage = () => {
     {
       id: 4,
       name: 'Dr Jegadheeswaran S',
-      designation: 'Transport',
+      designation: '',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/2022/09/Dr-Jegadheeswaran-S.png',
       phone: '+91 8508857666',
@@ -69,7 +69,7 @@ export const TeamsPage = () => {
     {
       id: 5,
       name: 'Dr Ganesh Babu C',
-      designation: 'Website,Media & Promotion',
+      designation: '',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/2022/10/Dr-Ganesh-Babu-C.png',
       phone: '+91 9842250635',
@@ -78,7 +78,7 @@ export const TeamsPage = () => {
     {
       id: 6,
       name: 'Dr Swathypriyadharsini P',
-      designation: 'Registration & Certificate',
+      designation: '',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Swathypriyadharsini-P.png',
       phone: '+91 9047172554',
@@ -87,7 +87,7 @@ export const TeamsPage = () => {
     {
       id: 7,
       name: 'Dr Bharathi A',
-      designation: 'Event Management',
+      designation: '',
       image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Bharathi-A.png',
       phone: '+91 9865530099',
       email: 'bharathia@bitsathy.ac.in',
@@ -95,7 +95,7 @@ export const TeamsPage = () => {
     {
       id: 8,
       name: 'Dr Prakash S P',
-      designation: 'Reception & Venue',
+      designation: '',
       image: 'https://www.bitsathy.ac.in/wp-content/uploads/Prakash-S-P.jpg',
       phone: '+91 9994926682',
       email: 'prakashsp@bitsathy.ac.in',

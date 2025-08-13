@@ -102,7 +102,7 @@ export function EventsCard({
             <img
               src={eventImage}
               alt={eventTitle}
-              className="w-full h-auto object-cover rounded-xl shadow-md"
+              className="w-full h-auto object-fill rounded-xl shadow-md"
               loading="lazy"
             />
           </div>
@@ -159,7 +159,7 @@ export function EventsCard({
           <img
             src={eventImage}
             alt={eventTitle}
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="w-full h-full object-fill rounded-xl shadow-md"
             loading="lazy"
           />
         </div>
