@@ -38,7 +38,6 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
     setSelectedSpeaker(null);
   };
 
-  const keynote = speakers.filter(s => s.isKeynote);
   const regularSpeakers = speakers;
   
   const industries = ['All', ...new Set(speakers.map(s => s.industry))];
@@ -406,7 +405,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
         <div className="relative container mx-auto px-6 py-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text ">
               Meet the Visionaries
             </h1>
             <p className="text-2xl text-purple-700 mb-4 font-semibold">
@@ -477,7 +476,7 @@ export const VideoSection = ({videos}) => {
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Meet Them in Action</h2>
         <div className="flex justify-center space-x-6 overflow-x-auto pb-4">
-          {videos.map((video, index) => (
+          {videos.map((video) => (
             <div key={video.id} className="flex-shrink-0 group cursor-pointer">
               <a href={video.link} target="_blank">
               <div className="relative">

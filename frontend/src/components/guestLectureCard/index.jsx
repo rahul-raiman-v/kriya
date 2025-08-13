@@ -43,9 +43,11 @@ export const GuestLectureCard = ({
             <p className="text-gray-700 leading-relaxed mb-3">{talkDescription}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
               <div>
-              <span className="font-semibold text-gray-800">Duration:
-                <span className="text-gray-600 ml-2">{duration}</span> | Time:
-                <span className="text-gray-600 ml-2">{time}</span></span>
+              <div className="font-semibold text-gray-800">
+              Duration:
+                <p className="text-gray-600 ml-2">{duration}</p> | Time:
+                <p className="text-gray-600 ml-2">{time}</p>
+              </div>
               </div>
             </div>
           </div>

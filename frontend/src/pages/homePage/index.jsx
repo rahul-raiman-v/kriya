@@ -222,18 +222,18 @@ export const HomePage = () => {
                Kriya 2025
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+              <h1 className="text-5xl md:text-7xl font-extrabold leading-tight w-fit max-lg:mx-auto ">
                 <div className='flex items-center whitespace-nowrap '>
-                  <span className='!text-blue-900'>B</span>
-                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">RIDGING</span>
+                  <span className='!text-blue-900 max-sm:text-4xl'>B</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent  max-sm:text-4xl">RIDGING</span>
                 </div>
                 <div className='flex items-center whitespace-nowrap'>
-                  <span className='!text-blue-900'>I</span>
-                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">NNOVATION &</span>
+                  <span className='!text-blue-900 max-sm:text-4xl'>I</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">NNOVATION &</span>
                 </div>
                 <div className='flex items-center whitespace-nowrap'>
-                  <span className='!text-blue-900'>T</span>
-                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">ECHNOLOGY</span>
+                  <span className='!text-blue-900 max-sm:text-4xl'>T</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">ECHNOLOGY</span>
                 </div>
               </h1>
 

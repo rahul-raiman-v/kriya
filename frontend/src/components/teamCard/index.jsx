@@ -5,6 +5,15 @@ React.lazy(()=> import('react'));
 
 React.lazy(()=> import('lucide-react'));
 
+TeamsCard.propTypes ={
+    variant: React.PropTypes.string,
+    name: React.PropTypes.string,
+    designation: React.PropTypes.string,
+    phone: React.PropTypes.string,
+    email: React.PropTypes.string,
+    image: React.PropTypes.string,
+}
+
 
 export const TeamsCard = ({variant, name="Rajkumar", designation="Event Organizer",phone="+91 1234567890",email="rajkumar@bitsathy.ac.in", image="/inauguration.jpg"}) => {
     if(variant?.trim() === "chairman"){
@@ -16,24 +25,6 @@ export const TeamsCard = ({variant, name="Rajkumar", designation="Event Organize
                     <p className='leading-tight text-2xl text-center text-gray-800'>{name}</p>
                     <p className='leading-tight text-lg text-center text-gray-700'>{designation}</p>
                 </div>
-            </div>
-            {(phone.trim() || email.trim()) && (
-                <hr className='border-gray-400' />
-            )}
-            <div className='flex flex-col gap-y-1'>
-            {phone.trim() && (
-                <div className='flex items-center gap-x-4'>
-                    <Phone className='size-6 text-gray-600'/>
-                    <p className='text-gray-600 text-lg'>{phone}</p>
-                </div>
-
-            )}
-            {email.trim() && (
-                <div className='flex items-center gap-x-4'>
-                    <Mail className='size-6 text-gray-600'/>
-                    <p className='text-gray-600 text-lg'>{email}</p>
-                </div>
-            )}
             </div>
         </div>
         )

@@ -1,18 +1,24 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import { Hotel, Ticket, Trophy } from 'lucide-react';
-// Assuming ComboImage is a local asset, make sure it's accessible.
-// If it's not present, the placeholder will be used.
 import ComboImage from '/comboImage.png';
 import { useComboStore } from '../../store/useComboStore/index';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
+import { useShallow } from 'zustand/react/shallow';
+
+React.lazy(() => import('react'));
+React.lazy(() => import('react-router'));
+React.lazy(() => import('lucide-react'));
+React.lazy(() => import('/comboImage.png'));
+React.lazy(() => import('../../store/useComboStore/index'));
+React.lazy(() => import('../../store/useComboPageStore/index'));
 
 
 export function ComboPage() {
-    const ComboData = useComboStore((state) => state.ComboData);
-    const ComboDeligatesData = useComboStore((state) => state.ComboDeligatesData);
-    const ComboStallsData = useComboStore((state) => state.ComboStallsData);
-    const setSelectedCombo = useComboPageStore((state) => state.setSelectedCombo);
+    const ComboData = useComboStore(useShallow((state) => state.ComboData));
+    const ComboDeligatesData = useComboStore(useShallow((state) => state.ComboDeligatesData));
+    const ComboStallsData = useComboStore(useShallow((state) => state.ComboStallsData));
+    const setSelectedCombo = useComboPageStore(useShallow((state) => state.setSelectedCombo));
     const navigate = useNavigate();
 
     // Helper function to render a block of combo cards

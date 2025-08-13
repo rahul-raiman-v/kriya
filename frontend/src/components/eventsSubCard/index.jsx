@@ -169,7 +169,7 @@ export const RewardsCard = ({ rewards }) => (
       Rewards & Prizes
     </h5>
     <div className="space-y-2">
-      {rewards.map((reward, index) => (
+      {rewards.map((reward) => (
         <div key={reward.id} className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-100">
           <Award size={16} className="text-yellow-600 flex-shrink-0 mt-0.5" />
           <p className="text-sm text-gray-800">{reward.content}</p>
@@ -196,8 +196,8 @@ export const PrerequisitesCard = ({ prerequisites }) => (
       Prerequisites
     </h5>
     <div className="space-y-2">
-      {prerequisites.map((prereq, index) => (
-        <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border border-blue-100">
+      {prerequisites.map((prereq) => (
+        <div key={prereq} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border border-blue-100">
           <div className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
             ✓
           </div>
