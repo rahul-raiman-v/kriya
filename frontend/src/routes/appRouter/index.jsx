@@ -1,8 +1,19 @@
-import { Layout } from '../../components/layout';
-import { routes, PrivateRouter, PublicRouter } from '..';
-import { HomePage, TimelinePage , SpeakersPage, EventsPage, PageNotFound, TeamsPage, ComboPage, ComboDetail} from '../../pages';
+import { Layout } from '../../components';
+import { routes } from '..';
+import { HomePage, SpeakersPage, EventsPage, PageNotFound, TeamsPage, ComboPage, ComboDetail} from '../../pages';
 
 import { BrowserRouter as Router , Route, Routes } from 'react-router';
+import React from 'react';
+
+React.lazy(()=> import('react-router'));
+
+React.lazy(()=> import('../../components'));
+
+React.lazy(()=> import('..'));
+
+React.lazy(()=> import('../../pages'));
+
+React.lazy(()=> import('react'));
 
 export const AppRouter = () => {
   return (
@@ -10,7 +21,6 @@ export const AppRouter = () => {
       <Routes>
         <Route path={routes.home} element={<Layout />}>
           <Route index element={<HomePage />} />
-          {/* <Route path={routes.timeline} element={<TimelinePage/>}/> */}
           <Route path={routes.events} element={<EventsPage />} />
           <Route path={routes.speakers} element={<SpeakersPage />} />
           <Route path={routes.teams} element={<TeamsPage />} />
@@ -20,5 +30,5 @@ export const AppRouter = () => {
         </Route>
       </Routes>
     </Router>
-  );
+    );
 };

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import {
   Calendar,
@@ -17,7 +17,16 @@ import {
   Twitter,
   Linkedin,
 } from 'lucide-react';
-import { Link } from 'react-router';
+
+React.lazy(() => import('lucide-react'));
+
+React.lazy(() => import('react-simple-typewriter'));
+
+React.lazy(() => import('react'));
+
+
+
+
 
 // Floating particle component
 const FloatingParticle = ({ style }) => (
@@ -26,11 +35,11 @@ const FloatingParticle = ({ style }) => (
 
 // Animated counter component
 const AnimatedCounter = ({ end, duration = 2000, suffix = '' }) => {
-  const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef();
+  const [count, setCount] = React.useState(0);
+  const [isVisible, setIsVisible] = React.useState(false);
+  const ref = React.useRef();
 
-  useEffect(() => {
+  React.useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !isVisible) {
@@ -47,7 +56,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '' }) => {
     return () => observer.disconnect();
   }, [isVisible]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!isVisible) return;
 
     let startTime;
@@ -73,20 +82,20 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '' }) => {
 };
 
 export const HomePage = () => {
-  const [particles, setParticles] = useState([]);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const containerRef = useRef(null);
+  const [particles, setParticles] = React.useState([]);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [scrollY, setScrollY] = React.useState(0);
+  const containerRef = React.useRef(null);
 
   // Scroll effect
-  useEffect(() => {
+  React.useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Generate particles
-  useEffect(() => {
+  React.useEffect(() => {
     const generateParticles = () => {
       const container = containerRef.current;
       if (!container) return;
@@ -282,6 +291,7 @@ export const HomePage = () => {
                     src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&h=500&fit=crop"
                     alt="Innovation and Technology"
                     className="w-full h-auto rounded-2xl shadow-2xl hover-lift"
+                    loading='lazy'
                   />
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
                     🚀
@@ -383,6 +393,7 @@ export const HomePage = () => {
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
                   alt="Team collaboration"
                   className="w-full h-auto rounded-2xl shadow-xl hover-lift"
+                  loading='lazy'
                 />
               </div>
             </div>

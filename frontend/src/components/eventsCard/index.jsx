@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { CalendarDays, MapPin } from 'lucide-react';
 import { MinCard } from '../../components';
 import './style.css';
 import { useNavigate } from 'react-router';
+
+React.lazy(()=> import('react'));
+
+React.lazy(()=> import('prop-types'));
+
+React.lazy(()=> import('lucide-react'));
+
+React.lazy(()=> import('../../components'));
+
+React.lazy(()=> import('./style.css'));
+
+React.lazy(()=> import('react-router'));
+
 
 export function EventsCard({
   eventTabs = [],
@@ -14,7 +27,7 @@ export function EventsCard({
 }) {
 
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState(eventTabs[0]?.title || '');
+  const [activeTab, setActiveTab] = React.useState(eventTabs[0]?.title || '');
 
   const activeTabData = eventTabs.find((tab) => tab.title === activeTab);
   const activeContent = activeTabData?.content || '';

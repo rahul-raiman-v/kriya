@@ -1,6 +1,11 @@
 import { Mail, Phone } from 'lucide-react'
 import React from 'react'
 
+React.lazy(()=> import('react'));
+
+React.lazy(()=> import('lucide-react'));
+
+
 export const TeamsCard = ({variant, name="Rajkumar", designation="Event Organizer",phone="+91 1234567890",email="rajkumar@bitsathy.ac.in", image="/inauguration.jpg"}) => {
     if(variant?.trim() === "chairman"){
         return (

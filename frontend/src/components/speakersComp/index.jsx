@@ -1,13 +1,26 @@
 import React from 'react';
 import { Play, Linkedin, Twitter, Globe, MapPin, Users, Building2, ExternalLink, Award, TrendingUp, UserCheck } from 'lucide-react';
 import { useNavigate } from 'react-router';
+import './styles.css' ;
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import './styles.css' ;
+import './swiper.css';
 
+React.lazy(()=> import('react'));
+
+React.lazy(()=> import('react-router'));
+
+React.lazy(()=> import('swiper/modules'));
+
+React.lazy(()=> import('swiper/css'));
+
+React.lazy(()=> import('lucide-react'));
+
+React.lazy(()=> import('swiper/react'));
 
 const EntrepreneurSpeakersPage = ({speakers}) => {
 
@@ -63,6 +76,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
                   <img 
                     src={selectedSpeaker.avatarUrl} 
                     alt={selectedSpeaker.name}
+                    loading='lazy'
                     className="w-24 h-24 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-purple-200"
                   />
                   <div>
@@ -195,7 +209,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
         <div className="relative container mx-auto px-6 py-2 mt-6">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text ">
               Meet the Visionaries
             </h1>
             <p className="text-2xl text-purple-700 mb-4 font-semibold">
@@ -289,7 +303,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
             </button>
           ))}
         </div>
-      </div>
+      </div>
 
       {/* Keynote Speakers */}
       {filteredSpeakers.length === 0 ? (
@@ -308,6 +322,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
                       <img 
                         src={speaker.avatarUrl} 
                         alt={speaker.name}
+                        loading='lazy'
                         className="w-24 h-24 rounded-full object-cover ring-4 ring-purple-200 group-hover:ring-purple-300 transition-all duration-300"
                       />
                       <div className="absolute -top-2 -right-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-1">
@@ -383,7 +398,7 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
   );
 };
 
-export default EntrepreneurSpeakersPage;
+export { EntrepreneurSpeakersPage };
 
 export const HeroSection = () => {
   return (
@@ -469,6 +484,7 @@ export const VideoSection = ({videos}) => {
                 <img 
                   src={video.thumbnail} 
                   alt={video.title}
+                  loading='lazy'
                   className="w-72 h-48 object-cover rounded-lg border-2 border-transparent group-hover:border-purple-400 transition-all duration-300 shadow-lg"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300 rounded-lg flex items-center justify-center">

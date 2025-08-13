@@ -2,8 +2,17 @@ import React, { useState, useMemo } from "react";
 import { CalendarDays, MapPin } from "lucide-react";
 import PropTypes from "prop-types";
 import {ContactCard} from "../../components"; // Adjust path as needed
-import { cn } from "../../lib";
 import { useNavigate } from "react-router";
+
+React.lazy(()=> import('react'));
+
+React.lazy(()=> import('lucide-react'));
+
+React.lazy(()=> import('prop-types'));
+
+React.lazy(()=> import('../../components'));
+
+React.lazy(()=> import('react-router'));
 
 export const GuestLectureCard = ({
   eventTabs = [],
@@ -124,10 +133,11 @@ export const GuestLectureCard = ({
 
       {/* Right Side - Image */}
       {eventImage && (
-        <div className="h-[400px] w-[500px]">
+        <div className="max-w-[500px] max-h-[400px] min-h-[200px]">
           <img
             src={eventImage}
             alt={talkTitle}
+            loading="lazy"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>

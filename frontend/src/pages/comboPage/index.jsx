@@ -26,6 +26,7 @@ export function ComboPage() {
                     <img
                         src={ComboImage || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
                         alt='combo illustration'
+                        loading='lazy'
                         // Responsive image, subtle hover scale for engagement
                         className="w-full h-auto object-cover transform transition-transform duration-300 hover:scale-110"
                         onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/380x200/F0F8FF/000000?text=Image+Error" }}

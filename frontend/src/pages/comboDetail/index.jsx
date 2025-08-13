@@ -33,6 +33,7 @@ export function ComboDetail() {
                             src={ComboImage || "https://placehold.co/600x300/E0F2F7/000000?text=Combo+Details+Image"}
                             alt='combo illustration'
                             className="w-full h-auto object-cover"
+                            loading='lazy'
                             onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/600x300/E0F2F7/000000?text=Image+Error" }}
                         />
                     </div>

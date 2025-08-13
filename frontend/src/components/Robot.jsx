@@ -2,6 +2,11 @@ import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
+React.lazy(()=> import('react'));
+
+React.lazy(()=> import('@react-three/drei'));
+React.lazy(()=> import('@react-three/fiber'));
+
 function Robot() {
   const { scene } = useGLTF('/assets/genkug_greeding_robot.gltf');
   return <primitive object={scene} scale={1.5} />;

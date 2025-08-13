@@ -3,6 +3,13 @@ import { Mail, Phone, UserCircle, Award, BookOpen, Users, Mic } from "lucide-rea
 import PropTypes from "prop-types";
 
 
+React.lazy(()=> import('react'));
+
+React.lazy(()=> import('lucide-react'));
+
+React.lazy(()=> import('prop-types'));
+
+
 export const MinCard = (props) => {
   const { title, contacts, rounds, rules, rewards, prerequisites, speakers } = props;
 

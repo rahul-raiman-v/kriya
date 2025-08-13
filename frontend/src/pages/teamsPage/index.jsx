@@ -1,6 +1,10 @@
 import { TeamsCard } from '../../components'
 import React from 'react'
 
+React.lazy(()=> import('../../components'));
+
+React.lazy(()=> import('react'));
+
 export const TeamsPage = () => {
   
 

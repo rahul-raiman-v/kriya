@@ -510,6 +510,7 @@ export const EventsPage = () => {
                     <img
                       src={event.img}
                       alt={event.eventTitle}
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
@@ -601,7 +602,7 @@ export const EventsPage = () => {
                  </div>
                 <div className="w-28 h-28 flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-4 group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300">
                   {typeof item.img === 'string' ? (
-                    <img src={item.img} alt="" className="w-20 h-20 object-contain" />
+                    <img src={item.img} alt="" className="w-20 h-20 object-contain" loading='lazy' />
                   ) : (
                     item.img
                   )}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+React.lazy(()=> import('react'));
+
 function Image({
   src,
   alt = "Image Name",
@@ -12,6 +14,7 @@ function Image({
       src={src}
       alt={alt}
       className={className}
+      loading='lazy'
       onError={(e) => {
         e.target.src = "/assets/images/no_image.png"
       }}

@@ -1,6 +1,10 @@
 import React from "react";
 import Icon from "./AppIcon";
 
+React.lazy(()=> import('react'));
+
+React.lazy(()=> import('./AppIcon'));
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);

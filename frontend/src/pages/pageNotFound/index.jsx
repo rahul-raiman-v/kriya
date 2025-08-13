@@ -1,11 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft, RefreshCw } from 'lucide-react';
 
-export const PageNotFound = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [floatingElements, setFloatingElements] = useState([]);
+React.lazy(()=> import('react'));
 
-  useEffect(() => {
+React.lazy(()=> import('lucide-react'));
+
+
+export const PageNotFound = () => {
+  const [isVisible, setIsVisible] = React.useState(true);
+  const [floatingElements, setFloatingElements] = React.useState([]);
+
+  React.useEffect(() => {
     // Trigger entrance animation
     setIsVisible(true);
     
