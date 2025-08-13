@@ -8,12 +8,14 @@ export const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path={routes.home} element={<HomePage />} />
-        <Route path={routes.events} element={<EventsPage />} />
-        <Route path={routes.speakers} element={<SpeakersPage />} />
-        <Route path={routes.timeline} element={<TimelinePage />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path={routes.home} element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path={routes.timeline} element={<TimelinePage/>}/>
+          <Route path={routes.events} element={<EventsPage />} />
+          <Route path={routes.speakers} element={<SpeakersPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Route>
       </Routes>
     </Router>
-  );
-}
+  );
+};

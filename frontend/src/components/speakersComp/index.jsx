@@ -1,6 +1,11 @@
 import React from 'react';
 import { Play, Linkedin, Twitter, Globe, MapPin, Users, Building2, ExternalLink, Award, TrendingUp, UserCheck } from 'lucide-react';
 import { useNavigate } from 'react-router';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import './styles.css' ;
 
 
@@ -261,10 +266,25 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
         {filteredSpeakers.length === 0 ? (
           <NoSpeakerFound selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {filteredSpeakers.map((speaker) => (
-              <div 
-                key={speaker.name}
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              Navigation={true}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Autoplay, Navigation, Pagination]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              className="mySwiper"
+            >
+            {regularSpeakers.map((speaker) => (
+              <SwiperSlide key={speaker.name}>
+                <div 
                 className="group relative"
               >
                 {/* Base Card - Fixed Height */}
@@ -297,19 +317,13 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
                         </span>
                       ))}
                     </div>
-                  </div>
-                  <div className='text-right'>
-                      <button 
-                        className="text-purple-600 hover:text-purple-500 text-sm font-medium transition-colors hover:cursor-pointer pointer-events-auto"
-                        onClick={() => openModal(speaker)}
-                      >
-                        More Details →
-                      </button>
-                  </div>
+                  </div>  
                 </div>
               </div>
+              </SwiperSlide>
+             
             ))}
-          </div>
+            </Swiper>
         )}
       </div>
 

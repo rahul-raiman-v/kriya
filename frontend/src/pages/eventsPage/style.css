@@ -1,0 +1,34 @@
+/* Hide default icon and replace with custom arrow */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px; /* Arrow size */
+  font-weight: bold;
+  color: white;
+}
+
+/* Custom arrow symbols */
+.swiper-button-prev::after {
+  content: '←';
+}
+
+.swiper-button-next::after {
+  content: '→';
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
