@@ -1,8 +1,8 @@
 import React from 'react';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
-import { Hotel, PartyPopper, Ticket, Trophy } from 'lucide-react';
-import ComboImage from '/comboImage.png';
-import { useNavigate } from 'react-router';
+import { Hotel, IndianRupee, PartyPopper, Ticket, Trophy } from 'lucide-react';
+// import ComboImage from '/comboImage.png';
+import { Link, useNavigate } from 'react-router';
 import { cn } from "../../lib/";
 import { useShallow } from "zustand/react/shallow"
 
@@ -30,7 +30,7 @@ export function ComboDetail() {
     return (
         <div className="min-h-screen bg-gray-50 p-4 sm:p-10 flex flex-col items-center font-sans">
             <div className="bg-white rounded-3xl border border-gray-200 p-5 sm:p-8 w-full max-w-4xl shadow-xl">
-                
+
                 {/* Combo Title */}
                 <h2 className="text-2xl sm:text-4xl font-extrabold text-center text-indigo-800 mb-6">
                     {selectedCombo.combo} Details
@@ -42,11 +42,11 @@ export function ComboDetail() {
                         <img
                             src={
                                 selectedCombo.image ||
-                                ComboImage ||
+                                // ComboImage ||
                                 "https://placehold.co/600x300/E0F2F7/000000?text=Combo+Details+Image"
                             }
                             alt={`${selectedCombo.combo} illustration`}
-                            className="w-full h-auto object-cover"
+                            className="w-full h-[250px] object-cover"
                             onError={(e) => {
                                 e.target.onerror = null;
                                 e.target.src = "https://placehold.co/600x300/E0F2F7/000000?text=Image+Error";
@@ -54,13 +54,19 @@ export function ComboDetail() {
                         />
                     </div>
 
-                    {/* Details */}
                     <div className="flex-1 flex flex-col gap-3 text-gray-700">
                         <div className="flex items-start gap-3 text-base sm:text-lg">
                             <Ticket size={24} className="text-indigo-600 flex-shrink-0 mt-1" />
                             <p className="leading-relaxed">
                                 <span className="font-medium">Events: </span>
                                 {selectedCombo.events}
+                            </p>
+                        </div>
+                        <div className="flex items-start gap-3 text-base sm:text-lg">
+                            <IndianRupee size={24} className="text-indigo-600 flex-shrink-0 mt-1" />
+                            <p className="leading-relaxed">
+                                <span className="font-medium">Registration Fee: </span>
+                                {selectedCombo.fee}{selectedCombo.prize && " per Person"}{!selectedCombo.prize && selectedCombo.isTrue && " per Person / Day"}{!selectedCombo.prize && !selectedCombo.isTrue && " for 3 days"}
                             </p>
                         </div>
                         <div className="flex items-start gap-3 text-base sm:text-lg">
@@ -88,6 +94,14 @@ export function ComboDetail() {
                         )}
                     </div>
                 </div>
+                <div>
+                    <button
+                        // onClick={handleRegistration}
+                        className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    >
+                        Download Brochure
+                    </button>
+                </div>
 
                 {/* Rules Section */}
                 <section aria-labelledby="rules-heading" className="mt-6 sm:mt-8">
@@ -95,7 +109,7 @@ export function ComboDetail() {
                         id="rules-heading"
                         className="text-lg sm:text-xl font-bold text-gray-800 mb-3"
                     >
-                        Rules and regulations
+                        Terms and Conditions
                     </p>
                     <ul className="bg-gray-100 p-4 rounded-xl mb-4 list-disc list-inside space-y-2 text-sm sm:text-base text-gray-600">
                         {Array.isArray(selectedCombo.rulesData) &&
@@ -126,14 +140,14 @@ export function ComboDetail() {
                 <div className="text-center">
                     <button
                         className={cn(
-                            'inline-block bg-indigo-600 text-white font-bold py-3 px-6 sm:px-12 rounded-lg shadow-lg transition-all duration-300 text-base sm:text-lg',
+                            'inline-block bg-indigo-600 text-white font-bold py-3 px-6 sm:px-12 rounded-lg shadow-lg transition-all duration-300 text-base sm:text-lg cursor-pointer',
                             isCheck
                                 ? 'hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300'
                                 : 'opacity-50 cursor-not-allowed'
                         )}
                         onClick={() => {
                             if (isCheck) {
-                                navigate("/");
+                                window.open(selectedCombo.link, "_blank");
                             }
                         }}
                         disabled={!isCheck}
