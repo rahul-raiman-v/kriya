@@ -5,8 +5,9 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Events", path: "/events" },
   { name: "Speakers", path: "/speakers" },
-  { name: "Timeline", path: "/timeline" },
-  { name: "Teams", path: "/teams" }
+  // { name: "Timeline", path: "/timeline" },
+  { name: "Teams", path: "/teams" },
+  { name: "Combo", path: "/combo" },
 ];
 
 export const Header = () => {
@@ -73,9 +74,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 w-full transition-all duration-300 backdrop-blur-xs ${
-        isScrolled ? 'glass-morphism-dark shadow-lg' : 'glass-morphism'
-      }`}>
+      <header className={`sticky top-0 z-50 w-full transition-all duration-300 backdrop-blur-xs bg-white`}>
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             {/* Logo with hover effect */}
@@ -93,7 +92,7 @@ export const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => handleNavigate(link.path)}
-                  className={`relative transition-all duration-300 hover:scale-105 focus:outline-none  rounded-lg px-3 py-2 ${
+                  className={`relative transition-all duration-300 hover:scale-105 focus:outline-none  rounded-lg px-3 py-2 text-lg ${
                     isActive(link.path)
                       ? "text-pink-600 font-semibold"
                       : "text-gray-600 hover:text-pink-600"

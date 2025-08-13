@@ -7,5 +7,7 @@ export const routes = {
   speakers: '/speakers',
   timeline:"/timeline",
   events:"/events",
-  teams:"/teams"
+  teams:"/teams",
+  combo: "/combo",
+  comboDetail: "/combo-detail",
 };
