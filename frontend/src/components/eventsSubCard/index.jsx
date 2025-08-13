@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, UserCircle, Award, BookOpen, Users, Mic } from "lucide-react";
+import { Phone, UserCircle, Award, BookOpen, Users, Mic } from "lucide-react";
 import PropTypes from "prop-types";
 
 
@@ -49,15 +49,6 @@ export const ContactCard = ({ contacts }) => (
             </h6>
             <p className="text-xs text-gray-600 mb-1">{contact.designation}</p>
             <div className="flex flex-col gap-1 text-xs text-gray-700">
-              <div className="flex items-center gap-1">
-                <Mail size={12} />
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="hover:text-blue-600 truncate"
-                >
-                  {contact.email}
-                </a>
-              </div>
               <div className="flex items-center gap-1">
                 <Phone size={12} />
                 <a
