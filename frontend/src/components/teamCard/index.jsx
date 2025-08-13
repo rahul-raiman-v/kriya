@@ -1,18 +1,12 @@
 import { Mail, Phone } from 'lucide-react'
+import PropTypes from 'prop-types';
 import React from 'react'
 
 React.lazy(()=> import('react'));
 
 React.lazy(()=> import('lucide-react'));
 
-TeamsCard.propTypes ={
-    variant: React.PropTypes.string,
-    name: React.PropTypes.string,
-    designation: React.PropTypes.string,
-    phone: React.PropTypes.string,
-    email: React.PropTypes.string,
-    image: React.PropTypes.string,
-}
+
 
 
 export const TeamsCard = ({variant, name="Rajkumar", designation="Event Organizer",phone="+91 1234567890",email="rajkumar@bitsathy.ac.in", image="/inauguration.jpg"}) => {
@@ -60,3 +54,12 @@ export const TeamsCard = ({variant, name="Rajkumar", designation="Event Organize
     )
 }
 
+
+TeamsCard.propTypes ={
+    variant: PropTypes.String,
+    name: PropTypes.String,
+    designation: PropTypes.String,
+    phone: PropTypes.String,
+    email: PropTypes.String,
+    image: PropTypes.String,
+}
