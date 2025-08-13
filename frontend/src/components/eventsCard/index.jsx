@@ -12,35 +12,30 @@ export function EventsCard({
   eventVenue = 'Venue not specified',
   eventImage = '',
 }) {
-
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(eventTabs[0]?.title || '');
 
   const activeTabData = eventTabs.find((tab) => tab.title === activeTab);
   const activeContent = activeTabData?.content || '';
 
-  // Function to render content based on tab type
   const renderTabContent = () => {
     const tabTitle = activeTab.toLowerCase();
-    
-    // Use MinCard for supported types
+
     if (['contact', 'rounds', 'rules', 'rewards', 'prerequisites', 'speakers'].includes(tabTitle)) {
       return (
         <MinCard
           key={activeTabData.id}
           title={activeTabData.id}
-          contacts={activeTabData.id === "contact" ? activeTabData.content : undefined}
-          rounds={activeTabData.id === "rounds" ? activeTabData.content : undefined}
-          rules={activeTabData.id === "rules" ? activeTabData.content : undefined}
-          rewards={activeTabData.id === "rewards" ? activeTabData.content : undefined}
-          prerequisites={activeTabData.id === "prerequisites" ? activeTabData.content : undefined}
-          speakers={activeTabData.id === "speakers" ? activeTabData.content : undefined}
+          contacts={activeTabData.id === 'contact' ? activeTabData.content : undefined}
+          rounds={activeTabData.id === 'rounds' ? activeTabData.content : undefined}
+          rules={activeTabData.id === 'rules' ? activeTabData.content : undefined}
+          rewards={activeTabData.id === 'rewards' ? activeTabData.content : undefined}
+          prerequisites={activeTabData.id === 'prerequisites' ? activeTabData.content : undefined}
+          speakers={activeTabData.id === 'speakers' ? activeTabData.content : undefined}
         />
       );
     }
-    
-    
-    // For other content types, render as text
+
     return (
       <div className="prose prose-sm max-w-none">
         {typeof activeContent === 'string' ? (
@@ -56,7 +51,7 @@ export function EventsCard({
 
   return (
     <div className="flex min-h-[200px] flex-col lg:flex-row justify-between items-stretch gap-6 p-6 
-    rounded-2xl border border-gray-200 bg-white shadow-md hover:border-blue-200 hover:shadow-lg transition-all duration-300">
+      rounded-2xl border border-gray-200 bg-white shadow-md hover:border-blue-200 hover:shadow-lg transition-all duration-300">
       
       {/* Left Side */}
       <div className="flex-1 flex flex-col">
@@ -77,13 +72,25 @@ export function EventsCard({
           {eventTitle}
         </h2>
 
+        {/* Image under title for mobile */}
+        {eventImage && (
+          <div className="mb-4 lg:hidden">
+            <img
+              src={eventImage}
+              alt={eventTitle}
+              className="w-full h-auto object-cover rounded-xl shadow-md"
+              loading="lazy"
+            />
+          </div>
+        )}
+
         {/* Tabs */}
         {eventTabs.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-6">
             {eventTabs.map((tab) => (
               <button
                 key={tab.id || tab.title}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${
                   activeTab === tab.title
                     ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md transform scale-105'
                     : 'border border-gray-300 text-gray-700 hover:bg-gradient-to-r hover:from-pink-100 hover:to-purple-100 hover:border-purple-300'
@@ -100,22 +107,23 @@ export function EventsCard({
 
         {/* Tab Content */}
         <div className="flex-1 mb-6">
-          <div className="bg-gray-50 rounded-xl p-4 min-h-[150px] max-h-[300px] text-gray-900 text-[20px] overflow-y-auto no-scrollbar">
+          <div className="bg-gray-50 rounded-xl p-4 min-h-[150px] max-h-[300px] text-gray-900 text-[16px] overflow-y-auto no-scrollbar">
             {renderTabContent()}
           </div>
         </div>
-        
+
         {/* Register Button */}
-        <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
-          onClick={() => navigate("/combo")}
+        <button
+          className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+          onClick={() => navigate('/combo')}
         >
           Register Now
         </button>
       </div>
 
-      {/* Right Side - Image */}
+      {/* Right Side - Image for desktop */}
       {eventImage && (
-        <div className="max-w-[500px] max-h-[400px] min-h-[200px]">
+        <div className="max-w-[500px] max-h-[400px] min-h-[200px] hidden lg:block">
           <img
             src={eventImage}
             alt={eventTitle}
