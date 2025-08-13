@@ -1,9 +1,7 @@
-import EntrepreneurSpeakersPage from "../../components/speakersComp";
-import speakersData from './speakersData.json' ;
+import React from 'react';
+import { EntrepreneurSpeakersPage } from '../../components';
+import speakersData from './speakersData.json';
 
 export const SpeakersPage = () => {
-
-  return (
-    <EntrepreneurSpeakersPage speakers={speakersData} />
-  )
+  return <EntrepreneurSpeakersPage speakers={speakersData} />;
 };

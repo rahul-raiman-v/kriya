@@ -1,20 +1,20 @@
-import React from "react";
-import { Phone, UserCircle, Award, BookOpen, Users, Mic } from "lucide-react";
-import PropTypes from "prop-types";
-
+import React from 'react';
+import { Phone, UserCircle, Award, BookOpen, Users, Mic } from 'lucide-react';
+import PropTypes from 'prop-types';
 
 export const MinCard = (props) => {
-  const { title, contacts, rounds, rules, rewards, prerequisites, speakers } = props;
+  const { title, contacts, rounds, rules, rewards, prerequisites, speakers } =
+    props;
 
-  if (title === "rounds") {
+  if (title === 'rounds') {
     return <RoundsCard rounds={rounds} />;
-  } else if (title === "rules") {
+  } else if (title === 'rules') {
     return <RulesCard rules={rules} />;
-  } else if (title === "rewards") {
+  } else if (title === 'rewards') {
     return <RewardsCard rewards={rewards} />;
-  } else if (title === "prerequisites") {
+  } else if (title === 'prerequisites') {
     return <PrerequisitesCard prerequisites={prerequisites} />;
-  } else if (title === "speakers") {
+  } else if (title === 'speakers') {
     return <SpeakersCard speakers={speakers} />;
   } else {
     return <ContactCard contacts={contacts} />;
@@ -87,7 +87,8 @@ export const RoundsCard = ({ rounds }) => (
     </h5>
     <div className="space-y-3">
       {rounds.map((round, index) => (
-        <div key={round.id}
+        <div
+          key={round.id}
           className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow"
         >
           <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold flex-shrink-0">
@@ -97,9 +98,7 @@ export const RoundsCard = ({ rounds }) => (
             <h6 className="font-semibold text-gray-900 text-sm mb-1">
               {round.title}
             </h6>
-            <p className="text-xs text-gray-700">
-              {round.content}
-            </p>
+            <p className="text-xs text-gray-700">{round.content}</p>
           </div>
         </div>
       ))}
@@ -125,7 +124,10 @@ export const RulesCard = ({ rules }) => (
     </h5>
     <div className="space-y-2">
       {rules.map((rule, index) => (
-        <div key={rule.id} className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border border-red-100">
+        <div
+          key={rule.id}
+          className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border border-red-100"
+        >
           <div className="bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
             {index + 1}
           </div>
@@ -140,11 +142,10 @@ RulesCard.propTypes = {
   rules: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired
+      content: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
-
 
 export const RewardsCard = ({ rewards }) => (
   <div className="space-y-3 px-5 py-5">
@@ -153,8 +154,11 @@ export const RewardsCard = ({ rewards }) => (
       Rewards & Prizes
     </h5>
     <div className="space-y-2">
-      {rewards.map((reward, index) => (
-        <div key={reward.id} className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-100">
+      {rewards.map((reward) => (
+        <div
+          key={reward.id}
+          className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-100"
+        >
           <Award size={16} className="text-yellow-600 flex-shrink-0 mt-0.5" />
           <p className="text-sm text-gray-800">{reward.content}</p>
         </div>
@@ -167,11 +171,10 @@ RewardsCard.propTypes = {
   rewards: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired
+      content: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
-
 
 export const PrerequisitesCard = ({ prerequisites }) => (
   <div className="space-y-3 px-5 py-5">
@@ -180,8 +183,11 @@ export const PrerequisitesCard = ({ prerequisites }) => (
       Prerequisites
     </h5>
     <div className="space-y-2">
-      {prerequisites.map((prereq, index) => (
-        <div key={index} className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border border-blue-100">
+      {prerequisites.map((prereq) => (
+        <div
+          key={prereq}
+          className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border border-blue-100"
+        >
           <div className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
             ✓
           </div>
@@ -204,7 +210,10 @@ export const SpeakersCard = ({ speakers }) => (
     </h5>
     <div className="grid gap-3 md:grid-cols-2">
       {speakers.map((speaker) => (
-        <div key={speaker.id} className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-md border border-gray-200">
+        <div
+          key={speaker.id}
+          className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-md border border-gray-200"
+        >
           <div className="bg-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold flex-shrink-0">
             <Mic size={16} />
           </div>

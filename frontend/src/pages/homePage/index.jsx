@@ -1,45 +1,114 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import {
+  Calendar,
+  MapPin,
+  Users,
+  ChevronDown,
+  Menu,
+  X,
+  Clock,
+  Star,
+  ArrowRight,
+  Phone,
+  Mail,
+  Instagram,
+  Twitter,
+  Linkedin,
+} from 'lucide-react';
 
-
-// Floating particle component for light theme
+// Floating particle component
 const FloatingParticle = ({ style }) => (
-  <div className="absolute rounded-full opacity-60" style={style} />
+  <div className="absolute rounded-full opacity-40" style={style} />
 );
 
-export const HomePage = () => {
-  const [particles, setParticles] = useState([]);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const containerRef = useRef(null);
+// Animated counter component
+const AnimatedCounter = ({ end, duration = 2000, suffix = '' }) => {
+  const [count, setCount] = React.useState(0);
+  const [isVisible, setIsVisible] = React.useState(false);
+  const ref = React.useRef();
 
-  // Effect to generate floating particles
-  useEffect(() => {
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isVisible]);
+
+  React.useEffect(() => {
+    if (!isVisible) return;
+
+    let startTime;
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      setCount(Math.floor(progress * end));
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [isVisible, end, duration]);
+
+  return (
+    <span ref={ref}>
+      {count}
+      {suffix}
+    </span>
+  );
+};
+
+export const HomePage = () => {
+  const [particles, setParticles] = React.useState([]);
+  const [scrollY, setScrollY] = React.useState(0);
+  const containerRef = React.useRef(null);
+
+  // Scroll effect
+  React.useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Generate particles
+  React.useEffect(() => {
     const generateParticles = () => {
       const container = containerRef.current;
       if (!container) return;
 
-      const numParticles = window.innerWidth > 768 ? 120 : 60;
+      const numParticles = window.innerWidth > 768 ? 100 : 50;
       const newParticles = [];
       const { clientWidth: containerWidth, clientHeight: containerHeight } =
         container;
 
-      const pastelColors = [
-        'rgba(255, 182, 193, 0.4)', // Light pink
-        'rgba(173, 216, 230, 0.4)', // Light blue
-        'rgba(221, 160, 221, 0.4)', // Plum
-        'rgba(255, 218, 185, 0.4)', // Peach
-        'rgba(152, 251, 152, 0.4)', // Pale green
-        'rgba(255, 255, 224, 0.4)', // Light yellow
+      const colors = [
+        'rgba(99, 102, 241, 0.3)', // Indigo
+        'rgba(236, 72, 153, 0.3)', // Pink
+        'rgba(168, 85, 247, 0.3)', // Purple
+        'rgba(34, 197, 94, 0.3)', // Green
+        'rgba(251, 191, 36, 0.3)', // Amber
+        'rgba(59, 130, 246, 0.3)', // Blue
       ];
 
       for (let i = 0; i < numParticles; i++) {
-        const size = Math.random() * 4 + 2;
+        const size = Math.random() * 6 + 3;
         const x = Math.random() * containerWidth;
         const y = Math.random() * containerHeight;
-        const animationDuration = Math.random() * 6 + 4; // 4s to 10s
-        const animationDelay = Math.random() * 3;
-        const color =
-          pastelColors[Math.floor(Math.random() * pastelColors.length)];
+        const animationDuration = Math.random() * 8 + 6;
+        const animationDelay = Math.random() * 4;
+        const color = colors[Math.floor(Math.random() * colors.length)];
 
         newParticles.push({
           id: i,
@@ -58,224 +127,412 @@ export const HomePage = () => {
 
     generateParticles();
     window.addEventListener('resize', generateParticles);
-
-    return () => {
-      window.removeEventListener('resize', generateParticles);
-    };
+    return () => window.removeEventListener('resize', generateParticles);
   }, []);
 
-  const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Team', href: '#team' },
-    { name: 'Activities', href: '#activities' },
+  const events = [
+    {
+      title: 'Innovation Workshop',
+      description: 'Hands-on workshop exploring cutting-edge technologies',
+      icon: '🚀',
+    },
+    {
+      title: 'Tech Talks',
+      description: 'Industry experts sharing insights and trends',
+      icon: '💡',
+    },
+    {
+      title: 'Startup Pitch',
+      description: 'Students present their innovative startup ideas',
+      icon: '🎯',
+    },
+    {
+      title: 'Networking Session',
+      description: 'Connect with peers and industry professionals',
+      icon: '🤝',
+    },
   ];
 
   return (
-    <main>
-      <div
-        ref={containerRef}
-        className="relative min-h-screen w-full text-gray-800 font-sans overflow-hidden"
+    <div
+      ref={containerRef}
+      className="relative  w-full overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"
+    >
+      {/* Custom Styles */}
+
+      {/* Floating Particles */}
+      {particles.map((particle) => (
+        <FloatingParticle key={particle.id} style={particle.style} />
+      ))}
+
+      {/* Navigation */}
+
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="relative min-h-screen flex items-center justify-center pt-0"
       >
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-blue-50 to-purple-50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/80 via-purple-50/80 to-pink-50/80" />
 
-        {/* Floating particles */}
-        {particles.map((particle) => (
-          <FloatingParticle key={particle.id} style={particle.style} />
-        ))}
-
-        <div className="relative z-10 flex flex-col min-h-screen">
-          {/* Sticky Header Navigation with Glassmorphism */}
-
-
-          {/* Hero Section with Gradient Background */}
-          <section className="flex-grow flex items-center justify-center relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-blue-50 to-purple-100 opacity-80" />
-
-            <div className="relative z-20 w-full max-w-6xl mx-auto px-6 py-12">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Left Content */}
-                <div className="text-center lg:text-left space-y-8 fade-in-up">
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-                    <span className="text-gradient">TECH</span>
-                    <br />
-                    <span className="text-gray-800">INNOVATION</span>
-                    <br />
-                    <span className="text-gradient">STARTS HERE</span>
-                  </h1>
-
-                  <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    <Typewriter
-                      words={[
-                        'Empowering the next generation of innovators through',
-                        'cutting-edge technology and collaborative learning.',
-                      ]}
-                      loop={0} // 0 = infinite
-                      cursor
-                      cursorStyle="|"
-                      typeSpeed={75}
-                      deleteSpeed={50}
-                      delaySpeed={1500}
-                    />
-                  </p>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-center lg:text-left space-y-8 animate-fadeInUp">
+              <h1 className="text-5xl md:text-7xl font-extrabold leading-tight w-fit max-lg:mx-auto ">
+                <div className="flex items-center whitespace-nowrap ">
+                  <span className="!text-blue-900 max-sm:text-4xl">B</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent  max-sm:text-4xl">
+                    RIDGING
+                  </span>
                 </div>
+                <div className="flex items-center whitespace-nowrap">
+                  <span className="!text-blue-900 max-sm:text-4xl">I</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">
+                    NNOVATION &
+                  </span>
+                </div>
+                <div className="flex items-center whitespace-nowrap">
+                  <span className="!text-blue-900 max-sm:text-4xl">T</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">
+                    ECHNOLOGY
+                  </span>
+                </div>
+              </h1>
 
-                {/* Right Content - PNG Image */}
-                <div
-                  className="flex justify-center lg:justify-end fade-in-up"
-                  style={{ animationDelay: '0.3s' }}
-                >
-                  <div className="relative w-full max-w-lg h-96 md:h-[500px] p-6">
-                    <div className="absolute inset-0 bg-gradient-to-r from-pink-200 to-purple-200 rounded-3xl blur-3xl opacity-30 animate-pulse" />
-                    <div
-                      className="relative z-10 w-full h-full p-4 animate-bounce-small"
-                      style={{ animationDuration: '1.60s' }} // make it twice as fast
-                    >
-                      <img
-                        src="/assets/robot.png"
-                        alt="Friendly robot mascot"
-                        className="w-full h-full object-contain transition-all duration-500 image-hover"
-                      />
-                    </div>
+              <div className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl h-[78px]">
+                <Typewriter
+                  words={[
+                    'Empowering the next generation of innovators through cutting-edge technology',
+                    "Building tomorrow's leaders with collaborative learning and innovation",
+                    'Creating a future where technology meets creativity and entrepreneurship',
+                  ]}
+                  loop={0}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={50}
+                  deleteSpeed={30}
+                  delaySpeed={2000}
+                />
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow">
+                  Register Now{' '}
+                  <ArrowRight className="inline-block ml-2" size={20} />
+                </button>
+                <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                  Learn More
+                </button>
+              </div>
+
+              {/* Event Details */}
+              <div className="flex flex-col sm:flex-row gap-6 text-slate-600 pt-8">
+                <div className="flex items-center gap-2 min-w-[250px]">
+                  <Calendar className="text-indigo-600" size={20} />
+                  <span className="font-medium">September 09-11, 2025</span>
+                </div>
+                <div className="flex items-center gap-2 min-w-[250px]">
+                  <MapPin className="text-purple-600" size={20} />
+                  <span className="font-medium">
+                    BIT Campus, Sathyamangalam
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 min-w-[250px]">
+                  <Users className="text-pink-600" size={20} />
+                  <span className="font-medium">500+ Participants</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content - Hero Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-lg">
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
+                <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
+                    alt="Innovation and Technology"
+                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift"
+                    loading="lazy"
+                  />
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
+                    🚀
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-
-          {/* Event Description Section */}
-          <section id="about" className="relative z-20 py-20 px-6">
-            <div className="container mx-auto max-w-4xl">
-              <div
-                className="glass-morphism rounded-3xl p-8 md:p-12 text-center space-y-8 fade-in-up"
-                style={{ animationDelay: '0.5s' }}
-              >
-                <div className="space-y-4">
-                  <h2 className="text-3xl md:text-4xl font-bold text-gradient">
-                    KRIYA 1.0 – Igniting the Entrepreneurial Spirit
-                  </h2>
-
-                  <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-600">
-                    <div className="flex items-center gap-2">
-                      <svg
-                        className="w-5 h-5 text-pink-500"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="font-medium">September 09-11, 2025</span>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <svg
-                        className="w-5 h-5 text-purple-500"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="font-medium">
-                        BIT Campus, Sathyamangalam
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-                  KRIYA 1.0 offers an immersive entrepreneurial journey, guiding participants
-                  from ideation to execution. It aims to instill a startup mindset, spark
-                  creativity, and enhance problem-solving through real-world challenges. By
-                  fostering cross-disciplinary collaboration and hands-on learning, KRIYA 1.0
-                  empowers students to design innovative solutions and launch viable ventures.
-                </p>
-
-                <div className="pt-6">
-                  <button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-4 px-12 rounded-xl transition-all duration-300 button-glow transform hover:scale-105 shadow-lg">
-                    Register Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* About Us Section */}
-          <section id="team" className="relative z-20 py-16 px-6">
-            <div className="container mx-auto max-w-6xl">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                {/* Left - About Content */}
-                <div className="space-y-6 slide-in-left">
-                  <h3 className="text-3xl md:text-4xl font-bold text-gradient">
-                    About KRIYA 1.0
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    KRIYA 1.0 is a student-driven initiative at Bannari
-                    Amman Institute of Technology. We aim to inspire innovation,
-                    build real-world tech skills, and foster collaboration among
-                    curious minds passionate about technology and its
-                    applications.
-                  </p>
-                  <div className="flex flex-wrap gap-4">
-                    <div className="bg-pink-100 text-pink-700 px-4 py-2 rounded-full font-medium">
-                      Innovation Hub
-                    </div>
-                    <div className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">
-                      Tech Community
-                    </div>
-                    <div className="bg-purple-100 text-purple-700 px-4 py-2 rounded-full font-medium">
-                      Future Leaders
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right - Stats or Additional Info */}
-                <div className="grid grid-cols-2 gap-6 slide-in-right">
-                  <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    <div className="text-3xl font-bold text-pink-600">500+</div>
-                    <div className="text-gray-600 font-medium">
-                      Active Members
-                    </div>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    <div className="text-3xl font-bold text-blue-600">50+</div>
-                    <div className="text-gray-600 font-medium">Tech Events</div>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    <div className="text-3xl font-bold text-purple-600">
-                      100+
-                    </div>
-                    <div className="text-gray-600 font-medium">Projects</div>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    <div className="text-3xl font-bold text-green-600">5+</div>
-                    <div className="text-gray-600 font-medium">
-                      Years Active
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Footer */}
-          <footer className="relative z-20 py-8 px-6 border-t border-gray-200">
-            <div className="container mx-auto text-center">
-              <p className="text-gray-600">
-                © 2025 KRIYA 1.0 Empowering Future Innovators.
-              </p>
-            </div>
-          </footer>
+          </div>
         </div>
-      </div>
-    </main>
+      </section>
+
+      {/* Stats Section */}
+      <section className="relative py-20 bg-white/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
+                <AnimatedCounter end={12} suffix="" />
+              </div>
+              <div className="text-slate-600 font-medium">Events</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">
+                <AnimatedCounter end={30} suffix="+" />
+              </div>
+              <div className="text-slate-600 font-medium">Speakers</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-green-600 mb-2">
+                <AnimatedCounter end={3} />
+              </div>
+              <div className="text-slate-600 font-medium">Days</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="relative py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
+              About KRIYA 1.0
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              An immersive entrepreneurial experience that enables participants
+              to explore the innovation journey from ideation to execution.
+            </p>
+          </div>
+
+          <div className="glass-morphism rounded-3xl p-8 md:p-12 mb-16">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="animate-slideInLeft">
+                <h3 className="text-3xl font-bold text-slate-800 mb-6">
+                  Our Mission
+                </h3>
+                <p className="text-lg text-slate-600 leading-relaxed mb-6">
+                  KRIYA 1.0 aims to cultivate a startup mindset, foster
+                  cross-disciplinary collaboration, and encourage the launch of
+                  viable student-led ventures. We focus on sparking creativity
+                  through design thinking, team formation, and problem
+                  discovery.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-indigo-600 rounded-full"></div>
+                    <span className="text-slate-700">
+                      Design Thinking Workshops
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
+                    <span className="text-slate-700">
+                      Business Model Development
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-pink-600 rounded-full"></div>
+                    <span className="text-slate-700">
+                      Startup Pitching Sessions
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                    <span className="text-slate-700">
+                      IPR Management Training
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="animate-slideInRight">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+                  alt="Team collaboration"
+                  className="w-full h-auto rounded-2xl shadow-xl hover-lift"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Events Section */}
+      <section
+        id="events"
+        className="relative py-20 bg-gradient-to-br from-indigo-50 to-purple-50"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
+              Event Highlights
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Explore our exciting lineup of workshops, talks, and networking
+              opportunities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {events.map((event, index) => (
+              <div
+                key={index}
+                className="glass-morphism rounded-2xl p-6 hover-lift group"
+              >
+                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {event.icon}
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">
+                  {event.title}
+                </h3>
+                <p className="text-slate-600 mb-4">{event.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Ready to Innovate?
+          </h2>
+          <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
+            Join us for an unforgettable journey of innovation, learning, and
+            collaboration. Register now and be part of the future!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
+              Register Now{' '}
+              <ArrowRight className="inline-block ml-2" size={20} />
+            </button>
+            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
+              Download Brochure
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="relative py-20 bg-gradient-to-br from-indigo-100 via-white to-pink-100 overflow-hidden"
+      >
+        {/* Decorative circles */}
+        <div className="absolute top-0 left-0 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
+              Get In Touch
+            </h2>
+            <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+              Have questions? We’re here to make your{' '}
+              <span className="font-semibold text-indigo-600">KRIYA 1.0</span>{' '}
+              experience unforgettable.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Contact Info Card */}
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+                Contact Information
+              </h3>
+              <div className="space-y-5">
+                <div className="flex items-center gap-3">
+                  <Phone className="text-indigo-600" size={22} />
+                  <span className="text-slate-700 text-lg">
+                    +91 80721 37522
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="text-purple-600" size={22} />
+                  <span className="text-slate-700 text-lg">
+                    startuphub@bitsathy.ac.in
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <MapPin className="text-pink-600" size={22} />
+                  <span className="text-slate-700 text-lg">
+                    Bannari Amman Institute Technology Campus, Sathyamangalam,
+                    Tamil Nadu
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.7629352440936!2d77.27452747513593!3d11.497017845488983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!2sBannari%20Amman%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1755107737262!5m2!1sen!2sin"
+                width="550"
+                height="250"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Bannari Amman Institute of Technology Map"
+              />
+            </div>
+            {/* Social Links Card */}
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center col-span-2 mx-auto w-1/2">
+              <h4 className="text-xl font-semibold text-slate-800 mb-4">
+                Follow Us
+              </h4>
+              <p className="text-slate-600 mb-6 text-center">
+                Stay updated with event announcements, schedules, and more.
+              </p>
+              <div className="flex gap-5">
+                <a
+                  href="#"
+                  className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
+                >
+                  <Instagram size={24} />
+                </a>
+                <a
+                  href="#"
+                  className="bg-gradient-to-tr from-blue-400 to-blue-600 text-white p-4 rounded-full shadow-lg hover:shadow-blue-300 transition-all duration-300"
+                >
+                  <Twitter size={24} />
+                </a>
+                <a
+                  href="#"
+                  className="bg-gradient-to-tr from-blue-700 to-indigo-900 text-white p-4 rounded-full shadow-lg hover:shadow-indigo-300 transition-all duration-300"
+                >
+                  <Linkedin size={24} />
+                </a>
+                <a
+                  onClick={() => {
+                    window.open(
+                      'https://codecirclebitsathy.netlify.app/',
+                      '_blank'
+                    );
+                  }}
+                  className=""
+                >
+                  <img
+                    src="https://codecirclebitsathy.netlify.app/images/codecirclelogo.png"
+                    alt=""
+                    className="size-14 rounded-full"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Scroll to Top Button */}
+      {scrollY > 500 && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-8 right-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-3 rounded-full shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 z-50"
+        >
+          <ChevronDown className="rotate-180" size={20} />
+        </button>
+      )}
+    </div>
   );
 };

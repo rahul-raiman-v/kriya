@@ -1,8 +1,8 @@
-import React, { useState, useMemo } from "react";
-import { CalendarDays, MapPin } from "lucide-react";
-import PropTypes from "prop-types";
-import { ContactCard } from "../../components";
-import { useNavigate } from "react-router";
+import React, { useState, useMemo } from 'react';
+import { CalendarDays, MapPin } from 'lucide-react';
+import PropTypes from 'prop-types';
+import { ContactCard } from '../../components'; // Adjust path as needed
+import { useNavigate } from 'react-router';
 
 export const GuestLectureCard = ({
   eventTabs = [],
@@ -15,7 +15,7 @@ export const GuestLectureCard = ({
   talkDescription,
   duration,
   eventImage,
-  buttonLabel = "Join now",
+  buttonLabel = 'Join now',
   isSelected = false,
 }) => {
   const navigate = useNavigate();
@@ -23,8 +23,8 @@ export const GuestLectureCard = ({
   const tabs = useMemo(() => {
     const baseTabs = [
       {
-        id: "description",
-        title: "Description",
+        id: 'description',
+        title: 'Description',
         content: (
           <div className="space-y-3">
             <h4 className="text-blue-700 font-semibold text-base mb-2">
@@ -47,11 +47,11 @@ export const GuestLectureCard = ({
       },
     ];
 
-    const contactTab = eventTabs.find((tab) => tab.id === "contact");
+    const contactTab = eventTabs.find((tab) => tab.id === 'contact');
     if (contactTab && Array.isArray(contactTab.content)) {
       baseTabs.push({
-        id: "contact",
-        title: "Contact",
+        id: 'contact',
+        title: 'Contact',
         content: <ContactCard contacts={contactTab.content} />,
       });
     }
@@ -59,14 +59,14 @@ export const GuestLectureCard = ({
     return baseTabs;
   }, [eventTabs, talkDescription, duration, time]);
 
-  const [activeTab, setActiveTab] = useState(tabs[0]?.title || "Description");
+  const [activeTab, setActiveTab] = useState(tabs[0]?.title || 'Description');
   const activeContent =
     tabs.find((tab) => tab.title === activeTab)?.content || null;
 
   return (
     <div
       className={`group relative flex flex-col lg:flex-row justify-between items-stretch gap-6 p-4 sm:p-6 rounded-2xl border transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-1 border-transparent hover:border-gray-300 shadow-xl hover:shadow-2xl bg-gradient-to-br from-white to-gray-50 hover:from-white hover:to-blue-50 ${
-        isSelected ? "border-blue-500 shadow-2xl" : ""
+        isSelected ? 'border-blue-500 shadow-2xl' : ''
       }`}
       aria-selected={isSelected}
     >
@@ -129,8 +129,8 @@ export const GuestLectureCard = ({
                 key={tab.id || tab.title}
                 className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${
                   activeTab === tab.title
-                    ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md transform scale-105"
-                    : "border border-gray-300 text-gray-700"
+                    ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md transform scale-105'
+                    : 'border border-gray-300 text-gray-700'
                 }`}
                 onClick={() => setActiveTab(tab.title)}
                 aria-selected={activeTab === tab.title}
@@ -150,7 +150,7 @@ export const GuestLectureCard = ({
         {/* Register Button */}
         <button
           className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-5 sm:px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition w-fit text-sm sm:text-base"
-          onClick={() => navigate("/combo")}
+          onClick={() => navigate('/combo')}
         >
           {buttonLabel}
         </button>
@@ -158,10 +158,11 @@ export const GuestLectureCard = ({
 
       {/* Right Side - Large Image for Desktop */}
       {eventImage && (
-        <div className="hidden lg:block w-full md:w-[300px] lg:w-[400px] max-h-[350px]">
+        <div className="h-[400px] w-[500px]">
           <img
             src={eventImage}
             alt={talkTitle}
+            loading="lazy"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>
