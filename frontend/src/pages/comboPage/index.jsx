@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import { Hotel, Ticket, Trophy } from 'lucide-react';
-import ComboImage from '/comboImage.png';
+// import ComboImage from '/comboImage.png';
 import { useComboStore } from '../../store/useComboStore/index';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
 import { useShallow } from 'zustand/react/shallow';
@@ -21,7 +21,6 @@ export function ComboPage() {
     const setSelectedCombo = useComboPageStore(useShallow((state) => state.setSelectedCombo));
     const navigate = useNavigate();
 
-    // Helper function to render a block of combo cards
     const renderComboCards = (data) => {
         return data.map((item) => (
             <div
@@ -30,10 +29,10 @@ export function ComboPage() {
             >
                 <div className="rounded-2xl overflow-hidden mb-6">
                     <img
-                        src={ComboImage || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
+                        // src={ComboImage || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
+                        src={item.image || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
                         alt='combo illustration'
-                        // Responsive image, subtle hover scale for engagement
-                        className="w-full h-auto object-cover transform transition-transform duration-300 hover:scale-110"
+                        className="w-full h-[200px] object-cover transform transition-transform duration-300 hover:scale-110"
                         onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/380x200/F0F8FF/000000?text=Image+Error" }}
                     />
                 </div>
@@ -56,12 +55,12 @@ export function ComboPage() {
                         </div>
                     )}
                 </div>
-                <div className="text-center mt-8 sm:mt-10">
+                <div className="text-center mt-8 sm:mt-4">
                     <button
-                        className="inline-block bg-blue-600 text-white font-bold py-2.5 px-8 sm:py-3 sm:px-10 rounded-[8px] shadow-md hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 text-base sm:text-lg"
+                        className="inline-block bg-blue-600 text-white font-bold py-2.5 px-8 sm:py-3 sm:px-10 rounded-[8px] shadow-md hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 text-base sm:text-lg cursor-pointer"
                         onClick={() => {
-                            setSelectedCombo(item); // Set the selected combo in the store
-                            navigate("/combo-detail"); // Navigate to the detail page
+                            setSelectedCombo(item);
+                            navigate("/combo-detail");
                         }}
                     >
                         Know More
@@ -76,25 +75,30 @@ export function ComboPage() {
             <h2 className="text-4xl font-extrabold text-center text-blue-800 mb-12">Choose Your Perfect Combo!</h2>
 
             <div className="mb-12">
-                <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">For Students and Participants</h3>
+                <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">Students and Participants</h3>
                 <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
                     {renderComboCards(ComboData)}
                 </div>
             </div>
 
-            <div className="mb-12">
-                <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">For Delegates (Professionals, Scholars, and Entrepreneurs)</h3>
-                <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
-                    {renderComboCards(ComboDeligatesData)}
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
+
+                <div className="mb-12">
+                    <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">Delegates (Researchers, Innovators, Incubatees, Startups and Entrepreneurs)</h3>
+                    <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+                        {renderComboCards(ComboDeligatesData)}
+                    </div>
+                </div>
+
+                <div>
+                    <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">Stall Registration</h3>
+                    <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+                        {renderComboCards(ComboStallsData)}
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">For Stalls</h3>
-                <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
-                    {renderComboCards(ComboStallsData)}
-                </div>
-            </div>
+
         </div>
     );
 }
