@@ -1,136 +1,422 @@
-[
-    {
-      "name": "Arun Prakash",
-      "title": "Founder & CEO",
-      "organization": "GUVI Geek Network",
-      "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
-      "carouselUrl": "https://i.ytimg.com/vi/EDjmHoAd50A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfeCAlIwOd_q5xdJixrBXx_KVsIA",
-      "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
-      "expertise": [
-        "EdTech Leadership",
-        "Technology Innovation",
-        "Vernacular Learning",
-        "Community Building"
-      ],
-      "achievements": [
-        "Led GUVI to achieve two Guinness World Records for AI coding lessons and online programming participation",
-        "Invited to Oxford University in 2024 to speak on 'How Vernacular learning is transforming Technology learning'",
-        "Recognized as a Youth Icon at the IYONS International Summit",
-        "Awarded Leading Social Entrepreneur Award by Action for India in 2019",
-        "GUVI awarded 'Most Trusted Vernacular EduTech Award' by ZEE Digital"
-      ],
-      "links": {
-        "wikipedia": "http://en.wikipedia.org/wiki/GUVI",
-        "linkedin": "https://www.linkedin.com/in/arunprakashm/?originalSubdomain=in",
-        "twitter": "https://x.com/arunprakashguvi"
-      },
-      "industry": "EdTech",
-      "isKeynote": true,
-      "quote": "Technology should be accessible to everyone, regardless of language or background."
+[{
+        "name": "Arun Prakash",
+        "title": "Founder & CEO",
+        "organization": "GUVI Geek Network",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755075009/guvi_hoezb3.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQHg4BOVYw_0rQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707379234009?e=1758153600&v=beta&t=SnOprAP-nNVm-T4hLrVcQEi66KWzUeUI5qn0B3OEsPQ",
+        "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
+        "expertise": [
+            "EdTech Leadership",
+            "Technology Innovation",
+            "Vernacular Learning",
+            "Community Building"
+        ],
+        "achievements": [
+            "Led GUVI to achieve two Guinness World Records for AI coding lessons and online programming participation",
+            "Invited to Oxford University in 2024 to speak on 'How Vernacular learning is transforming Technology learning'",
+            "Recognized as a Youth Icon at the IYONS International Summit",
+            "Awarded Leading Social Entrepreneur Award by Action for India in 2019",
+            "GUVI awarded 'Most Trusted Vernacular EduTech Award' by ZEE Digital"
+        ],
+        "links": {
+            "wikipedia": "http://en.wikipedia.org/wiki/GUVI",
+            "linkedin": "https://www.linkedin.com/in/arunprakashm/?originalSubdomain=in",
+            "twitter": "https://x.com/arunprakashguvi"
+        },
+        "industry": "EdTech",
+        "isKeynote": true,
+        "quote": "Technology should be accessible to everyone, regardless of language or background."
     },
     {
-      "name": "Kevin Scott",
-      "title": "Chief Technology Officer",
-      "organization": "Microsoft",
-      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFtp-0LsoG-J5B5m4iuem1H7qnl3R4F4q7Vw&s",
-      "carouselUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Kevin_Scott.jpg",
-      "about": "Kevin Scott is the CTO at Microsoft, previously Senior VP of Engineering and Operations at LinkedIn where he helped scale the platform significantly.",
-      "expertise": ["Engineering Leadership", "Infrastructure Scaling"],
-      "achievements": [
-        "Scaled LinkedIn ahead of its IPO",
-        "Authored 'Reprogramming the American Dream'",
-        "Founded nonprofit Behind the Tech"
-      ],
-      "links": {
-        "wikipedia": "https://en.wikipedia.org/wiki/Kevin_Scott_(computer_scientist)",
-        "linkedin": "https://www.linkedin.com/in/jkevinscott/",
-        "twitter": "https://x.com/kevin_scott?lang=en"
-      },
-      "industry": "Tech",
-      "isKeynote": true,
-      "quote": "The future of technology is about democratizing opportunity and empowering every person to achieve more."
+        "name": "Kannan Hari",
+        "title": "Co-founder & Founder",
+        "organization": "Palm Era Foods",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755075301/lampera_z2sp0y.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQG9sKcp5-ClKg/profile-displayphoto-shrink_100_100/B56Zawc.zaH0Ac-/0/1746717110006?e=1758153600&v=beta&t=HDWTHMzLegy5alGQeei-6D1QMAlUrgZFcE5rqX8K4k0",
+        "about": "Kannan Hari, an engineer-turned-entrepreneur, co-founded Palm Era Foods with Abinaya, driven by a mission to preserve the endangered legacy of the Palmyra palm in Tamil Nadu. His journey began after witnessing the felling of palm trees due to crop damage and discovering the challenges faced by palm climbers, including low income and lack of standardization. Palm Era aims to elevate palm-based products to premium quality through innovation and branding, and reintroduce nutrient-rich, low-glycemic palm products into daily diets, especially for children. He applies systematic thinking and process-building skills from his extensive IT career to his food brand, focusing on quality, transparency, and tradition, with a vision to provide certified, clean nutrition from Tamil Nadu to the world.",
+        "expertise": [
+            "Release Management (IT) [5]",
+            "DevOps Business Development & Solution Architecture (IT) [5]",
+            "Project Management (PMP® Certified) [5]",
+            "Agile Methodologies (CSM® Certified) [5]",
+            "Cloud Solutions (AWS Certified) [5]",
+            "Enterprise Architecture (TOGAF® Certified) [5]",
+            "Community Empowerment",
+            "Environmental Sustainability"
+        ],
+        "achievements": [
+            "Co-founded Palm Era Foods to preserve the Palmyra palm legacy and promote healthy, natural food products [1, 2]",
+            "Developed powdered palm jaggery in collaboration with university researchers to extend shelf life and enhance convenience [2]",
+            "Secured multiple certifications for Palm Era products including FSSAI, ZED, AGMARK, Pesticide & Residue-Free, FDA, and MSME Udyam [3, 4, 5]",
+            "Led Palm Era to become the only palm jaggery brand in the world with AGMARK certification [3]",
+            "Increased harvest volumes and expanded the palm climber network through optimized processing and improved remuneration [2]",
+            "Implemented year-round employment initiatives for village women by processing palm sprouts during the off-season [2]",
+            "Transitioned from a high-paying corporate IT job to social entrepreneurship [6]",
+            "Secured initial funding/support for Palm Era (implied by 'The Turning Point & Tanseed Fund') [7]",
+            "Featured in The New Indian Express for initiating a 'palm revolution' in the state [2]",
+            "Registered Palm Era Foods Private Limited on December 1, 2022 [8]"
+        ],
+        "links": {
+            "website": "https://thepalmera.in/",
+            "linkedin": "https://www.linkedin.com/in/kannan-hari-158b2757",
+            "twitter": "https://x.com/thepalmera"
+        },
+        "industry": "Food & Beverages",
+        "isKeynote": true,
+        "quote": "The country's economy grows only when villages grow."
     },
     {
-      "name": "Li Fan",
-      "title": "Chief Technology Officer",
-      "organization": "Circle",
-      "avatarUrl": "https://cdn.prod.website-files.com/67116d0daddc92483c812ead/67116d0daddc92483c812fc6_LiFan-sq-web_500.jpeg",
-      "carouselUrl": "https://media.licdn.com/dms/image/v2/D5605AQH6vkO8eylhXg/videocover-low/B56ZdAYM1DH8Bs-/0/1749131789411?e=2147483647&v=beta&t=bp6TyWg4DIDZER1XDZyLp5COvK-12jUlLU7_NJwPIeE",
-      "about": "Li Fan is a computer scientist and CTO at Circle, previously held senior engineering roles at Google, Baidu, Pinterest, and Lime.",
-      "expertise": ["Computer Vision", "Engineering Leadership", "Big Data Infrastructure"],
-      "achievements": [
-        "Led engineering teams at major tech firms",
-        "Recognized as one of most important engineers globally"
-      ],
-      "links": {
-        "wikipedia": "https://en.wikipedia.org/wiki/Li_Fan_(engineer)",
-        "linkedin": "https://www.linkedin.com/in/li-fan-52869322/",
-        "twitter": "https://x.com/circle"
-      },
-      "industry": "FinTech",
-      "isKeynote": true,
-      "quote": "Innovation in financial technology requires both technical excellence and deep understanding of human trust."
+        "name": "Prabaharan Venugopal",
+        "title": "Founder",
+        "organization": "Cup Time | Maheesha Foods and Beverages Private Limited",
+        "carouselUrl" : "https://res.cloudinary.com/doko35o8e/image/upload/v1755075446/cuptime_p3couy.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQF0TUETgKUlNA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1625989525757?e=1758153600&v=beta&t=E6Hcejer9DpIcQsOmjNFZ8bt9PeQW97-QmGPn5Vnn_s",
+        "about": "Prabaharan Venugopal is the founder of Cup Time and Maheesha Foods and Beverages Private Limited, both based in Madurai, Tamil Nadu. He launched Cup Time in 2020, aiming to reintroduce authentic local South Indian beverages like Karungali Coffee, Panangkinjau Paal, and Sukku Kaapi. His business model focuses on B2B delivery of fresh, hot, and preservative-free drinks to corporate offices, hospitals, and educational institutions. Maheesha Foods and Beverages Private Limited serves as the corporate and manufacturing arm, ensuring quality and compliance. Prabaharan is actively focused on scaling his ventures by raising funding, hiring talent, and continuously brainstorming new ideas. He applies his expertise in FMCG, retail sales, and entrepreneurship to drive growth and create sustainable local opportunities.",
+        "expertise": [
+            "FMCG (Fast-Moving Consumer Goods) [1, 2]",
+            "Retail Sales [1, 2]",
+            "Entrepreneurship [1, 2]",
+            "Business Model Innovation",
+            "Startup Scaling",
+            "B2B Delivery",
+            "Traditional Beverage Production",
+            "Franchisee Development"
+        ],
+        "achievements": [
+            "Successfully transitioned Cup Time to B2B deliveries to offices, hospitals, and educational institutions by 2021 [5, 3, 4]",
+            "Introduced the 'Franchisee Cup Time-Operated' model in 2022, leading to consistent expansion through 2025 [5, 3, 4]",
+            "Achieved a 98% client satisfaction rate for Cup Time's services [3, 4]",
+            "Co-founded Maheesha Foods and Beverages Private Limited, incorporated on February 8, 2022, as the manufacturing and corporate entity [6, 5, 7, 8]",
+            "Serves as a Director at Maheesha Foods and Beverages Private Limited since its incorporation [7, 9, 8]",
+            "Holds the role of Chapter Director Consultant for BNI Madurai Garudas [9]"
+        ],
+        "links": {
+            "website": "https://www.cuptime.in/",
+            "linkedin": "https://www.linkedin.com/in/prabaharan-venugopal-0b1a2b1a3/",
+            "twitter": "https://x.com/cuptimeindia"
+        },
+        "industry": "Food & Beverages",
+        "isKeynote": false,
+        "quote": "Every cup we serve is not just a beverage, but a story of tradition, quality, and local pride."
     },
     {
-      "name": "Sandra \"Sandy\" Carter",
-      "title": "Chief Operating Officer",
-      "organization": "Unstoppable Domains",
-      "avatarUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sandy_Carter%2C_IBM.jpg/250px-Sandy_Carter%2C_IBM.jpg",
-      "carouselUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpix6NDI7R24BA6DITXm4T1FtW4rYQrOgw2A&s",
-      "about": "Sandy Carter is a businesswoman, speaker, and author. Former GM at IBM and VP at Amazon Web Services; now COO at Unstoppable Domains.",
-      "expertise": ["Business Operations", "Tech Marketing", "Leadership"],
-      "achievements": [
-        "Held senior roles at IBM and AWS",
-        "Accomplished public speaker"
-      ],
-      "links": {
-        "wikipedia": "https://en.wikipedia.org/wiki/Sandy_Carter",
-        "linkedin": "https://www.linkedin.com/in/sandyacarter/",
-        "twitter": "https://x.com/unstoppableweb"
-      },
-      "industry": "Web3",
-      "isKeynote": false
+        "name": "Kalai Kathiravan",
+        "title": "Managing Partner | Founder, Director & CEO",
+        "organization": "Lemurian Bazaar | Lemurian Ventures Private Limited",
+        "avatarUrl": "https://scontent.fcjb5-2.fna.fbcdn.net/v/t39.30808-1/428602920_10224498529923104_7991102416821069512_n.jpg?stp=c9.0.720.720a_dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=I-QUoz-QNmAQ7kNvwH06Czs&_nc_oc=AdnWRSHEq9s9WLIjNRb8UCPe3NGl-8o1G9BO8Qe-_FrL-w-0AYBjWdcPsyO0FuBO3TU&_nc_zt=24&_nc_ht=scontent.fcjb5-2.fna&_nc_gid=YmNPpt33HgJksCMiN9uuFQ&oh=00_AfWsNXyJET7rEXDUj9XcCd6YwPuxObKxqwewJuenBjURFw&oe=68A23ECE",
+        "about": "Kalai Kathiravan is a pivotal figure in the agri-food sector in Tamil Nadu, India, serving as the Managing Partner of Lemurian Bazaar and concurrently as the Founder, Director, and CEO of Lemurian Ventures Private Limited. Operating from a remote village in Ramanathapuram, his mission is to deliver traditional, regional, hygienic, and nutritionally potent agri-products directly from farms to homes across India.[1, 2] He applies systematic thinking and process-building skills, implicitly learned from his background as a 'techie' who quit his IT job to venture into selling dry fish.[3] His leadership bridges traditional agricultural practices with modern business strategies, focusing on quality, transparency, and community empowerment.[3, 2]",
+        "expertise": [
+            "Agri-Food Supply Chain Management",
+            "Traditional Food Product Development",
+            "Rural Entrepreneurship",
+            "Social Enterprise Leadership",
+            "E-commerce Sales & Marketing",
+            "Brand Development & Packaging Innovation",
+            "Community Empowerment Initiatives",
+            "Strategic Partnerships"
+        ],
+        "achievements": [
+            "Co-founded and serves as Director and CEO of Lemurian Ventures Private Limited, incorporated on May 6, 2022 [4, 5]",
+            "Successfully launched Lemurian Bazaar products on Amazon, achieving sales of Rs 3 lakh per month [3]",
+            "Secured and manages the 'One Station, One Product' (OSOP) opportunity for dry fish at Madurai Railway Junction, evolving from a table setup to a permanent 'dry fish hut' [6]",
+            "Projected to achieve a turnover of 15 lakhs per month and a total turnover of 2 crore in the first year through the OSOP initiative [6]",
+            "Collaborates with Puthumaipen, a 10-member women's self-help group in Mandapam, for packing dry fish, contributing to local employment [3]",
+            "Implemented modern branding techniques, including QR codes on dry fish packaging linking to cooking recipes [3]",
+            "Garnered significant media recognition, with features in Hindustan Times, Tholil Uzhagam, Puthiya Thalaimurai, and Dinakaran [1, 7, 8]",
+            "Holds a directorship in CROPORIUM PRIVATE LIMITED, appointed on April 11, 2024 [9]"
+        ],
+        "links": {
+            "website": "https://lemurianbazaar.com/",
+            "linkedin": "https://www.linkedin.com/in/kalai-kathiravan-0b1a2b1a3/",
+            "twitter": "https://x.com/lemurianbazaar"
+        },
+        "industry": "Food & Beverages",
+        "isKeynote": false,
+        "quote": "From a small village to national markets, my mission is to prove that traditional products can thrive in the modern economy without losing their authenticity."
     },
     {
-      "name": "Padmasree Warrior",
-      "title": "Founder & CEO",
-      "organization": "Fable",
-      "avatarUrl": "https://www.boomlive.in/wp-content/uploads/2015/02/Padmasree-Warrior.jpg",
-      "carouselUrl": "https://thestoryexchange.org/app/uploads/2021/12/padmasree-warrior-raises-20m-fable.jpg",
-      "about": "Padmasree Warrior is a technology executive, formerly CTO at Cisco and Motorola, and CEO of Nio USA. She now leads Fable, a curated reading platform for mental wellness.",
-      "expertise": ["Technology Leadership", "Executive Strategy", "Product Innovation"],
-      "achievements": [
-        "CTO at Cisco & Motorola",
-        "Founded and leading Fable",
-        "Board member at Microsoft and Spotify"
-      ],
-      "links": {
-        "wikipedia": "https://en.wikipedia.org/wiki/Padmasree_Warrior",
-        "linkedin": "https://www.linkedin.com/in/padmasree-warrior-9917a26b/",
-        "twitter": "https://x.com/padmasree"
-      },
-      "industry": "HealthTech",
-      "isKeynote": true,
-      "quote": "True innovation happens when technology meets human empathy and understanding."
+        "name": "Santhos Premraj",
+        "title": "Co-Founder & Head of Product",
+        "organization": "Ticket9",
+        "carouselUrl" : "https://res.cloudinary.com/doko35o8e/image/upload/v1755075995/ticket9_orgete.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGZZcRLcwId-g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721149310612?e=1758153600&v=beta&t=OuMPuZsf2JP6j_38DwWe05GmnFbWZQ4xnouciaFeuPQ",
+        "about": "Santhos Premraj is the Co-Founder and Head of Product at Ticket9, an innovative Event Tech SaaS platform based in Coimbatore, India.[1, 2, 3] With a decade of experience spanning events, technology, and marketing, he is dedicated to simplifying the event management process by automating traditionally manual tasks.[1, 2, 4] His background in corporate IT, including roles at Tata Consultancy Services and Cognizant, has equipped him with systematic thinking and process-building skills, which he applies to prioritize quality and transparency in his entrepreneurial ventures.[1, 5] He is passionate about wellness, clean ingredients, and meaningful entrepreneurship, with a leadership style marked by a commitment to growth and positive community impact.[1, 2] The idea for Ticket9 originated from identifying inefficiencies in manual event management, leading to its rapid expansion from a modest bedroom to a 26-seat office space.[6, 4]",
+        "expertise": [
+            "Product Development (SaaS, AI-powered features) [1, 2, 7]",
+            "Event Management Automation [4, 3]",
+            "Systematic Thinking & Process Building [1]",
+            "Release Management [5]",
+            "DevOps & Solution Architecture [5]",
+            "Project Management (PMP® Certified) [5]",
+            "Agile Methodologies (CSM® Certified) [5]",
+            "Cloud Solutions (AWS Certified) [5]",
+            "Enterprise Architecture (TOGAF® Certified) [5]",
+            "Customer Experience Enhancement [1, 2]",
+            "Event Marketing [1, 2]"
+        ],
+        "achievements": [
+            "Successfully pivoted Ticket9 to support virtual and hybrid events during the COVID-19 pandemic, organizing over 60 virtual events with 500+ attendees [4]",
+            "Secured $120K in pre-seed funding for Ticket9 on May 24, 2023 [8, 9, 10]",
+            "Attracted strategic investors, including actress Nayanthara and director Vignesh Shivan, in a Seed round on September 18, 2024 [8, 11]",
+            "Grew Ticket9 from a 'modest bedroom' to a '26-seat office space' [6]",
+            "Instrumental in automating traditionally manual processes in event management [4, 3]",
+            "Holds multiple professional certifications including Certified ScrumMaster® (CSM®), The Open Group Certified: TOGAF® 9 Certified, ServiceNow Certified System Administrator, AWS Certified Solutions Architect - Associate, and Project Management Professional (PMP)® [5]",
+            "Recognized as an Event Tech Innovator [1, 2]",
+            "Drives product development with a strong focus on customer feedback and user experience [1, 2]"
+        ],
+        "links": {
+            "website": "https://www.theticket9.com/",
+            "linkedin": "https://www.linkedin.com/in/santhospremraj/",
+            "twitter": "https://x.com/santhospremraj"
+        },
+        "industry": "Event Technology",
+        "isKeynote": false,
+        "quote": "Building a product with real scenes in SaaS is no small feat; it underscores the complexity and depth of the process!"
     },
     {
-      "name": "Samina Virk",
-      "title": "U.S. CEO & Chief Marketing Officer",
-      "organization": "Vestiaire Collective",
-      "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjCC3zOTukHXFxeJQRtF3i3dkIWQhGmdQa3w&s",
-      "carouselUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZrXM1G-OrHRnqYc02lnFMl3DoYbl-69zXQ&s",
-      "about": "Samina Virk serves as both U.S. CEO and CMO of Vestiaire Collective. Her career spans digital agencies, eBay, Target, and scaling luxury-resale operations in the U.S.",
-      "expertise": ["E-commerce Strategy", "Digital Marketing", "Business Scaling"],
-      "achievements": [
-        "Launched eBay's fashion vertical",
-        "Scaled U.S. business for Vestiaire Collective as CEO and CMO"
-      ],
-      "links": {
-        "news": "https://www.bbc.com/culture/article/20240911-vestiairie-collective-vintage-and-the-rise-of-archival-fashion",
-        "linkedin": "https://www.linkedin.com/in/saminavirk/",
-        "twitter": "https://x.com/vestiaireco?lang=en"
-      },
-      "industry": "E-commerce",
-      "isKeynote": false
+        "name": "Vinoth Kumar Chandran",
+        "title": "Director",
+        "organization": "Bipolar Factory Private Limited",
+        "carouselUrl":"" ,
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEfE0lbqoqqIA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669297488292?e=1758153600&v=beta&t=WLe4_bDkWLKrFWikNmLKSf8UtyNUoIfLwYV_m6C2M1w",
+        "about": "Dr. Vinoth Kumar Chandran is a Director at Bipolar Factory Private Limited, appointed on December 22, 2023.[1, 2] He brings over two decades of extensive experience in healthcare management, having held significant positions at renowned institutions like Apollo Hospitals Group, Global Health City, and KIMS Health.[3, 4, 5] His academic background includes a doctorate and post-graduate degrees in Hospital Management, Business Management, Medical Law & Ethics, Materials Management, and Labour Laws.[3, 4, 5] He is recognized for multiple world records and holds the prestigious Level 3 'Qimpro Certified Qualitist' badge, a recognition conceptualized by Dr. J. M. Juran, the 'Father of Quality'.[3, 4, 5] Bipolar Factory specializes in Artificial Intelligence, Deep Learning Solutions, Metaverse Development, and IoT Development, aiming to harness technology for societal betterment and champion 'Make in India' products globally.[6, 7, 8, 9, 10, 11] The company has its registered office in Coimbatore, Tamil Nadu, and an operational focus in Bengaluru North, Karnataka.[12, 13, 14, 15, 10, 16, 11]",
+        "expertise": [
+            "Healthcare Management [3, 4, 5]",
+            "Quality Management Systems (ISO, NABH, NABL, ACHSI, JCI) [3, 4, 5]",
+            "Lean Six Sigma in Healthcare [3, 4, 5]",
+            "Health Technology Assessment [3, 4, 5]",
+            "Comprehensive Disaster Management [3, 4, 5]",
+            "Risk Management [3, 4, 5]",
+            "Medical Law & Ethics [3, 4, 5]",
+            "Materials Management [3, 4, 5]",
+            "Labour Laws with Administrative Laws [3, 4, 5]",
+            "Strategic Planning",
+            "Process Optimization",
+            "Ethical AI"
+        ],
+        "achievements": [
+            "Awarded Asia Healthcare Excellence Award (2016) [3, 4, 5]",
+            "Received Pride of India Award (2017) [3, 4, 5]",
+            "Named Healthcare Personality of the Year (2017) [3, 4, 5]",
+            "Awarded World Health & Wellness Congress Award (2018) [3, 4, 5]",
+            "Record holder in India Book of Records (IBR), Asia Book of Records (ABR), World Book of Records (UK), and Guinness World Records [3, 4, 5]",
+            "First healthcare supply chain management professional to achieve record-holder status in multiple world record books [3, 4, 5]",
+            "First healthcare management professional in India to secure a place in World Book of Records (UK) and Guinness World Records [3, 4, 5]",
+            "Awarded Level 3 (Highest) Badge – 'Qimpro Certified Qualitist' from QIMPRO Foundation [3, 4, 5]",
+            "Appointed Director at Bipolar Factory Private Limited on December 22, 2023 [1, 2]",
+            "Serves as a Director at Pharmbioz Healthcare Private Limited [1, 17, 18, 19, 20, 21]"
+        ],
+        "links": {
+            "website": "https://www.bipolarfactory.com/",
+            "linkedin": "https://www.linkedin.com/company/bipolar-factory/?originalSubdomain=in",
+            "twitter": "https://x.com/bipolarfactory"
+        },
+        "industry": "Technology",
+        "isKeynote": false,
+        "quote": "The true future of healthcare lies at the intersection of compassion and cutting-edge technology."
+    },
+    {
+        "name": "Vasu Karthi",
+        "title": "Co-Founder and CEO",
+        "organization": "Magic 20 Tamil",
+        "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755076507/magic20_bhs2sf.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQFK9lG1Dh_1Rg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701174173460?e=1758153600&v=beta&t=zXgH9ThjYgIRLiV-OeaJI6RZdMRHD-5G-erWsSl5Y_M",
+        "about": "Vasu Karthi is the Co-Founder and CEO of Magic 20 Tamil, an app-based platform dedicated to translating and summarizing global business, marketing, and self-help English books into accessible Tamil audio formats.[1] His mission is to 'bridge the gap between global wisdom and Tamil culture' by making world-class knowledge available to Tamil speakers.[1] The platform offers concise 20-minute summaries, utilizing colloquial language and localized examples to cater to busy professionals and aspiring entrepreneurs who view time as a precious commodity and learning as an ongoing journey.[1, 2] He is also a director at Bookspark Media Private Limited, the legal entity behind Magic 20 Tamil.[5] Vasu Karthi actively engages in public discussions on business topics, emphasizing effective communication and strategic positioning.[3]",
+        "expertise": [
+            "Content Strategy and Development",
+            "Tamil Language Localization",
+            "Audiobook Production",
+            "Business Communication",
+            "Ed-Tech Entrepreneurship",
+            "Strategic Partnerships",
+            "Marketing for Regional Audiences"
+        ],
+        "achievements": [
+            "Led Magic 20 Tamil to expand its content library to over 400 book summaries and more than 40 Masterclass podcasts [1, 4]",
+            "Secured funding for Magic 20 Tamil from Cultiv8 (CIET - TBI) [1]",
+            "Attracted a diverse group of angel investors and industry leaders, including C K Kumaravel, R Pallavarajan, K Mohan, Ananth Mani, and SP Balamurugan [1]",
+            "Established a strategic partnership with Krea University to offer a '3-Day Executive Education Program (Mini MBA)' for working professionals and entrepreneurs [6]",
+            "Oversees content creation and production, utilizing expert writers, professional voice artists, RJs, celebrities, and television personalities to ensure high-quality, localized audio content [1]",
+            "Serves as a director of Bookspark Media Private Limited, the legal entity incorporated on August 4, 2022, that underpins Magic 20 Tamil [5]"
+        ],
+        "links": {
+            "website": "https://magic20.co.in/",
+            "linkedin": "https://www.linkedin.com/company/booksparkmedia/",
+            "twitter": "https://x.com/magic20tamil"
+        },
+        "industry": "EdTech",
+        "isKeynote": false,
+        "quote": "Bridging the gap between global wisdom and Tamil culture is not just a mission—it’s a responsibility."
+    },
+    {
+        "name": "Ramesh Narayanan",
+        "title": "CEO",
+        "organization": "Adyar Ananda Bhavan (A2B) | A2B Sweets & Restaurants",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755076699/a2b_hcnjtb.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGA3fOQuOaR3w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1680616785551?e=1758153600&v=beta&t=kEKoz-s5Egquo0dTc_vMEEpQtqmJAxpoQEvgryjBXlY",
+        "about": "Ramesh Narayanan serves as the Chief Executive Officer of Adyar Ananda Bhavan (A2B) - India, a prominent South Indian restaurant chain headquartered in Chennai with over 120 branches across India. In this role, he is responsible for leading the operations and strategic direction of the extensive A2B network, which includes restaurants, sweets, and savouries. His leadership is part of the evolving management structure of this long-standing family-owned enterprise, aiming to drive its continued growth and global aspirations.",
+        "expertise": [
+            "Business Scaling",
+            "Data-driven Strategy",
+            "Retail Operations",
+            "Food & Beverage Management",
+            "Organizational Leadership"
+        ],
+        "achievements": [
+            "Oversees operations for a chain with over 120 branches across India, serving quality South Indian food, sweets, and savouries"
+        ],
+        "links": {
+            "website": "https://a2b.world/",
+            "linkedin": "https://www.linkedin.com/company/adyar-ananda-bhavan---india/?originalSubdomain=in",
+            "twitter": "https://x.com/a2bworld"
+        },
+        "industry": "Food & Beverages",
+        "isKeynote": false,
+        "quote": "When you talk about people online, there is another big group of people offline "
+    },
+    {
+        "name": "Anusha V",
+        "title": "Founder and CEO",
+        "organization": "Narchuvai Foods",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077018/foods_ulhkg5.jpg",
+        "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077133/foods2_vukj0b.jpg",
+        "about": "Anusha V is the Founder and CEO of Narchuvai Foods, a D2C brand specializing in premium heritage gifting and traditional food products for modern lifestyles. Hailing from a Chettinad family with a deep cultural connection to food, her passion for traditional cooking was ignited in her mother's kitchen, where hygienic and delicious health mixes, masalas, and podis were crafted. Recognizing a market gap for such authentic products, she founded Narchuvai Foods to bridge the rich culinary past with the demands of the fast-paced present. Despite marrying at 15, she later pursued education and built a career in digital marketing, which provides a strong foundation for Narchuvai's D2C model. The brand name 'Narchuvai' (நல்ல சுவை) reflects her commitment to 'good taste' and preserving age-old culinary wisdom.",
+        "expertise": [
+            "Brand Identity Development",
+            "Storytelling",
+            "Packaging Strategy",
+            "D2C Business Model",
+            "Traditional Chettinad Cuisine",
+            "Health & Wellness Food Products",
+            "Entrepreneurship (especially for women and home-based entrepreneurs)"
+        ],
+        "achievements": [
+            "Founded Narchuvai Foods to bring traditional, hygienic, and nutritious Chettinad food products to a wider audience",
+            "Successfully established Narchuvai Foods as a D2C brand focused on premium heritage gifting",
+            "Ensures products are homemade, handcrafted, and preservative-free, maintaining authentic quality",
+            "Secured comprehensive quality certifications including FSSAI, ZED, AGMARK, and Pesticide & Residue-Free for Narchuvai products",
+            "Achieved high customer satisfaction with an average rating of 4.9 out of 5 on platforms like Justdial, with positive feedback on flavor, freshness, and packaging",
+            "Actively participates as a speaker in business forums, sharing insights on building and scaling D2C food brands",
+            "Hosts webinars to encourage and guide aspiring entrepreneurs, particularly women and home-based entrepreneurs, in digital marketing and brand building",
+            "Expanded market reach through partnerships, making products available for international shipping (e.g., via Madrascart.com to US and Canada)"
+        ],
+        "links": {
+            "website": "https://www.narchuvaifoods.in/",
+            "linkedin": "https://www.linkedin.com/in/anusha-v-715817203/?originalSubdomain=in",
+            "twitter": "https://x.com/narchuvaifoods"
+        },
+        "industry": "Food & Beverages",
+        "isKeynote": true,
+        "quote": "Narchuvai, a name that shows my deep love for preserving age-old culinary wisdom. I picked this name to share the richness of taste and bring people closer to our traditional flavors!"
+    },
+    {
+        "name": "Umasankaran P",
+        "title": "Founder & CEO",
+        "organization": "Startup News Tamil & Free Famous Food",
+        "carouselUrl":"https://media.licdn.com/dms/image/v2/D5622AQEYyajV-i5Rpg/feedshare-shrink_2048_1536/B56ZWJ01BrHsAw-/0/1741774082950?e=1758153600&v=beta&t=_u4j2zrDCgqeTjJGQX8FkBGbH8vbaASBPfpJDXRN5Zw",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5622AQHNQ6V7Pni6PA/feedshare-shrink_800/B56ZbTa6yTGoAs-/0/1747303775922?e=2147483647&v=beta&t=4sD3H3XHgWle7-m4E4n4fswLpvuyA3gDwtYYRD7CBE4",
+        "about": "Umasankaran P is a multifaceted entrepreneur and ecosystem builder, known for founding Startup News Tamil and Free Famous Food. A graphic designer by background, he moved to Singapore in 2002 to pursue a Higher Diploma in Communication Science.[1] In 2009, he founded Aadhii Designs in Singapore, providing branding services to restaurants and salons.[1] In 2015, he launched Free Famous Food (FFF) in Singapore as a bootstrapped venture, aiming to disrupt the advertising industry by offering 100% free food vouchers, leveraging the 'urge for free offers' psychology.[1] He successfully expanded FFF to India in 2018, starting in his hometown Thanjavur and then to other Tamil Nadu cities, overcoming initial public skepticism that 'free is fake'.[1] He also founded Startup News Tamil, a platform dedicated to building and celebrating the Tamil Startup Ecosystem, providing authentic startup stories and updates in Tamil.[2] His work focuses on business strategy, branding, marketing, and startup mentorship, actively contributing to the regional entrepreneurial landscape.[3, 4, 5, 6]",
+        "expertise": [
+            "Communication Science [1]",
+            "Branding (for F&B, salons, and startup ecosystems) [1, 5]",
+            "Marketing Innovation (disruptive models, digital marketing, social media) [1, 4]",
+            "Business Strategy (market gap identification, new business model creation) [1]",
+            "Startup Mentorship [7, 4, 8]",
+            "F&B Industry [1]",
+            "Ecosystem Building (Startup Ecosystem) [2]",
+            "Public Speaking & Thought Leadership [3, 4, 5, 6]"
+        ],
+        "achievements": [
+            "Founded Free Famous Food (FFF) in Singapore in 2015 as a bootstrapped venture with Rs 2.5 lakh capital",
+            "Successfully gained 52 F&B partners and 4,000 registered users for FFF in Singapore",
+            "Launched FFF in India in 2018, expanding to Thanjavur, Chennai, Madurai, Tiruchirapalli, Coimbatore, Salem, and Kodaikanal",
+            "Achieved a turnover of Rs 50 lakh for FFF in India (as of May 2019), with 30 F&B partners and 700 registered users",
+            "Successfully overcame the 'Free is Fake' challenge, building customer trust for FFF's unique model [1]",
+            "Founded Startup News Tamil, positioning it as the 'go-to destination for authentic startup stories and updates in Tamil' [2]",
+            "Established Startup News Tamil as a media partner for incubators, accelerators, co-working spaces, and investors within the Tamil startup ecosystem [2]",
+            "Actively contributes to building and celebrating the Tamil Startup Ecosystem locally and globally [2]",
+            "Demonstrated resilience by overcoming skepticism about his age and capabilities in his entrepreneurial journey [3]"
+        ],
+        "links": {
+            "website": "www.freefamousfood.com",
+            "linkedin": "https://www.linkedin.com/company/startup-news-tamil",
+            "twitter": "https://x.com/freefamousfood"
+        },
+        "industry": "Food & Beverages",
+        "isKeynote": false,
+        "quote": "Our USP is we persuade the consumers on the psychology of 'urge for free offers' and pull large crowd-base traffic to the portal as users. More than convincing the restaurants to partner with us, it was difficult to make people understand that FFF vouchers are not fake. [1]"
+    },
+    {
+        "name": "Sreeja Mohan",
+        "title": "Founder and CEO",
+        "organization": "My Peeli",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077612/peele_qrc28t.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEVfVls75tuqA/profile-displayphoto-shrink_400_400/B4DZbPHZTbG8Ak-/0/1747231545189?e=1758153600&v=beta&t=qE0ZJcyjhM7p6eshcbK0Dhm4bGMcO0V_koZE0NvREDs",
+        "about": "Sreeja Mohan is the Founder and CEO of My Peeli, a multifaceted digital content management agency based in Coimbatore, India. Established in 2017, My Peeli initially focused on content writing services and has since expanded to offer a comprehensive suite of digital solutions.[1] Sreeja's personal journey, including her early marriage and subsequent career in digital marketing, highlights her resilience and adaptability.[2] Her deep passion for the arts, evident in her roles as a lyricist, blogger ('WHY KNOCK?!'), and independent artist, directly influences My Peeli's 'Creative Factory' ethos, enabling the agency to craft compelling and results-driven digital narratives.[1, 3] She also holds significant roles in various financial and trading firms, demonstrating a strong business acumen beyond creative endeavors.[4] Her mission for My Peeli is to empower client stories to transcend business boundaries and stand out in the digital sphere.[1]",
+        "expertise": [
+            "Lyric Writing (Tamil) [3]",
+            "Blogging [3]",
+            "Event Coordination [3]",
+            "Digital Marketing (SEO, Social Media, YouTube, Email, SMS, Google Ads) [1]",
+            "Content Creation (Web, Social Media, Technical, Travel Mass Media, Scriptwriting) [1]",
+            "Branding & Design (Logo, Brochures, Posters, Product Photography, Packaging) [1]",
+            "Web Development [1]",
+            "Digital Education [5]",
+            "Financial Services (Gold Trading, Kuries & Loans, Chits) [4]",
+            "Business Strategy"
+        ],
+        "achievements": [
+            "Founded My Peeli in 2017, evolving it from a content writing service to a comprehensive digital solutions agency [1]",
+            "Established Peeli Digital Academy, offering courses, communities, webinars, and digital products to foster digital literacy and entrepreneurship [6, 5]",
+            "Holds multiple directorships and partnerships in financial and trading firms, including PONALLUR GOLD TRADING FIRM LLP, HUMAN WELFARE KURIES AND LOANS PVT LTD, and HUMANWELFARE CHITS (PONALLUR) PRIVATE LIMITED [4]",
+            "Recognized as Chief Creative Officer of My Peeli, infusing artistic flair into digital strategies [3]",
+            "Known for her creative work as a lyric writer (Tamil), blogger, and independent artist [3]",
+            "Successfully transitioned from early life challenges to build a career in digital marketing [2]"
+        ],
+        "links": {
+            "website": "http://mypeeli.com",
+            "linkedin": "https://www.linkedin.com/in/sreeja-mohan-376532129/?originalSubdomain=in",
+            "twitter": "https://x.com/mypeeli"
+        },
+        "industry": "EdTech",
+        "isKeynote": false, 
+        "quote": "Creativity is not just an art—it’s a strategy. At My Peeli, we turn stories into experiences that outlive campaigns."
+    },
+    {
+        "name": "Dhivya Bharathi",
+        "title": "Founder",
+        "organization": "Uzhamagal",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077973/uzhamagal_apv89n.jpg",
+        "avatarUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ggfD4ncurYlWUYQpEQ_NR7LwK5__TB5WrClAhGgMrdHbvOVLQI36IG-kGCJEI6WhRUhXMkeMtWby12sQiCnyrafOpBT7MGTXnQtfzUNLCnKApc8ChXhw3mgBxjcw5YxWhyphenhyphenbiHK58jzWRk-nJ2WEyzm0blIrPzNHtXpEYNwOmyy4JAthZ6tOUgRKAKm0/s320/Shop%20our%20New%20Collections%20_Website%20link%20in%20bio%20__(JPG)_3.jpg",
+        "about": "Dhivya Bharathi is the visionary founder of Uzhamagal, an affordable women's ethnic wear brand based in Tiruppur, Tamil Nadu. Hailing from a farming family, her journey from 'Uzhavanin Magal' (Farmer's Daughter) to 'Uzhamagal' (Daughter of Labor/Effort) symbolizes empowerment, sustainability, and authenticity.[1, 2] With a B.Tech in Fashion, she started her business with a modest 5,000 rupees, reinvesting all profits to grow her online e-commerce clothing store, primarily through Instagram.[1] Her motivation stems from an ideology to challenge societal norms that often limit women, aiming to empower them through personalized clothing that is 'as unique as you are'.[1, 3]",
+        "expertise": [
+            "E-commerce & Digital Marketing (Instagram-first strategy) [1]",
+            "Lean Startup Methodology [1]",
+            "Customization in Apparel [3]",
+            "Supply Chain Management (sourcing & production) [1]",
+            "Team Building & Remote Workforce Management [1]",
+            "Brand Building & Storytelling (leveraging personal narrative) [1, 2]",
+            "Social Entrepreneurship & Community Empowerment [1]"
+        ],
+        "achievements": [
+            "Founded Uzhamagal, an online e-commerce clothing brand [1]",
+            "Started the business with an initial investment of just 5,000 rupees [1]",
+            "Achieved significant financial growth, generating revenue 'in lakhs' [1]",
+            "Grew Instagram following to over one lakh followers, establishing a strong digital presence [1]",
+            "Expanded the team to include 5 on-site employees and many remote workers [1]",
+            "Implemented strategic outsourcing for design and tailoring works to manage order volume [1]",
+            "Developed a global customer base for Uzhamagal products [1]",
+            "Received awards as an entrepreneur [1]",
+            "Invited as a chief guest to her alma mater [1]",
+            "Featured in Business Minutes, enhancing brand visibility [1]"
+        ],
+        "links": {
+            "website": "https://www.uzhamagal.in/",
+            "linkedin": "https://www.instagram.com/uzhamagal/",
+            "youtube": "https://www.youtube.com/@Uzhamagal"
+        },
+        "industry": "Fashion",
+        "isKeynote": true,
+        "quote": "I grew up with the ideology to break it and overcome it."
     }
-  ]
+]

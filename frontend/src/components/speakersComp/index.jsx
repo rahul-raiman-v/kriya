@@ -37,9 +37,11 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
     : regularSpeakers.filter(s => s.industry === selectedFilter);
 
   const videos = [
-    { id: 1, title: "Kevin Scott on AI and the Future", thumbnail: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&h=200&fit=crop" , link : "https://www.youtube.com/watch?v=jYHLKtWM164" },
-    { id: 2, title: "Padmasree Warrior on Innovation", thumbnail: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=300&h=200&fit=crop" , link : "https://www.youtube.com/watch?v=HNme-j6qY24" },
-    { id: 3, title: "Sandy Carter on Digital Transformation", thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop" , link : "https://www.youtube.com/watch?v=LhiMt84U5Ks" }
+    { id: 1, title: "Q&A Session with Our CEO Arun Prakash | GUVI", thumbnail: "https://i.ytimg.com/vi/HTPyOJzFSHs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAF6bM1A-0O_o_2tgS-1RrVMBXuNQ" , link : "https://www.youtube.com/watch?v=HTPyOJzFSHs" },
+    { id: 2, title: "Why I Built a Brand for Karupatti!? - The 'Palm Era' Startup Story" , thumbnail: "https://i.ytimg.com/vi/XK5bJU01CVc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC0fk0Z4tQizuRblR2OGa2w8eJk_A" , link : "https://www.youtube.com/watch?v=XK5bJU01CVc" },
+    { id: 3, title: "Success Story of CUPTIME By Mr.Prabhkaran Venugopal", 
+      thumbnail: "https://res.cloudinary.com/doko35o8e/image/upload/v1755080090/Screenshot_2025-08-13_154301_ym2fjo.png" , 
+      link : "https://www.youtube.com/watch?v=C17As3izvN0" }
   ];
 
   return (
@@ -341,17 +343,17 @@ const EntrepreneurSpeakersPage = ({speakers}) => {
 
                       <div className="flex space-x-3">
                         {speaker.links.linkedin && (
-                          <a href="#" className="text-gray-500 hover:text-blue-600 transition-colors">
+                          <a href={speaker.links.linkedin} target='_blank' className="text-gray-500 hover:text-blue-600 transition-colors">
                             <Linkedin size={20} />
                           </a>
                         )}
                         {speaker.links.twitter && (
-                          <a href="#" className="text-gray-500 hover:text-blue-400 transition-colors">
+                          <a href={speaker.links.twitter} target='_blank' className="text-gray-500 hover:text-blue-400 transition-colors">
                             <Twitter size={20} />
                           </a>
                         )}
                         {speaker.links.wikipedia && (
-                          <a href="#" className="text-gray-500 hover:text-green-600 transition-colors">
+                          <a href={speaker.links.wikipedia} target='_blank' className="text-gray-500 hover:text-green-600 transition-colors">
                             <Globe size={20} />
                           </a>
                         )}
@@ -465,7 +467,7 @@ export const VideoSection = ({videos}) => {
         <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">Meet Them in Action</h2>
         <div className="flex justify-center space-x-6 overflow-x-auto pb-4">
           {videos.map((video, index) => (
-            <div key={video.id} className="flex-shrink-0 group cursor-pointer">
+            <div key={video.id} className="flex-shrink-0 group cursor-pointer w-72">
               <a href={video.link} target="_blank">
               <div className="relative">
                 <img 
