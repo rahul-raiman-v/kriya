@@ -8,3 +8,4 @@ export * from "./essentials";
 export * from "./layout";
 export * from "./timeline";
 export * from "./background";
+export * from "./teamCard";

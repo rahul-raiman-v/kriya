@@ -237,3 +237,11 @@
 .animate-bounce-small {
   animation: bounce-small 1s infinite;
 }
+
+.no-scrollbar{
+  scrollbar-width: none; 
+}
+
+.no-scrollbar::-webkit-scrollbar{
+  width: 0px;
+}
