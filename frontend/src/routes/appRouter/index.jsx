@@ -1,19 +1,18 @@
 import { Layout } from '../../components';
 import { routes } from '..';
-import { HomePage, SpeakersPage, EventsPage, PageNotFound, TeamsPage, ComboPage, ComboDetail, DevelopersPage} from '../../pages';
+import {
+  HomePage,
+  SpeakersPage,
+  EventsPage,
+  PageNotFound,
+  TeamsPage,
+  ComboPage,
+  ComboDetail,
+  DevelopersPage,
+} from '../../pages';
 
-import { BrowserRouter as Router , Route, Routes } from 'react-router';
+import { BrowserRouter as Router, Route, Routes } from 'react-router';
 import React from 'react';
-
-React.lazy(()=> import('react-router'));
-
-React.lazy(()=> import('../../components'));
-
-React.lazy(()=> import('..'));
-
-React.lazy(()=> import('../../pages'));
-
-React.lazy(()=> import('react'));
 
 export const AppRouter = () => {
   return (
@@ -31,5 +30,5 @@ export const AppRouter = () => {
         </Route>
       </Routes>
     </Router>
-    );
+  );
 };

@@ -1,11 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router';
 
-React.lazy(()=> import('react'));
-
-React.lazy(()=> import('react-router'));
-
-
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Events', path: '/events' },
@@ -101,14 +96,26 @@ export const Header = () => {
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
+            <img
+              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
+              alt=""
+              className="h-13"
+              loading="lazy"
+            />
+            <img
+              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_lpiwdp.png"
+              alt=""
+              className="h-16"
+              loading="lazy"
+            />
+            <img
+              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106865/tbi_c9c0ao.png"
+              alt=""
+              className="h-16"
+              loading="lazy"
+            />
+
             {/* Logo with enhanced hover effect */}
-            <button
-              onClick={() => handleNavigate('/')}
-              className="text-2xl md:text-3xl font-bold tracking-wider bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent slide-in-left hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 rounded-xl px-3 py-2 hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50"
-              aria-label="Go to home page"
-            >
-              KRIYA 1.0
-            </button>
 
             {/* Desktop Navigation with enhanced styling */}
             <nav className="hidden lg:flex flex-grow justify-center items-center space-x-8">
@@ -127,9 +134,7 @@ export const Header = () => {
                   {/* Enhanced animated underline */}
                   <span
                     className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 transition-all duration-300 ${
-                      isActive(link.path)
-                        ? 'w-3/4'
-                        : 'group-hover:w-3/4'
+                      isActive(link.path) ? 'w-3/4' : 'group-hover:w-3/4'
                     }`}
                   ></span>
                 </button>
@@ -137,15 +142,25 @@ export const Header = () => {
             </nav>
 
             {/* Enhanced Registration Button for Desktop */}
-            <div className="hidden lg:block">
+            <div className="hidden lg:flex items-center gap-x-4  ">
               <button
                 onClick={handleRegistration}
-                className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-full font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 <span className="flex items-center">
                   Register Now
-                  <svg className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                  <svg
+                    className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    ></path>
                   </svg>
                 </span>
               </button>
@@ -196,7 +211,6 @@ export const Header = () => {
                     }}
                     aria-current={isActive(link.path) ? 'page' : undefined}
                   >
-                    
                     <div className="flex items-center justify-between">
                       <span className="flex items-center">
                         {link.icon && (
@@ -233,11 +247,27 @@ export const Header = () => {
                 <span className="flex items-center justify-center">
                   Register Now
                   <span className="ml-2 inline-block animate-bounce">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      ></path>
                     </svg>
                   </span>
                 </span>
+              </button>
+              <button
+                className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+                onClick={() => alert('Broucher will be available soon')}
+              >
+                Download Brochure
               </button>
             </nav>
           </div>

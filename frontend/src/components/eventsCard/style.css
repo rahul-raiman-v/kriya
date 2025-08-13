@@ -1,7 +1,7 @@
-.no-scrollbar{
-    scrollbar-width: none; 
+.no-scrollbar {
+  scrollbar-width: none;
 }
 
-.no-scrollbar::-webkit-scrollbar{
-    width: 0px;
+.no-scrollbar::-webkit-scrollbar {
+  width:  0px;
 }

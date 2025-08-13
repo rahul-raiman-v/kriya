@@ -1,400 +1,410 @@
 import React from 'react';
-import { EventsCard , GuestLectureCard } from '../../components';
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "./style.css";
+import { EventsCard, GuestLectureCard } from '../../components';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './style.css';
 const stats = [
   {
-  id: 'events',
-  title: 'Events',
-  img: '/CalendarLogo.png',
-  highlight: false,
-  events: [
+    id: 'events',
+    title: 'Events',
+    img: '/CalendarLogo.png',
+    highlight: false,
+    events: [
       {
-      id: 'event-1',
-      eventTitle: 'Event 1',
-      eventType: 'Electrical Event',
-      date: 'July 14–15, 2025',
-      venue: 'BIT Main Auditorium',
-      img: 'https://i0.wp.com/roboticsindia.live/wp-content/uploads/2022/08/Robowars_Thumbnail.jpg?resize=800%2C417&ssl=1',
-      highlight: true,
-      tabs: [
+        id: 'event-1',
+        eventTitle: 'Event 1',
+        eventType: 'Electrical Event',
+        date: 'July 14–15, 2025',
+        venue: 'BIT Main Auditorium',
+        img: 'https://i0.wp.com/roboticsindia.live/wp-content/uploads/2022/08/Robowars_Thumbnail.jpg?resize=800%2C417&ssl=1',
+        highlight: true,
+        tabs: [
           {
-          id: 'description',
-          title: 'Description',
-          content:
+            id: 'description',
+            title: 'Description',
+            content:
               'We are excited to invite you to a special two-day guest lecture event taking place at the BIT Main Auditorium on July 14–15, 2025, from 9:00 AM to 4:30 PM each day. This enriching program will feature a lineup of distinguished industry experts who will share valuable insights, real-world experiences, and emerging trends across various fields.',
           },
           {
-              id: 'rounds',
-              title: 'Rounds',
-              content: [
+            id: 'rounds',
+            title: 'Rounds',
+            content: [
               {
-                  id:"1",
-                  title:"Round 1",
-                  content:"Round 1 will go like this",
+                id: '1',
+                title: 'Round 1',
+                content: 'Round 1 will go like this',
               },
               {
-                  id:"2",
-                  title:"Round 1",
-                  content:"Round 2 will go like this",
+                id: '2',
+                title: 'Round 1',
+                content: 'Round 2 will go like this',
               },
               {
-                  id:"3",
-                  title:"Round 3",
-                  content:"Round 3 will go like this",
+                id: '3',
+                title: 'Round 3',
+                content: 'Round 3 will go like this',
               },
-              ],
+            ],
           },
           {
-          id: 'rules',
-          title: 'Rules',
-          content: [
+            id: 'rules',
+            title: 'Rules',
+            content: [
               {
-                  id:"1",
-                  title:"Rule 1",
-                  content:"No plagiarism."
+                id: '1',
+                title: 'Rule 1',
+                content: 'No plagiarism.',
               },
               {
-                  id:"2",
-                  title:"Rule 2",
-                  content:"Team size: 2-4."
+                id: '2',
+                title: 'Rule 2',
+                content: 'Team size: 2-4.',
               },
               {
-                  id:"3",
-                  title:"Rule 3",
-                  content:"Time limit: 10 min."
+                id: '3',
+                title: 'Rule 3',
+                content: 'Time limit: 10 min.',
               },
-          ],
+            ],
           },
           {
             id: 'rewards',
             title: 'Rewards',
-            content:[
-                {
-                    id:"1",
-                    title:"Reward 1",
-                    content:"Winners get certificates and cash prizes.",
-                },
-                {
-                    id:"2",
-                    title:"Reward 2",
-                    content:"Runners get only certificate.",
-                },
-                {
-                    id:"3",
-                    title:"Reward 3",
-                    content:"Participation certificate is available."
-                }
+            content: [
+              {
+                id: '1',
+                title: 'Reward 1',
+                content: 'Winners get certificates and cash prizes.',
+              },
+              {
+                id: '2',
+                title: 'Reward 2',
+                content: 'Runners get only certificate.',
+              },
+              {
+                id: '3',
+                title: 'Reward 3',
+                content: 'Participation certificate is available.',
+              },
             ],
           },
           {
-          id: 'contact',
-          title: 'Contact',
-          content:[{
-              id:'person1',
-              name:'Person 1',
-              designation:'Designation 1',
-              email:'person1@example.com',
-              phone:'1234567890',
-              img:'https://via.placeholder.com/150'
+            id: 'contact',
+            title: 'Contact',
+            content: [
+              {
+                id: 'person1',
+                name: 'Person 1',
+                designation: 'Designation 1',
+                email: 'person1@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
+              },
+              {
+                id: 'person2',
+                name: 'Person 2',
+                designation: 'Designation 2',
+                email: 'person2@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
+              },
+            ],
           },
-          {
-              id:'person2',
-              name:'Person 2',
-              designation:'Designation 2',
-              email:'person2@example.com',
-              phone:'1234567890',
-              img:'https://via.placeholder.com/150'
-          }]
-          },
-      ],
+        ],
       },
       {
-      id: 'event-2',
-      eventTitle: 'Event 2',
-      eventType: 'Electrical Event',
-      date: 'July 14–15, 2025',
-      venue: 'BIT Main Auditorium',
-      img: 'https://tse2.mm.bing.net/th/id/OIP.TNYaNdxaxaSwUi-JWSUqkAHaEN?cb=thfc1&w=590&h=336&rs=1&pid=ImgDetMain&o=7&rm=3',
-      highlight: true,
-      tabs: [
+        id: 'event-2',
+        eventTitle: 'Event 2',
+        eventType: 'Electrical Event',
+        date: 'July 14–15, 2025',
+        venue: 'BIT Main Auditorium',
+        img: 'https://tse2.mm.bing.net/th/id/OIP.TNYaNdxaxaSwUi-JWSUqkAHaEN?cb=thfc1&w=590&h=336&rs=1&pid=ImgDetMain&o=7&rm=3',
+        highlight: true,
+        tabs: [
           {
-              id: 'description',
-              title: 'Description',
-              content:
+            id: 'description',
+            title: 'Description',
+            content:
               'We are excited to invite you to a special two-day guest lecture event taking place at the BIT Main Auditorium on July 14–15, 2025, from 9:00 AM to 4:30 PM each day. This enriching program will feature a lineup of distinguished industry experts who will share valuable insights, real-world experiences, and emerging trends across various fields.',
           },
           {
-              id: 'rounds',
-              title: 'Rounds',
-              content: [
+            id: 'rounds',
+            title: 'Rounds',
+            content: [
               {
-                  id:"1",
-                  title:"Round 1",
-                  content:"Round 1 will go like this",
+                id: '1',
+                title: 'Round 1',
+                content: 'Round 1 will go like this',
               },
               {
-                  id:"2",
-                  title:"Round 1",
-                  content:"Round 2 will go like this",
+                id: '2',
+                title: 'Round 1',
+                content: 'Round 2 will go like this',
               },
               {
-                  id:"3",
-                  title:"Round 3",
-                  content:"Round 3 will go like this",
+                id: '3',
+                title: 'Round 3',
+                content: 'Round 3 will go like this',
               },
-              ],
+            ],
           },
           {
-          id: 'rules',
-          title: 'Rules',
-          content: [
+            id: 'rules',
+            title: 'Rules',
+            content: [
               {
-                  id:"1",
-                  title:"Rule 1",
-                  content:"No plagiarism."
+                id: '1',
+                title: 'Rule 1',
+                content: 'No plagiarism.',
               },
               {
-                  id:"2",
-                  title:"Rule 2",
-                  content:"Team size: 2-4."
+                id: '2',
+                title: 'Rule 2',
+                content: 'Team size: 2-4.',
               },
               {
-                  id:"3",
-                  title:"Rule 3",
-                  content:"Time limit: 10 min."
+                id: '3',
+                title: 'Rule 3',
+                content: 'Time limit: 10 min.',
               },
-          ],
+            ],
           },
           {
-          id: 'rewards',
-          title: 'Rewards',
-          content:[
+            id: 'rewards',
+            title: 'Rewards',
+            content: [
               {
-                  id:"1",
-                  title:"Reward 1",
-                  content:"Winners get certificates and cash prizes.",
+                id: '1',
+                title: 'Reward 1',
+                content: 'Winners get certificates and cash prizes.',
               },
               {
-                  id:"2",
-                  title:"Reward 2",
-                  content:"Runners get only certificate.",
+                id: '2',
+                title: 'Reward 2',
+                content: 'Runners get only certificate.',
               },
               {
-                  id:"3",
-                  title:"Reward 3",
-                  content:"Participation certificate is available."
-              }
-          ],
+                id: '3',
+                title: 'Reward 3',
+                content: 'Participation certificate is available.',
+              },
+            ],
           },
           {
-          id: 'contact',
-          title: 'Contact',
-          content:[{
-              id:'person1',
-              name:'Person 1',
-              designation:'Designation 1',
-              email:'person1@example.com',
-              phone:'1234567890',
-              img:'https://via.placeholder.com/150'
+            id: 'contact',
+            title: 'Contact',
+            content: [
+              {
+                id: 'person1',
+                name: 'Person 1',
+                designation: 'Designation 1',
+                email: 'person1@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
+              },
+              {
+                id: 'person2',
+                name: 'Person 2',
+                designation: 'Designation 2',
+                email: 'person2@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
+              },
+            ],
           },
-          {
-              id:'person2',
-              name:'Person 2',
-              designation:'Designation 2',
-              email:'person2@example.com',
-              phone:'1234567890',
-              img:'https://via.placeholder.com/150'
-          }]
-          },
-      ],
+        ],
       },
-  ],
+    ],
   },
   {
-  id: 'workshop',
-  title: 'Workshop',
-  img: '/WorkshopLogo.png',
-  highlight: false,
-  events: [
+    id: 'workshop',
+    title: 'Workshop',
+    img: '/WorkshopLogo.png',
+    highlight: false,
+    events: [
       {
-      id: 'workshop-1',
-      eventTitle: 'Workshop 1',
-      eventType: 'Electrical Workshop',
-      img: 'https://st2.depositphotos.com/1038076/6328/i/600/depositphotos_63287513-stock-photo-workshop.jpg',
-      date: 'July 15–16, 2025',
-      venue: 'BIT Main Auditorium',
-      highlight: true,
-      tabs: [
+        id: 'workshop-1',
+        eventTitle: 'Workshop 1',
+        eventType: 'Electrical Workshop',
+        img: 'https://st2.depositphotos.com/1038076/6328/i/600/depositphotos_63287513-stock-photo-workshop.jpg',
+        date: 'July 15–16, 2025',
+        venue: 'BIT Main Auditorium',
+        highlight: true,
+        tabs: [
           {
-          id: 'description',
-          title: 'Description',
-          content:
+            id: 'description',
+            title: 'Description',
+            content:
               'We are excited to invite you to a special two-day workshop event taking place at the BIT Main Auditorium on July 14–15, 2025, from 9:00 AM to 4:30 PM each day.',
           },
           {
-          id: 'prerequisites',
-          title: 'Prerequisites',
-          content: ['Basic programming knowledge and laptop required.'],
+            id: 'prerequisites',
+            title: 'Prerequisites',
+            content: ['Basic programming knowledge and laptop required.'],
           },
           {
-          id: 'speakers',
-          title: 'Speakers',
-          content: [
+            id: 'speakers',
+            title: 'Speakers',
+            content: [
               {
-                  id:"1",
-                  speakerName:"'John Doe",
+                id: '1',
+                speakerName: "'John Doe",
               },
               {
-                  id:"2",
-                  speakerName:'Jane Smith',
-              }
-          ],
+                id: '2',
+                speakerName: 'Jane Smith',
+              },
+            ],
           },
           {
-          id: 'contact',
-          title: 'Contact',
-          content:[{
-              id:'person1',
-              name:'Person 1',
-              designation:'Designation 1',
-              email:'person1@example.com',
-              phone:'1234567890',
-              img:'https://via.placeholder.com/150'
+            id: 'contact',
+            title: 'Contact',
+            content: [
+              {
+                id: 'person1',
+                name: 'Person 1',
+                designation: 'Designation 1',
+                email: 'person1@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
+              },
+              {
+                id: 'person2',
+                name: 'Person 2',
+                designation: 'Designation 2',
+                email: 'person2@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
+              },
+            ],
           },
-          {
-              id:'person2',
-              name:'Person 2',
-              designation:'Designation 2',
-              email:'person2@example.com',
-              phone:'1234567890',
-              img:'https://via.placeholder.com/150'
-          }],
-          },
-      ],
+        ],
       },
-  ],
+    ],
   },
   {
-  id: 'guest-lecture',
-  title: 'Guest Lecture',
-  img: '/GuestLectureLogo.png',
-  highlight: false,
-  events: [
+    id: 'guest-lecture',
+    title: 'Guest Lecture',
+    img: '/GuestLectureLogo.png',
+    highlight: false,
+    events: [
       {
-      id: 'guestlecture1',
-      eventTitle: 'AI and Machine Learning',
-      speakerName: 'Dr Priya Sharma',
-      speakerDesignation: 'Professor of Computer Science, Google',
-      talkTitle: 'AI and Machine Learning',
-      talkDescription: 'An in-depth look at the future of AI and its applications.',
-      duration: '45 mins',
-      date: 'July 14, 2025',
-      venue: 'BIT Main Auditorium',
-      time: '12:00 PM',
-      img: './GuestLecturerImg.png',
-      highlight: true,
-      tabs: [
+        id: 'guestlecture1',
+        eventTitle: 'AI and Machine Learning',
+        speakerName: 'Dr Priya Sharma',
+        speakerDesignation: 'Professor of Computer Science, Google',
+        talkTitle: 'AI and Machine Learning',
+        talkDescription:
+          'An in-depth look at the future of AI and its applications.',
+        duration: '45 mins',
+        date: 'July 14, 2025',
+        venue: 'BIT Main Auditorium',
+        time: '12:00 PM',
+        img: './GuestLecturerImg.png',
+        highlight: true,
+        tabs: [
           {
-          id: 'description',
-          title: 'Description',
+            id: 'description',
+            title: 'Description',
           },
           {
-          id: 'contact',
-          title: 'Contact',
-          content:[
+            id: 'contact',
+            title: 'Contact',
+            content: [
               {
-              id: 'person1',
-              name: 'Person 1',
-              designation: 'Designation 1',
-              email: 'person1@example.com',
-              phone: '1234567890',
-              img: 'https://via.placeholder.com/150'
+                id: 'person1',
+                name: 'Person 1',
+                designation: 'Designation 1',
+                email: 'person1@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
               },
               {
-              id: 'person2',
-              name: 'Person 2',
-              designation: 'Designation 2',
-              email: 'person2@example.com',
-              phone: '1234567890',
-              img: 'https://via.placeholder.com/150'
+                id: 'person2',
+                name: 'Person 2',
+                designation: 'Designation 2',
+                email: 'person2@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
               },
-          ]
-          }
-      ]
+            ],
+          },
+        ],
       },
       {
-      id: 'guestlecture2',
-      eventTitle: 'AI and Machine Learning',
-      speakerName: 'Dr Arya Sharma',
-      speakerDesignation: 'Professor of Computer Science, IBM',
-      talkTitle: 'AI and Machine Learning',
-      talkDescription: 'An in-depth look at the future of AI and its applications.',
-      duration: '45 mins',
-      date: 'July 14, 2025',
-      venue: 'BIT Main Auditorium',
-      time: '12:00 PM',
-      img: './GuestLecturerImg.png',
-      highlight: true,
-      tabs: [
+        id: 'guestlecture2',
+        eventTitle: 'AI and Machine Learning',
+        speakerName: 'Dr Arya Sharma',
+        speakerDesignation: 'Professor of Computer Science, IBM',
+        talkTitle: 'AI and Machine Learning',
+        talkDescription:
+          'An in-depth look at the future of AI and its applications.',
+        duration: '45 mins',
+        date: 'July 14, 2025',
+        venue: 'BIT Main Auditorium',
+        time: '12:00 PM',
+        img: './GuestLecturerImg.png',
+        highlight: true,
+        tabs: [
           {
-          id: 'description',
-          title: 'Description',
+            id: 'description',
+            title: 'Description',
           },
           {
-          id: 'contact',
-          title: 'Contact',
-          content:[
+            id: 'contact',
+            title: 'Contact',
+            content: [
               {
-              id: 'person1',
-              name: 'Person 1',
-              designation: 'Designation 1',
-              email: 'person1@example.com',
-              phone: '1234567890',
-              img: 'https://via.placeholder.com/150'
+                id: 'person1',
+                name: 'Person 1',
+                designation: 'Designation 1',
+                email: 'person1@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
               },
               {
-              id: 'person2',
-              name: 'Person 2',
-              designation: 'Designation 2',
-              email: 'person2@example.com',
-              phone: '1234567890',
-              img: 'https://via.placeholder.com/150'
+                id: 'person2',
+                name: 'Person 2',
+                designation: 'Designation 2',
+                email: 'person2@example.com',
+                phone: '1234567890',
+                img: 'https://via.placeholder.com/150',
               },
-          ]
-          }
-      ]
+            ],
+          },
+        ],
       },
-  ],
+    ],
   },
 ];
-
-
-
 
 export const EventsPage = () => {
   const [selectedEventId, setSelectedEventId] = React.useState('all');
   const [searchQuery, setSearchQuery] = React.useState('');
   const [searchResults, setSearchResults] = React.useState([]);
   const [isSearching, setIsSearching] = React.useState(false);
-  
+
   // Build augmented events list with category metadata
-  const allEventsAugmented = stats.flatMap(category => 
-    category.events.map(event => ({
+  const allEventsAugmented = stats.flatMap((category) =>
+    category.events.map((event) => ({
       ...event,
       categoryTitle: category.title,
-      categoryId: category.id
+      categoryId: category.id,
     }))
   );
 
   // Add a synthetic "All" category at the beginning
   const allCategoryIcon = (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-20 h-20 text-indigo-600">
-      <path d="M3 5.25A2.25 2.25 0 0 1 5.25 3h3.5A2.25 2.25 0 0 1 11 5.25v3.5A2.25 2.25 0 0 1 8.75 11h-3.5A2.25 2.25 0 0 1 3 8.75v-3.5Zm9.5 0A2.25 2.25 0 0 1 14.75 3h3.5A2.25 2.25 0 0 1 20.5 5.25v3.5A2.25 2.25 0 0 1 18.25 11h-3.5A2.25 2.25 0 0 1 12.5 8.75v-3.5Zm-9.5 9.5A2.25 2.25 0 0 1 5.25 12h3.5A2.25 2.25 0 0 1 11 14.25v3.5A2.25 2.25 0 0 1 8.75 20h-3.5A2.25 2.25 0 0 1 3 17.75v-3.5Zm9.5 0A2.25 2.25 0 0 1 14.75 12h3.5A2.25 2.25 0 0 1 20.5 14.25v3.5A2.25 2.25 0 0 1 18.25 20h-3.5A2.25 2.25 0 0 1 12.5 17.75v-3.5Z"/>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="w-20 h-20 text-indigo-600"
+    >
+      <path d="M3 5.25A2.25 2.25 0 0 1 5.25 3h3.5A2.25 2.25 0 0 1 11 5.25v3.5A2.25 2.25 0 0 1 8.75 11h-3.5A2.25 2.25 0 0 1 3 8.75v-3.5Zm9.5 0A2.25 2.25 0 0 1 14.75 3h3.5A2.25 2.25 0 0 1 20.5 5.25v3.5A2.25 2.25 0 0 1 18.25 11h-3.5A2.25 2.25 0 0 1 12.5 8.75v-3.5Zm-9.5 9.5A2.25 2.25 0 0 1 5.25 12h3.5A2.25 2.25 0 0 1 11 14.25v3.5A2.25 2.25 0 0 1 8.75 20h-3.5A2.25 2.25 0 0 1 3 17.75v-3.5Zm9.5 0A2.25 2.25 0 0 1 14.75 12h3.5A2.25 2.25 0 0 1 20.5 14.25v3.5A2.25 2.25 0 0 1 18.25 20h-3.5A2.25 2.25 0 0 1 12.5 17.75v-3.5Z" />
     </svg>
   );
 
@@ -409,7 +419,9 @@ export const EventsPage = () => {
     ...stats,
   ];
 
-  const selectedCategory = categoriesWithAll.find((item) => item.id === selectedEventId);
+  const selectedCategory = categoriesWithAll.find(
+    (item) => item.id === selectedEventId
+  );
 
   // Get all events from all categories for carousel (augmented)
   const allEvents = allEventsAugmented;
@@ -417,7 +429,7 @@ export const EventsPage = () => {
   // Search functionality
   const handleSearch = (query) => {
     setSearchQuery(query);
-    
+
     if (!query.trim()) {
       setSearchResults([]);
       setIsSearching(false);
@@ -425,67 +437,72 @@ export const EventsPage = () => {
     }
 
     setIsSearching(true);
-    
+
     // Search through all events
     const results = [];
-    stats.forEach(category => {
-      category.events.forEach(event => {
+    stats.forEach((category) => {
+      category.events.forEach((event) => {
         const searchableText = [
           event.eventTitle,
           event.eventType,
           event.date,
           event.venue,
           category.title,
-          ...(event.tabs ? event.tabs.map(tab => tab.content) : []),
-          ...(event.speakerName ? [event.speakerName, event.talkTitle, event.talkDescription] : [])
-        ].join(' ').toLowerCase();
-        
+          ...(event.tabs ? event.tabs.map((tab) => tab.content) : []),
+          ...(event.speakerName
+            ? [event.speakerName, event.talkTitle, event.talkDescription]
+            : []),
+        ]
+          .join(' ')
+          .toLowerCase();
+
         if (searchableText.includes(query.toLowerCase())) {
           results.push({
             ...event,
             categoryTitle: category.title,
-            categoryId: category.id
+            categoryId: category.id,
           });
         }
       });
     });
-    
+
     setSearchResults(results);
   };
 
   const goToEvent = (event) => {
     // Set the selected category
     setSelectedEventId(event.categoryId);
-    
+
     // Clear search
     setSearchQuery('');
     setSearchResults([]);
     setIsSearching(false);
-    
+
     // Scroll to the event card after a short delay to ensure the category is loaded
     setTimeout(() => {
       const eventElement = document.getElementById(`event-${event.id}`);
       if (eventElement) {
         eventElement.scrollIntoView({
           behavior: 'smooth',
-          block: 'center'
+          block: 'center',
         });
       }
     }, 100);
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-blue-50 to-purple-100 p-6">
+    <div className="bg-gradient-to-br from-pink-100 via-blue-50 to-purple-100 p-6">
       {/* Header Section */}
-       <div className="text-center mb-12">
-         <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-           Events & Activities
-         </h1>
-         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-           Discover exciting events, workshops, and guest lectures happening at our institution
-         </p>
-       </div>
-       
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+          Events & Activities
+        </h1>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Discover exciting events, workshops, and guest lectures happening at
+          our institution
+        </p>
+      </div>
+
       {/* {Swiper} */}
       <div className="w-full max-w-7xl mx-auto mb-16 px-4 sm:px-6 lg:px-8">
         <div className="w-full relative rounded-3xl overflow-hidden shadow-2xl  border border-white/0">
@@ -506,20 +523,18 @@ export const EventsPage = () => {
             {allEvents.map((event) => (
               <SwiperSlide key={event.id}>
                 <div className="w-full border rounded-3xl border-grey-700 p-4 sm:p-6 lg:p-8 relative min-h-[400px] sm:min-h-[450px] lg:h-98 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex flex-col lg:flex-row items-center justify-center shadow-lg gap-4 sm:gap-6 lg:gap-8">
-                  
                   {/* Image */}
                   <div className="w-full lg:w-1/3 h-48 sm:h-64 lg:h-80 flex-shrink-0 order-1 lg:order-1">
                     <img
                       src={event.img}
                       alt={event.eventTitle}
-                      loading='lazy'
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
 
                   {/* Event Details */}
                   <div className="w-full lg:w-2/3 text-gray-800 flex flex-col justify-start order-2 lg:order-2 lg:pl-8">
-                    
                     {/* Category Tag */}
                     <div className="mb-3 sm:mb-4 lg:mb-5 flex justify-center lg:justify-start">
                       <span className="inline-block px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs sm:text-sm font-semibold rounded-full shadow-lg tracking-wide">
@@ -537,23 +552,35 @@ export const EventsPage = () => {
                       {event.categoryId === 'guest-lecture' ? (
                         <>
                           <p className="text-center lg:text-left">
-                            <span className="font-semibold text-blue-600">Speaker:</span> {event.speakerName || 'TBA'}
+                            <span className="font-semibold text-blue-600">
+                              Speaker:
+                            </span>{' '}
+                            {event.speakerName || 'TBA'}
                           </p>
                         </>
                       ) : (
                         event.eventType && (
                           <p className="text-center lg:text-left">
-                            <span className="font-semibold text-blue-600">Type:</span> {event.eventType}
+                            <span className="font-semibold text-blue-600">
+                              Type:
+                            </span>{' '}
+                            {event.eventType}
                           </p>
                         )
                       )}
 
                       {/* Common Details */}
                       <p className="text-center lg:text-left">
-                        <span className="font-semibold text-blue-600">Date:</span> {event.date}
+                        <span className="font-semibold text-blue-600">
+                          Date:
+                        </span>{' '}
+                        {event.date}
                       </p>
                       <p className="text-center lg:text-left">
-                        <span className="font-semibold text-blue-600">Venue:</span> {event.venue}
+                        <span className="font-semibold text-blue-600">
+                          Venue:
+                        </span>{' '}
+                        {event.venue}
                       </p>
                     </div>
                   </div>
@@ -574,7 +601,7 @@ export const EventsPage = () => {
             Select a category to explore available events
           </p>
         </div>
-        
+
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 justify-items-center"
           role="tablist"
@@ -592,9 +619,8 @@ export const EventsPage = () => {
             >
               {/* Background Pattern */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
+
               <div className="relative z-10 flex flex-col sm:flex-row sm:justify-between items-center w-full gap-3 sm:gap-4">
-                
                 {/* Content Section */}
                 <div className="text-center sm:text-left order-2 sm:order-1 flex-1">
                   <h3 className="text-lg sm:text-xl lg:text-xl font-semibold text-gray-800 mb-1 sm:mb-2">
@@ -604,15 +630,15 @@ export const EventsPage = () => {
                     {item.events.length}
                   </p>
                 </div>
-                
+
                 {/* Icon Section */}
                 <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl sm:rounded-2xl p-2 sm:p-3 lg:p-4 group-hover:from-blue-200 group-hover:to-purple-200 transition-all duration-300 order-1 sm:order-2 flex-shrink-0">
                   {typeof item.img === 'string' ? (
-                    <img 
-                      src={item.img} 
-                      alt="" 
-                      className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 object-contain" 
-                      loading='lazy' 
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 object-contain"
+                      loading="lazy"
                     />
                   ) : (
                     <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 flex items-center justify-center">
@@ -629,75 +655,90 @@ export const EventsPage = () => {
       {/* Events List Section */}
       {selectedCategory && (
         <div className="w-full max-w-7xl mx-auto">
-                     <div className="text-center mb-12">
-             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-               {selectedCategory.title} - Available Events
-             </h2>
-             <p className="text-gray-600 mb-8">
-               {selectedCategory.id === 'all'
-                 ? `Explore all ${selectedCategory.events.length} events below`
-                 : `Explore all ${selectedCategory.events.length} ${selectedCategory.title.toLowerCase()} below`}
-             </p>
-             
-             {/* Search Bar */}
-             <div className="flex justify-center mb-8">
-               <div className="relative w-96 text-black">
-                 <input
-                   type="text"
-                   value={searchQuery}
-                   onChange={(e) => handleSearch(e.target.value)}
-                   placeholder="Search events..."
-                   className="w-full px-4 py-3 pl-12 pr-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 hover:bg-white/90 placeholder-gray-500"
-                 />
-                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                   <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                   </svg>
-                 </div>
-                 
-                  {/* Search Results Dropdown */}
-                  {isSearching && searchResults.length > 0 && (
-                    <div
-                      className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 max-h-96 overflow-y-auto z-50"
-                      role="listbox"
-                    >
-                      {searchResults.map((result, index) => (
-                        <button
-                          key={`${result.categoryId}-${result.id}-${index}`}
-                          onClick={() => goToEvent(result)}
-                          className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-100 last:border-b-0 transition-colors duration-200 focus:outline-none focus:bg-gray-100"
-                          role="option"
-                        >
-                          <div className="flex items-center space-x-3">
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center">
-                              <span className="text-indigo-600 font-semibold text-sm">
-                                {result.categoryTitle.charAt(0)}
-                              </span>
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <p className="text-sm font-semibold text-gray-900 truncate">
-                                {result.eventTitle}
-                              </p>
-                              <p className="text-xs text-gray-500 truncate">
-                                {result.categoryTitle} • {result.date} • {result.venue}
-                              </p>
-                            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              {selectedCategory.title} - Available Events
+            </h2>
+            <p className="text-gray-600 mb-8">
+              {selectedCategory.id === 'all'
+                ? `Explore all ${selectedCategory.events.length} events below`
+                : `Explore all ${selectedCategory.events.length} ${selectedCategory.title.toLowerCase()} below`}
+            </p>
+
+            {/* Search Bar */}
+            <div className="flex justify-center mb-8">
+              <div className="relative w-96 text-black">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => handleSearch(e.target.value)}
+                  placeholder="Search events..."
+                  className="w-full px-4 py-3 pl-12 pr-4 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 hover:bg-white/90 placeholder-gray-500"
+                />
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <svg
+                    className="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </div>
+
+                {/* Search Results Dropdown */}
+                {isSearching && searchResults.length > 0 && (
+                  <div
+                    className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 max-h-96 overflow-y-auto z-50"
+                    role="listbox"
+                  >
+                    {searchResults.map((result, index) => (
+                      <button
+                        key={`${result.categoryId}-${result.id}-${index}`}
+                        onClick={() => goToEvent(result)}
+                        className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-100 last:border-b-0 transition-colors duration-200 focus:outline-none focus:bg-gray-100"
+                        role="option"
+                      >
+                        <div className="flex items-center space-x-3">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center">
+                            <span className="text-indigo-600 font-semibold text-sm">
+                              {result.categoryTitle.charAt(0)}
+                            </span>
                           </div>
-                        </button>
-                      ))}
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm font-semibold text-gray-900 truncate">
+                              {result.eventTitle}
+                            </p>
+                            <p className="text-xs text-gray-500 truncate">
+                              {result.categoryTitle} • {result.date} •{' '}
+                              {result.venue}
+                            </p>
+                          </div>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {/* No Results Message */}
+                {isSearching &&
+                  searchQuery.trim() &&
+                  searchResults.length === 0 && (
+                    <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 p-4 z-50">
+                      <p className="text-gray-500 text-center">
+                        No events found for "{searchQuery}"
+                      </p>
                     </div>
                   )}
-                 
-                 {/* No Results Message */}
-                 {isSearching && searchQuery.trim() && searchResults.length === 0 && (
-                   <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-200 p-4 z-50">
-                     <p className="text-gray-500 text-center">No events found for "{searchQuery}"</p>
-                   </div>
-                 )}
-               </div>
-             </div>
-           </div>
-          
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-8">
             {selectedCategory.id === 'all'
               ? selectedCategory.events.map((event) => (
@@ -775,4 +816,4 @@ export const EventsPage = () => {
       )}
     </div>
   );
-}
+};

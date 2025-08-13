@@ -1,17 +1,7 @@
-import React from "react";
-import { EntrepreneurSpeakersPage } from "../../components";
-import speakersData from './speakersData.json' ;
-
-React.lazy(()=> import('react'));
-
-React.lazy(()=> import('../../components'));
-
-React.lazy(()=> import('./speakersData.json'));
-
+import React from 'react';
+import { EntrepreneurSpeakersPage } from '../../components';
+import speakersData from './speakersData.json';
 
 export const SpeakersPage = () => {
-
-  return (
-    <EntrepreneurSpeakersPage speakers={speakersData} />
-  )
+  return <EntrepreneurSpeakersPage speakers={speakersData} />;
 };

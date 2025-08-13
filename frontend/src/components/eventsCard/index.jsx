@@ -5,19 +5,6 @@ import { MinCard } from '../../components';
 import './style.css';
 import { useNavigate } from 'react-router';
 
-React.lazy(()=> import('react'));
-
-React.lazy(()=> import('prop-types'));
-
-React.lazy(()=> import('lucide-react'));
-
-React.lazy(()=> import('../../components'));
-
-React.lazy(()=> import('./style.css'));
-
-React.lazy(()=> import('react-router'));
-
-
 export function EventsCard({
   eventTabs = [],
   eventTitle = 'Untitled Event',
@@ -34,17 +21,40 @@ export function EventsCard({
   const renderTabContent = () => {
     const tabTitle = activeTab.toLowerCase();
 
-    if (['contact', 'rounds', 'rules', 'rewards', 'prerequisites', 'speakers'].includes(tabTitle)) {
+    if (
+      [
+        'contact',
+        'rounds',
+        'rules',
+        'rewards',
+        'prerequisites',
+        'speakers',
+      ].includes(tabTitle)
+    ) {
       return (
         <MinCard
           key={activeTabData.id}
           title={activeTabData.id}
-          contacts={activeTabData.id === 'contact' ? activeTabData.content : undefined}
-          rounds={activeTabData.id === 'rounds' ? activeTabData.content : undefined}
-          rules={activeTabData.id === 'rules' ? activeTabData.content : undefined}
-          rewards={activeTabData.id === 'rewards' ? activeTabData.content : undefined}
-          prerequisites={activeTabData.id === 'prerequisites' ? activeTabData.content : undefined}
-          speakers={activeTabData.id === 'speakers' ? activeTabData.content : undefined}
+          contacts={
+            activeTabData.id === 'contact' ? activeTabData.content : undefined
+          }
+          rounds={
+            activeTabData.id === 'rounds' ? activeTabData.content : undefined
+          }
+          rules={
+            activeTabData.id === 'rules' ? activeTabData.content : undefined
+          }
+          rewards={
+            activeTabData.id === 'rewards' ? activeTabData.content : undefined
+          }
+          prerequisites={
+            activeTabData.id === 'prerequisites'
+              ? activeTabData.content
+              : undefined
+          }
+          speakers={
+            activeTabData.id === 'speakers' ? activeTabData.content : undefined
+          }
         />
       );
     }
@@ -63,9 +73,10 @@ export function EventsCard({
   };
 
   return (
-    <div className="flex min-h-[200px] flex-col lg:flex-row justify-between items-stretch gap-6 p-6 
-      rounded-2xl border border-gray-200 bg-white shadow-md hover:border-blue-200 hover:shadow-lg transition-all duration-300">
-      
+    <div
+      className="flex min-h-[200px] flex-col lg:flex-row justify-between items-stretch gap-6 p-6 
+      rounded-2xl border border-gray-200 bg-white shadow-md hover:border-blue-200 hover:shadow-lg transition-all duration-300"
+    >
       {/* Left Side */}
       <div className="flex-1 flex flex-col">
         {/* Date & Location */}
@@ -126,12 +137,20 @@ export function EventsCard({
         </div>
 
         {/* Register Button */}
-        <button
-          className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
-          onClick={() => navigate('/combo')}
-        >
-          Register Now
-        </button>
+        <div className="flex items-center gap-x-4">
+          <button
+            className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+            onClick={() => navigate('/combo')}
+          >
+            Register Now
+          </button>
+          <button
+            className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+            onClick={() => alert('Broucher will be available soon')}
+          >
+            Download Brochure
+          </button>
+        </div>
       </div>
 
       {/* Right Side - Image for desktop */}

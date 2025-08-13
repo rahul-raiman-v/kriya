@@ -4,7 +4,6 @@ import {
   Calendar,
   MapPin,
   Users,
-  Award,
   ChevronDown,
   Menu,
   X,
@@ -17,18 +16,6 @@ import {
   Twitter,
   Linkedin,
 } from 'lucide-react';
-
-import { useNavigate} from "react-router"
-
-React.lazy(() => import('lucide-react'));
-
-React.lazy(() => import('react-simple-typewriter'));
-
-React.lazy(() => import('react'));
-
-
-
-
 
 // Floating particle component
 const FloatingParticle = ({ style }) => (
@@ -85,10 +72,8 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '' }) => {
 
 export const HomePage = () => {
   const [particles, setParticles] = React.useState([]);
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
-  const router = useNavigate();
 
   // Scroll effect
   React.useEffect(() => {
@@ -150,108 +135,28 @@ export const HomePage = () => {
       title: 'Innovation Workshop',
       description: 'Hands-on workshop exploring cutting-edge technologies',
       icon: '🚀',
-      
     },
     {
       title: 'Tech Talks',
       description: 'Industry experts sharing insights and trends',
       icon: '💡',
-      
     },
     {
       title: 'Startup Pitch',
       description: 'Students present their innovative startup ideas',
       icon: '🎯',
-      
     },
     {
       title: 'Networking Session',
       description: 'Connect with peers and industry professionals',
       icon: '🤝',
-      
     },
   ];
-
-  const speakers = [
-    {
-      name: 'Dr. Sarah Johnson',
-      title: 'AI Research Director',
-      company: 'Tech Innovations Inc.',
-      image:
-        'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face',
-    },
-    {
-      name: 'Mark Thompson',
-      title: 'Startup Founder',
-      company: 'NextGen Solutions',
-      image:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face',
-    },
-    {
-      name: 'Prof. Lisa Chen',
-      title: 'Technology Evangelist',
-      company: 'Future Labs',
-      image:
-        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face',
-    },
-  ];
-    const developers = [
-      {
-        id: 1,
-        name:"Rahul P",
-        designation:"Frontend Developer",
-        image:"https://media.licdn.com/dms/image/v2/D5603AQFLAsMFCY02pA/profile-displayphoto-scale_400_400/B56Zh_9s15HcAk-/0/1754493539086?e=1758153600&v=beta&t=qe2o65Q3QcGwL3t6QN9doIlE3kdhfQgeMrW1v2AXyKs",
-        phone:"+91 9361212442",
-        email:"rahul.cs23@bitsathy.ac.in"
-      },
-      {
-        id: 2,
-        name:"Bhadri Prabhu K",
-        designation:"Frontend Developer",
-        image:"https://media.licdn.com/dms/image/v2/D4E03AQFY5FVbS7txjg/profile-displayphoto-shrink_400_400/B4EZZcsIjQHQAg-/0/1745311796057?e=1758153600&v=beta&t=m2g-oj0gWtaR2ud6g9RoMNHr4qyvCAeb0mputI6XjIU",
-        phone:"+91 8825728740",
-        email:"bhadrikeshav0612@gmail.com"
-      },
-      {
-        id: 3,
-        name:"Dharshan S",
-        designation:"Frontend Developer",
-        image:"https://media.licdn.com/dms/image/v2/D5603AQFliUBlxW7wew/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725974097274?e=1758153600&v=beta&t=zaZFr7sX9A_sEa88oeHu7fnKBWQqWbLUQM00bg5e6Nk",
-        phone:"+91 9080155375",
-        email:"voicepython1@gmail.com"
-      },
-      {
-        id: 4,
-        name:"Tridev Balaji R",
-        designation:"Backend Developer",
-        image:"https://media.licdn.com/dms/image/v2/D4D03AQFtjCnG--wagg/profile-displayphoto-scale_400_400/B4DZf0_bf5GgAk-/0/1752161960319?e=1758153600&v=beta&t=HtcIwpFSroZDNL4DHqgwMXCEGWfQAqhqqonrdnlzgHc",
-        phone:"+91 6379269278",
-        email:"tridev.2416@gmail.com"
-      },
-      {
-        id: 5,
-        name:"Raksith S S",
-        designation:"Frontend Developer",
-        image:"https://media.licdn.com/dms/image/v2/D5603AQHb3uPPbiq97w/profile-displayphoto-shrink_400_400/B56ZRvKY1aHsAk-/0/1737031782713?e=1758153600&v=beta&t=ZBCcrSykdg-r2AVuKigQCboNah_4JGBZqzRpo6DXpwk",
-        phone:"+91 ",
-        email:"raksith.cs23@bitsathy.ac.in"
-      },
-      {
-        id: 6,
-        name:"Deepak G S",
-        designation:"Frontend Developer",
-        image:"https://media.licdn.com/dms/image/v2/D4D03AQF6Nz6BUWet2g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729308032708?e=1758153600&v=beta&t=8mhvPE4vfZKaYq9lyh3YEqRUYryCmdBTCCDY3pPbiMU",
-        phone:"+91 ",
-        email:"deepak.cs23@bitsathy.ac.in"
-      },
-      
-    ]
-
 
   return (
     <div
       ref={containerRef}
-      className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"
+      className="relative  w-full overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"
     >
       {/* Custom Styles */}
 
@@ -265,7 +170,7 @@ export const HomePage = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center pt-16"
+        className="relative min-h-screen flex items-center justify-center pt-0"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/80 via-purple-50/80 to-pink-50/80" />
 
@@ -273,26 +178,28 @@ export const HomePage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="text-center lg:text-left space-y-8 animate-fadeInUp">
-              <div className="inline-block px-4 py-2 bg-gradient-to-r from-indigo-100 to-purple-100 rounded-full text-indigo-700 font-semibold text-sm mb-4">
-               Kriya 2025
-              </div>
-
               <h1 className="text-5xl md:text-7xl font-extrabold leading-tight w-fit max-lg:mx-auto ">
-                <div className='flex items-center whitespace-nowrap '>
-                  <span className='!text-blue-900 max-sm:text-4xl'>B</span>
-                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent  max-sm:text-4xl">RIDGING</span>
+                <div className="flex items-center whitespace-nowrap ">
+                  <span className="!text-blue-900 max-sm:text-4xl">B</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent  max-sm:text-4xl">
+                    RIDGING
+                  </span>
                 </div>
-                <div className='flex items-center whitespace-nowrap'>
-                  <span className='!text-blue-900 max-sm:text-4xl'>I</span>
-                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">NNOVATION &</span>
+                <div className="flex items-center whitespace-nowrap">
+                  <span className="!text-blue-900 max-sm:text-4xl">I</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">
+                    NNOVATION &
+                  </span>
                 </div>
-                <div className='flex items-center whitespace-nowrap'>
-                  <span className='!text-blue-900 max-sm:text-4xl'>T</span>
-                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">ECHNOLOGY</span>
+                <div className="flex items-center whitespace-nowrap">
+                  <span className="!text-blue-900 max-sm:text-4xl">T</span>
+                  <span className="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent max-sm:text-4xl">
+                    ECHNOLOGY
+                  </span>
                 </div>
               </h1>
 
-              <div className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl">
+              <div className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl h-[78px]">
                 <Typewriter
                   words={[
                     'Empowering the next generation of innovators through cutting-edge technology',
@@ -309,11 +216,11 @@ export const HomePage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow">
+                <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow">
                   Register Now{' '}
                   <ArrowRight className="inline-block ml-2" size={20} />
                 </button>
-                <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
                   Learn More
                 </button>
               </div>
@@ -343,10 +250,10 @@ export const HomePage = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
                 <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
                   <img
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&h=500&fit=crop"
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
                     alt="Innovation and Technology"
                     className="w-full h-auto rounded-2xl shadow-2xl hover-lift"
-                    loading='lazy'
+                    loading="lazy"
                   />
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
                     🚀
@@ -361,24 +268,18 @@ export const HomePage = () => {
       {/* Stats Section */}
       <section className="relative py-20 bg-white/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
-                <AnimatedCounter end={15} suffix="+" />
+                <AnimatedCounter end={12} suffix="" />
               </div>
               <div className="text-slate-600 font-medium">Events</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">
-                <AnimatedCounter end={20} suffix="+" />
+                <AnimatedCounter end={30} suffix="+" />
               </div>
               <div className="text-slate-600 font-medium">Speakers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-pink-600 mb-2">
-                <AnimatedCounter end={5} suffix="+" />
-              </div>
-              <div className="text-slate-600 font-medium">Workshops</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-green-600 mb-2">
@@ -395,7 +296,7 @@ export const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
-              About KRIYA 2025
+              About KRIYA 1.0
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               An immersive entrepreneurial experience that enables participants
@@ -410,7 +311,7 @@ export const HomePage = () => {
                   Our Mission
                 </h3>
                 <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                  KRIYA 2025 aims to cultivate a startup mindset, foster
+                  KRIYA 1.0 aims to cultivate a startup mindset, foster
                   cross-disciplinary collaboration, and encourage the launch of
                   viable student-led ventures. We focus on sparking creativity
                   through design thinking, team formation, and problem
@@ -448,7 +349,7 @@ export const HomePage = () => {
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
                   alt="Team collaboration"
                   className="w-full h-auto rounded-2xl shadow-xl hover-lift"
-                  loading='lazy'
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -530,7 +431,7 @@ export const HomePage = () => {
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
               Have questions? We’re here to make your{' '}
-              <span className="font-semibold text-indigo-600">KRIYA 2025</span>{' '}
+              <span className="font-semibold text-indigo-600">KRIYA 1.0</span>{' '}
               experience unforgettable.
             </p>
           </div>
@@ -545,26 +446,38 @@ export const HomePage = () => {
                 <div className="flex items-center gap-3">
                   <Phone className="text-indigo-600" size={22} />
                   <span className="text-slate-700 text-lg">
-                    +91 98765 43210
+                    +91 80721 37522
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="text-purple-600" size={22} />
                   <span className="text-slate-700 text-lg">
-                    info@kriya2025.com
+                    startuphub@bitsathy.ac.in
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="text-pink-600" size={22} />
                   <span className="text-slate-700 text-lg">
-                    BIT Campus, Sathyamangalam, Tamil Nadu
+                    Bannari Amman Institute Technology Campus, Sathyamangalam,
+                    Tamil Nadu
                   </span>
                 </div>
               </div>
             </div>
-
-            {/* Social Links Card */}
             <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.7629352440936!2d77.27452747513593!3d11.497017845488983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!2sBannari%20Amman%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1755107737262!5m2!1sen!2sin"
+                width="550"
+                height="250"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Bannari Amman Institute of Technology Map"
+              />
+            </div>
+            {/* Social Links Card */}
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center col-span-2 mx-auto w-1/2">
               <h4 className="text-xl font-semibold text-slate-800 mb-4">
                 Follow Us
               </h4>
@@ -591,38 +504,25 @@ export const HomePage = () => {
                   <Linkedin size={24} />
                 </a>
                 <a
-                  onClick={()=> {
-                    window.open("https://codecirclebitsathy.netlify.app/","_blank")
-                    }}
+                  onClick={() => {
+                    window.open(
+                      'https://codecirclebitsathy.netlify.app/',
+                      '_blank'
+                    );
+                  }}
                   className=""
                 >
-                  <img src="https://codecirclebitsathy.netlify.app/images/codecirclelogo.png" alt="" className='size-14 rounded-full' />
+                  <img
+                    src="https://codecirclebitsathy.netlify.app/images/codecirclelogo.png"
+                    alt=""
+                    className="size-14 rounded-full"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="relative py-6 bg-slate-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* <div className="border-t border-slate-700 pt-6 text-center"> */}
-          <p className="text-sm md:text-base text-slate-400 pt-6 tracking-wide text-center">
-            © 2025 <span className="font-semibold text-white">KRIYA</span> -
-            All rights reserved. |
-            <span className="text-indigo-400 font-medium">
-              {' '}
-              Empowering Future Innovators
-            </span> |
-            <span className="text-white cursor-pointer font-medium hover:underline" onClick={()=> router('/developers')}>
-              {' '} 
-              Developers
-            </span>
-          </p>
-          {/* </div> */}
-        </div>
-      </footer>
 
       {/* Scroll to Top Button */}
       {scrollY > 500 && (
