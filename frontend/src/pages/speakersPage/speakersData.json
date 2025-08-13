@@ -3,7 +3,7 @@
         "title": "Founder & CEO",
         "organization": "GUVI Geek Network",
         "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
-        "carouselUrl":"https://english.cdn.zeenews.com/sites/default/files/2022/08/30/1083847-zee-news.png",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755075009/guvi_hoezb3.jpg",
         "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
         "expertise": [
             "EdTech Leadership",
@@ -32,6 +32,7 @@
         "title": "Co-founder & Founder",
         "organization": "Palm Era Foods",
         "avatarUrl": "https://dtnext-prod-new.s3.ap-south-1.amazonaws.com/h-upload/2025/07/09/868661-kannan.jpg",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755075301/lampera_z2sp0y.jpg",
         "about": "Kannan Hari, an engineer-turned-entrepreneur, co-founded Palm Era Foods with Abinaya, driven by a mission to preserve the endangered legacy of the Palmyra palm in Tamil Nadu. His journey began after witnessing the felling of palm trees due to crop damage and discovering the challenges faced by palm climbers, including low income and lack of standardization. Palm Era aims to elevate palm-based products to premium quality through innovation and branding, and reintroduce nutrient-rich, low-glycemic palm products into daily diets, especially for children. He applies systematic thinking and process-building skills from his extensive IT career to his food brand, focusing on quality, transparency, and tradition, with a vision to provide certified, clean nutrition from Tamil Nadu to the world.",
         "expertise": [
             "Release Management (IT)",
@@ -60,7 +61,7 @@
             "linkedin": "https://www.linkedin.com/in/kannan-hari-158b2757",
             "twitter": "https://x.com/thepalmera"
         },
-        "industry": "Food & Beverages (Clean Food, Social Enterprise)",
+        "industry": "Food & Beverages",
         "isKeynote": true,
         "quote": "The country's economy grows only when villages grow."
     },
@@ -95,7 +96,7 @@
             "linkedin": "https://www.linkedin.com/in/kalai-kathiravan-0b1a2b1a3/",
             "twitter": "https://x.com/lemurianbazaar"
         },
-        "industry": "Food & Beverages (Agri-based), Retail, Social Enterprise, Food Tech",
+        "industry": "Food & Beverages",
         "isKeynote": false,
         "quote": "From a small village to national markets, my mission is to prove that traditional products can thrive in the modern economy without losing their authenticity."
     },
@@ -103,6 +104,7 @@
         "name": "Santhos Premraj",
         "title": "Co-Founder & Head of Product",
         "organization": "Ticket9",
+        "carouselUrl" : "https://res.cloudinary.com/doko35o8e/image/upload/v1755075995/ticket9_orgete.jpg",
         "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGZZcRLcwId-g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721149310630?e=1758153600&v=beta&t=86y32-_3Az42DYOjGSEfMTU7kqjEL3weGDQOxnloBkM",
         "about": "Santhos Premraj is the Co-Founder and Head of Product at Ticket9, an innovative Event Tech SaaS platform based in Coimbatore, India. With a decade of experience spanning events, technology, and marketing, he is dedicated to simplifying the event management process by automating traditionally manual tasks.His background in corporate IT, including roles at Tata Consultancy Services and Cognizant, has equipped him with systematic thinking and process-building skills, which he applies to prioritize quality and transparency in his entrepreneurial ventures.He is passionate about wellness, clean ingredients, and meaningful entrepreneurship, with a leadership style marked by a commitment to growth and positive community impact.The idea for Ticket9 originated from identifying inefficiencies in manual event management, leading to its rapid expansion from a modest bedroom to a 26-seat office space.",
         "expertise": [
@@ -133,7 +135,7 @@
             "linkedin": "https://www.linkedin.com/in/santhospremraj/",
             "twitter": "https://x.com/santhospremraj"
         },
-        "industry": "Event Technology, SaaS, Marketplace, Enterprise Tech",
+        "industry": "Event Technology",
         "isKeynote": false,
         "quote": "Building a product with real scenes in SaaS is no small feat; it underscores the complexity and depth of the process!"
     },
@@ -141,7 +143,8 @@
         "name": "Vinoth Kumar Chandran",
         "title": "Director",
         "organization": "Bipolar Factory Private Limited",
-        "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs9w15kOf1vkPJmoWX8aAXTSpWWEBwYDNwDg&s",
+        "carouselUrl":"https://media.licdn.com/dms/image/v2/D5622AQFyRtLwq2ZA3A/feedshare-shrink_1280/feedshare-shrink_1280/0/1730181272674?e=1758153600&v=beta&t=VQnaGrQCYrZqmwGJoyxwwfouQ5vp8u4pzm3P5tIfvns" ,
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEfE0lbqoqqIA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669297488292?e=1758153600&v=beta&t=WLe4_bDkWLKrFWikNmLKSf8UtyNUoIfLwYV_m6C2M1w",
         "about": "Dr. Vinoth Kumar Chandran is a Director at Bipolar Factory Private Limited, appointed on December 22, 2023.[1, 2] He brings over two decades of extensive experience in healthcare management, having held significant positions at renowned institutions like Apollo Hospitals Group, Global Health City, and KIMS Health.[3, 4, 5] His academic background includes a doctorate and post-graduate degrees in Hospital Management, Business Management, Medical Law & Ethics, Materials Management, and Labour Laws.[3, 4, 5] He is recognized for multiple world records and holds the prestigious Level 3 'Qimpro Certified Qualitist' badge, a recognition conceptualized by Dr. J. M. Juran, the 'Father of Quality'.[3, 4, 5] Bipolar Factory specializes in Artificial Intelligence, Deep Learning Solutions, Metaverse Development, and IoT Development, aiming to harness technology for societal betterment and champion 'Make in India' products globally.[6, 7, 8, 9, 10, 11] The company has its registered office in Coimbatore, Tamil Nadu, and an operational focus in Bengaluru North, Karnataka.[12, 13, 14, 15, 10, 16, 11]",
         "expertise": [
             "Healthcare Management ",
@@ -174,7 +177,7 @@
             "linkedin": "https://www.linkedin.com/company/bipolar-factory/?originalSubdomain=in",
             "twitter": "https://x.com/bipolarfactory"
         },
-        "industry": "Technology (AI, Deep Learning, Metaverse, IoT), Healthcare Management",
+        "industry": "Technology",
         "isKeynote": false,
         "quote": "The true future of healthcare lies at the intersection of compassion and cutting-edge technology."
     },
@@ -183,6 +186,7 @@
         "title": "Co-Founder and CEO",
         "organization": "Magic 20 Tamil",
         "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQFK9lG1Dh_1Rg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701174173460?e=1758153600&v=beta&t=dGi7oK4gkHr39qtPICWqr-W8131eqpe32ZCq6vfciAw",
+        "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755076507/magic20_bhs2sf.jpg",
         "about": "Vasu Karthi is the Co-Founder and CEO of Magic 20 Tamil, an app-based platform dedicated to translating and summarizing global business, marketing, and self-help English books into accessible Tamil audio formats... His mission is to 'bridge the gap between global wisdom and Tamil culture' by making world-class knowledge available to Tamil speakers... The platform offers concise 20-minute summaries, utilizing colloquial language and localized examples to cater to busy professionals and aspiring entrepreneurs who view time as a precious commodity and learning as an ongoing journey.[1, 2] He is also a director at Bookspark Media Private Limited, the legal entity behind Magic 20 Tamil.. Vasu Karthi actively engages in public discussions on business topics, emphasizing effective communication and strategic positioning.[3]",
         "expertise": [
             "Content Strategy and Development",
@@ -206,7 +210,7 @@
             "linkedin": "https://www.linkedin.com/company/booksparkmedia/",
             "twitter": "https://x.com/magic20tamil"
         },
-        "industry": "Ed-Tech, Digital Publishing, Audiobooks, E-learning",
+        "industry": "EdTech",
         "isKeynote": false,
         "quote": "Bridging the gap between global wisdom and Tamil culture is not just a mission—it’s a responsibility."
     },
@@ -214,7 +218,8 @@
         "name": "Ramesh Narayanan",
         "title": "CEO",
         "organization": "Adyar Ananda Bhavan (A2B) | A2B Sweets & Restaurants",
-        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGA3fOQuOaR3w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680616785551?e=1758153600&v=beta&t=MM4X7rU5GNWvXHVzo5w0cOzqkr0TX1tUMyRYjTbKI8w",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755076699/a2b_hcnjtb.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGA3fOQuOaR3w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1680616785551?e=1758153600&v=beta&t=kEKoz-s5Egquo0dTc_vMEEpQtqmJAxpoQEvgryjBXlY",
         "about": "Ramesh Narayanan serves as the Chief Executive Officer of Adyar Ananda Bhavan (A2B) - India, a prominent South Indian restaurant chain headquartered in Chennai with over 120 branches across India. In this role, he is responsible for leading the operations and strategic direction of the extensive A2B network, which includes restaurants, sweets, and savouries. His leadership is part of the evolving management structure of this long-standing family-owned enterprise, aiming to drive its continued growth and global aspirations.",
         "expertise": [
             "Business Scaling",
@@ -231,7 +236,7 @@
             "linkedin": "https://www.linkedin.com/company/adyar-ananda-bhavan---india/?originalSubdomain=in",
             "twitter": "https://x.com/a2bworld"
         },
-        "industry": "Food & Beverages, Restaurants, Sweets, Quick Service Restaurant (QSR)",
+        "industry": "Food & Beverages",
         "isKeynote": false,
         "quote": "When you talk about people online, there is another big group of people offline "
     },
@@ -239,6 +244,7 @@
         "name": "Anusha V",
         "title": "Founder and CEO",
         "organization": "Narchuvai Foods",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077018/foods_ulhkg5.jpg",
         "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJ_NvjeE5j2Mn5FI7naChO_x3b1ugT_1tLA&s",
         "about": "Anusha V is the Founder and CEO of Narchuvai Foods, a D2C brand specializing in premium heritage gifting and traditional food products for modern lifestyles. Hailing from a Chettinad family with a deep cultural connection to food, her passion for traditional cooking was ignited in her mother's kitchen, where hygienic and delicious health mixes, masalas, and podis were crafted. Recognizing a market gap for such authentic products, she founded Narchuvai Foods to bridge the rich culinary past with the demands of the fast-paced present. Despite marrying at 15, she later pursued education and built a career in digital marketing, which provides a strong foundation for Narchuvai's D2C model. The brand name 'Narchuvai' (நல்ல சுவை) reflects her commitment to 'good taste' and preserving age-old culinary wisdom.",
         "expertise": [
@@ -265,7 +271,7 @@
             "linkedin": "https://www.linkedin.com/in/anusha-v-715817203/?originalSubdomain=in",
             "twitter": "https://x.com/narchuvaifoods"
         },
-        "industry": "Food & Beverages (D2C, Traditional Food, Health Food, Gifting)",
+        "industry": "Food & Beverages",
         "isKeynote": true,
         "quote": "Narchuvai, a name that shows my deep love for preserving age-old culinary wisdom. I picked this name to share the richness of taste and bring people closer to our traditional flavors!"
     },
@@ -274,6 +280,7 @@
         "title": "Founder & CEO",
         "organization": "Startup News Tamil & Free Famous Food",
         "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQqxOigPZqs-fQpoHei1edNoaFkHhNYqkXA&s",
+        "carouselUrl":"https://media.licdn.com/dms/image/v2/D5622AQEYyajV-i5Rpg/feedshare-shrink_2048_1536/B56ZWJ01BrHsAw-/0/1741774082950?e=1758153600&v=beta&t=_u4j2zrDCgqeTjJGQX8FkBGbH8vbaASBPfpJDXRN5Zw",
         "about": "Umasankaran P is a multifaceted entrepreneur and ecosystem builder, known for founding Startup News Tamil and Free Famous Food. A graphic designer by background, he moved to Singapore in 2002 to pursue a Higher Diploma in Communication Science... In 2009, he founded Aadhii Designs in Singapore, providing branding services to restaurants and salons. In 2015, he launched Free Famous Food (FFF) in Singapore as a bootstrapped venture, aiming to disrupt the advertising industry by offering 100% free food vouchers, leveraging the 'urge for free offers' psychology... He successfully expanded FFF to India in 2018, starting in his hometown Thanjavur and then to other Tamil Nadu cities, overcoming initial public skepticism that 'free is fake'.He also founded Startup News Tamil, a platform dedicated to building and celebrating the Tamil Startup Ecosystem, providing authentic startup stories and updates in Tamil.[2] His work focuses on business strategy, branding, marketing, and startup mentorship, actively contributing to the regional entrepreneurial landscape.",
         "expertise": [
             "Communication Science",
@@ -301,7 +308,7 @@
             "linkedin": "https://www.linkedin.com/company/startup-news-tamil",
             "twitter": "https://x.com/freefamousfood"
         },
-        "industry": "Media, Food & Beverages, Marketing, Business Services",
+        "industry": "Food & Beverages",
         "isKeynote": false,
         "quote": "Our USP is we persuade the consumers on the psychology of 'urge for free offers' and pull large crowd-base traffic to the portal as users. More than convincing the restaurants to partner with us, it was difficult to make people understand that FFF vouchers are not fake."
     },
@@ -310,6 +317,7 @@
         "title": "Founder and CEO",
         "organization": "My Peeli",
         "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEVfVls75tuqA/profile-displayphoto-shrink_800_800/B4DZbPHZTbG8Ag-/0/1747231545210?e=1758153600&v=beta&t=DzqrDMrssuJuZ5NGUkZRG4lWl_F6kASKXsHqWEkGM58",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077612/peele_qrc28t.jpg",
         "about": "Sreeja Mohan is the Founder and CEO of My Peeli, a multifaceted digital content management agency based in Coimbatore, India. Established in 2017, My Peeli initially focused on content writing services and has since expanded to offer a comprehensive suite of digital solutions.Sreeja's personal journey, including her early marriage and subsequent career in digital marketing, highlights her resilience and adaptability.[2] Her deep passion for the arts, evident in her roles as a lyricist, blogger ('WHY KNOCK?!'), and independent artist, directly influences My Peeli's 'Creative Factory' ethos, enabling the agency to craft compelling and results-driven digital narratives.She also holds significant roles in various financial and trading firms, demonstrating a strong business acumen beyond creative endeavors.Her mission for My Peeli is to empower client stories to transcend business boundaries and stand out in the digital sphere.",
         "expertise": [
             "Lyric Writing (Tamil)",
@@ -336,8 +344,8 @@
             "linkedin": "https://www.linkedin.com/in/sreeja-mohan-376532129/?originalSubdomain=in",
             "twitter": "https://x.com/mypeeli"
         },
-        "industry": "Digital Marketing, Content Creation, Digital Education, Financial Services",
-        "isKeynote": false,
+        "industry": "EdTech",
+        "isKeynote": false, 
         "quote": "Creativity is not just an art—it’s a strategy. At My Peeli, we turn stories into experiences that outlive campaigns."
     },
     {
@@ -345,6 +353,7 @@
         "title": "Founder",
         "organization": "Uzhamagal",
         "avatarUrl": "https://www.uzhamagal.in/cdn/shop/files/1995C450-DE77-47AE-8727-CA3F18A05C8F.jpg?v=1752417366&width=533",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077973/uzhamagal_apv89n.jpg",
         "about": "Dhivya Bharathi is the visionary founder of Uzhamagal, an affordable women's ethnic wear brand based in Tiruppur, Tamil Nadu. Hailing from a farming family, her journey from 'Uzhavanin Magal' (Farmer's Daughter) to 'Uzhamagal' (Daughter of Labor/Effort) symbolizes empowerment, sustainability, and authenticity.With a B.Tech in Fashion, she started her business with a modest 5,000 rupees, reinvesting all profits to grow her online e-commerce clothing store, primarily through Instagram.Her motivation stems from an ideology to challenge societal norms that often limit women, aiming to empower them through personalized clothing that is 'as unique as you are'.",
         "expertise": [
             "E-commerce & Digital Marketing (Instagram-first strategy)",
@@ -372,7 +381,7 @@
             "linkedin": "https://www.instagram.com/uzhamagal/",
             "youtube": "https://www.youtube.com/@Uzhamagal"
         },
-        "industry": "Fashion, E-commerce, Women's Ethnic Wear",
+        "industry": "Fashion",
         "isKeynote": true,
         "quote": "I grew up with the ideology to break it and overcome it."
     },
@@ -381,6 +390,7 @@
         "title": "Chief Content & Growth Strategist | Content Creator",
         "organization": "TownScholar",
         "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTacc-FO7lIo-UGiNVvayGRNTA9G-DR36Og&s",
+        "carouselUrl":"",
         "about": "Iswaryaa G P is a prominent content creator and Chief Content & Growth Strategist at TownScholar. An Electrical & Electronics Engineer by academic background from NIT Tiruchirappalli, she brings a strong analytical and systematic approach to her work.She transitioned from a 'dream job' at Deloitte to pursue content creation, driven by a philosophy of 'helping > impressing' and providing genuine value to her audience.Her content focuses on career advice (IT jobs, engineering), college guidance, personal development, and productivity, aiming to simplify complex topics and empower her viewers.[3, 5, 6] She is also the creator of Peeli Digital Academy, extending her influence into digital education.",
         "expertise": [
             "Growth Strategy",
@@ -408,6 +418,87 @@
         "industry": "Digital Marketing, Content Creation, Ed-Tech, Social Impact",
         "isKeynote": false,
         "quote": "The skills that got you here might not be the ones that take you further."
+    },
+    {
+        "name": "C K (Ckk) Kumaravel",
+        "title": "Co-founder & CMD",
+        "organization": "Naturals Salon & Spa",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQG8xdHFVdqMbg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1702882017563?e=1758153600&v=beta&t=kkITmiNslLKYrWXWaJqUkG-0X_Xg3Qzps5puFpLGv6g",
+        "carouselUrl":"https://i.ytimg.com/vi/1MTiOokPYl8/maxresdefault.jpg",
+        "about": "C.K. Kumaravel is a transformative figure in the Indian beauty and wellness sector, co-founder and CMD of Naturals Salon & Spa. He joined his wife, K. Veena, in 2004, after she established the first salon in 2000. He is credited with disrupting the salon industry, transforming it from a 'taboo activity' to a mainstream 'lifestyle industry' by offering good quality, affordable beauty salons. Inspired by his mother's resilience and entrepreneurial spirit, he is on a mission to create a 'Housewife-free India' by empowering women entrepreneurs through Naturals' franchise model, believing in 'women power' and their capabilities in business. He believes in the 'outsider advantage' in disruption, asserting that true innovation comes from questioning conventional practices and constantly exploring novel possibilities, citing Tesla as an example. His philosophy emphasizes resilience, learning from failures (like his first venture, Raaga Herbal Powder, which failed due to neglecting finance), and dreaming big to unlock hidden value using technology.",
+        "expertise": [
+            "Women's Empowerment",
+            "Business Strategy & Scaling",
+            "Marketing & Branding (FMCG, Salon Industry)",
+            "Leadership & Resilience",
+            "Value Creation (Unlocking Hidden Value with Technology)",
+            "Public Speaking (entrepreneurship, women empowerment, business success, failure, leadership)"
+        ],
+        "achievements": [
+            "Transformed the Indian salon industry from a 'taboo activity' to a 'lifestyle industry'",
+            "Grew Naturals to over 750 salons across 20+ states by 2024",
+            "Pioneered a franchise model that empowered over 400 women entrepreneurs by 2020, with a vision for 1000+ by 2029",
+            "Created over 8,000 direct jobs by 2016, with a target of 50,000 by 2029",
+            "Led Naturals to serve over 7 million happy customers by 2024",
+            "Received numerous awards including India's Best Beauty Salon Award (NDTV, 2011), Best National Salon Chain of the Year (Salon International, 2011), CII Emerging Entrepreneur of the Year (2015), Business Star Award (Nanayam Vikatan, 2016), and Franchise Entrepreneur of the Year (Dhanam, 2020)",
+            "Honored as 'Super Chennai Icon of the Month' by CREDAI (2025) for contribution to women's entrepreneurship and inclusive growth",
+            "Invested in Bookspark Media (Magic 20 Tamil) as a prestigious investor",
+            "Launched 'refillable beauty' model in 2024 to reduce costs and promote sustainability",
+            "Introduced new skin aesthetics brand 'Star Secrets'",
+            "Formed strategic partnerships with Assam Skill University and SRCW, Coimbatore, for skill development and women's self-employment",
+            "Partnered with HairOriginals to promote hair extensions",
+            "Appointed cricketer Smriti Mandhana as brand ambassador for D2C skincare product segment",
+            "Introduced Medical Beauty Service (Medi-Facial treatment) in salons",
+            "Collaborated with StarStruck by Sunny Leone to launch Naturals Beauty Academy (NBA) in Mumbai",
+            "Groom India (Naturals Salon) honored with 'Best Franchisee of the Year 2024' at MAPIC India Awards",
+            "Groom India - NBA partnered with IIT Madras to train talents globally through Swayam Plus"
+        ],
+        "links": {
+            "website": "https://naturals.in/",
+            "linkedin": "https://www.linkedin.com/in/ckknaturals/?originalSubdomain=in",
+            "twitter": "https://x.com/ckknaturals/status/1389576575260102656"
+        },
+        "industry": "Beauty & Wellness, Retail, Franchising, Consumer Goods, Angel Investing",
+        "isKeynote": true,
+        "quote": "If you are from the industry you cannot disrupt the industry."
+    },
+    {
+        "name": "Sivakumar Palanisamy",
+        "title": "VP & Chief of Staff",
+        "organization": "StartupTN",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQElPzDTBLhOXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727836756065?e=1758153600&v=beta&t=OmsaB6atfW5rb19gEZ6E_-fND1wMM0cIpN8ODdHffY0",
+        "about": "Sivakumar Palanisamy serves as Vice President at StartupTN, a pivotal role in cultivating Tamil Nadu's vibrant and inclusive startup ecosystem. With an extensive background in agricultural innovation and business management, he previously served as CEO of NABARD MABIF (Madurai Agribusiness Incubation Forum) from 2018 to 2022, where he facilitated numerous intellectual property protections for agribusinesses.[1] His expertise drives StartupTN's initiatives across funding, incubation, market access, and policy formulation, contributing to Tamil Nadu's ascent as a 'Knowledge Capital' and 'Innovation Hub'.[1] He is dedicated to bridging technology, policy, and entrepreneurship to foster significant societal and economic change in the agricultural sector.[2, 3]",
+        "expertise": [
+            "Business Strategy",
+            "Branding & Marketing",
+            "Startup Mentorship",
+            "Agricultural Innovation",
+            "Intellectual Property Protection (Trademarks, Patents, GIs)",
+            "Business Incubation ",
+            "Policy Formulation",
+            "Rural Development",
+            "Poultry Industry Transformation (DNA-based nutrition, AI-driven food customization, Alternative Protein Sources like BSF, Industry 4.0 Integration)",
+            "Digital Transformation (for MSMEs)",
+            "Fundraising & Investment",
+            "Global Market Access "
+        ],
+        "achievements": [
+            "Facilitated 139 trademarks, 20 patents, and 65 Geographical Indications (GIs) at NABARD MABIF, with 7 GIs certified",
+            "Identified and nurtured over 100 ideas into investment-ready pitches at StartupTN",
+            "Contributed to Tamil Nadu being recognized as the 'Best Performer' State in Startup India Rankings 2022",
+            "Contributed to Chennai ranking 18th in Asia in the Global Startup Ecosystem Report 2023",
+            "Contributed to Tamil Nadu being among the top 3 states in the Startup Outperformers 2023 rankings",
+            "Contributed to the growth of over 11,280 DPIIT-recognized startups in Tamil Nadu, including 5,560 women-led startups",
+            "Facilitated $9.6 million in funding for startups in August 2024 through StartupTN's partner network",
+            "Instrumental in establishing Global Startup Coordination Centres in Dubai, Singapore, and the U.S. for Tamil Nadu startups (Dubai center launched)",
+            "Prominent speaker at the PoultryTech Summit & Expo, advocating for AgriTech and poultry innovation",
+            "Holds board directorships for NABARD SDAU Rural Business Incubation Center, CAIE Gwalior, ICAM TECHNOSYS PRIVATE LIMITED (Investment Director since Sep 2023), and Namsanthai Kotagiri Tribal Private Limited (Board Member since Feb 2024) [13, 1, 2, 14, 15, 16, 17]"
+        ],
+        "links": {
+            "linkedin": "https://www.linkedin.com/in/28siva/?originalSubdomain=in"
+        },
+        "industry": "Government (Startup Ecosystem Development), AgriTech, Poultry, Business Strategy, Consulting",
+        "isKeynote": true,
+        "quote": "Innovation is not just about technology — it’s about empowering people to create lasting impact."
     }
-
 ]
