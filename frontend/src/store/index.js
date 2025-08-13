@@ -1,1 +1,1 @@
-export * from "./useEventsStore";
+export * from './useEventsStore';
