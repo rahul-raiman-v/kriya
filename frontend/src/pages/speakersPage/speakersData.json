@@ -2,7 +2,8 @@
         "name": "Arun Prakash",
         "title": "Founder & CEO",
         "organization": "GUVI Geek Network",
-        "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755075009/guvi_hoezb3.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQHg4BOVYw_0rQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707379234009?e=1758153600&v=beta&t=SnOprAP-nNVm-T4hLrVcQEi66KWzUeUI5qn0B3OEsPQ",
         "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
         "expertise": [
             "EdTech Leadership",
@@ -30,15 +31,16 @@
         "name": "Kannan Hari",
         "title": "Co-founder & Founder",
         "organization": "Palm Era Foods",
-        "avatarUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fkannan-hari&psig=AOvVaw3O9f7IleWQrtu0R9YRM6Kt&ust=1755145680556000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKCOj6v5ho8DFQAAAAAdAAAAABAE",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755075301/lampera_z2sp0y.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQG9sKcp5-ClKg/profile-displayphoto-shrink_100_100/B56Zawc.zaH0Ac-/0/1746717110006?e=1758153600&v=beta&t=HDWTHMzLegy5alGQeei-6D1QMAlUrgZFcE5rqX8K4k0",
         "about": "Kannan Hari, an engineer-turned-entrepreneur, co-founded Palm Era Foods with Abinaya, driven by a mission to preserve the endangered legacy of the Palmyra palm in Tamil Nadu. His journey began after witnessing the felling of palm trees due to crop damage and discovering the challenges faced by palm climbers, including low income and lack of standardization. Palm Era aims to elevate palm-based products to premium quality through innovation and branding, and reintroduce nutrient-rich, low-glycemic palm products into daily diets, especially for children. He applies systematic thinking and process-building skills from his extensive IT career to his food brand, focusing on quality, transparency, and tradition, with a vision to provide certified, clean nutrition from Tamil Nadu to the world.",
         "expertise": [
-            "Release Management (IT) [5]",
-            "DevOps Business Development & Solution Architecture (IT) [5]",
-            "Project Management (PMP® Certified) [5]",
-            "Agile Methodologies (CSM® Certified) [5]",
-            "Cloud Solutions (AWS Certified) [5]",
-            "Enterprise Architecture (TOGAF® Certified) [5]",
+            "Release Management (IT)",
+            "DevOps Business Development & Solution Architecture (IT)",
+            "Project Management (PMP® Certified)",
+            "Agile Methodologies (CSM® Certified)",
+            "Cloud Solutions (AWS Certified)",
+            "Enterprise Architecture (TOGAF® Certified)",
             "Community Empowerment",
             "Environmental Sustainability"
         ],
@@ -59,7 +61,7 @@
             "linkedin": "https://www.linkedin.com/in/kannan-hari-158b2757",
             "twitter": "https://x.com/thepalmera"
         },
-        "industry": "Food & Beverages (Clean Food, Social Enterprise)",
+        "industry": "Food & Beverages",
         "isKeynote": true,
         "quote": "The country's economy grows only when villages grow."
     },
@@ -67,7 +69,8 @@
         "name": "Prabaharan Venugopal",
         "title": "Founder",
         "organization": "Cup Time | Maheesha Foods and Beverages Private Limited",
-        "avatarUrl": "N/A",
+        "carouselUrl" : "https://res.cloudinary.com/doko35o8e/image/upload/v1755075446/cuptime_p3couy.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQF0TUETgKUlNA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1625989525757?e=1758153600&v=beta&t=E6Hcejer9DpIcQsOmjNFZ8bt9PeQW97-QmGPn5Vnn_s",
         "about": "Prabaharan Venugopal is the founder of Cup Time and Maheesha Foods and Beverages Private Limited, both based in Madurai, Tamil Nadu. He launched Cup Time in 2020, aiming to reintroduce authentic local South Indian beverages like Karungali Coffee, Panangkinjau Paal, and Sukku Kaapi. His business model focuses on B2B delivery of fresh, hot, and preservative-free drinks to corporate offices, hospitals, and educational institutions. Maheesha Foods and Beverages Private Limited serves as the corporate and manufacturing arm, ensuring quality and compliance. Prabaharan is actively focused on scaling his ventures by raising funding, hiring talent, and continuously brainstorming new ideas. He applies his expertise in FMCG, retail sales, and entrepreneurship to drive growth and create sustainable local opportunities.",
         "expertise": [
             "FMCG (Fast-Moving Consumer Goods) [1, 2]",
@@ -92,7 +95,7 @@
             "linkedin": "https://www.linkedin.com/in/prabaharan-venugopal-0b1a2b1a3/",
             "twitter": "https://x.com/cuptimeindia"
         },
-        "industry": "Food & Beverages (Traditional Beverages, B2B Food Service), Food Tech, FMCG",
+        "industry": "Food & Beverages",
         "isKeynote": false,
         "quote": "Every cup we serve is not just a beverage, but a story of tradition, quality, and local pride."
     },
@@ -100,7 +103,7 @@
         "name": "Kalai Kathiravan",
         "title": "Managing Partner | Founder, Director & CEO",
         "organization": "Lemurian Bazaar | Lemurian Ventures Private Limited",
-        "avatarUrl": "N/A",
+        "avatarUrl": "https://scontent.fcjb5-2.fna.fbcdn.net/v/t39.30808-1/428602920_10224498529923104_7991102416821069512_n.jpg?stp=c9.0.720.720a_dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=I-QUoz-QNmAQ7kNvwH06Czs&_nc_oc=AdnWRSHEq9s9WLIjNRb8UCPe3NGl-8o1G9BO8Qe-_FrL-w-0AYBjWdcPsyO0FuBO3TU&_nc_zt=24&_nc_ht=scontent.fcjb5-2.fna&_nc_gid=YmNPpt33HgJksCMiN9uuFQ&oh=00_AfWsNXyJET7rEXDUj9XcCd6YwPuxObKxqwewJuenBjURFw&oe=68A23ECE",
         "about": "Kalai Kathiravan is a pivotal figure in the agri-food sector in Tamil Nadu, India, serving as the Managing Partner of Lemurian Bazaar and concurrently as the Founder, Director, and CEO of Lemurian Ventures Private Limited. Operating from a remote village in Ramanathapuram, his mission is to deliver traditional, regional, hygienic, and nutritionally potent agri-products directly from farms to homes across India.[1, 2] He applies systematic thinking and process-building skills, implicitly learned from his background as a 'techie' who quit his IT job to venture into selling dry fish.[3] His leadership bridges traditional agricultural practices with modern business strategies, focusing on quality, transparency, and community empowerment.[3, 2]",
         "expertise": [
             "Agri-Food Supply Chain Management",
@@ -127,7 +130,7 @@
             "linkedin": "https://www.linkedin.com/in/kalai-kathiravan-0b1a2b1a3/",
             "twitter": "https://x.com/lemurianbazaar"
         },
-        "industry": "Food & Beverages (Agri-based), Retail, Social Enterprise, Food Tech",
+        "industry": "Food & Beverages",
         "isKeynote": false,
         "quote": "From a small village to national markets, my mission is to prove that traditional products can thrive in the modern economy without losing their authenticity."
     },
@@ -135,7 +138,8 @@
         "name": "Santhos Premraj",
         "title": "Co-Founder & Head of Product",
         "organization": "Ticket9",
-        "avatarUrl": "N/A",
+        "carouselUrl" : "https://res.cloudinary.com/doko35o8e/image/upload/v1755075995/ticket9_orgete.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGZZcRLcwId-g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721149310612?e=1758153600&v=beta&t=OuMPuZsf2JP6j_38DwWe05GmnFbWZQ4xnouciaFeuPQ",
         "about": "Santhos Premraj is the Co-Founder and Head of Product at Ticket9, an innovative Event Tech SaaS platform based in Coimbatore, India.[1, 2, 3] With a decade of experience spanning events, technology, and marketing, he is dedicated to simplifying the event management process by automating traditionally manual tasks.[1, 2, 4] His background in corporate IT, including roles at Tata Consultancy Services and Cognizant, has equipped him with systematic thinking and process-building skills, which he applies to prioritize quality and transparency in his entrepreneurial ventures.[1, 5] He is passionate about wellness, clean ingredients, and meaningful entrepreneurship, with a leadership style marked by a commitment to growth and positive community impact.[1, 2] The idea for Ticket9 originated from identifying inefficiencies in manual event management, leading to its rapid expansion from a modest bedroom to a 26-seat office space.[6, 4]",
         "expertise": [
             "Product Development (SaaS, AI-powered features) [1, 2, 7]",
@@ -165,7 +169,7 @@
             "linkedin": "https://www.linkedin.com/in/santhospremraj/",
             "twitter": "https://x.com/santhospremraj"
         },
-        "industry": "Event Technology, SaaS, Marketplace, Enterprise Tech",
+        "industry": "Event Technology",
         "isKeynote": false,
         "quote": "Building a product with real scenes in SaaS is no small feat; it underscores the complexity and depth of the process!"
     },
@@ -173,7 +177,8 @@
         "name": "Vinoth Kumar Chandran",
         "title": "Director",
         "organization": "Bipolar Factory Private Limited",
-        "avatarUrl": "N/A",
+        "carouselUrl":"" ,
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEfE0lbqoqqIA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669297488292?e=1758153600&v=beta&t=WLe4_bDkWLKrFWikNmLKSf8UtyNUoIfLwYV_m6C2M1w",
         "about": "Dr. Vinoth Kumar Chandran is a Director at Bipolar Factory Private Limited, appointed on December 22, 2023.[1, 2] He brings over two decades of extensive experience in healthcare management, having held significant positions at renowned institutions like Apollo Hospitals Group, Global Health City, and KIMS Health.[3, 4, 5] His academic background includes a doctorate and post-graduate degrees in Hospital Management, Business Management, Medical Law & Ethics, Materials Management, and Labour Laws.[3, 4, 5] He is recognized for multiple world records and holds the prestigious Level 3 'Qimpro Certified Qualitist' badge, a recognition conceptualized by Dr. J. M. Juran, the 'Father of Quality'.[3, 4, 5] Bipolar Factory specializes in Artificial Intelligence, Deep Learning Solutions, Metaverse Development, and IoT Development, aiming to harness technology for societal betterment and champion 'Make in India' products globally.[6, 7, 8, 9, 10, 11] The company has its registered office in Coimbatore, Tamil Nadu, and an operational focus in Bengaluru North, Karnataka.[12, 13, 14, 15, 10, 16, 11]",
         "expertise": [
             "Healthcare Management [3, 4, 5]",
@@ -206,7 +211,7 @@
             "linkedin": "https://www.linkedin.com/company/bipolar-factory/?originalSubdomain=in",
             "twitter": "https://x.com/bipolarfactory"
         },
-        "industry": "Technology (AI, Deep Learning, Metaverse, IoT), Healthcare Management",
+        "industry": "Technology",
         "isKeynote": false,
         "quote": "The true future of healthcare lies at the intersection of compassion and cutting-edge technology."
     },
@@ -214,7 +219,8 @@
         "name": "Vasu Karthi",
         "title": "Co-Founder and CEO",
         "organization": "Magic 20 Tamil",
-        "avatarUrl": "N/A",
+        "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755076507/magic20_bhs2sf.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQFK9lG1Dh_1Rg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1701174173460?e=1758153600&v=beta&t=zXgH9ThjYgIRLiV-OeaJI6RZdMRHD-5G-erWsSl5Y_M",
         "about": "Vasu Karthi is the Co-Founder and CEO of Magic 20 Tamil, an app-based platform dedicated to translating and summarizing global business, marketing, and self-help English books into accessible Tamil audio formats.[1] His mission is to 'bridge the gap between global wisdom and Tamil culture' by making world-class knowledge available to Tamil speakers.[1] The platform offers concise 20-minute summaries, utilizing colloquial language and localized examples to cater to busy professionals and aspiring entrepreneurs who view time as a precious commodity and learning as an ongoing journey.[1, 2] He is also a director at Bookspark Media Private Limited, the legal entity behind Magic 20 Tamil.[5] Vasu Karthi actively engages in public discussions on business topics, emphasizing effective communication and strategic positioning.[3]",
         "expertise": [
             "Content Strategy and Development",
@@ -238,7 +244,7 @@
             "linkedin": "https://www.linkedin.com/company/booksparkmedia/",
             "twitter": "https://x.com/magic20tamil"
         },
-        "industry": "Ed-Tech, Digital Publishing, Audiobooks, E-learning",
+        "industry": "EdTech",
         "isKeynote": false,
         "quote": "Bridging the gap between global wisdom and Tamil culture is not just a mission—it’s a responsibility."
     },
@@ -246,7 +252,8 @@
         "name": "Ramesh Narayanan",
         "title": "CEO",
         "organization": "Adyar Ananda Bhavan (A2B) | A2B Sweets & Restaurants",
-        "avatarUrl": "N/A",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755076699/a2b_hcnjtb.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGA3fOQuOaR3w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1680616785551?e=1758153600&v=beta&t=kEKoz-s5Egquo0dTc_vMEEpQtqmJAxpoQEvgryjBXlY",
         "about": "Ramesh Narayanan serves as the Chief Executive Officer of Adyar Ananda Bhavan (A2B) - India, a prominent South Indian restaurant chain headquartered in Chennai with over 120 branches across India. In this role, he is responsible for leading the operations and strategic direction of the extensive A2B network, which includes restaurants, sweets, and savouries. His leadership is part of the evolving management structure of this long-standing family-owned enterprise, aiming to drive its continued growth and global aspirations.",
         "expertise": [
             "Business Scaling",
@@ -263,7 +270,7 @@
             "linkedin": "https://www.linkedin.com/company/adyar-ananda-bhavan---india/?originalSubdomain=in",
             "twitter": "https://x.com/a2bworld"
         },
-        "industry": "Food & Beverages, Restaurants, Sweets, Quick Service Restaurant (QSR)",
+        "industry": "Food & Beverages",
         "isKeynote": false,
         "quote": "When you talk about people online, there is another big group of people offline "
     },
@@ -271,7 +278,8 @@
         "name": "Anusha V",
         "title": "Founder and CEO",
         "organization": "Narchuvai Foods",
-        "avatarUrl": "N/A",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077018/foods_ulhkg5.jpg",
+        "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077133/foods2_vukj0b.jpg",
         "about": "Anusha V is the Founder and CEO of Narchuvai Foods, a D2C brand specializing in premium heritage gifting and traditional food products for modern lifestyles. Hailing from a Chettinad family with a deep cultural connection to food, her passion for traditional cooking was ignited in her mother's kitchen, where hygienic and delicious health mixes, masalas, and podis were crafted. Recognizing a market gap for such authentic products, she founded Narchuvai Foods to bridge the rich culinary past with the demands of the fast-paced present. Despite marrying at 15, she later pursued education and built a career in digital marketing, which provides a strong foundation for Narchuvai's D2C model. The brand name 'Narchuvai' (நல்ல சுவை) reflects her commitment to 'good taste' and preserving age-old culinary wisdom.",
         "expertise": [
             "Brand Identity Development",
@@ -297,7 +305,7 @@
             "linkedin": "https://www.linkedin.com/in/anusha-v-715817203/?originalSubdomain=in",
             "twitter": "https://x.com/narchuvaifoods"
         },
-        "industry": "Food & Beverages (D2C, Traditional Food, Health Food, Gifting)",
+        "industry": "Food & Beverages",
         "isKeynote": true,
         "quote": "Narchuvai, a name that shows my deep love for preserving age-old culinary wisdom. I picked this name to share the richness of taste and bring people closer to our traditional flavors!"
     },
@@ -305,7 +313,8 @@
         "name": "Umasankaran P",
         "title": "Founder & CEO",
         "organization": "Startup News Tamil & Free Famous Food",
-        "avatarUrl": "N/A",
+        "carouselUrl":"https://media.licdn.com/dms/image/v2/D5622AQEYyajV-i5Rpg/feedshare-shrink_2048_1536/B56ZWJ01BrHsAw-/0/1741774082950?e=1758153600&v=beta&t=_u4j2zrDCgqeTjJGQX8FkBGbH8vbaASBPfpJDXRN5Zw",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D5622AQHNQ6V7Pni6PA/feedshare-shrink_800/B56ZbTa6yTGoAs-/0/1747303775922?e=2147483647&v=beta&t=4sD3H3XHgWle7-m4E4n4fswLpvuyA3gDwtYYRD7CBE4",
         "about": "Umasankaran P is a multifaceted entrepreneur and ecosystem builder, known for founding Startup News Tamil and Free Famous Food. A graphic designer by background, he moved to Singapore in 2002 to pursue a Higher Diploma in Communication Science.[1] In 2009, he founded Aadhii Designs in Singapore, providing branding services to restaurants and salons.[1] In 2015, he launched Free Famous Food (FFF) in Singapore as a bootstrapped venture, aiming to disrupt the advertising industry by offering 100% free food vouchers, leveraging the 'urge for free offers' psychology.[1] He successfully expanded FFF to India in 2018, starting in his hometown Thanjavur and then to other Tamil Nadu cities, overcoming initial public skepticism that 'free is fake'.[1] He also founded Startup News Tamil, a platform dedicated to building and celebrating the Tamil Startup Ecosystem, providing authentic startup stories and updates in Tamil.[2] His work focuses on business strategy, branding, marketing, and startup mentorship, actively contributing to the regional entrepreneurial landscape.[3, 4, 5, 6]",
         "expertise": [
             "Communication Science [1]",
@@ -333,7 +342,7 @@
             "linkedin": "https://www.linkedin.com/company/startup-news-tamil",
             "twitter": "https://x.com/freefamousfood"
         },
-        "industry": "Media, Food & Beverages, Marketing, Business Services",
+        "industry": "Food & Beverages",
         "isKeynote": false,
         "quote": "Our USP is we persuade the consumers on the psychology of 'urge for free offers' and pull large crowd-base traffic to the portal as users. More than convincing the restaurants to partner with us, it was difficult to make people understand that FFF vouchers are not fake. [1]"
     },
@@ -341,7 +350,8 @@
         "name": "Sreeja Mohan",
         "title": "Founder and CEO",
         "organization": "My Peeli",
-        "avatarUrl": "N/A",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077612/peele_qrc28t.jpg",
+        "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEVfVls75tuqA/profile-displayphoto-shrink_400_400/B4DZbPHZTbG8Ak-/0/1747231545189?e=1758153600&v=beta&t=qE0ZJcyjhM7p6eshcbK0Dhm4bGMcO0V_koZE0NvREDs",
         "about": "Sreeja Mohan is the Founder and CEO of My Peeli, a multifaceted digital content management agency based in Coimbatore, India. Established in 2017, My Peeli initially focused on content writing services and has since expanded to offer a comprehensive suite of digital solutions.[1] Sreeja's personal journey, including her early marriage and subsequent career in digital marketing, highlights her resilience and adaptability.[2] Her deep passion for the arts, evident in her roles as a lyricist, blogger ('WHY KNOCK?!'), and independent artist, directly influences My Peeli's 'Creative Factory' ethos, enabling the agency to craft compelling and results-driven digital narratives.[1, 3] She also holds significant roles in various financial and trading firms, demonstrating a strong business acumen beyond creative endeavors.[4] Her mission for My Peeli is to empower client stories to transcend business boundaries and stand out in the digital sphere.[1]",
         "expertise": [
             "Lyric Writing (Tamil) [3]",
@@ -368,15 +378,16 @@
             "linkedin": "https://www.linkedin.com/in/sreeja-mohan-376532129/?originalSubdomain=in",
             "twitter": "https://x.com/mypeeli"
         },
-        "industry": "Digital Marketing, Content Creation, Digital Education, Financial Services",
-        "isKeynote": false,
+        "industry": "EdTech",
+        "isKeynote": false, 
         "quote": "Creativity is not just an art—it’s a strategy. At My Peeli, we turn stories into experiences that outlive campaigns."
     },
     {
         "name": "Dhivya Bharathi",
         "title": "Founder",
         "organization": "Uzhamagal",
-        "avatarUrl": "N/A",
+        "carouselUrl":"https://res.cloudinary.com/doko35o8e/image/upload/v1755077973/uzhamagal_apv89n.jpg",
+        "avatarUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ggfD4ncurYlWUYQpEQ_NR7LwK5__TB5WrClAhGgMrdHbvOVLQI36IG-kGCJEI6WhRUhXMkeMtWby12sQiCnyrafOpBT7MGTXnQtfzUNLCnKApc8ChXhw3mgBxjcw5YxWhyphenhyphenbiHK58jzWRk-nJ2WEyzm0blIrPzNHtXpEYNwOmyy4JAthZ6tOUgRKAKm0/s320/Shop%20our%20New%20Collections%20_Website%20link%20in%20bio%20__(JPG)_3.jpg",
         "about": "Dhivya Bharathi is the visionary founder of Uzhamagal, an affordable women's ethnic wear brand based in Tiruppur, Tamil Nadu. Hailing from a farming family, her journey from 'Uzhavanin Magal' (Farmer's Daughter) to 'Uzhamagal' (Daughter of Labor/Effort) symbolizes empowerment, sustainability, and authenticity.[1, 2] With a B.Tech in Fashion, she started her business with a modest 5,000 rupees, reinvesting all profits to grow her online e-commerce clothing store, primarily through Instagram.[1] Her motivation stems from an ideology to challenge societal norms that often limit women, aiming to empower them through personalized clothing that is 'as unique as you are'.[1, 3]",
         "expertise": [
             "E-commerce & Digital Marketing (Instagram-first strategy) [1]",
@@ -404,11 +415,8 @@
             "linkedin": "https://www.instagram.com/uzhamagal/",
             "youtube": "https://www.youtube.com/@Uzhamagal"
         },
-        "industry": "Fashion, E-commerce, Women's Ethnic Wear",
+        "industry": "Fashion",
         "isKeynote": true,
         "quote": "I grew up with the ideology to break it and overcome it."
     }
-
-
-
 ]
