@@ -6,6 +6,7 @@ const navLinks = [
   { name: "Events", path: "/events" },
   { name: "Speakers", path: "/speakers" },
   { name: "Timeline", path: "/timeline" },
+  { name: "Combo", path: "/combo" },
 ];
 
 export const Header = () => {

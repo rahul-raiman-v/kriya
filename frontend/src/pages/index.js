@@ -3,3 +3,5 @@ export * from "./timelinePage";
 export * from './speakersPage';
 export * from './pageNotFound';
 export * from './eventsPage';
+export * from './comboPage';
+export * from './comboDetail';
