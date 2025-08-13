@@ -1,5 +1,6 @@
 [
     {
+      "id": "1",
       "name": "Arun Prakash",
       "title": "Founder & CEO",
       "organization": "GUVI Geek Network",
@@ -29,6 +30,7 @@
       "quote": "Technology should be accessible to everyone, regardless of language or background."
     },
     {
+      "id": "2",
       "name": "Kevin Scott",
       "title": "Chief Technology Officer",
       "organization": "Microsoft",
@@ -51,6 +53,7 @@
       "quote": "The future of technology is about democratizing opportunity and empowering every person to achieve more."
     },
     {
+      "id": "3",
       "name": "Li Fan",
       "title": "Chief Technology Officer",
       "organization": "Circle",
@@ -72,6 +75,7 @@
       "quote": "Innovation in financial technology requires both technical excellence and deep understanding of human trust."
     },
     {
+      "id": "4",
       "name": "Sandra \"Sandy\" Carter",
       "title": "Chief Operating Officer",
       "organization": "Unstoppable Domains",
@@ -92,6 +96,7 @@
       "isKeynote": false
     },
     {
+      "id": "5",
       "name": "Padmasree Warrior",
       "title": "Founder & CEO",
       "organization": "Fable",
@@ -114,6 +119,7 @@
       "quote": "True innovation happens when technology meets human empathy and understanding."
     },
     {
+      "id": "6",
       "name": "Samina Virk",
       "title": "U.S. CEO & Chief Marketing Officer",
       "organization": "Vestiaire Collective",
