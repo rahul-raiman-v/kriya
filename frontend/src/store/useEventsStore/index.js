@@ -21,7 +21,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'Brand Alchemy is an exciting test of creativity, strategy, and presentation skills, where participants transform ideas into market ready brands. The event unfolds in two competitive rounds. ',
+                'Brand Alchemy is an exciting test of creativity, strategy, and presentation skills, where participants transform ideas into market ready brands. The event unfolds in two competitive rounds.',
             },
             {
               id: 'rounds',
@@ -251,7 +251,7 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-3',
-          eventTitle: 'Break Thru',
+          eventTitle: 'BREAKTHRU',
           eventType: 'Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
