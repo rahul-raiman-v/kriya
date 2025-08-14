@@ -237,7 +237,7 @@ export const TeamsPage = () => {
         </div>
         <div className="flex flex-col gap-y-5">
           <p className="text-gray-700 font-semibold text-3xl text-center">
-            Falculty Co-ordinators
+            Faculty Co-ordinators
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
             {faculties.map((item) => {
