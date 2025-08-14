@@ -989,7 +989,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                "BRAINSTROM TO BUSINESS, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.",
+                'BRAINSTROM TO BUSINESS, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.',
             },
             {
               id: 'prerequisites',
@@ -1049,7 +1049,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                "FROM IDEA TO MARKET,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.",
+                'FROM IDEA TO MARKET,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.',
             },
             {
               id: 'prerequisites',

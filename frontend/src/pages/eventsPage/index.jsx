@@ -158,7 +158,7 @@ export const EventsPage = () => {
                       src={event.img}
                       alt={event.eventTitle}
                       loading="lazy"
-                      className="w-full h-full object-fit rounded-lg shadow-md"
+                      className="w-full h-full !object-fill rounded-lg shadow-md "
                     />
                   </div>
 

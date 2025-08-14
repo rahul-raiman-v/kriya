@@ -53,7 +53,9 @@ export function ComboDetail() {
                 className="text-indigo-600 flex-shrink-0 mt-1"
               />
               <p className="leading-relaxed">
-                {selectedCombo.prize && <span className="font-medium">Events: </span> }
+                {selectedCombo.prize && (
+                  <span className="font-medium">Events: </span>
+                )}
                 {selectedCombo.events}
               </p>
             </div>
@@ -69,7 +71,9 @@ export function ComboDetail() {
                 {!selectedCombo.prize &&
                   selectedCombo.isTrue &&
                   ' per Person / Day (excluding GST)'}
-                {!selectedCombo.prize && !selectedCombo.isTrue && 'for a 3 days (excluding GST)'}
+                {!selectedCombo.prize &&
+                  !selectedCombo.isTrue &&
+                  'for a 3 days (excluding GST)'}
               </p>
             </div>
             <div className="flex items-start gap-3 text-base sm:text-lg">
