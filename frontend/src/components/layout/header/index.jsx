@@ -99,13 +99,25 @@ export const Header = () => {
             <img
               src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
               alt=""
-              className="h-13"
+              className="h-13 hidden xl:block"
+              loading="lazy"
+            />
+            <img
+              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106862/bitsathyindia_fvkxxf.png"
+              alt=""
+              className="h-16 xl:hidden block"
               loading="lazy"
             />
             <img
               src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_lpiwdp.png"
               alt=""
-              className="h-16"
+              className="h-16 xl:hidden block md:hidden lg:block"
+              loading="lazy"
+            />
+            <img
+              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
+              alt=""
+              className="h-16  hidden xl:block md:block lg:hidden"
               loading="lazy"
             />
             <img
@@ -147,7 +159,7 @@ export const Header = () => {
                 onClick={handleRegistration}
                 className="cursor-pointer bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                <span className="flex items-center">
+                <span className="flex items-center whitespace-nowrap">
                   Register Now
                   <svg
                     className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"
@@ -235,40 +247,42 @@ export const Header = () => {
               </div>
 
               {/* Enhanced Mobile Registration Button */}
-              <button
-                onClick={handleRegistration}
-                className="cursor-pointer w-full mt-8 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white py-4 px-6 rounded-2xl font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-200 shadow-lg hover:shadow-xl active:scale-95 transform hover:-translate-y-0.5"
-                style={{
-                  animation: isMenuOpen
-                    ? `fadeInUp 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) ${navLinks.length * 70}ms both`
-                    : 'none',
-                }}
-              >
-                <span className="flex items-center justify-center">
-                  Register Now
-                  <span className="ml-2 inline-block animate-bounce">
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      ></path>
-                    </svg>
+              <div className='flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:space-y-4 flex-row gap-x-4'>
+                <button
+                  onClick={handleRegistration}
+                  className="cursor-pointer bg-gradient-to-r w-full from-pink-400 via-purple-500 to-indigo-500 text-white py-4 px-6 rounded-2xl font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-200 shadow-lg hover:shadow-xl active:scale-95 transform hover:-translate-y-0.5"
+                  style={{
+                    animation: isMenuOpen
+                      ? `fadeInUp 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) ${navLinks.length * 70}ms both`
+                      : 'none',
+                  }}
+                >
+                  <span className="flex items-center justify-center">
+                    Register Now
+                    <span className="ml-2 inline-block animate-bounce">
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M13 7l5 5m0 0l-5 5m5-5H6"
+                        ></path>
+                      </svg>
+                    </span>
                   </span>
-                </span>
-              </button>
-              <button
-                className="cursor-pointer bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
-                onClick={() => alert('Broucher will be available soon')}
-              >
-                Download Brochure
-              </button>
+                </button>
+                <button
+                  className="cursor-pointer bg-gradient-to-r w-full  from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300  shadow-md"
+                  onClick={() => alert('Broucher will be available soon')}
+                >
+                  Download Brochure
+                </button>
+              </div>
             </nav>
           </div>
         </div>

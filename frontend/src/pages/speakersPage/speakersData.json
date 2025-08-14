@@ -502,5 +502,32 @@
     "industry": "Government (StartupTN)",
     "isKeynote": true,
     "quote": "Innovation is not just about technology — it’s about empowering people to create lasting impact."
-  }
+  },
+  {
+    "name": "Vaishnavi Rajalakshmi S",
+    "title": "CEO & Managing Director",
+    "organization": "The Gaia Sustainable Solutions Pvt Ltd & Zorg Corp Business consultation Pvt Ltd",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755146128/IMG-20250813-WA0014_1_cpxxyu.jpg",
+    "carouselUrl":"https://res.cloudinary.com/dsz2br3qg/image/upload/v1755146128/IMG-20250813-WA0014_1_cpxxyu.jpg",
+    "about": "Vaishnavi Rajalakshmi S is a portfolio entrepreneur and public advocate for sustainability, climate action, and social innovation. She is the CEO of The Gaia Sustainable Solutions, a venture described as a trailblazer in the textile industry offering a sustainable marketplace [1], and the Managing Director of Zorgcorpp Business Consultation Pvt. Ltd.[2] Her entrepreneurial activities also extend to the education sector as the Founder and CEO of Cosmic One, a competitive exams institute.[3, 4] A prominent voice in climate change discourse, her TEDx talk, 'Climate action - what an individual can do,' calls for personal responsibility to 'extend the timeline' of the planet's health, emphasizing that adults must serve as behavioral models for the next generation.[5] She is publicly recognized as a 'visionary CEO,' 'Sustainability promoter,' and 'humanitarian'.[3, 6]",
+    "expertise":[
+      "Business Consulting & Strategy",
+      "Educational Entrepreneurship"
+    ],
+    "achievements":[
+        "Founder & CEO of The Gaia Sustainable Solutions Pvt Ltd, a company focused on creating a 100% sustainable marketplace for the textile industry [1]",
+        "Managing Director of Zorgcorpp Business Consultation Pvt. Ltd., a business services and consulting firm [2]",
+        "Founder & CEO of Cosmic One, an educational venture described as a competitive exams institute [3, 4]",
+        "Recognized as one of the Top 30 social Innovators of Youth Co:lab 2020, an initiative by UNDP and Citi Foundation [7, 8, 9, 10]",
+        "Publicly noted for The Gaia Sustainable Solutions' acceptance into a prestigious program at Stanford [1]",
+        "Featured speaker and panelist at Startup Grind events, sharing insights on entrepreneurship and diversity in startups [11, 4]",
+        "Founder of 'I am you Geniee,' another entrepreneurial venture mentioned in her public profile [11]"
+    ],
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/vaishnavirajalaksmi/"
+    },
+    "industry": "Sustainability, Social Enterprise, Business Consulting, Textiles, Education",
+    "isKeynote": true,
+    "quote": "Remember childrens do learn. but they copy us."
+}
 ]

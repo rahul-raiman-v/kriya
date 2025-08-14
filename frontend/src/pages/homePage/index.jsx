@@ -439,39 +439,39 @@ export const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 grid-col-1 gap-10">
             {/* Contact Info Card */}
             <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+              <h3 className="text-2xl max-sm:text-xl font-bold text-slate-800 mb-6">
                 Contact Information
               </h3>
-              <div className="space-y-5">
+              <div className="flex flex-col gap-y-3">
                 <div className="flex items-center gap-3">
                   <Phone className="text-indigo-600" size={22} />
-                  <span className="text-slate-700 text-lg">
+                  <span className="text-slate-700 text-lg max-sm:text-md">
                     +91 80721 37522
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="text-purple-600" size={22} />
-                  <span className="text-slate-700 text-lg">
+                  <span className="text-slate-700 text-lg max-sm:text-md">
                     startuphub@bitsathy.ac.in
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="text-pink-600" size={22} />
-                  <span className="text-slate-700 text-lg">
+                  <p className="text-slate-700 text-lg max-sm:text-md">
                     Bannari Amman Institute Technology Campus, Sathyamangalam,
                     Tamil Nadu
-                  </span>
+                  </p>
                 </div>
               </div>
             </div>
             <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.7629352440936!2d77.27452747513593!3d11.497017845488983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!2sBannari%20Amman%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1755107737262!5m2!1sen!2sin"
-                width="550"
-                height="250"
+                width=""
+                height=""
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -480,14 +480,14 @@ export const HomePage = () => {
               />
             </div>
             {/* Social Links Card */}
-            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center col-span-2 mx-auto w-1/2">
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl  hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
               <h4 className="text-xl font-semibold text-slate-800 mb-4">
                 Follow Us
               </h4>
               <p className="text-slate-600 mb-6 text-center">
                 Stay updated with event announcements, schedules, and more.
               </p>
-              <div className="flex gap-5">
+              <div className="grid gap-5 grid-cols-3">
                 <a
                   href="#"
                   className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
@@ -522,6 +522,32 @@ export const HomePage = () => {
                   />
                 </a>
               </div>
+            </div>
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+                Associate With
+              </h3>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                {/* Times of India Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://www.pngitem.com/pimgs/m/334-3344553_times-of-india-logo-png-transparent-png.png"
+                    alt="Times of India"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">Times of India</span>
+                </div>
+
+                {/* StartupTN Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://images.indianexpress.com/2023/09/Wma5uL7U_400x400.jpg"
+                    alt="StartupTN"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">StartupTN</span>
+                </div>
+                </div>
             </div>
           </div>
         </div>
