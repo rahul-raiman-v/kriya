@@ -123,7 +123,7 @@ export const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => handleNavigate(link.path)}
-                  className={`relative transition-all duration-300 hover:scale-105 text-lg px-4 py-3 ${
+                  className={`cursor-pointer relative transition-all duration-300 hover:scale-105 text-lg px-4 py-3 ${
                     isActive(link.path)
                       ? 'text-pink-600 font-bold '
                       : 'text-slate-600 font-semibold '
@@ -145,7 +145,7 @@ export const Header = () => {
             <div className="hidden lg:flex items-center gap-x-4  ">
               <button
                 onClick={handleRegistration}
-                className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="cursor-pointer bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 <span className="flex items-center">
                   Register Now
@@ -170,7 +170,7 @@ export const Header = () => {
             <div className="lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="relative w-12 h-12 flex flex-col items-center justify-center focus:outline-none group rounded-xl hover:bg-pink-50 transition-colors duration-300"
+                className="cursor-pointer relative w-12 h-12 flex flex-col items-center justify-center focus:outline-none group rounded-xl hover:bg-pink-50 transition-colors duration-300"
                 aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={isMenuOpen}
               >
@@ -199,7 +199,7 @@ export const Header = () => {
                   <button
                     key={link.name}
                     onClick={() => handleNavigate(link.path)}
-                    className={`block w-full text-left py-4 px-6 rounded-2xl transition-all duration-300 focus:outline-none ${
+                    className={`cursor-pointer block w-full text-left py-4 px-6 rounded-2xl transition-all duration-300 focus:outline-none ${
                       isActive(link.path)
                         ? 'text-pink-600 font-bold bg-gradient-to-r from-pink-100 to-purple-100 border border-pink-200 shadow-md'
                         : 'text-slate-600 hover:text-pink-600 hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 font-medium'
@@ -237,7 +237,7 @@ export const Header = () => {
               {/* Enhanced Mobile Registration Button */}
               <button
                 onClick={handleRegistration}
-                className="w-full mt-8 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white py-4 px-6 rounded-2xl font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-200 shadow-lg hover:shadow-xl active:scale-95 transform hover:-translate-y-0.5"
+                className="cursor-pointer w-full mt-8 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white py-4 px-6 rounded-2xl font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-200 shadow-lg hover:shadow-xl active:scale-95 transform hover:-translate-y-0.5"
                 style={{
                   animation: isMenuOpen
                     ? `fadeInUp 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) ${navLinks.length * 70}ms both`
@@ -264,7 +264,7 @@ export const Header = () => {
                 </span>
               </button>
               <button
-                className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+                className="cursor-pointer bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
                 onClick={() => alert('Broucher will be available soon')}
               >
                 Download Brochure

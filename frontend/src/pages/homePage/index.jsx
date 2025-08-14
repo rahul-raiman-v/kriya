@@ -16,6 +16,7 @@ import {
   Twitter,
   Linkedin,
 } from 'lucide-react';
+import { useNavigate } from 'react-router';
 
 // Floating particle component
 const FloatingParticle = ({ style }) => (
@@ -74,6 +75,8 @@ export const HomePage = () => {
   const [particles, setParticles] = React.useState([]);
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
+    const router = useNavigate();
+
 
   // Scroll effect
   React.useEffect(() => {
@@ -216,11 +219,11 @@ export const HomePage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow">
+                <button onClick={()=> router("/combo")} className="cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow">
                   Register Now{' '}
                   <ArrowRight className="inline-block ml-2" size={20} />
                 </button>
-                <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                <button className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
                   Learn More
                 </button>
               </div>
@@ -237,10 +240,10 @@ export const HomePage = () => {
                     BIT Campus, Sathyamangalam
                   </span>
                 </div>
-                <div className="flex items-center gap-2 min-w-[250px]">
+                {/* <div className="flex items-center gap-2 min-w-[250px]">
                   <Users className="text-pink-600" size={20} />
                   <span className="font-medium">500+ Participants</span>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -271,7 +274,7 @@ export const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
-                <AnimatedCounter end={12} suffix="" />
+                <AnimatedCounter end={20} suffix="+" />
               </div>
               <div className="text-slate-600 font-medium">Events</div>
             </div>
@@ -404,11 +407,11 @@ export const HomePage = () => {
             collaboration. Register now and be part of the future!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
+            <button onClick={()=> router("/combo")} className="cursor-pointer bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
               Register Now{' '}
               <ArrowRight className="inline-block ml-2" size={20} />
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
+            <button className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
               Download Brochure
             </button>
           </div>
@@ -528,7 +531,7 @@ export const HomePage = () => {
       {scrollY > 500 && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-3 rounded-full shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 z-50"
+          className="cursor-pointer fixed bottom-8 right-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-3 rounded-full shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 z-50"
         >
           <ChevronDown className="rotate-180" size={20} />
         </button>
