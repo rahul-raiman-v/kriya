@@ -53,7 +53,7 @@ export function ComboDetail() {
                 className="text-indigo-600 flex-shrink-0 mt-1"
               />
               <p className="leading-relaxed">
-                <span className="font-medium">Events: </span>
+                {selectedCombo.prize && <span className="font-medium">Events: </span> }
                 {selectedCombo.events}
               </p>
             </div>
@@ -65,17 +65,17 @@ export function ComboDetail() {
               <p className="leading-relaxed">
                 <span className="font-medium">Registration Fee: </span>
                 {selectedCombo.fee}
-                {selectedCombo.prize && ' per Person'}
+                {selectedCombo.prize && ' per Person (excluding GST)'}
                 {!selectedCombo.prize &&
                   selectedCombo.isTrue &&
-                  ' per Person / Day'}
-                {!selectedCombo.prize && !selectedCombo.isTrue && ' for 3 days'}
+                  ' per Person / Day (excluding GST)'}
+                {!selectedCombo.prize && !selectedCombo.isTrue && 'for a 3 days (excluding GST)'}
               </p>
             </div>
             <div className="flex items-start gap-3 text-base sm:text-lg">
               <Hotel size={24} className="text-indigo-600 flex-shrink-0 mt-1" />
               <p className="leading-relaxed">
-                <span className="font-medium">Accommodation: </span>
+                {/* <span className="font-medium">Accommodation: </span> */}
                 {selectedCombo.hostel}
               </p>
             </div>
@@ -87,7 +87,7 @@ export function ComboDetail() {
                   className="text-indigo-600 flex-shrink-0 mt-1"
                 />
                 <p className="leading-relaxed">
-                  <span className="font-medium">Prizes: </span>
+                  {/* <span className="font-medium">Prizes: </span> */}
                   {selectedCombo.prize}
                 </p>
               </div>
@@ -122,7 +122,7 @@ export function ComboDetail() {
           >
             Terms and Conditions
           </p>
-          <ul className="bg-gray-100 p-4 rounded-xl mb-4 list-disc list-inside space-y-2 text-sm sm:text-base text-gray-600">
+          <ul className="bg-gray-100 p-4 rounded-xl mb-4 list-disc list-outside pl-8 space-y-2 text-sm sm:text-base text-gray-600">
             {Array.isArray(selectedCombo.rulesData) &&
               selectedCombo.rulesData.map((item) => (
                 <li key={item.id}>{item.rule}</li>
