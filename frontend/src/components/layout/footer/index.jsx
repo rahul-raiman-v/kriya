@@ -20,7 +20,7 @@ export const Footer = () => {
             onClick={() => router('/developers')}
           >
             {' '}
-            Developers
+            Developers Team
           </span>
         </p>
         {/* </div> */}

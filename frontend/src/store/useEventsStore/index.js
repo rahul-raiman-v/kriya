@@ -21,7 +21,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'Brand Alchemy is an exciting test of creativity, strategy, and presentation skills, where participants transform ideas into market ready brands. The event unfolds in two competitive rounds. ',
+                'Brand Alchemy is an exciting test of creativity, strategy, and presentation skills, where participants transform ideas into market ready brands. The event unfolds in two competitive rounds.',
             },
             {
               id: 'rounds',
@@ -251,7 +251,7 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-3',
-          eventTitle: 'Break Thru',
+          eventTitle: 'BREAKTHRU',
           eventType: 'Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
@@ -262,7 +262,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'BreakThru is a high-impact problem-solving competition where participants tackle real-world entrepreneurial challenges with creativity and strategy. Teams will analyse the given problem, develop innovative and practical solutions, and present their approach with clarity and conviction. The event tests critical thinking, market insight, and execution skills — rewarding those who can break through obstacles and turn challenges into business opportunities.',
+                'BREAKTHRU is a high-impact problem-solving competition where participants tackle real-world entrepreneurial challenges with creativity and strategy. Teams will analyse the given problem, develop innovative and practical solutions, and present their approach with clarity and conviction. The event tests critical thinking, market insight, and execution skills — rewarding those who can break through obstacles and turn challenges into business opportunities.',
             },
             {
               id: 'rounds',
@@ -610,7 +610,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'Tech Talk is a fast-paced debate competition where sharp minds engage over the most exciting and controversial topics in entrepreneurship. Participants compete in structured rounds, presenting well-researched arguments, countering opponents’ points, and defending their stance with logic, facts, and quick thinking. The event tests communication skills, business acumen, and the ability to think on your feet — rewarding those who can persuade, outwit, and inspire.',
+                'Talk Show is a fast-paced debate competition where sharp minds engage over the most exciting and controversial topics in entrepreneurship. Participants compete in structured rounds, presenting well-researched arguments, countering opponents’ points, and defending their stance with logic, facts, and quick thinking. The event tests communication skills, business acumen, and the ability to think on your feet — rewarding those who can persuade, outwit, and inspire.',
             },
             {
               id: 'rounds',
@@ -989,7 +989,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                "'Brainstrom to Business' Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.",
+                'BRAINSTROM TO BUSINESS, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.',
             },
             {
               id: 'prerequisites',
@@ -1049,7 +1049,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                "'From Idea to Market'  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.",
+                'FROM IDEA TO MARKET,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.',
             },
             {
               id: 'prerequisites',
