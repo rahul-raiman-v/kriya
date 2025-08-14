@@ -978,7 +978,7 @@ export const useEventsStore = create(() => ({
       events: [
         {
           id: 'workshop-1',
-          eventTitle: 'Turning Sparks into succesful ventures',
+          eventTitle: 'BRAINSTROM TO BUSINESS',
           eventType: 'Startup Workshop',
           img: './WorkShop1Img.jpg',
           date: 'September 09, 2025',
@@ -989,7 +989,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'BRAINSTROM TO BUSINESS, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.',
+                'Turning Sparks into succesful ventures, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.',
             },
             {
               id: 'prerequisites',
@@ -1038,7 +1038,7 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'workshop-2',
-          eventTitle: 'Turning Concepts into Customers',
+          eventTitle: 'FROM IDEA TO MARKET',
           eventType: 'Startup Workshop',
           img: './WorkShop2Img.jpg',
           date: 'September 10, 2025',
@@ -1049,7 +1049,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'FROM IDEA TO MARKET,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.',
+                'Turning Concepts into Customers,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.',
             },
             {
               id: 'prerequisites',
