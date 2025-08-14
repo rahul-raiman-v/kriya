@@ -62,7 +62,10 @@ export function EventsCard({
     return (
       <div className="prose prose-sm max-w-none">
         {typeof activeContent === 'string' ? (
-          <p>{activeContent}</p>
+          <div className="flex">
+            <p>"</p>
+            <p>{activeContent}"</p>
+          </div>
         ) : (
           <pre className="whitespace-pre-wrap text-sm">
             {JSON.stringify(activeContent, null, 2)}
@@ -137,7 +140,7 @@ export function EventsCard({
         </div>
 
         {/* Register Button */}
-        <div className="flex items-center gap-x-4">
+        <div className="flex items-center gap-x-4 max-sm:flex-col max-sm:gap-y-4">
           <button
             className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
             onClick={() => navigate('/combo')}

@@ -75,8 +75,7 @@ export const HomePage = () => {
   const [particles, setParticles] = React.useState([]);
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
-    const router = useNavigate();
-
+  const router = useNavigate();
 
   // Scroll effect
   React.useEffect(() => {
@@ -219,7 +218,10 @@ export const HomePage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button onClick={()=> router("/combo")} className="cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow">
+                <button
+                  onClick={() => router('/combo')}
+                  className="cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow"
+                >
                   Register Now{' '}
                   <ArrowRight className="inline-block ml-2" size={20} />
                 </button>
@@ -407,7 +409,10 @@ export const HomePage = () => {
             collaboration. Register now and be part of the future!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={()=> router("/combo")} className="cursor-pointer bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
+            <button
+              onClick={() => router('/combo')}
+              className="cursor-pointer bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105"
+            >
               Register Now{' '}
               <ArrowRight className="inline-block ml-2" size={20} />
             </button>
@@ -535,7 +540,9 @@ export const HomePage = () => {
                     alt="Times of India"
                     className="h-16 object-contain"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">Times of India</span>
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Times of India
+                  </span>
                 </div>
 
                 {/* StartupTN Logo */}
@@ -545,9 +552,11 @@ export const HomePage = () => {
                     alt="StartupTN"
                     className="h-16 object-contain"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">StartupTN</span>
+                  <span className="text-slate-700 mt-2 font-medium">
+                    StartupTN
+                  </span>
                 </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>

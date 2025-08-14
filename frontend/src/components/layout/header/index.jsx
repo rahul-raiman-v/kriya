@@ -247,7 +247,7 @@ export const Header = () => {
               </div>
 
               {/* Enhanced Mobile Registration Button */}
-              <div className='flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:space-y-4 flex-row gap-x-4'>
+              <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:space-y-4 flex-row gap-x-4">
                 <button
                   onClick={handleRegistration}
                   className="cursor-pointer bg-gradient-to-r w-full from-pink-400 via-purple-500 to-indigo-500 text-white py-4 px-6 rounded-2xl font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-200 shadow-lg hover:shadow-xl active:scale-95 transform hover:-translate-y-0.5"
