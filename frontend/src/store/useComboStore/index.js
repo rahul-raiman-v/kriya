@@ -189,7 +189,7 @@ export const useComboStore = create(() => ({
     {
       id: 1,
       combo: 'Delegate Registrations',
-      events: 'Can access all the events for a day',
+      events: 'Can visit all the events for a day',
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '1500.00',
       link: 'https://forms.gle/na9rUVbfzSYVtA2h7',
@@ -206,7 +206,7 @@ export const useComboStore = create(() => ({
         },
         {
           id: 3,
-          rule: 'A valid ID is required for registration and verification at the event venue.',
+          rule: 'A valid ID is required for verification at the event venue.',
         },
       ],
     },
