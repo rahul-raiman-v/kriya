@@ -62,10 +62,7 @@ export function EventsCard({
     return (
       <div className="prose prose-sm max-w-none">
         {typeof activeContent === 'string' ? (
-          <div className='flex'>
-            <p>"</p>
-            <p>{activeContent}"</p>
-          </div>
+          <p>{activeContent}</p>
         ) : (
           <pre className="whitespace-pre-wrap text-sm">
             {JSON.stringify(activeContent, null, 2)}
