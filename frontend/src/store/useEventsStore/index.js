@@ -262,7 +262,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'BreakThru is a high-impact problem-solving competition where participants tackle real-world entrepreneurial challenges with creativity and strategy. Teams will analyse the given problem, develop innovative and practical solutions, and present their approach with clarity and conviction. The event tests critical thinking, market insight, and execution skills — rewarding those who can break through obstacles and turn challenges into business opportunities.',
+                'BREAKTHRU is a high-impact problem-solving competition where participants tackle real-world entrepreneurial challenges with creativity and strategy. Teams will analyse the given problem, develop innovative and practical solutions, and present their approach with clarity and conviction. The event tests critical thinking, market insight, and execution skills — rewarding those who can break through obstacles and turn challenges into business opportunities.',
             },
             {
               id: 'rounds',
@@ -610,7 +610,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'Tech Talk is a fast-paced debate competition where sharp minds engage over the most exciting and controversial topics in entrepreneurship. Participants compete in structured rounds, presenting well-researched arguments, countering opponents’ points, and defending their stance with logic, facts, and quick thinking. The event tests communication skills, business acumen, and the ability to think on your feet — rewarding those who can persuade, outwit, and inspire.',
+                'Talk Show is a fast-paced debate competition where sharp minds engage over the most exciting and controversial topics in entrepreneurship. Participants compete in structured rounds, presenting well-researched arguments, countering opponents’ points, and defending their stance with logic, facts, and quick thinking. The event tests communication skills, business acumen, and the ability to think on your feet — rewarding those who can persuade, outwit, and inspire.',
             },
             {
               id: 'rounds',
@@ -978,7 +978,7 @@ export const useEventsStore = create(() => ({
       events: [
         {
           id: 'workshop-1',
-          eventTitle: 'Turning Sparks into succesful ventures',
+          eventTitle: 'BRAINSTROM TO BUSINESS',
           eventType: 'Startup Workshop',
           img: './WorkShop1Img.jpg',
           date: 'September 09, 2025',
@@ -989,7 +989,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                "'Brainstrom to Business' Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.",
+                'Turning Sparks into succesful ventures, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.',
             },
             {
               id: 'prerequisites',
@@ -1038,7 +1038,7 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'workshop-2',
-          eventTitle: 'Turning Concepts into Customers',
+          eventTitle: 'FROM IDEA TO MARKET',
           eventType: 'Startup Workshop',
           img: './WorkShop2Img.jpg',
           date: 'September 10, 2025',
@@ -1049,7 +1049,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                "'From Idea to Market'  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.",
+                'Turning Concepts into Customers,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.',
             },
             {
               id: 'prerequisites',

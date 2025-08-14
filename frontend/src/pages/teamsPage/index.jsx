@@ -106,7 +106,7 @@ export const TeamsPage = () => {
     {
       id: 1,
       name: 'Kirupa Sankar M',
-      designation: 'Ideathon',
+      designation: 'IdeaForge',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Kirupa-Sankar-M.png',
       phone: '+91 9994624674',
@@ -115,7 +115,7 @@ export const TeamsPage = () => {
     {
       id: 2,
       name: 'Vaidhyanathan B',
-      designation: 'Hackthon',
+      designation: 'HACKVISION',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Vaidhyanathan-B.jpg',
       phone: '+91 7395887646',
@@ -124,7 +124,7 @@ export const TeamsPage = () => {
     {
       id: 3,
       name: 'Prathap M R',
-      designation: 'Problem Solving',
+      designation: 'BREAKTHRU',
       image: 'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Prathap-M-R.jpg',
       phone: '+91 8344480485',
       email: 'prathap@bitsathy.ac.in',
@@ -132,7 +132,7 @@ export const TeamsPage = () => {
     {
       id: 4,
       name: 'Kalaiyarasi M',
-      designation: 'Product Expo',
+      designation: 'CREOVATE',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Kalaiyarasi-M.png',
       phone: '+91 9842981160',
@@ -150,7 +150,7 @@ export const TeamsPage = () => {
     {
       id: 6,
       name: 'Nandhini K M',
-      designation: 'Quiz',
+      designation: 'QUIZXtream',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Ms-Nandhini-K-M.png',
       phone: '+91 9788005115',
@@ -159,7 +159,7 @@ export const TeamsPage = () => {
     {
       id: 7,
       name: 'Sakthiya Ram S',
-      designation: 'Debate',
+      designation: 'Talk Show',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Sakthiya-Ram-S.jpg',
       phone: '+91 9443074586',
@@ -168,7 +168,7 @@ export const TeamsPage = () => {
     {
       id: 8,
       name: 'Kumaresan K',
-      designation: 'Connections',
+      designation: 'Guess In Glance',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Prof.-Kumaresan-K.jpg',
       phone: '+91 6374412828',
@@ -227,7 +227,7 @@ export const TeamsPage = () => {
         </div>
         <div className="flex flex-col gap-y-5">
           <p className="text-gray-700 font-semibold text-3xl text-center">
-            SPOC
+            Team KRIYA
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
             {spocs.map((item) => {
@@ -237,7 +237,7 @@ export const TeamsPage = () => {
         </div>
         <div className="flex flex-col gap-y-5">
           <p className="text-gray-700 font-semibold text-3xl text-center">
-            Falculty Co-ordinators
+            Faculty Co-ordinators
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
             {faculties.map((item) => {

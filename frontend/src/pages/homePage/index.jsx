@@ -16,6 +16,7 @@ import {
   Twitter,
   Linkedin,
 } from 'lucide-react';
+import { useNavigate } from 'react-router';
 
 // Floating particle component
 const FloatingParticle = ({ style }) => (
@@ -74,6 +75,7 @@ export const HomePage = () => {
   const [particles, setParticles] = React.useState([]);
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
+  const router = useNavigate();
 
   // Scroll effect
   React.useEffect(() => {
@@ -216,11 +218,14 @@ export const HomePage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow">
+                <button
+                  onClick={() => router('/combo')}
+                  className="cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-glow"
+                >
                   Register Now{' '}
                   <ArrowRight className="inline-block ml-2" size={20} />
                 </button>
-                <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                <button className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
                   Learn More
                 </button>
               </div>
@@ -237,10 +242,10 @@ export const HomePage = () => {
                     BIT Campus, Sathyamangalam
                   </span>
                 </div>
-                <div className="flex items-center gap-2 min-w-[250px]">
+                {/* <div className="flex items-center gap-2 min-w-[250px]">
                   <Users className="text-pink-600" size={20} />
                   <span className="font-medium">500+ Participants</span>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -271,7 +276,7 @@ export const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
-                <AnimatedCounter end={12} suffix="" />
+                <AnimatedCounter end={20} suffix="+" />
               </div>
               <div className="text-slate-600 font-medium">Events</div>
             </div>
@@ -404,11 +409,14 @@ export const HomePage = () => {
             collaboration. Register now and be part of the future!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105">
+            <button
+              onClick={() => router('/combo')}
+              className="cursor-pointer bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105"
+            >
               Register Now{' '}
               <ArrowRight className="inline-block ml-2" size={20} />
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
+            <button className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
               Download Brochure
             </button>
           </div>
@@ -436,39 +444,39 @@ export const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 grid-col-1 gap-10">
             {/* Contact Info Card */}
             <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+              <h3 className="text-2xl max-sm:text-xl font-bold text-slate-800 mb-6">
                 Contact Information
               </h3>
-              <div className="space-y-5">
+              <div className="flex flex-col gap-y-3">
                 <div className="flex items-center gap-3">
                   <Phone className="text-indigo-600" size={22} />
-                  <span className="text-slate-700 text-lg">
+                  <span className="text-slate-700 text-lg max-sm:text-md">
                     +91 80721 37522
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="text-purple-600" size={22} />
-                  <span className="text-slate-700 text-lg">
+                  <span className="text-slate-700 text-lg max-sm:text-md">
                     startuphub@bitsathy.ac.in
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="text-pink-600" size={22} />
-                  <span className="text-slate-700 text-lg">
+                  <p className="text-slate-700 text-lg max-sm:text-md">
                     Bannari Amman Institute Technology Campus, Sathyamangalam,
                     Tamil Nadu
-                  </span>
+                  </p>
                 </div>
               </div>
             </div>
             <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.7629352440936!2d77.27452747513593!3d11.497017845488983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!2sBannari%20Amman%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1755107737262!5m2!1sen!2sin"
-                width="550"
-                height="250"
+                width=""
+                height=""
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -477,14 +485,14 @@ export const HomePage = () => {
               />
             </div>
             {/* Social Links Card */}
-            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center col-span-2 mx-auto w-1/2">
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl  hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
               <h4 className="text-xl font-semibold text-slate-800 mb-4">
                 Follow Us
               </h4>
               <p className="text-slate-600 mb-6 text-center">
                 Stay updated with event announcements, schedules, and more.
               </p>
-              <div className="flex gap-5">
+              <div className="grid gap-5 grid-cols-3">
                 <a
                   href="#"
                   className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
@@ -520,6 +528,36 @@ export const HomePage = () => {
                 </a>
               </div>
             </div>
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+                Associate With
+              </h3>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                {/* Times of India Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://www.pngitem.com/pimgs/m/334-3344553_times-of-india-logo-png-transparent-png.png"
+                    alt="Times of India"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Times of India
+                  </span>
+                </div>
+
+                {/* StartupTN Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://images.indianexpress.com/2023/09/Wma5uL7U_400x400.jpg"
+                    alt="StartupTN"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    StartupTN
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -528,7 +566,7 @@ export const HomePage = () => {
       {scrollY > 500 && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-3 rounded-full shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 z-50"
+          className="cursor-pointer fixed bottom-8 right-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-3 rounded-full shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 z-50"
         >
           <ChevronDown className="rotate-180" size={20} />
         </button>
