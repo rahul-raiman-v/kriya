@@ -844,7 +844,7 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-8',
-          eventTitle: 'HACKVISION',
+          eventTitle: 'VISIONHACK',
           eventType: 'Hackathon',
           date: 'September 11, 2025',
           venue: 'BIT Campus',
@@ -855,7 +855,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'HACKVISION is an intense, time-bound innovation challenge where participants collaborate in teams to design, build, and present creative tech solutions to real-world problems. Over the course of the event, innovators brainstorm ideas, develop prototypes, and pitch their projects to judges — all under the pressure of a ticking clock. It’s a thrilling test of coding skills, problem-solving, teamwork, and ingenuity, rewarding those who can turn bold ideas into working solutions.',
+                'VISIONHACK is an intense, time-bound innovation challenge where participants collaborate in teams to design, build, and present creative tech solutions to real-world problems. Over the course of the event, innovators brainstorm ideas, develop prototypes, and pitch their projects to judges — all under the pressure of a ticking clock. It’s a thrilling test of coding skills, problem-solving, teamwork, and ingenuity, rewarding those who can turn bold ideas into working solutions.',
             },
             {
               id: 'rounds',

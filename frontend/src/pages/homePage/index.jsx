@@ -549,6 +549,18 @@ export const HomePage = () => {
                   </span>
                 </div>
 
+                {/** ISBA Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755240080/isba_t4ehjo.png"
+                    alt="ISBA"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    ISBA
+                  </span>
+                </div>
+
               </div>
             </div>
             {/* Social Links Card */}
@@ -559,7 +571,7 @@ export const HomePage = () => {
               <p className="text-slate-600 mb-6 text-center">
                 Stay updated with event announcements, schedules, and more.
               </p>
-              <div className="grid gap-5 max-sm:grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
+              <div className="flex gap-5 flex-wrap">
                 <a
                   href="#"
                   className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
