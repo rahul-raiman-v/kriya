@@ -477,7 +477,7 @@ export const HomePage = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.7629352440936!2d77.27452747513593!3d11.497017845488983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!2sBannari%20Amman%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1755107737262!5m2!1sen!2sin"
                 width=""
                 height=""
-                style={{ border: 0 , height:"100%", width:"100%" }}
+                style={{ border: 0, height: '100%', width: '100%' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -556,11 +556,8 @@ export const HomePage = () => {
                     alt="ISBA"
                     className="h-16 object-contain"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    ISBA
-                  </span>
+                  <span className="text-slate-700 mt-2 font-medium">ISBA</span>
                 </div>
-
               </div>
             </div>
             {/* Social Links Card */}
@@ -607,7 +604,6 @@ export const HomePage = () => {
                 </a>
               </div>
             </div>
-            
           </div>
         </div>
       </section>

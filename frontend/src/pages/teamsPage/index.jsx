@@ -178,8 +178,7 @@ export const TeamsPage = () => {
       id: 9,
       name: 'Dr Haritha J',
       designation: 'BRAND ALCHEMY',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Haritha-J.png',
+      image: 'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Haritha-J.png',
       phone: '+91 8072285633',
       email: 'haritha@bitsathy.ac.in',
     },

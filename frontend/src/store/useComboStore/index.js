@@ -11,7 +11,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '499.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236018/comboImage1_fonz4q.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236018/comboImage1_fonz4q.png',
       rulesData: [
         {
           id: 1,
@@ -40,7 +41,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '499.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/comboImage2_t6fxoa.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/comboImage2_t6fxoa.png',
       rulesData: [
         {
           id: 1,
@@ -69,7 +71,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '555.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage3_uaftkh.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage3_uaftkh.png',
       rulesData: [
         {
           id: 1,
@@ -98,7 +101,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '555.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236017/comboImage4_xi6kb3.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236017/comboImage4_xi6kb3.png',
       rulesData: [
         {
           id: 1,
@@ -127,7 +131,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '599.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236013/comboImage5_wghokk.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236013/comboImage5_wghokk.png',
       rulesData: [
         {
           id: 1,
@@ -156,7 +161,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '400.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage6_wr2iu6.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage6_wr2iu6.png',
       rulesData: [
         {
           id: 1,
@@ -185,7 +191,8 @@ export const useComboStore = create(() => ({
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '1500.00',
       link: 'https://forms.gle/na9rUVbfzSYVtA2h7',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage7_qlcqha.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage7_qlcqha.png',
       isTrue: true,
       rulesData: [
         {
@@ -211,7 +218,8 @@ export const useComboStore = create(() => ({
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '5000.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLScYvnbrjPKIxbcvfjUpRXQH-WOrG-2Yop14lZPBp1y-s0137g/viewform?usp=sharing&ouid=107739413345558944539',
-      image: "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage8_lvlc6v.png",
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage8_lvlc6v.png',
       isTrue: false,
       rulesData: [
         {
