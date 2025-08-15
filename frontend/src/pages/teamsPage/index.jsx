@@ -105,7 +105,7 @@ export const TeamsPage = () => {
   const faculties = [
     {
       id: 1,
-      name: 'Kirupa Sankar M',
+      name: 'Dr Kirupa Sankar M',
       designation: 'IdeaForge',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Kirupa-Sankar-M.png',
@@ -131,7 +131,7 @@ export const TeamsPage = () => {
     },
     {
       id: 4,
-      name: 'Kalaiyarasi M',
+      name: 'Dr Kalaiyarasi M',
       designation: 'CREOVATE',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Kalaiyarasi-M.png',
@@ -140,7 +140,7 @@ export const TeamsPage = () => {
     },
     {
       id: 5,
-      name: 'Dhanasekar R',
+      name: 'Dr Dhanasekar R',
       designation: 'Workshop',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Dhanasekar-R.png',
@@ -158,7 +158,7 @@ export const TeamsPage = () => {
     },
     {
       id: 7,
-      name: 'Sakthiya Ram S',
+      name: 'Dr Sakthiya Ram S',
       designation: 'Talk Show',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Sakthiya-Ram-S.jpg',
@@ -173,6 +173,15 @@ export const TeamsPage = () => {
         'https://www.bitsathy.ac.in/wp-content/uploads/Prof.-Kumaresan-K.jpg',
       phone: '+91 6374412828',
       email: 'kumaresank@bitsathy.ac.in',
+    },
+    {
+      id: 9,
+      name: 'Dr Haritha J',
+      designation: 'BRAND ALCHEMY',
+      image:
+        'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Haritha-J.png',
+      phone: '+91 8072285633',
+      email: 'haritha@bitsathy.ac.in',
     },
   ];
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { EventsCard, GuestLectureCard } from '../../components';
+import { EventsCard } from '../../components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';

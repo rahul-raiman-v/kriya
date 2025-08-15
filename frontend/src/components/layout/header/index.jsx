@@ -97,27 +97,15 @@ export const Header = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <img
-              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
-              alt=""
-              className="h-13 hidden xl:block"
-              loading="lazy"
-            />
-            <img
               src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106862/bitsathyindia_fvkxxf.png"
               alt=""
-              className="h-16 xl:hidden block"
+              className="h-16 "
               loading="lazy"
             />
             <img
               src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_lpiwdp.png"
               alt=""
-              className="h-16 xl:hidden block md:hidden lg:block"
-              loading="lazy"
-            />
-            <img
-              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
-              alt=""
-              className="h-16  hidden xl:block md:block lg:hidden"
+              className="h-16 "
               loading="lazy"
             />
             <img
