@@ -1,6 +1,6 @@
 import React from 'react';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
-import { Hotel, IndianRupee, PartyPopper, Ticket, Trophy } from 'lucide-react';
+import { Hotel, IndianRupee, PartyPopper, Phone, Ticket, Trophy, UserCircle } from 'lucide-react';
 import { cn } from '../../lib/';
 import { useShallow } from 'zustand/react/shallow';
 
@@ -169,6 +169,38 @@ export function ComboDetail() {
           >
             Register Now
           </button>
+        </div>
+        <div className="mt-6 sm:mt-8">
+          <p className="text-lg sm:text-xl font-bold text-gray-800 mb-3">Contact for Queries</p>
+          <div>
+            <div className="grid gap-3 md:grid-cols-2">
+              {selectedCombo.contact.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow"
+                >
+                  <UserCircle className="text-blue-500 flex-shrink-0" />
+                  <div className="flex-1 min-w-0">
+                    <h6 className="font-semibold text-gray-900 text-sm">
+                      {item.name}
+                    </h6>
+                    <p className="text-xs text-gray-600 mb-1">{item.position}</p>
+                    <div className="flex flex-col gap-1 text-xs text-gray-700">
+                      <div className="flex items-center gap-1">
+                        <Phone size={12} />
+                        <a
+                          href={`tel:${item.phone}`}
+                          className="hover:text-blue-600"
+                        >
+                          {item.phone}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

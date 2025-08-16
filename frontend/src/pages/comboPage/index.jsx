@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import { Hotel, Ticket, Trophy } from 'lucide-react';
+import { Hotel, IndianRupee, Ticket, Trophy } from 'lucide-react';
 // import ComboImage from '/comboImage.png';
 import { useComboStore } from '../../store/useComboStore/index';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
@@ -48,6 +48,23 @@ export function ComboPage() {
           <div className="flex items-start gap-3 sm:gap-4 text-base sm:text-lg">
             <Ticket size={24} className="text-blue-500 flex-shrink-0 mt-1" />
             <p className="leading-relaxed">{item.events}</p>
+          </div>
+          <div className="flex items-start gap-3 text-base sm:text-lg">
+            <IndianRupee
+              size={24}
+              className="text-indigo-600 flex-shrink-0 mt-1"
+            />
+            <p className="leading-relaxed">
+              <span className="font-medium">Registration Fee: </span>
+              {item.fee}
+              {item.prize && ' per Person (excluding GST)'}
+              {!item.prize &&
+                item.isTrue &&
+                ' per Person / Day (excluding GST)'}
+              {!item.prize &&
+                !item.isTrue &&
+                ' for 3 days (excluding GST)'}
+            </p>
           </div>
           <div className="flex items-start gap-3 sm:gap-4 text-base sm:text-lg">
             <Hotel size={24} className="text-blue-500 flex-shrink-0 mt-1" />
