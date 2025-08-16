@@ -484,20 +484,21 @@ export const HomePage = () => {
                 title="Bannari Amman Institute of Technology Map"
               />
             </div>
+            {/* In-Associated With Card */}
             <div className="glass-morphism md:col-span-2 rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">
-                Associated With
+                In-Associated With
               </h3>
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
-                {/* Times of India Logo */}
+                {/** Bannari Amman Logo */}
                 <div className="flex flex-col items-center">
                   <img
-                    src="https://www.pngitem.com/pimgs/m/334-3344553_times-of-india-logo-png-transparent-png.png"
-                    alt="Times of India"
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
+                    alt="BIT"
                     className="h-16 object-contain"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    Times of India
+                  <span className="text-slate-700 mt-2 font-medium text-center">
+                    Bannari Amman Institute of Technology
                   </span>
                 </div>
 
@@ -513,17 +514,6 @@ export const HomePage = () => {
                   </span>
                 </div>
 
-                {/** Bannari Amman Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
-                    alt="BIT"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    Bannari Amman Institute of Technology
-                  </span>
-                </div>
 
                 {/** Kriya Logo */}
                 <div className="flex flex-col items-center">
@@ -560,6 +550,26 @@ export const HomePage = () => {
                 </div>
               </div>
             </div>
+            {/* Media Partner Card */}
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+                Media Partner
+              </h3>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
+                {/* Times of India Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://www.pngitem.com/pimgs/m/334-3344553_times-of-india-logo-png-transparent-png.png"
+                    alt="Times of India"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Times of India
+                  </span>
+                </div>
+                
+              </div>
+            </div>
             {/* Social Links Card */}
             <div className="glass-morphism rounded-2xl p-8 shadow-xl  hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
               <h4 className="text-xl font-semibold text-slate-800 mb-4">
@@ -594,7 +604,7 @@ export const HomePage = () => {
                       '_blank'
                     );
                   }}
-                  className=""
+                  className="cursor-pointer"
                 >
                   <img
                     src="https://codecirclebitsathy.netlify.app/images/codecirclelogo.png"
