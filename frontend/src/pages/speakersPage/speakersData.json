@@ -491,33 +491,33 @@
   "isKeynote": false,
   "quote": ""
 },
-  {
-  "name": "Vaishnavi Rajalakshmi S",
-  "title": "CEO & Managing Director",
-  "organization": "The Gaia Sustainable Solutions Pvt Ltd & Zorp Corp Business Consultation Pvt Ltd",
-  "avatarUrl": "",
-  "carouselUrl": "",
-  "about": "Vaishnavi Rajalakshmi S is the CEO & Managing Director of The Gaia Sustainable Solutions Pvt Ltd and Zorp Corp Business Consultation Pvt Ltd. She is actively involved in promoting sustainable practices, innovative business models, and consultation for enterprises.",
-  "expertise": [
-    "Sustainability Leadership",
-    "Business Consultation",
-    "Corporate Strategy",
-    "Entrepreneurship"
-  ],
-  "achievements": [
-    "Founded and scaled The Gaia Sustainable Solutions Pvt Ltd",
-    "CEO & MD of Zorp Corp Business Consultation Pvt Ltd",
-    "Promotes sustainability-driven business practices"
-  ],
-  "links": {
-    "wikipedia": "",
-    "linkedin": "https://www.linkedin.com/in/vaishnavirajalaksmi/?originalSubdomain=in",
-    "twitter": ""
+ {
+    "name": "Vaishnavi Rajalakshmi S",
+    "title": "CEO & Managing Director",
+    "organization": "The Gaia Sustainable Solutions Pvt Ltd & Zorg Corp Business consultation Pvt Ltd",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755146128/IMG-20250813-WA0014_1_cpxxyu.jpg",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755342991/vis2_wkqihb.jpg",
+    "about": "Vaishnavi Rajalakshmi S is a portfolio entrepreneur and public advocate for sustainability, climate action, and social innovation. She is the CEO of The Gaia Sustainable Solutions, a venture described as a trailblazer in the textile industry offering a sustainable marketplace [1], and the Managing Director of Zorgcorpp Business Consultation Pvt. Ltd.[2] Her entrepreneurial activities also extend to the education sector as the Founder and CEO of Cosmic One, a competitive exams institute.[3, 4] A prominent voice in climate change discourse, her TEDx talk, 'Climate action - what an individual can do,' calls for personal responsibility to 'extend the timeline' of the planet's health, emphasizing that adults must serve as behavioral models for the next generation.[5] She is publicly recognized as a 'visionary CEO,' 'Sustainability promoter,' and 'humanitarian'.[3, 6]",
+    "expertise": [
+      "Business Consulting & Strategy",
+      "Educational Entrepreneurship"
+    ],
+    "achievements": [
+      "Founder & CEO of The Gaia Sustainable Solutions Pvt Ltd, a company focused on creating a 100% sustainable marketplace for the textile industry [1]",
+      "Managing Director of Zorgcorpp Business Consultation Pvt. Ltd., a business services and consulting firm [2]",
+      "Founder & CEO of Cosmic One, an educational venture described as a competitive exams institute [3, 4]",
+      "Recognized as one of the Top 30 social Innovators of Youth Co:lab 2020, an initiative by UNDP and Citi Foundation [7, 8, 9, 10]",
+      "Publicly noted for The Gaia Sustainable Solutions' acceptance into a prestigious program at Stanford [1]",
+      "Featured speaker and panelist at Startup Grind events, sharing insights on entrepreneurship and diversity in startups [11, 4]",
+      "Founder of 'I am you Geniee,' another entrepreneurial venture mentioned in her public profile [11]"
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/vaishnavirajalaksmi/"
+    },
+    "industry": "Sustainability, Social Enterprise, Business Consulting, Textiles, Education",
+    "isKeynote": true,
+    "quote": "Remember childrens do learn. but they copy us."
   },
-  "industry": "Business Consulting",
-  "isKeynote": false,
-  "quote": ""
-},
   {
   "name": "S. Kandasamy",
   "title": "IAS Officer",
@@ -736,31 +736,6 @@
   "quote": "Driving engineering excellence through automated, efficient, and reliable software delivery."
 },
 {
-  "name": "Shashi Bhatia",
-  "title": "Senior Leader, Learning & Development",
-  "organization": "Royal Enfield",
-  "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEeMvUq9jlrqg/profile-displayphoto-shrink_400_400/B4DZVIUP9kHkAk-/0/1740675026281?e=1758153600&v=beta&t=ejIcAESQzSA8CJRz7qqqPYObr0aCxLfXaPNo49nWkwc",
-  "carouselUrl": "",
-  "about": "Shashi Bhatia holds a senior leadership position in the Learning & Development domain at Royal Enfield. He has shared insights into leadership and continuous learning in industry talks and is featured in the Leadership Talk Series.",
-  "expertise": [
-    "Leadership Development",
-    "Organizational Learning",
-    "Talent Training & Engagement",
-    "Corporate Skill-Building"
-  ],
-  "achievements": [
-    "Featured speaker in Royal Enfield’s Leadership Talk Series on learning and leadership development :contentReference[oaicite:0]{index=0}"
-  ],
-  "links": {
-    "wikipedia": "",
-    "linkedin": "",
-    "twitter": ""
-  },
-  "industry": "Automotive",
-  "isKeynote": false,
-  "quote": ""
-},
-{
   "name": "Poongumaran Panneerselvam",
   "title": "Managing Director",
   "organization": "TICEL Biopark Ltd",
@@ -789,8 +764,8 @@
   "name": "Yuvarani Balakrishnan",
   "title": "Chief Executive Officer",
   "organization": "Dailikart Soft Tech",
-  "avatarUrl": "",
-  "carouselUrl": "",
+  "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFFlqCjWVVqZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1645258809158?e=1758153600&v=beta&t=tYGVyQwINQjaxzjGhSoIGV5N-IszhKg4ETVc_y4-7tM",
+  "carouselUrl": "https://media.licdn.com/dms/image/v2/D5616AQFQNo4ruoCqWw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1693465807377?e=1758153600&v=beta&t=FLe1Tbqp_UicYmSHgf5TksgR3ms42X4fD6vLGu3IUD0",
   "about": "Yuvarani Balakrishnan is the CEO of Dailikart Soft Tech with an academic background in Finance and IT. She brings expertise in managing technology-driven solutions while applying her knowledge of business and financial strategy to scale organizations.",
   "expertise": [
     "Business Strategy",
@@ -834,6 +809,65 @@
     "twitter": ""
   },
   "industry": "Startup Incubation",
+  "isKeynote": false,
+  "quote": ""
+},
+{
+  "name": "Dinesh K Sundaravelu",
+  "title": "CEO",
+  "organization": "TN Research Parks Foundation (TIDCO)",
+  "avatarUrl": "https://media.licdn.com/dms/image/v2/D4E03AQE8dLpmiz_7SQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729753102557?e=1758153600&v=beta&t=8tw1IzZeBxwnBitwL9q0UT4dQLvtWyjb2qRAO9PhhZk",
+  "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQF0u0cWJv6QqA/feedshare-shrink_2048_1536/B56ZexmFOSHUAo-/0/1751031240064?e=1758153600&v=beta&t=tIZnBZ96yi7c4y_qPj4bMJwY-1eYwFUl_0__VXBt-5A",
+  "about": "Dinesh K Sundaravelu is the CEO of TN Research Parks Foundation under TIDCO. He is a Chevening CRISP Fellow (2025-26), with prior experience at StartupTN. He actively works in public service innovation and research ecosystem development.",
+  "expertise": [
+    "Research Park Development",
+    "Public Service Innovation",
+    "Startup Ecosystem",
+    "Leadership & Policy"
+  ],
+  "achievements": [
+    "Appointed CEO of TN Research Parks Foundation under TIDCO",
+    "Chevening CRISP Fellow 2025-26",
+    "Former leader at StartupTN driving startup ecosystem growth"
+  ],
+  "links": {
+    "wikipedia": "https://theorg.com/org/startuptn/org-chart/dinesh-sundaravelu",
+    "linkedin": "https://www.linkedin.com/in/dinesh-sundaravelu-641b501a/",
+    "twitter": ""
+  },
+  "industry": "Research & Innovation / Public Service",
+  "isKeynote": false,
+  "quote": ""
+},
+{
+  "name": "P. Vivek",
+  "title": "CEO",
+  "organization": "Thiagarajar College of Engineering Technology Business Incubator",
+  "avatarUrl": "https://www.tce.edu/staff_profile/faculty/image/faculty-photo/pvkarch.jpg",
+  "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755342246/tbi_dzijzf.jpg",
+  "about": "P. Vivek is a faculty member at the Department of Architecture, Thiagarajar College of Engineering. He has actively contributed to consultancy projects and has participated in numerous seminars, conferences, and workshops.",
+  "stats": {
+    "publications": "-",
+    "sponsoredProjects": "-",
+    "consultancyProjects": 1,
+    "mePhdScholars": "-",
+    "seminarConferenceWorkshopsAttended": 23
+  },
+  "expertise": [
+    "Architecture",
+    "Consultancy Projects",
+    "Workshops & Conferences"
+  ],
+  "achievements": [
+    "1 consultancy project completed",
+    "Attended 23 seminars, conferences, and workshops"
+  ],
+  "links": {
+    "wikipedia": "https://tce.edu/staff_profile/faculty/BARCH/pvkarch.html",
+    "linkedin": "",
+    "twitter": ""
+  },
+  "industry": "Architecture / Education",
   "isKeynote": false,
   "quote": ""
 }
