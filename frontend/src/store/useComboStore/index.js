@@ -31,6 +31,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 2,
@@ -59,6 +85,32 @@ export const useComboStore = create(() => ({
         {
           id: 4,
           rule: 'A valid student ID is required for registration and verification at the event venue.',
+        },
+      ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
         },
       ],
     },
@@ -91,6 +143,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 4,
@@ -119,6 +197,32 @@ export const useComboStore = create(() => ({
         {
           id: 4,
           rule: 'A valid student ID is required for registration and verification at the event venue.',
+        },
+      ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
         },
       ],
     },
@@ -151,6 +255,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 6,
@@ -181,6 +311,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
   ],
   ComboDeligatesData: [
@@ -206,6 +362,32 @@ export const useComboStore = create(() => ({
         {
           id: 3,
           rule: 'A valid ID is required for verification at the event venue.',
+        },
+      ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
         },
       ],
     },
@@ -237,6 +419,32 @@ export const useComboStore = create(() => ({
         {
           id: 4,
           rule: 'A valid ID is required for registration and verification at the event venue.',
+        },
+      ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
         },
       ],
     },
