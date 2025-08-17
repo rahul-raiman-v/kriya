@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import {
   Calendar,
@@ -76,6 +76,12 @@ export const HomePage = () => {
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
   const router = useNavigate();
+
+  const useScroll = useRef();
+
+  const handleScroll = () => {
+    useScroll.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   // Scroll effect
   React.useEffect(() => {
@@ -225,7 +231,7 @@ export const HomePage = () => {
                   Register Now{' '}
                   <ArrowRight className="inline-block ml-2" size={20} />
                 </button>
-                <button className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                <button onClick={handleScroll} className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
                   Learn More
                 </button>
               </div>
@@ -297,7 +303,7 @@ export const HomePage = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative py-20">
+      <section id="about" className="relative py-20" ref={useScroll}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
@@ -453,22 +459,27 @@ export const HomePage = () => {
               <div className="flex flex-col gap-y-3">
                 <div className="flex items-center gap-3 w-fit">
                   <Phone className="text-indigo-600" size={22} />
-                  <span className="text-slate-700 text-lg max-sm:text-md">
+                  <a
+                    href="tel:+918072137522"
+                    className="text-slate-700 text-lg sm:text-base hover:text-blue-600"
+                  >
                     +91 80721 37522
-                  </span>
+                  </a>
                 </div>
-                <div className="flex items-center gap-3 w-min max-xs:flex max-xs:flex-col max-xs:gap-1">
+                <div className="flex items-center gap-3 flex-wrap">
                   <Mail className="text-purple-600" size={22} />
-                  <span className="text-slate-700 text-lg max-sm:text-md max-sm:truncate max-sm:w-fit">
+                  <span
+                    className="text-slate-700 text-lg sm:text-base break-all"
+                  >
                     startuphub@bitsathy.ac.in
                   </span>
                 </div>
-                <div className="flex items-center gap-3 w-fit">
-                  <MapPin className="text-pink-600" size={22} />
-                  <p className="text-slate-700 text-lg max-sm:text-md ">
-                    Bannari Amman Institute Technology Campus, Sathyamangalam,
-                    Tamil Nadu
-                  </p>
+                <div className="flex items-start gap-3">
+                  <MapPin className="text-purple-600" size={24} />
+                  <span className="text-slate-600 text-lg sm:text-base leading-relaxed">
+                    Bannari Amman Institute of Technology,
+                    Sathyamangalam, Tamil Nadu
+                  </span>
                 </div>
               </div>
             </div>
@@ -567,7 +578,7 @@ export const HomePage = () => {
                     Times of India
                   </span>
                 </div>
-                
+
               </div>
             </div>
             {/* Social Links Card */}
@@ -585,12 +596,12 @@ export const HomePage = () => {
                 >
                   <Instagram size={24} />
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="bg-gradient-to-tr from-blue-400 to-blue-600 text-white p-4 rounded-full shadow-lg hover:shadow-blue-300 transition-all duration-300"
                 >
                   <Twitter size={24} />
-                </a>
+                </a> */}
                 <a
                   href="#"
                   className="bg-gradient-to-tr from-blue-700 to-indigo-900 text-white p-4 rounded-full shadow-lg hover:shadow-indigo-300 transition-all duration-300"
