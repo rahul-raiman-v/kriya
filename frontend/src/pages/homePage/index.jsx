@@ -422,9 +422,11 @@ export const HomePage = () => {
               Register Now{' '}
               <ArrowRight className="inline-block ml-2" size={20} />
             </button>
-            <button className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi"
+              className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
               Download Brochure
-            </button>
+            </a>
           </div>
         </div>
       </section>
