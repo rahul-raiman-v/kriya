@@ -1,6 +1,6 @@
 import React from 'react';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
-import { Hotel, IndianRupee, PartyPopper, Phone, Ticket, Trophy, UserCircle } from 'lucide-react';
+import { Calendar, Hotel, IndianRupee, PartyPopper, Phone, Ticket, Trophy, UserCircle } from 'lucide-react';
 import { cn } from '../../lib/';
 import { useShallow } from 'zustand/react/shallow';
 
@@ -65,7 +65,7 @@ export function ComboDetail() {
                 className="text-indigo-600 flex-shrink-0 mt-1"
               />
               <p className="leading-relaxed">
-                <span className="font-medium">Registration Fee: </span>
+                <span className="font-medium">Registration Fee: &#8377;</span>
                 {selectedCombo.fee}
                 {selectedCombo.prize && ' per Person (excluding GST)'}
                 {!selectedCombo.prize &&
@@ -76,6 +76,14 @@ export function ComboDetail() {
                   'for a 3 days (excluding GST)'}
               </p>
             </div>
+            {selectedCombo.date &&
+              <div className="flex items-start gap-3 text-base sm:text-lg">
+                <Calendar size={24} className="text-indigo-600 flex-shrink-0 mt-1" />
+                <p className="leading-relaxed">
+                  <span className="font-medium">Date: </span>
+                  {selectedCombo.date}
+                </p>
+              </div>}
             <div className="flex items-start gap-3 text-base sm:text-lg">
               <Hotel size={24} className="text-indigo-600 flex-shrink-0 mt-1" />
               <p className="leading-relaxed">
@@ -109,14 +117,21 @@ export function ComboDetail() {
             )}
           </div>
         </div>
-        <div>
-          <button
-            // onClick={handleRegistration}
+        <div className="flex gap-4 flex-wrap">
+          <a
             className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Download Brochure
-          </button>
+          </a>
+          {selectedCombo.prize && 
+          <a
+            href="https://drive.google.com/uc?export=download&id=14SyW_FewCmA-vUYD5DpGfd4WQqy75TM8"
+            className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          >
+            Download Overall Rules
+          </a>}
         </div>
+
 
         {/* Rules Section */}
         <section aria-labelledby="rules-heading" className="mt-6 sm:mt-8">
@@ -147,7 +162,7 @@ export function ComboDetail() {
             htmlFor="agree-checkbox"
             className="text-gray-700 cursor-pointer"
           >
-            I Agree to the Rules and Regulations
+            I Agree to the Terms and Conditions
           </label>
         </div>
 

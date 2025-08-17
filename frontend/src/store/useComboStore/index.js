@@ -11,8 +11,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '499.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image:
-        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236018/comboImage1_fonz4q.png',
+      image: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236018/comboImage1_fonz4q.png',
+      date: "Sep 09 - 10",
       rulesData: [
         {
           id: 1,
@@ -69,6 +69,7 @@ export const useComboStore = create(() => ({
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/comboImage2_t6fxoa.png',
+      date: "Sep 09 - 10",
       rulesData: [
         {
           id: 1,
@@ -125,6 +126,7 @@ export const useComboStore = create(() => ({
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage3_uaftkh.png',
+      date: "Sep 10 - 11",
       rulesData: [
         {
           id: 1,
@@ -181,6 +183,7 @@ export const useComboStore = create(() => ({
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236017/comboImage4_xi6kb3.png',
+      date: "Sep 10 - 11",
       rulesData: [
         {
           id: 1,
@@ -237,6 +240,7 @@ export const useComboStore = create(() => ({
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236013/comboImage5_wghokk.png',
+      date: "Sep 10 - 11",
       rulesData: [
         {
           id: 1,
@@ -293,6 +297,7 @@ export const useComboStore = create(() => ({
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage6_wr2iu6.png',
+      date: "Sep 11",
       rulesData: [
         {
           id: 1,
