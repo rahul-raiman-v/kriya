@@ -292,7 +292,7 @@ export const useComboStore = create(() => ({
       events: 'Hackathon',
       hostel: 'Accommodation, Food, and Refreshments are Included',
       prize: 'Exciting Prizes!',
-      ticket: 'Tickets for Star Night (Culturals) are included!',
+      // ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '400.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
       image:
