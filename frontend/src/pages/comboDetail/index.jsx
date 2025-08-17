@@ -119,17 +119,18 @@ export function ComboDetail() {
         </div>
         <div className="flex gap-4 flex-wrap">
           <a
+            href="https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi"
             className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Download Brochure
           </a>
-          {selectedCombo.prize && 
-          <a
-            href="https://drive.google.com/uc?export=download&id=14SyW_FewCmA-vUYD5DpGfd4WQqy75TM8"
-            className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-          >
-            Download Overall Rules
-          </a>}
+          {selectedCombo.prize &&
+            <a
+              href="https://drive.google.com/uc?export=download&id=14SyW_FewCmA-vUYD5DpGfd4WQqy75TM8"
+              className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Download Overall Rules
+            </a>}
         </div>
 
 
