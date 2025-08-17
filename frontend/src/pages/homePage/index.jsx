@@ -446,26 +446,26 @@ export const HomePage = () => {
 
           <div className="grid md:grid-cols-2 grid-col-1 gap-10">
             {/* Contact Info Card */}
-            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
-              <h3 className="text-2xl max-sm:text-xl font-bold text-slate-800 mb-6">
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl lg:hover:scale-105 lg:transition-transform lg:duration-300 backdrop-blur-md border border-white/20">
+              <h3 className="text-2xl max-sm:text-xl font-bold text-slate-800 mb-6 w-fit">
                 Contact Information
               </h3>
               <div className="flex flex-col gap-y-3">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 w-fit">
                   <Phone className="text-indigo-600" size={22} />
                   <span className="text-slate-700 text-lg max-sm:text-md">
                     +91 80721 37522
                   </span>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 w-min max-xs:flex max-xs:flex-col max-xs:gap-1">
                   <Mail className="text-purple-600" size={22} />
-                  <span className="text-slate-700 text-lg max-sm:text-md">
+                  <span className="text-slate-700 text-lg max-sm:text-md max-sm:truncate max-sm:w-fit">
                     startuphub@bitsathy.ac.in
                   </span>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 w-fit">
                   <MapPin className="text-pink-600" size={22} />
-                  <p className="text-slate-700 text-lg max-sm:text-md">
+                  <p className="text-slate-700 text-lg max-sm:text-md ">
                     Bannari Amman Institute Technology Campus, Sathyamangalam,
                     Tamil Nadu
                   </p>
@@ -477,12 +477,98 @@ export const HomePage = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.7629352440936!2d77.27452747513593!3d11.497017845488983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!2sBannari%20Amman%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1755107737262!5m2!1sen!2sin"
                 width=""
                 height=""
-                style={{ border: 0 }}
+                style={{ border: 0, height: '100%', width: '100%' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Bannari Amman Institute of Technology Map"
               />
+            </div>
+            {/* In-Associated With Card */}
+            <div className="glass-morphism md:col-span-2 rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+                In-Associated With
+              </h3>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
+                {/** Bannari Amman Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
+                    alt="BIT"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium text-center">
+                    Bannari Amman Institute of Technology
+                  </span>
+                </div>
+
+                {/* StartupTN Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://images.indianexpress.com/2023/09/Wma5uL7U_400x400.jpg"
+                    alt="StartupTN"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    StartupTN
+                  </span>
+                </div>
+
+
+                {/** Kriya Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
+                    alt="Kriya 1.0"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Kriya 1.0
+                  </span>
+                </div>
+
+                {/** TBI Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106865/tbi_c9c0ao.png"
+                    alt="BIT TBI"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    BIT - TBI
+                  </span>
+                </div>
+
+                {/** ISBA Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755240080/isba_t4ehjo.png"
+                    alt="ISBA"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">ISBA</span>
+                </div>
+              </div>
+            </div>
+            {/* Media Partner Card */}
+            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">
+                Media Partner
+              </h3>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
+                {/* Times of India Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://www.pngitem.com/pimgs/m/334-3344553_times-of-india-logo-png-transparent-png.png"
+                    alt="Times of India"
+                    className="h-16 object-contain"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Times of India
+                  </span>
+                </div>
+                
+              </div>
             </div>
             {/* Social Links Card */}
             <div className="glass-morphism rounded-2xl p-8 shadow-xl  hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
@@ -492,7 +578,7 @@ export const HomePage = () => {
               <p className="text-slate-600 mb-6 text-center">
                 Stay updated with event announcements, schedules, and more.
               </p>
-              <div className="grid gap-5 grid-cols-3">
+              <div className="flex gap-5 flex-wrap">
                 <a
                   href="#"
                   className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
@@ -518,7 +604,7 @@ export const HomePage = () => {
                       '_blank'
                     );
                   }}
-                  className=""
+                  className="cursor-pointer"
                 >
                   <img
                     src="https://codecirclebitsathy.netlify.app/images/codecirclelogo.png"
@@ -526,36 +612,6 @@ export const HomePage = () => {
                     className="size-14 rounded-full"
                   />
                 </a>
-              </div>
-            </div>
-            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">
-                Associate With
-              </h3>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                {/* Times of India Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://www.pngitem.com/pimgs/m/334-3344553_times-of-india-logo-png-transparent-png.png"
-                    alt="Times of India"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    Times of India
-                  </span>
-                </div>
-
-                {/* StartupTN Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://images.indianexpress.com/2023/09/Wma5uL7U_400x400.jpg"
-                    alt="StartupTN"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    StartupTN
-                  </span>
-                </div>
               </div>
             </div>
           </div>

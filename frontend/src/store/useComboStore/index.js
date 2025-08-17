@@ -1,12 +1,4 @@
 import { create } from 'zustand';
-import ComboImage1 from '/comboImage1.png';
-import ComboImage2 from '/comboImage2.png';
-import ComboImage3 from '/comboImage3.png';
-import ComboImage4 from '/comboImage4.png';
-import ComboImage5 from '/comboImage5.png';
-import ComboImage6 from '/comboImage6.png';
-import ComboImage7 from '/comboImage7.png';
-import ComboImage8 from '/comboImage8.png';
 
 export const useComboStore = create(() => ({
   ComboData: [
@@ -19,7 +11,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '499.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: ComboImage1,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236018/comboImage1_fonz4q.png',
       rulesData: [
         {
           id: 1,
@@ -38,6 +31,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 2,
@@ -48,7 +67,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '499.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: ComboImage2,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/comboImage2_t6fxoa.png',
       rulesData: [
         {
           id: 1,
@@ -67,6 +87,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 3,
@@ -77,7 +123,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '555.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: ComboImage3,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage3_uaftkh.png',
       rulesData: [
         {
           id: 1,
@@ -96,6 +143,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 4,
@@ -106,7 +179,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '555.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: ComboImage4,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236017/comboImage4_xi6kb3.png',
       rulesData: [
         {
           id: 1,
@@ -125,6 +199,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 5,
@@ -135,7 +235,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '599.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: ComboImage5,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236013/comboImage5_wghokk.png',
       rulesData: [
         {
           id: 1,
@@ -154,6 +255,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
     {
       id: 6,
@@ -164,7 +291,8 @@ export const useComboStore = create(() => ({
       ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '400.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
-      image: ComboImage6,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage6_wr2iu6.png',
       rulesData: [
         {
           id: 1,
@@ -183,6 +311,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
   ],
   ComboDeligatesData: [
@@ -193,7 +347,8 @@ export const useComboStore = create(() => ({
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '1500.00',
       link: 'https://forms.gle/na9rUVbfzSYVtA2h7',
-      image: ComboImage7,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage7_qlcqha.png',
       isTrue: true,
       rulesData: [
         {
@@ -209,6 +364,32 @@ export const useComboStore = create(() => ({
           rule: 'A valid ID is required for verification at the event venue.',
         },
       ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
+        },
+      ],
     },
   ],
   ComboStallsData: [
@@ -219,7 +400,8 @@ export const useComboStore = create(() => ({
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '5000.00',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLScYvnbrjPKIxbcvfjUpRXQH-WOrG-2Yop14lZPBp1y-s0137g/viewform?usp=sharing&ouid=107739413345558944539',
-      image: ComboImage8,
+      image:
+        'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage8_lvlc6v.png',
       isTrue: false,
       rulesData: [
         {
@@ -237,6 +419,32 @@ export const useComboStore = create(() => ({
         {
           id: 4,
           rule: 'A valid ID is required for registration and verification at the event venue.',
+        },
+      ],
+      contact: [
+        {
+          id: 1,
+          name: "Surya Raj S",
+          position: "Overall Incharge",
+          phone: "+91 8072137522",
+        },
+        {
+          id: 2,
+          name: "Ahill Pranav M",
+          position: "Overall Incharge",
+          phone: "+91 9940911411",
+        },
+        {
+          id: 3,
+          name: "Swetha Gayathri V",
+          position: "Overall Incharge",
+          phone: "+91 9342896561",
+        },
+        {
+          id: 4,
+          name: "Preethika S",
+          position: "Overall Incharge",
+          phone: "+91 6381878288",
         },
       ],
     },

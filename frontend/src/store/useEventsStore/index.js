@@ -5,7 +5,7 @@ export const useEventsStore = create(() => ({
     {
       id: 'events',
       title: 'Events',
-      img: '/CalendarLogo.png',
+      img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755235996/CalendarLogo_hncnur.png',
       highlight: false,
       events: [
         {
@@ -14,7 +14,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: './BuildaBrandImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755235996/BuildaBrandImg_rsbx4e.jpg',
           highlight: true,
           tabs: [
             {
@@ -135,7 +135,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: '/InnoVisionImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236014/InnoVisionImg_r2umgq.jpg',
           highlight: true,
           tabs: [
             {
@@ -255,7 +255,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: './BreakThroughImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/BreakThroughImg_z0jjf9.jpg',
           highlight: true,
           tabs: [
             {
@@ -384,7 +384,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Product Expo',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: './CreovateImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236008/CreovateImg_igr4zp.jpg',
           highlight: true,
           tabs: [
             {
@@ -487,7 +487,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Non-Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: './GuessInGlanceImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/GuessInGlanceImg_zxtfq5.jpg',
           highlight: true,
           tabs: [
             {
@@ -603,7 +603,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Non-Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: './TalkShowImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236014/TalkShowImg_hevk1s.jpg',
           highlight: true,
           tabs: [
             {
@@ -727,7 +727,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Non-Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: './QuizXtremeImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236012/QuizXtremeImg_swvrl0.jpg',
           highlight: true,
           tabs: [
             {
@@ -844,18 +844,18 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-8',
-          eventTitle: 'HACKVISION',
+          eventTitle: 'VISIONHACK',
           eventType: 'Hackathon',
           date: 'September 11, 2025',
           venue: 'BIT Campus',
-          img: './VisionHackImg.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/VisionHackImg_ntfdbg.jpg',
           highlight: true,
           tabs: [
             {
               id: 'description',
               title: 'Description',
               content:
-                'HACKVISION is an intense, time-bound innovation challenge where participants collaborate in teams to design, build, and present creative tech solutions to real-world problems. Over the course of the event, innovators brainstorm ideas, develop prototypes, and pitch their projects to judges — all under the pressure of a ticking clock. It’s a thrilling test of coding skills, problem-solving, teamwork, and ingenuity, rewarding those who can turn bold ideas into working solutions.',
+                'VISIONHACK is an intense, time-bound innovation challenge where participants collaborate in teams to design, build, and present creative tech solutions to real-world problems. Over the course of the event, innovators brainstorm ideas, develop prototypes, and pitch their projects to judges — all under the pressure of a ticking clock. It’s a thrilling test of coding skills, problem-solving, teamwork, and ingenuity, rewarding those who can turn bold ideas into working solutions.',
             },
             {
               id: 'rounds',
@@ -973,14 +973,14 @@ export const useEventsStore = create(() => ({
     {
       id: 'workshop',
       title: 'Workshop',
-      img: '/WorkshopLogo.png',
+      img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkshopLogo_ta3dgh.png',
       highlight: false,
       events: [
         {
           id: 'workshop-1',
           eventTitle: 'BRAINSTROM TO BUSINESS',
           eventType: 'Startup Workshop',
-          img: './WorkShop1Img.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/WorkShop1Img_rekco2.jpg',
           date: 'September 09, 2025',
           venue: 'BIT Campus',
           highlight: true,
@@ -1040,7 +1040,7 @@ export const useEventsStore = create(() => ({
           id: 'workshop-2',
           eventTitle: 'FROM IDEA TO MARKET',
           eventType: 'Startup Workshop',
-          img: './WorkShop2Img.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkShop2Img_x9plwz.jpg',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           highlight: true,
