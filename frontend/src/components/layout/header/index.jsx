@@ -88,10 +88,11 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 w-full duration-300 bg-white ${isScrolled
+        className={`sticky top-0 z-50 w-full duration-300 bg-white ${
+          isScrolled
             ? 'bg-white/80 backdrop-blur-xl border-b border-pink-200/60 shadow-lg'
             : 'bg-gradient-to-r from-white/70 via-pink-50/50 to-purple-50/50 backdrop-blur-lg border-b border-pink-100/40'
-          }`}
+        }`}
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
@@ -122,17 +123,19 @@ export const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => handleNavigate(link.path)}
-                  className={`cursor-pointer relative transition-all duration-300 hover:scale-105 text-lg px-4 py-3 ${isActive(link.path)
+                  className={`cursor-pointer relative transition-all duration-300 hover:scale-105 text-lg px-4 py-3 ${
+                    isActive(link.path)
                       ? 'text-pink-600 font-bold '
                       : 'text-slate-600 font-semibold '
-                    } group`}
+                  } group`}
                   aria-current={isActive(link.path) ? 'page' : undefined}
                 >
                   {link.name}
                   {/* Enhanced animated underline */}
                   <span
-                    className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 transition-all duration-300 ${isActive(link.path) ? 'w-3/4' : 'group-hover:w-3/4'
-                      }`}
+                    className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 transition-all duration-300 ${
+                      isActive(link.path) ? 'w-3/4' : 'group-hover:w-3/4'
+                    }`}
                   ></span>
                 </button>
               ))}
@@ -186,8 +189,9 @@ export const Header = () => {
 
           {/* Enhanced Mobile menu with beautiful styling */}
           <div
-            className={`lg:hidden overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-              }`}
+            className={`lg:hidden overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+              isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            }`}
           >
             <nav className="mt-6 rounded-3xl p-6 bg-gradient-to-br from-white/95 via-pink-50/80 to-purple-50/80 border border-pink-200/60 shadow-xl backdrop-blur-sm">
               <div className="space-y-3">
@@ -195,10 +199,11 @@ export const Header = () => {
                   <button
                     key={link.name}
                     onClick={() => handleNavigate(link.path)}
-                    className={`cursor-pointer block w-full text-left py-4 px-6 rounded-2xl transition-all duration-300 focus:outline-none ${isActive(link.path)
+                    className={`cursor-pointer block w-full text-left py-4 px-6 rounded-2xl transition-all duration-300 focus:outline-none ${
+                      isActive(link.path)
                         ? 'text-pink-600 font-bold bg-gradient-to-r from-pink-100 to-purple-100 border border-pink-200 shadow-md'
                         : 'text-slate-600 hover:text-pink-600 hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 font-medium'
-                      }`}
+                    }`}
                     style={{
                       animation: isMenuOpen
                         ? `fadeInUp 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) ${index * 70}ms both`
@@ -210,10 +215,11 @@ export const Header = () => {
                       <span className="flex items-center">
                         {link.icon && (
                           <span
-                            className={`mr-3 text-lg ${isActive(link.path)
+                            className={`mr-3 text-lg ${
+                              isActive(link.path)
                                 ? 'text-pink-500'
                                 : 'text-slate-400'
-                              }`}
+                            }`}
                           >
                             {link.icon}
                           </span>
@@ -258,12 +264,17 @@ export const Header = () => {
                     </span>
                   </span>
                 </button>
-                <a
+                <button
                   className="cursor-pointer bg-gradient-to-r w-full  from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300  shadow-md flex justify-center items-center"
-                  href="https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi"
+                  onClick={() =>
+                    window.open(
+                      'https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi',
+                      '_blank'
+                    )
+                  }
                 >
                   Download Brochure
-                </a>
+                </button>
               </div>
             </nav>
           </div>

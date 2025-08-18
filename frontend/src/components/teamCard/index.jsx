@@ -55,7 +55,12 @@ export const TeamsCard = ({
           {phone.trim() && (
             <div className="flex items-center gap-x-4">
               <Phone className="size-6 text-gray-600" />
-              <a href={`tel:${phone}`} className="text-gray-600 text-lg hover:text-blue-600">{phone}</a>
+              <a
+                href={`tel:${phone}`}
+                className="text-gray-600 text-lg hover:text-blue-600"
+              >
+                {phone}
+              </a>
             </div>
           )}
           {email.trim() && (
@@ -95,7 +100,12 @@ export const TeamsCard = ({
         {phone.trim() && (
           <div className="flex items-center gap-x-4">
             <Phone className="size-6 text-gray-600" />
-            <a href={`tel:${phone}`} className="text-gray-600 text-lg hover:text-blue-600">{phone}</a>
+            <a
+              href={`tel:${phone}`}
+              className="text-gray-600 text-lg hover:text-blue-600"
+            >
+              {phone}
+            </a>
           </div>
         )}
         {email.trim() && (

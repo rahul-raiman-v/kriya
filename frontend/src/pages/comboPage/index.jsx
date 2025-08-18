@@ -61,16 +61,18 @@ export function ComboPage() {
               {!item.prize &&
                 item.isTrue &&
                 ' per Person / Day (excluding GST)'}
-              {!item.prize &&
-                !item.isTrue &&
-                ' for 3 days (excluding GST)'}
+              {!item.prize && !item.isTrue && ' for 3 days (excluding GST)'}
             </p>
           </div>
-          {item.date && 
-          <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
-            <Calendar size={24} className="text-blue-500 flex-shrink-0 mt-1" />
-            <p className="leading-relaxed">Date: {item.date}</p>
-          </div>}
+          {item.date && (
+            <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
+              <Calendar
+                size={24}
+                className="text-blue-500 flex-shrink-0 mt-1"
+              />
+              <p className="leading-relaxed">Date: {item.date}</p>
+            </div>
+          )}
           <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
             <Hotel size={24} className="text-blue-500 flex-shrink-0 mt-1" />
             <p className="leading-relaxed">{item.hostel}</p>
