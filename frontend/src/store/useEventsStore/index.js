@@ -10,18 +10,19 @@ export const useEventsStore = create(() => ({
       events: [
         {
           id: 'event-1',
-          eventTitle: 'Brand Alchemy',
+          eventTitle: 'BRAND ALCHEMY',
           eventType: 'Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755235996/BuildaBrandImg_rsbx4e.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755446916/WhatsApp_Image_2025-08-17_at_21.35.26_f3b7650e_n2djqo.jpg',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
           highlight: true,
           tabs: [
             {
               id: 'description',
               title: 'Description',
               content:
-                'Brand Alchemy is an exciting test of creativity, strategy, and presentation skills, where participants transform ideas into market ready brands. The event unfolds in two competitive rounds.',
+                'BRAND ALCHEMY is an exciting test of creativity, strategy, and presentation skills, where participants transform ideas into market ready brands. The event unfolds in two competitive rounds.',
             },
             {
               id: 'rounds',
@@ -73,7 +74,7 @@ export const useEventsStore = create(() => ({
                   id: '5',
                   title: 'Rule 5',
                   content:
-                    'Usage of mobile phones or electronic gadgets in Round 1 is strictly prohibited.',
+                    'Usage of mobile phones or electronic gadgets is strictly prohibited.',
                 },
                 {
                   id: '6',
@@ -136,6 +137,7 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236014/InnoVisionImg_r2umgq.jpg',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1xEhTtOuqf0u93K5_dJtfb87jmbyrE3XY',
           highlight: true,
           tabs: [
             {
@@ -193,7 +195,7 @@ export const useEventsStore = create(() => ({
                   id: '6',
                   title: 'Rule 6',
                   content:
-                    'Usage of mobile phones or electronic gadgets in Round 1 is strictly prohibited.',
+                    'Usage of mobile phones or electronic gadgets is strictly prohibited.',
                 },
                 {
                   id: '7',
@@ -256,6 +258,7 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/BreakThroughImg_z0jjf9.jpg',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=13iWqZyk9qgn_mj18umZV1c3Q1WWUtpG_',
           highlight: true,
           tabs: [
             {
@@ -380,18 +383,19 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-4',
-          eventTitle: 'Creovate',
+          eventTitle: 'CREOVATE',
           eventType: 'Product Expo',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236008/CreovateImg_igr4zp.jpg',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1_4ndeCfA39eoY6VGBKhda44WHgOqKJet',
           highlight: true,
           tabs: [
             {
               id: 'description',
               title: 'Description',
               content:
-                'Creovate is a dynamic product expo competition where entrepreneurial minds showcase their innovative products and solutions to the world. Participants will present their creations, highlighting design, functionality, market potential, and business strategy, while engaging with judges and visitors. The event celebrates creativity, problem-solving, and market readiness — rewarding those who can transform ideas into impactful, real-world products.',
+                'CREOVATE is a dynamic product expo competition where entrepreneurial minds showcase their innovative products and solutions to the world. Participants will present their creations, highlighting design, functionality, market potential, and business strategy, while engaging with judges and visitors. The event celebrates creativity, problem-solving, and market readiness — rewarding those who can transform ideas into impactful, real-world products.',
             },
             {
               id: 'rounds',
@@ -483,18 +487,19 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-5',
-          eventTitle: 'Guess In Glance',
+          eventTitle: 'Guess In A Glance',
           eventType: 'Non-Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/GuessInGlanceImg_zxtfq5.jpg',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=11mQUgy5wm-nFdtjrKmp43m2pEuNZ1_hN',
           highlight: true,
           tabs: [
             {
               id: 'description',
               title: 'Description',
               content:
-                'Guess in Glance is a fast-paced connection game where participants test their entrepreneurial knowledge and quick thinking. Players will be shown a series of visual or verbal clues related to famous startups, business models, founders, and market trends, and must connect the dots to identify the correct answer in the shortest time possible. The game blends business insight with speed and creativity, rewarding sharp observation and a keen understanding of the entrepreneurial world.',
+                'Guess in A Glance is an electrifying event designed to keep participants on their toes through two thrilling stages. Each team will consist of 4–5 members, fostering teamwork, quick thinking, and collaboration. Only the top-performing teams from the first round will make it to the grand second round, ensuring a truly competitive spirit. The topics for both rounds will be revealed right at the venue, bringing a wave of surprise, energy, and excitement to the challenge. With every second counting, this event promises non-stop fun and an adrenaline rush for all participants.',
             },
             {
               id: 'rounds',
@@ -503,12 +508,12 @@ export const useEventsStore = create(() => ({
                 {
                   id: '1',
                   title: 'Round 1',
-                  content: 'Round 1 will go like this',
+                  content: 'Teams compete in the first round and best performers will be shortlisted.',
                 },
                 {
                   id: '2',
                   title: 'Round 2',
-                  content: 'Round 2 will go like this',
+                  content: 'Fun filled final round with interesting twists.',
                 },
               ],
             },
@@ -579,18 +584,18 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
-                  name: 'Hima',
+                  name: 'HIMASHREE K',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
-                  phone: '+91 9092533465',
+                  phone: '+91 9092533465    ',
                   img: 'https://via.placeholder.com/150',
                 },
                 {
                   id: 'person2',
-                  name: 'Naresh',
+                  name: 'ABISHEK R',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
-                  phone: '+91 9361701233',
+                  phone: '+91 7448665599',
                   img: 'https://via.placeholder.com/150',
                 },
               ],
@@ -599,18 +604,19 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-6',
-          eventTitle: 'Talk Show',
+          eventTitle: 'CONVO CLASH',
           eventType: 'Non-Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236014/TalkShowImg_hevk1s.jpg',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
           highlight: true,
           tabs: [
             {
               id: 'description',
               title: 'Description',
               content:
-                'Talk Show is a fast-paced debate competition where sharp minds engage over the most exciting and controversial topics in entrepreneurship. Participants compete in structured rounds, presenting well-researched arguments, countering opponents’ points, and defending their stance with logic, facts, and quick thinking. The event tests communication skills, business acumen, and the ability to think on your feet — rewarding those who can persuade, outwit, and inspire.',
+                'CONVO CLASH is a fast-paced debate competition where sharp minds engage over the most exciting and controversial topics in entrepreneurship. Participants compete in structured rounds, presenting well-researched arguments, countering opponents’ points, and defending their stance with logic, facts, and quick thinking. The event tests communication skills, business acumen, and the ability to think on your feet — rewarding those who can persuade, outwit, and inspire.',
             },
             {
               id: 'rounds',
@@ -723,11 +729,12 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-7',
-          eventTitle: 'QuizXtreme',
+          eventTitle: 'QUIZXtreme',
           eventType: 'Non-Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236012/QuizXtremeImg_swvrl0.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755446896/ChatGPT_Image_Aug_14__2025__11_46_10_AM_1_i90vu5.png',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1N1dPZccfe98wYlJHanYtMj4vN1FewWDI',
           highlight: true,
           tabs: [
             {
@@ -786,7 +793,7 @@ export const useEventsStore = create(() => ({
                   id: '4',
                   title: 'Rule 4',
                   content:
-                    'Usage of mobile phones or electronic gadgets in Round 1 is strictly prohibited.',
+                    'Usage of mobile phones or electronic gadgets is strictly prohibited.',
                 },
                 {
                   id: '5',
@@ -844,18 +851,19 @@ export const useEventsStore = create(() => ({
         },
         {
           id: 'event-8',
-          eventTitle: 'VISIONHACK',
+          eventTitle: 'VISION HACK',
           eventType: 'Hackathon',
           date: 'September 11, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/VisionHackImg_ntfdbg.jpg',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
           highlight: true,
           tabs: [
             {
               id: 'description',
               title: 'Description',
               content:
-                'VISIONHACK is an intense, time-bound innovation challenge where participants collaborate in teams to design, build, and present creative tech solutions to real-world problems. Over the course of the event, innovators brainstorm ideas, develop prototypes, and pitch their projects to judges — all under the pressure of a ticking clock. It’s a thrilling test of coding skills, problem-solving, teamwork, and ingenuity, rewarding those who can turn bold ideas into working solutions.',
+                'VISION HACK is an intense, time-bound innovation challenge where participants collaborate in teams to design, build, and present creative tech solutions to real-world problems. Over the course of the event, innovators brainstorm ideas, develop prototypes, and pitch their projects to judges — all under the pressure of a ticking clock. It’s a thrilling test of coding skills, problem-solving, teamwork, and ingenuity, rewarding those who can turn bold ideas into working solutions.',
             },
             {
               id: 'rounds',
@@ -983,6 +991,7 @@ export const useEventsStore = create(() => ({
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/WorkShop1Img_rekco2.jpg',
           date: 'September 09, 2025',
           venue: 'BIT Campus',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1p1zoVgGq30k_8IQwt88hR9djsMP5ur9Q',
           highlight: true,
           tabs: [
             {
@@ -1043,6 +1052,7 @@ export const useEventsStore = create(() => ({
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkShop2Img_x9plwz.jpg',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1cIzoRqwOhblHYvIggZLBhQ9_HuUFmtAD',
           highlight: true,
           tabs: [
             {
