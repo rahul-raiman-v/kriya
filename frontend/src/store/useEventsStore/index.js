@@ -647,7 +647,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    'Individual participation.',
                 },
                 {
                   id: '2',
@@ -719,7 +719,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
               ],
-            }, //contacts completed
+            },
           ],
         },
         {
@@ -851,7 +851,7 @@ export const useEventsStore = create(() => ({
           date: 'September 11, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/VisionHackImg_ntfdbg.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
+          brochureLink: 'https://drive.google.com/uc?export=download&id=1OmXxEo7JImawGBr9NrxqogMpM86fLYiu',
           highlight: true,
           tabs: [
             {
