@@ -96,23 +96,23 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                   <img
                     src={selectedSpeaker.avatarUrl}
                     alt={selectedSpeaker.name}
-                    className="w-24 h-24 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-purple-200"
+                    className="w-24 h-24 max-sm:size-16 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-purple-200"
                   />
                   <div>
-                    <h2 className="text-3xl font-bold text-gray-800 mb-1">
+                    <h2 className="max-sm:text-xl text-3xl font-bold text-gray-800 mb-1">
                       {selectedSpeaker.name}
                     </h2>
-                    <p className="text-xl text-purple-600 font-semibold">
+                    <p className="max-sm:text-base text-xl text-purple-600 font-semibold">
                       {selectedSpeaker.title}
                     </p>
-                    <p className="text-lg text-gray-700 font-semibold">
+                    <p className="max-sm:text-sm text-lg text-gray-700 font-semibold">
                       {selectedSpeaker.organization}
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={closeModal}
-                  className="self-start text-gray-500 hover:text-gray-700 transition-colors p-3 rounded-full hover:bg-gray-100 flex-shrink-0 w-fit"
+                  className="self-start max-xs:hidden block text-gray-500 hover:text-gray-700 transition-colors p-3 rounded-full hover:bg-gray-100 flex-shrink-0 w-fit"
                 >
                   <svg
                     className="w-6 h-6 hover:cursor-pointer"
@@ -130,52 +130,50 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 </button>
               </div>
 
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between max-xs:gap-3 flex-wrap">
                 <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full border border-purple-200">
                   {selectedSpeaker.industry}
                 </span>
-                <div className="flex space-x-3">
-                  {selectedSpeaker.links.linkedin && (
-                    <a
-                      href={selectedSpeaker.links.linkedin}
-                      target="_blank"
-                      className="p-3 bg-blue-50 hover:bg-blue-100 rounded-full border border-blue-200 hover:border-blue-300 transition-all duration-300 group"
-                    >
-                      <Linkedin
-                        size={20}
-                        className="text-blue-600 group-hover:scale-110 transition-transform"
-                      />
-                    </a>
-                  )}
-                  {selectedSpeaker.links.twitter && (
-                    <a
-                      href={selectedSpeaker.links.twitter}
-                      target="_blank"
-                      className="p-3 bg-sky-50 hover:bg-sky-100 rounded-full border border-sky-200 hover:border-sky-300 transition-all duration-300 group"
-                    >
-                      <Twitter
-                        size={20}
-                        className="text-sky-600 group-hover:scale-110 transition-transform"
-                      />
-                    </a>
-                  )}
-                  {(selectedSpeaker.links.wikipedia ||
-                    selectedSpeaker.links.news) && (
-                    <a
-                      href={
-                        selectedSpeaker.links.wikipedia ||
-                        selectedSpeaker.links.news
-                      }
-                      target="_blank"
-                      className="p-3 bg-green-50 hover:bg-green-100 rounded-full border border-green-200 hover:border-green-300 transition-all duration-300 group"
-                    >
-                      <ExternalLink
-                        size={20}
-                        className="text-green-600 group-hover:scale-110 transition-transform"
-                      />
-                    </a>
-                  )}
-                </div>
+                {selectedSpeaker.links.linkedin && (
+                  <a
+                    href={selectedSpeaker.links.linkedin}
+                    target="_blank"
+                    className="p-3 bg-blue-50 hover:bg-blue-100 rounded-full border border-blue-200 hover:border-blue-300 transition-all duration-300 group"
+                  >
+                    <Linkedin
+                      size={20}
+                      className="text-blue-600 group-hover:scale-110 transition-transform"
+                    />
+                  </a>
+                )}
+                {selectedSpeaker.links.twitter && (
+                  <a
+                    href={selectedSpeaker.links.twitter}
+                    target="_blank"
+                    className="p-3 bg-sky-50 hover:bg-sky-100 rounded-full border border-sky-200 hover:border-sky-300 transition-all duration-300 group"
+                  >
+                    <Twitter
+                      size={20}
+                      className="text-sky-600 group-hover:scale-110 transition-transform"
+                    />
+                  </a>
+                )}
+                {(selectedSpeaker.links.wikipedia ||
+                  selectedSpeaker.links.news) && (
+                  <a
+                    href={
+                      selectedSpeaker.links.wikipedia ||
+                      selectedSpeaker.links.news
+                    }
+                    target="_blank"
+                    className="p-3 bg-green-50 hover:bg-green-100 rounded-full border border-green-200 hover:border-green-300 transition-all duration-300 group"
+                  >
+                    <ExternalLink
+                      size={20}
+                      className="text-green-600 group-hover:scale-110 transition-transform"
+                    />
+                  </a>
+                )}
               </div>
             </div>
 
@@ -187,15 +185,15 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
               <div className="p-8">
                 {/* About Section */}
                 <div className="mb-8">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
-                      <Users size={20} className="text-white" />
+                  <div className="flex items-center mb-6 max-xs:mb-3">
+                    <div className="w-12 h-12 max-xs:size-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                      <Users className="text-white size-5 max-xs:size-4" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">
+                    <h3 className="text-2xl max-xs:text-xl font-bold text-gray-800">
                       About {selectedSpeaker.name.split(' ')[0]}
                     </h3>
                   </div>
-                  <p className="text-gray-600 leading-relaxed text-lg pl-16">
+                  <p className="text-gray-600 leading-relaxed text-lg max-xs:text-base pl-16">
                     {selectedSpeaker.about}
                   </p>
                 </div>
@@ -204,13 +202,13 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 {selectedSpeaker.quote && (
                   <div className="mb-8">
                     <blockquote className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-xl border border-purple-200 relative">
-                      <div className="absolute top-4 left-4 text-purple-300 text-6xl font-serif">
+                      <div className="absolute top-4 left-4 text-purple-300 text-6xl max-xs:text-5xl font-serif">
                         "
                       </div>
-                      <p className="text-gray-700 text-xl italic leading-relaxed mb-4 pl-12">
+                      <p className="text-gray-700 text-xl max-xs:text-lg italic leading-relaxed mb-4 pl-12">
                         {selectedSpeaker.quote}
                       </p>
-                      <cite className="text-purple-600 font-semibold text-lg pl-12">
+                      <cite className="text-purple-600 font-semibold text-lg max-xs:text-sm pl-12">
                         - {selectedSpeaker.name}
                       </cite>
                     </blockquote>
@@ -220,21 +218,21 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 {/* Expertise */}
                 <div className="mb-8">
                   <div className="flex items-center mb-2">
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
-                      <TrendingUp size={20} className="text-white" />
+                    <div className="w-12 h-12 max-xs:size-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                      <TrendingUp className="text-white size-5 max-xs:size-4" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">
+                    <h3 className="text-2xl max-sm:text-xl font-bold text-gray-800">
                       Expertise
                     </h3>
                   </div>
-                  <div className="space-y-3 pl-16">
+                  <div className="space-y-3 pl-16 max-xs:pl-12">
                     {selectedSpeaker.expertise.map((skill, index) => (
                       <div
                         key={index}
                         className="flex items-center p-3 bg-gray-50 rounded-lg border-none transition-colors"
                       >
-                        <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-4"></div>
-                        <span className="text-gray-700 font-medium">
+                        <div className="w-3 h-3 max-sm:size-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-4"></div>
+                        <span className="text-gray-700 font-medium max-xs:text-xs">
                           {skill}
                         </span>
                       </div>
@@ -245,25 +243,25 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 {/* Achievements */}
                 <div className="mb-8">
                   <div className="flex items-center mb-2">
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
-                      <Award size={20} className="text-white" />
+                    <div className="w-12 h-12 max-xs:size-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                      <Award className="text-white size-5 max-xs:size-4" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">
+                    <h3 className="text-2xl max-sm:text-xl font-bold text-gray-800">
                       Achievements
                     </h3>
                   </div>
-                  <div className="space-y-4 pl-16">
+                  <div className="space-y-4 pl-16 max-xs:pl-12">
                     {selectedSpeaker.achievements.map((achievement, index) => (
                       <div
                         key={index}
                         className="flex items-start p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-300 transition-colors"
                       >
-                        <div className="w-5 h-5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                          <span className="text-white text-[12px] font-bold">
+                        <div className="w-5 h-5 max-xs:size-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                          <span className="text-white text-[12px] max-xs:text-[10px] font-bold">
                             {index + 1}
                           </span>
                         </div>
-                        <p className="text-gray-700 leading-relaxed">
+                        <p className="text-gray-700 max-xs:text-xs leading-relaxed">
                           {achievement}
                         </p>
                       </div>
@@ -281,13 +279,13 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
         <div className="relative container mx-auto px-6 py-2 mt-6">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Meet the Visionaries
             </h1>
-            <p className="text-2xl text-purple-700 mb-4 font-semibold">
+            <p className="text-xl text-purple-700 mb-4 font-semibold">
               Innovators, Dreamers, and Game Changers
             </p>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-md text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Join us as we bring together the most influential entrepreneurs,
               tech leaders, and innovators who are shaping the future of
               business and technology.
@@ -371,7 +369,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
             <button
               key={industry}
               onClick={() => setSelectedFilter(industry)}
-              className={`hover:cursor-pointer px-6 py-2 rounded-full transition-all duration-300 ${
+              className={`hover:cursor-pointer px-3 py-1 rounded-full transition-all duration-300 truncate ${
                 selectedFilter === industry
                   ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300 shadow-sm'
@@ -428,7 +426,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                               .map((skill, index) => (
                                 <span
                                   key={index}
-                                  className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm border border-purple-200"
+                                  className="px-3 py-1 max-xs:line-clamp-1 bg-purple-100 text-purple-700 rounded-full text-sm border border-purple-200"
                                 >
                                   {skill}
                                 </span>
@@ -515,7 +513,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 to-pink-100/40"></div>
       <div className="relative container mx-auto px-6 py-10">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Meet the Visionaries
           </h1>
           <p className="text-2xl text-purple-700 mb-4 font-semibold">
