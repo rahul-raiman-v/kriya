@@ -1,6 +1,15 @@
 import React from 'react';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
-import { Hotel, IndianRupee, PartyPopper, Phone, Ticket, Trophy, UserCircle } from 'lucide-react';
+import {
+  Calendar,
+  Hotel,
+  IndianRupee,
+  PartyPopper,
+  Phone,
+  Ticket,
+  Trophy,
+  UserCircle,
+} from 'lucide-react';
 import { cn } from '../../lib/';
 import { useShallow } from 'zustand/react/shallow';
 
@@ -65,7 +74,7 @@ export function ComboDetail() {
                 className="text-indigo-600 flex-shrink-0 mt-1"
               />
               <p className="leading-relaxed">
-                <span className="font-medium">Registration Fee: </span>
+                <span className="font-medium">Registration Fee: &#8377;</span>
                 {selectedCombo.fee}
                 {selectedCombo.prize && ' per Person (excluding GST)'}
                 {!selectedCombo.prize &&
@@ -76,6 +85,18 @@ export function ComboDetail() {
                   'for a 3 days (excluding GST)'}
               </p>
             </div>
+            {selectedCombo.date && (
+              <div className="flex items-start gap-3 text-base sm:text-lg">
+                <Calendar
+                  size={24}
+                  className="text-indigo-600 flex-shrink-0 mt-1"
+                />
+                <p className="leading-relaxed">
+                  <span className="font-medium">Date: </span>
+                  {selectedCombo.date}
+                </p>
+              </div>
+            )}
             <div className="flex items-start gap-3 text-base sm:text-lg">
               <Hotel size={24} className="text-indigo-600 flex-shrink-0 mt-1" />
               <p className="leading-relaxed">
@@ -109,13 +130,31 @@ export function ComboDetail() {
             )}
           </div>
         </div>
-        <div>
+        <div className="flex gap-4 flex-wrap justify-center">
           <button
-            // onClick={handleRegistration}
-            className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            onClick={() =>
+              window.open(
+                'https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi',
+                '_blank'
+              )
+            }
+            className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg max-sm:w-full hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Download Brochure
           </button>
+          {selectedCombo.prize && (
+            <button
+              onClick={() =>
+                window.open(
+                  'https://drive.google.com/uc?export=download&id=14SyW_FewCmA-vUYD5DpGfd4WQqy75TM8',
+                  '_blank'
+                )
+              }
+              className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 max-sm:w-full text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Download Overall Rules
+            </button>
+          )}
         </div>
 
         {/* Rules Section */}
@@ -147,7 +186,7 @@ export function ComboDetail() {
             htmlFor="agree-checkbox"
             className="text-gray-700 cursor-pointer"
           >
-            I Agree to the Rules and Regulations
+            I Agree to the Terms and Conditions
           </label>
         </div>
 
@@ -171,7 +210,9 @@ export function ComboDetail() {
           </button>
         </div>
         <div className="mt-6 sm:mt-8">
-          <p className="text-lg sm:text-xl font-bold text-gray-800 mb-3">Contact for Queries</p>
+          <p className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+            Contact for Queries
+          </p>
           <div>
             <div className="grid gap-3 md:grid-cols-2">
               {selectedCombo.contact.map((item) => (
@@ -184,7 +225,9 @@ export function ComboDetail() {
                     <h6 className="font-semibold text-gray-900 text-sm">
                       {item.name}
                     </h6>
-                    <p className="text-xs text-gray-600 mb-1">{item.position}</p>
+                    <p className="text-xs text-gray-600 mb-1">
+                      {item.position}
+                    </p>
                     <div className="flex flex-col gap-1 text-xs text-gray-700">
                       <div className="flex items-center gap-1">
                         <Phone size={12} />
