@@ -120,7 +120,7 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person2',
-                  name: 'Thejashree',
+                  name: 'Thejashree C',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
                   phone: '+91 9345794779',
@@ -189,7 +189,7 @@ export const useEventsStore = create(() => ({
                   id: '5',
                   title: 'Rule 5',
                   content:
-                    'Participants must BRING and ensure their devices are charged before Round 2. Charging stations may be limited.',
+                    'Participants must BRING and ensure their devices are charged before Round 1. Charging stations may be limited.',
                 },
                 {
                   id: '6',
@@ -233,7 +233,7 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
-                  name: 'Kowshika',
+                  name: 'Kowshika D',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
                   phone: '+91 8072103089',
@@ -363,7 +363,7 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
-                  name: 'Mohan',
+                  name: 'Mohanakrishna',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
                   phone: '+91 9360839549',
@@ -371,10 +371,10 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person2',
-                  name: 'Kabilan K A',
+                  name: 'Sudarsana',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
-                  phone: '+91 9952301658',
+                  phone: '+91 63795 53236',
                   img: 'https://via.placeholder.com/150',
                 },
               ],
@@ -467,7 +467,7 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
-                  name: 'Madhesh',
+                  name: 'Madhesh Kumar',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
                   phone: '+91 6381416788',
@@ -584,7 +584,7 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
-                  name: 'HIMASHREE K',
+                  name: 'Himashree K',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
                   phone: '+91 9092533465    ',
@@ -592,7 +592,7 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person2',
-                  name: 'ABISHEK R',
+                  name: 'Abishek R',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
                   phone: '+91 7448665599',
@@ -616,7 +616,7 @@ export const useEventsStore = create(() => ({
               id: 'description',
               title: 'Description',
               content:
-                'CONVO CLASH is a fast-paced debate competition where sharp minds engage over the most exciting and controversial topics in entrepreneurship. Participants compete in structured rounds, presenting well-researched arguments, countering opponents’ points, and defending their stance with logic, facts, and quick thinking. The event tests communication skills, business acumen, and the ability to think on your feet — rewarding those who can persuade, outwit, and inspire.',
+                'CONVO CLASH is An exciting on-the-spot debate where participants are instantly divided into teams and given surprise topics. With only a short time to prepare, they must think quickly, present strong arguments, and counter their opponents effectively. The 40-minute showdown will test their wit, logic, and communication skills in a high-energy battle of words',
             },
             {
               id: 'rounds',
@@ -653,31 +653,31 @@ export const useEventsStore = create(() => ({
                   id: '2',
                   title: 'Rule 2',
                   content:
-                    'Speaking Duration: each speech may have a maximum duration of 5 minutes',
+                    'Each participant will get up to 3 minutes to speak, starting with an introduction, presenting arguments with examples, and ending with a conclusion.',
                 },
                 {
                   id: '3',
                   title: 'Rule 3',
                   content:
-                    'Argument Format: each speaker must start with an introduction, present a thesis or main argument, followed by supporting evidence or data, and a conclusion.',
+                    'All arguments must be logical, fact-based, and relevant to the topic. Personal attacks, shouting, offensive or abusive language are strictly prohibited.',
                 },
                 {
                   id: '4',
                   title: 'Rule 4',
                   content:
-                    'Speaking Guidelines: Arguments must be logical ,fact based ,and relevant to the topic. Personal attacks,shouting ,or interrupting opponents is not permitted',
+                    'There is no separate rebuttal time; chances to respond will be given to everyone during the debate.',
                 },
                 {
                   id: '5',
                   title: 'Rule 5',
                   content:
-                    'Rebuttal Rules: after each speech, there will be a designated time for other speakers to provide responses or rebut the arguments presented.',
+                    'Respect speaking time, avoid interruptions, and maintain respectful conduct at all times.',
                 },
                 {
                   id: '6',
                   title: 'Rule 6',
                   content:
-                    'Orderliness and Etiquette: not interrupting other speakers, respecting the allocated time, and avoiding the use of inappropriate language or actions.',
+                    'Any disputes will be resolved by the judging panel, and their decision will be final.',
                 },
               ],
             },
@@ -694,11 +694,6 @@ export const useEventsStore = create(() => ({
                 {
                   id: '2',
                   title: 'Reward 2',
-                  content: 'Top teams will be recognized with awards.',
-                },
-                {
-                  id: '3',
-                  title: 'Reward 3',
                   content: 'Participation certificate will be provided.',
                 },
               ],
@@ -717,7 +712,7 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person2',
-                  name: 'Aniruth',
+                  name: 'Aniruth JR',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
                   phone: '+91 6374776818',
@@ -831,7 +826,7 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
-                  name: 'Pooja',
+                  name: 'Pooja K',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
                   phone: '+91 7871448301',
@@ -839,10 +834,10 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person2',
-                  name: 'Hari hara sudhan',
+                  name: ' Mariya Christy V',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
-                  phone: '+91 8870731577',
+                  phone: '+91 9344265121',
                   img: 'https://via.placeholder.com/150',
                 },
               ],
@@ -1035,10 +1030,10 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person2',
-                  name: 'Gowtham M',
+                  name: 'Eniya A',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
-                  phone: '+91 9952401611',
+                  phone: '+91 7339197734',
                   img: 'https://via.placeholder.com/150',
                 },
               ],
@@ -1096,10 +1091,10 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person2',
-                  name: 'Gowtham M',
+                  name: 'Eniya A',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
-                  phone: '+91 9952401611',
+                  phone: '+91 7339197734',
                   img: 'https://via.placeholder.com/150',
                 },
               ],
