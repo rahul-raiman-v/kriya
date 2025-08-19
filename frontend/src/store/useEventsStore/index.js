@@ -50,7 +50,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
@@ -165,7 +165,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
@@ -293,7 +293,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
@@ -417,7 +417,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
@@ -525,7 +525,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
@@ -647,7 +647,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Individual participation.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
@@ -770,7 +770,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
@@ -879,7 +879,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    'Team: Teams of up to 4-5 members are welcome, with a maximum of one participant from BIT permitted. Allowed: 3-4 non-BIT + 1 BIT student (or) Allowed: 4-5 non-BIT students.',
+                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
                 },
                 {
                   id: '2',
