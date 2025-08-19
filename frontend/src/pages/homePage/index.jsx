@@ -259,14 +259,14 @@ export const HomePage = () => {
             </div>
 
             {/* Right Content - Hero Image */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex items-start h-full lg:justify-end">
               <div className="relative w-full max-w-lg">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
                 <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
                   <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
                     alt="Innovation and Technology"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift"
+                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift p-6 bg-white"
                     loading="lazy"
                   />
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
@@ -285,7 +285,7 @@ export const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
-                <AnimatedCounter end={20} suffix="+" />
+                <AnimatedCounter end={30} suffix="+" />
               </div>
               <div className="text-slate-600 font-medium">Events</div>
             </div>
@@ -505,18 +505,7 @@ export const HomePage = () => {
                 In-Associated With
               </h3>
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
-                {/** Bannari Amman Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
-                    alt="BIT"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium text-center">
-                    Bannari Amman Institute of Technology
-                  </span>
-                </div>
-
+                
                 {/* StartupTN Logo */}
                 <div className="flex flex-col items-center">
                   <img
@@ -529,30 +518,6 @@ export const HomePage = () => {
                   </span>
                 </div>
 
-                {/** Kriya Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
-                    alt="Kriya 1.0"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    Kriya 1.0
-                  </span>
-                </div>
-
-                {/** TBI Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106865/tbi_c9c0ao.png"
-                    alt="BIT TBI"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    BIT - TBI
-                  </span>
-                </div>
-
                 {/** ISBA Logo */}
                 <div className="flex flex-col items-center">
                   <img
@@ -562,6 +527,28 @@ export const HomePage = () => {
                   />
                   <span className="text-slate-700 mt-2 font-medium">ISBA</span>
                 </div>
+
+                {/** IIC Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755577029/iic_pl9hpw.png"
+                    alt="IIC"
+                    className="h-16 scale-200"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">Institution's Innovation Council</span>
+                </div>
+
+                {/** DNA Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755577737/dna_ongpwu.png"
+                    alt="DNA"
+                    className="h-16 scale-125"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">Don't Build Alone</span>
+                </div>
+
+
               </div>
             </div>
             {/* Media Partner Card */}

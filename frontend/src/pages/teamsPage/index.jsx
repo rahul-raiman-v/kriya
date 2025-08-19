@@ -150,7 +150,7 @@ export const TeamsPage = () => {
     {
       id: 6,
       name: 'Nandhini K M',
-      designation: 'QUIZXtream',
+      designation: 'QUIZXtreme',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Ms-Nandhini-K-M.png',
       phone: '+91 9788005115',
