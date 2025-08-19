@@ -301,18 +301,22 @@ export const useComboStore = create(() => ({
       rulesData: [
         {
           id: 1,
-          rule: 'Only hackathon-related facilities and certificates are included.',
+          rule: 'No ticket for star night (culturals) will be included.',
         },
         {
           id: 2,
-          rule: 'Team registration must be completed before Day 2 evening.',
+          rule: 'Only hackathon-related facilities and certificates are included.',
         },
         {
           id: 3,
-          rule: 'All members must be present for the entire hackathon duration, late arrivals may be disqualified.',
+          rule: 'Team registration must be completed before Day 2 evening.',
         },
         {
           id: 4,
+          rule: 'All members must be present for the entire hackathon duration, late arrivals may be disqualified.',
+        },
+        {
+          id: 5,
           rule: 'A valid student ID is required for registration and verification at the event venue.',
         },
       ],
