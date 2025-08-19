@@ -80,7 +80,7 @@ export const HomePage = () => {
   const useScroll = useRef();
 
   const handleScroll = () => {
-    useScroll.current.scrollIntoView({ behavior: "smooth" });
+    useScroll.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   // Scroll effect
@@ -231,7 +231,10 @@ export const HomePage = () => {
                   Register Now{' '}
                   <ArrowRight className="inline-block ml-2" size={20} />
                 </button>
-                <button onClick={handleScroll} className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                <button
+                  onClick={handleScroll}
+                  className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300"
+                >
                   Learn More
                 </button>
               </div>
@@ -424,7 +427,8 @@ export const HomePage = () => {
             </button>
             <a
               href="https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi"
-              className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
+              className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300"
+            >
               Download Brochure
             </a>
           </div>
@@ -470,17 +474,15 @@ export const HomePage = () => {
                 </div>
                 <div className="flex items-center gap-3 flex-wrap">
                   <Mail className="text-purple-600" size={22} />
-                  <span
-                    className="text-slate-700 text-lg sm:text-base break-all"
-                  >
+                  <span className="text-slate-700 text-lg sm:text-base break-all">
                     startuphub@bitsathy.ac.in
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="text-purple-600" size={24} />
                   <span className="text-slate-600 text-lg sm:text-base leading-relaxed">
-                    Bannari Amman Institute of Technology,
-                    Sathyamangalam, Tamil Nadu
+                    Bannari Amman Institute of Technology, Sathyamangalam, Tamil
+                    Nadu
                   </span>
                 </div>
               </div>
@@ -526,7 +528,6 @@ export const HomePage = () => {
                     StartupTN
                   </span>
                 </div>
-
 
                 {/** Kriya Logo */}
                 <div className="flex flex-col items-center">
@@ -580,7 +581,6 @@ export const HomePage = () => {
                     Times of India
                   </span>
                 </div>
-
               </div>
             </div>
             {/* Social Links Card */}
