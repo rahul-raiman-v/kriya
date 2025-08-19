@@ -29,11 +29,12 @@ export function ComboPage() {
           <img
             // src={ComboImage || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
             src={
-              item.image ||
+              item.image 
+              ||
               'https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image'
             }
-            alt="combo illustration"
-            className="w-full h-[200px] object-cover transform transition-transform duration-300 hover:scale-110"
+            alt="Combo Image"
+            className="w-full h-[200px] object-cover transform transition-transform duration-300 hover:scale-110 bg-blue-50"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src =

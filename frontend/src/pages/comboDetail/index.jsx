@@ -46,7 +46,7 @@ export function ComboDetail() {
                 'https://placehold.co/600x300/E0F2F7/000000?text=Combo+Details+Image'
               }
               alt={`${selectedCombo.combo} illustration`}
-              className="w-full h-[250px] object-cover"
+              className="w-full h-[250px] object-cover bg-blue-50"
               onError={(e) => {
                 e.target.onerror = null;
                 e.target.src =
