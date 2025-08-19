@@ -264,9 +264,9 @@ export const HomePage = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
                 <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
                   <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
                     alt="Innovation and Technology"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift p-6 bg-white"
+                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift bg-white"
                     loading="lazy"
                   />
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
