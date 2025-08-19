@@ -12,7 +12,8 @@ export function EventsCard({
   eventDate = 'Date not specified',
   eventVenue = 'Venue not specified',
   eventImage = '',
-  brochureLink,
+  brochureLink, // Fixed typo: was brouchreLink
+  eventType = "",
 }) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = React.useState(eventTabs[0]?.title || '');
