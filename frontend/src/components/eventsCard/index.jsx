@@ -139,9 +139,6 @@ export function EventsCard({
             <MapPin size={16} className="text-red-500" />
             <span>{eventVenue}</span>
           </div>
-          <div className="flex items-center px-3 py-0 h-[25px] leading-none text-xs font-bold rounded-full bg-purple-100 text-purple-700">
-            <span>{eventType}</span>
-          </div>
         </div>
 
         {/* Title */}
