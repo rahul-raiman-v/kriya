@@ -384,7 +384,7 @@ export const useEventsStore = create(() => ({
         {
           id: 'event-4',
           eventTitle: 'CREOVATE',
-          eventType: 'Product Expo',
+          eventType: 'Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236008/CreovateImg_igr4zp.jpg',
