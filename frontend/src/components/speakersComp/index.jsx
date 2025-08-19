@@ -170,7 +170,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                         className="text-sky-700 group-hover:scale-110 transition-transform"
                       />
                     </a>
-                  )}  
+                  )}
                   {(selectedSpeaker.links.wikipedia ||
                     selectedSpeaker.links.news) && (
                     <a

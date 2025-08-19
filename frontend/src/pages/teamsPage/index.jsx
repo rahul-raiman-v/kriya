@@ -92,7 +92,7 @@ export const TeamsPage = () => {
       phone: '+91 9865530099',
       email: 'bharathia@bitsathy.ac.in',
     },
-    
+
     {
       id: 9,
       name: 'Prathap M R',
@@ -240,9 +240,13 @@ export const TeamsPage = () => {
             Team KRIYA
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
-            {spocs.sort((a,b) => a.name.localeCompare(b.name)).map((item) => {
-              return <TeamsCard key={item.id} {...item} variant={'chairman'} />;
-            })}
+            {spocs
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item) => {
+                return (
+                  <TeamsCard key={item.id} {...item} variant={'chairman'} />
+                );
+              })}
           </div>
         </div>
         {/* <div className="flex flex-col gap-y-5">
@@ -260,9 +264,11 @@ export const TeamsPage = () => {
             Students Co-ordinators
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
-            {students.sort((a,b) => a.name.localeCompare(b.name)).map((item) => {
-              return <TeamsCard key={item.id} {...item} variant={'code'} />;
-            })}
+            {students
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item) => {
+                return <TeamsCard key={item.id} {...item} variant={'code'} />;
+              })}
           </div>
         </div>
       </div>

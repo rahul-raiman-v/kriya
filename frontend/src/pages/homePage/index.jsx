@@ -551,7 +551,6 @@ export const HomePage = () => {
                   </span>
                 </div>
 
-
                 {/** Code Circle Logo */}
                 <div className="flex flex-col items-center">
                   <img
