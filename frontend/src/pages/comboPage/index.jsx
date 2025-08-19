@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import { Hotel, IndianRupee, Ticket, Trophy } from 'lucide-react';
+import { Calendar, Hotel, IndianRupee, Ticket, Trophy } from 'lucide-react';
 // import ComboImage from '/comboImage.png';
 import { useComboStore } from '../../store/useComboStore/index';
 import { useComboPageStore } from '../../store/useComboPageStore/index';
@@ -32,8 +32,8 @@ export function ComboPage() {
               item.image ||
               'https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image'
             }
-            alt="combo illustration"
-            className="w-full h-[200px] object-cover transform transition-transform duration-300 hover:scale-110"
+            alt="Combo Image"
+            className="w-full h-[200px] object-cover transform transition-transform duration-300 hover:scale-110 bg-blue-50"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src =
@@ -44,8 +44,8 @@ export function ComboPage() {
         <h3 className="text-2xl sm:text-3xl font-extrabold text-indigo-600 text-center mb-6">
           {item.combo}
         </h3>
-        <div className="flex flex-col gap-5 sm:gap-6 text-gray-600">
-          <div className="flex items-start gap-3 sm:gap-4 text-base sm:text-lg">
+        <div className="flex flex-col gap-4 sm:gap-4 text-gray-600">
+          <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
             <Ticket size={24} className="text-blue-500 flex-shrink-0 mt-1" />
             <p className="leading-relaxed">{item.events}</p>
           </div>
@@ -55,23 +55,30 @@ export function ComboPage() {
               className="text-indigo-600 flex-shrink-0 mt-1"
             />
             <p className="leading-relaxed">
-              <span className="font-medium">Registration Fee: </span>
+              <span className="font-medium">Registration Fee: &#8377;</span>
               {item.fee}
               {item.prize && ' per Person (excluding GST)'}
               {!item.prize &&
                 item.isTrue &&
                 ' per Person / Day (excluding GST)'}
-              {!item.prize &&
-                !item.isTrue &&
-                ' for 3 days (excluding GST)'}
+              {!item.prize && !item.isTrue && ' for 3 days (excluding GST)'}
             </p>
           </div>
-          <div className="flex items-start gap-3 sm:gap-4 text-base sm:text-lg">
+          {item.date && (
+            <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
+              <Calendar
+                size={24}
+                className="text-blue-500 flex-shrink-0 mt-1"
+              />
+              <p className="leading-relaxed">Date: {item.date}</p>
+            </div>
+          )}
+          <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
             <Hotel size={24} className="text-blue-500 flex-shrink-0 mt-1" />
             <p className="leading-relaxed">{item.hostel}</p>
           </div>
           {item.prize && (
-            <div className="flex items-start gap-3 sm:gap-4 text-base sm:text-lg">
+            <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
               <Trophy size={24} className="text-blue-500 flex-shrink-0 mt-1" />
               <p className="leading-relaxed">{item.prize}</p>
             </div>

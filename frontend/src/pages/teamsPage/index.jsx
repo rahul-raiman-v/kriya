@@ -115,7 +115,7 @@ export const TeamsPage = () => {
     {
       id: 2,
       name: 'Vaidhyanathan B',
-      designation: 'HACKVISION',
+      designation: 'VISIONHACK',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Vaidhyanathan-B.jpg',
       phone: '+91 7395887646',
@@ -150,7 +150,7 @@ export const TeamsPage = () => {
     {
       id: 6,
       name: 'Nandhini K M',
-      designation: 'QUIZXtream',
+      designation: 'QUIZXtreme',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Ms-Nandhini-K-M.png',
       phone: '+91 9788005115',
@@ -159,7 +159,7 @@ export const TeamsPage = () => {
     {
       id: 7,
       name: 'Dr Sakthiya Ram S',
-      designation: 'Talk Show',
+      designation: 'CONVO CLASH',
       image:
         'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Sakthiya-Ram-S.jpg',
       phone: '+91 9443074586',

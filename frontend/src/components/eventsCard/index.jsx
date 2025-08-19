@@ -7,10 +7,12 @@ import { useNavigate } from 'react-router';
 
 export function EventsCard({
   eventTabs = [],
+  eventType = 'Untitled',
   eventTitle = 'Untitled Event',
   eventDate = 'Date not specified',
   eventVenue = 'Venue not specified',
   eventImage = '',
+  brochureLink, // Fixed typo: was brouchreLink
 }) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = React.useState(eventTabs[0]?.title || '');
@@ -75,6 +77,45 @@ export function EventsCard({
     );
   };
 
+  // Function to handle brochure download
+  const handleBrochureDownload = () => {
+    if (!brochureLink) {
+      alert('Brochure not available for this event');
+      return;
+    }
+
+    // For Google Drive links, ensure proper download format
+    let downloadUrl = brochureLink;
+    if (
+      brochureLink.includes('drive.google.com') &&
+      !brochureLink.includes('export=download')
+    ) {
+      const fileId = brochureLink.match(/\/d\/([a-zA-Z0-9-_]+)/);
+      if (fileId) {
+        downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId[1]}`;
+      }
+    }
+
+    try {
+      // Try direct download first (works for most direct file links)
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.style.display = 'none';
+
+      // Set download attribute with a meaningful filename
+      const fileName = `${eventTitle.replace(/[^a-z0-9]/gi, '_')}_Brochure.pdf`;
+      link.download = fileName;
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Download failed:', error);
+      // Fallback: open in same window if direct download fails
+      window.location.href = downloadUrl;
+    }
+  };
+
   return (
     <div
       className="flex min-h-[200px] flex-col lg:flex-row justify-between items-stretch gap-6 p-6 
@@ -83,7 +124,18 @@ export function EventsCard({
       {/* Left Side */}
       <div className="flex-1 flex flex-col">
         {/* Date & Location */}
-        <div className="flex flex-wrap gap-4 mb-4">
+        <div className="flex items-center flex-wrap gap-4 mb-4">
+          {/* Badge */}
+          <span
+            className={`inline-flex items-center justify-center ml-2 px-3 py-1 rounded-full text-[12px] tracking-wide font-semibold uppercase shadow-sm
+              ${
+                eventType === 'Technical'
+                  ? 'bg-gradient-to-r from-green-400 to-green-600 text-white'
+                  : 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-white'
+              }`}
+          >
+            {eventType}
+          </span>
           <div className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 px-4 py-2 rounded-lg text-sm text-white shadow-sm">
             <CalendarDays size={16} />
             <span className="font-medium">{eventDate}</span>
@@ -147,12 +199,24 @@ export function EventsCard({
           >
             Register Now
           </button>
-          <button
-            className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
-            onClick={() => alert('Broucher will be available soon')}
-          >
-            Download Brochure
-          </button>
+
+          {/* Updated brochure button with conditional rendering */}
+          {brochureLink ? (
+            <button
+              onClick={handleBrochureDownload}
+              className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+            >
+              Download Rulebook
+            </button>
+          ) : (
+            <button
+              disabled
+              className="bg-gradient-to-r cursor-not-allowed from-gray-400 to-gray-500 text-white px-8 py-3 rounded-lg font-semibold opacity-60 transition-all duration-300 w-fit shadow-md"
+              title="Brochure not available"
+            >
+              Rulebook Unavailable
+            </button>
+          )}
         </div>
       </div>
 
@@ -182,8 +246,10 @@ EventsCard.propTypes = {
       ]),
     })
   ),
+  eventType: PropTypes.string,
   eventTitle: PropTypes.string,
   eventDate: PropTypes.string,
   eventVenue: PropTypes.string,
   eventImage: PropTypes.string,
+  brochureLink: PropTypes.string, // Fixed typo here too
 };

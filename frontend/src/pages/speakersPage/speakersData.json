@@ -193,10 +193,10 @@
     "linkedin": "https://in.linkedin.com/in/k-t-srinivasa-raja-57346118",
     "twitter": ""
   },
-  "industry": "Food & Beverages",
-  "isKeynote": false,
-  "quote": "From humble beginnings to a global brand, it’s about preserving tradition while embracing innovation."
-},
+    "industry": "Food & Beverages",
+    "isKeynote": false,
+    "quote": "From humble beginnings to a global brand, it’s about preserving tradition while embracing innovation."
+  },
   {
     "name": "Anusha V",
     "title": "Founder and CEO",
@@ -328,7 +328,8 @@
     "Recognized for thought leadership in brand storytelling and innovative approaches to content-driven growth."
     ],
     "links": {
-      "linkedin": "https://www.linkedin.com/in/iswaryaagp/?originalSubdomain=in"
+      "linkedin": "https://www.linkedin.com/in/iswaryaagp/?originalSubdomain=in",
+      "wikipedia": "https://www.townscholar.com/"
     },
     "industry": "Digital Marketing",
     "isKeynote": false,

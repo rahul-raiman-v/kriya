@@ -96,24 +96,34 @@ export const Header = () => {
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <img
-              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106862/bitsathyindia_fvkxxf.png"
-              alt=""
-              className="h-16 "
-              loading="lazy"
-            />
-            <img
-              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_lpiwdp.png"
-              alt=""
-              className="h-16 "
-              loading="lazy"
-            />
-            <img
-              src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106865/tbi_c9c0ao.png"
-              alt=""
-              className="h-16"
-              loading="lazy"
-            />
+            <div className="flex items-center gap-3">
+              <img
+                src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106862/bitsathyindia_fvkxxf.png"
+                alt=""
+                className="h-16 xl:hidden block "
+                loading="lazy"
+              />
+              <img
+                src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
+                alt=""
+                className="h-16 hidden xl:block "
+                loading="lazy"
+              />
+              <img
+                src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106865/tbi_c9c0ao.png"
+                alt=""
+                className="h-[66px]"
+                loading="lazy"
+              />
+              <div className="h-16 flex items-center pb-[9px] ">
+                <img
+                  src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755575691/IMG-20250814-WA0005_1_-removebg-preview_fuxmeh.png"
+                  alt=""
+                  className="h-11"
+                  loading="lazy"
+                />
+              </div>
+            </div>
 
             {/* Logo with enhanced hover effect */}
 
@@ -235,7 +245,7 @@ export const Header = () => {
               </div>
 
               {/* Enhanced Mobile Registration Button */}
-              <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:space-y-4 flex-row gap-x-4">
+              <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:space-y-4 flex-row gap-x-4 mt-4">
                 <button
                   onClick={handleRegistration}
                   className="cursor-pointer bg-gradient-to-r w-full from-pink-400 via-purple-500 to-indigo-500 text-white py-4 px-6 rounded-2xl font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-200 shadow-lg hover:shadow-xl active:scale-95 transform hover:-translate-y-0.5"
@@ -265,8 +275,13 @@ export const Header = () => {
                   </span>
                 </button>
                 <button
-                  className="cursor-pointer bg-gradient-to-r w-full  from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300  shadow-md"
-                  onClick={() => alert('Broucher will be available soon')}
+                  className="cursor-pointer bg-gradient-to-r w-full  from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300  shadow-md flex justify-center items-center"
+                  onClick={() =>
+                    window.open(
+                      'https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi',
+                      '_blank'
+                    )
+                  }
                 >
                   Download Brochure
                 </button>
@@ -279,7 +294,7 @@ export const Header = () => {
       {/* Mobile menu backdrop */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-20 z-40 lg:hidden transition-opacity duration-300"
+          className="fixed inset-0  bg-opacity-20 z-40 lg:hidden transition-opacity duration-300"
           onClick={() => setIsMenuOpen(false)}
           aria-hidden="true"
         ></div>

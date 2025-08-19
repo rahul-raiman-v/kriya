@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import {
   Calendar,
@@ -76,6 +76,12 @@ export const HomePage = () => {
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
   const router = useNavigate();
+
+  const useScroll = useRef();
+
+  const handleScroll = () => {
+    useScroll.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   // Scroll effect
   React.useEffect(() => {
@@ -176,7 +182,7 @@ export const HomePage = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/80 via-purple-50/80 to-pink-50/80" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-sm:mt-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="text-center lg:text-left space-y-8 animate-fadeInUp">
@@ -225,7 +231,10 @@ export const HomePage = () => {
                   Register Now{' '}
                   <ArrowRight className="inline-block ml-2" size={20} />
                 </button>
-                <button className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                <button
+                  onClick={handleScroll}
+                  className="cursor-pointer border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300"
+                >
                   Learn More
                 </button>
               </div>
@@ -250,14 +259,14 @@ export const HomePage = () => {
             </div>
 
             {/* Right Content - Hero Image */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex items-start h-full lg:justify-end">
               <div className="relative w-full max-w-lg">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
                 <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
                   <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
                     alt="Innovation and Technology"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift"
+                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift p-6 bg-white"
                     loading="lazy"
                   />
                   <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
@@ -276,7 +285,7 @@ export const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
-                <AnimatedCounter end={20} suffix="+" />
+                <AnimatedCounter end={30} suffix="+" />
               </div>
               <div className="text-slate-600 font-medium">Events</div>
             </div>
@@ -297,7 +306,7 @@ export const HomePage = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative py-20">
+      <section id="about" className="relative py-20" ref={useScroll}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
@@ -416,9 +425,12 @@ export const HomePage = () => {
               Register Now{' '}
               <ArrowRight className="inline-block ml-2" size={20} />
             </button>
-            <button className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1OtHgqZsBELucRohlH0xpIzihyK7ixZKi"
+              className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300"
+            >
               Download Brochure
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -453,22 +465,25 @@ export const HomePage = () => {
               <div className="flex flex-col gap-y-3">
                 <div className="flex items-center gap-3 w-fit">
                   <Phone className="text-indigo-600" size={22} />
-                  <span className="text-slate-700 text-lg max-sm:text-md">
+                  <a
+                    href="tel:+918072137522"
+                    className="text-slate-700 text-lg sm:text-base hover:text-blue-600"
+                  >
                     +91 80721 37522
-                  </span>
+                  </a>
                 </div>
-                <div className="flex items-center gap-3 w-min max-xs:flex max-xs:flex-col max-xs:gap-1">
+                <div className="flex items-center gap-3 flex-wrap">
                   <Mail className="text-purple-600" size={22} />
-                  <span className="text-slate-700 text-lg max-sm:text-md max-sm:truncate max-sm:w-fit">
+                  <span className="text-slate-700 text-lg sm:text-base break-all">
                     startuphub@bitsathy.ac.in
                   </span>
                 </div>
-                <div className="flex items-center gap-3 w-fit">
-                  <MapPin className="text-pink-600" size={22} />
-                  <p className="text-slate-700 text-lg max-sm:text-md ">
-                    Bannari Amman Institute Technology Campus, Sathyamangalam,
-                    Tamil Nadu
-                  </p>
+                <div className="flex items-start gap-3">
+                  <MapPin className="text-purple-600" size={24} />
+                  <span className="text-slate-600 text-lg sm:text-base leading-relaxed">
+                    Bannari Amman Institute of Technology, Sathyamangalam, Tamil
+                    Nadu
+                  </span>
                 </div>
               </div>
             </div>
@@ -490,18 +505,6 @@ export const HomePage = () => {
                 In-Associated With
               </h3>
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
-                {/** Bannari Amman Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106848/bit_df5hvq.png"
-                    alt="BIT"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium text-center">
-                    Bannari Amman Institute of Technology
-                  </span>
-                </div>
-
                 {/* StartupTN Logo */}
                 <div className="flex flex-col items-center">
                   <img
@@ -514,31 +517,6 @@ export const HomePage = () => {
                   </span>
                 </div>
 
-
-                {/** Kriya Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755148754/kriya_d0uwcp.png"
-                    alt="Kriya 1.0"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    Kriya 1.0
-                  </span>
-                </div>
-
-                {/** TBI Logo */}
-                <div className="flex flex-col items-center">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106865/tbi_c9c0ao.png"
-                    alt="BIT TBI"
-                    className="h-16 object-contain"
-                  />
-                  <span className="text-slate-700 mt-2 font-medium">
-                    BIT - TBI
-                  </span>
-                </div>
-
                 {/** ISBA Logo */}
                 <div className="flex flex-col items-center">
                   <img
@@ -547,6 +525,30 @@ export const HomePage = () => {
                     className="h-16 object-contain"
                   />
                   <span className="text-slate-700 mt-2 font-medium">ISBA</span>
+                </div>
+
+                {/** IIC Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755577029/iic_pl9hpw.png"
+                    alt="IIC"
+                    className="h-16 scale-200"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Institution's Innovation Council
+                  </span>
+                </div>
+
+                {/** DNA Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755577737/dna_ongpwu.png"
+                    alt="DNA"
+                    className="h-16 scale-125"
+                  />
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Don't Build Alone
+                  </span>
                 </div>
               </div>
             </div>
@@ -567,7 +569,6 @@ export const HomePage = () => {
                     Times of India
                   </span>
                 </div>
-                
               </div>
             </div>
             {/* Social Links Card */}
@@ -580,19 +581,23 @@ export const HomePage = () => {
               </p>
               <div className="flex gap-5 flex-wrap">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/lifeatbit?igsh=MW8wdjV1ZGloejV1MQ=="
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
                 >
                   <Instagram size={24} />
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="bg-gradient-to-tr from-blue-400 to-blue-600 text-white p-4 rounded-full shadow-lg hover:shadow-blue-300 transition-all duration-300"
                 >
                   <Twitter size={24} />
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/school/bitsathyindia/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-gradient-to-tr from-blue-700 to-indigo-900 text-white p-4 rounded-full shadow-lg hover:shadow-indigo-300 transition-all duration-300"
                 >
                   <Linkedin size={24} />
