@@ -13,6 +13,7 @@ export function EventsCard({
   eventVenue = 'Venue not specified',
   eventImage = '',
   brochureLink, // Fixed typo: was brouchreLink
+  eventType = "",
 }) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = React.useState(eventTabs[0]?.title || '');
@@ -120,7 +121,7 @@ export function EventsCard({
       {/* Left Side */}
       <div className="flex-1 flex flex-col">
         {/* Date & Location */}
-        <div className="flex flex-wrap gap-4 mb-4">
+        <div className="flex items-center flex-wrap gap-4 mb-4">
           {/* Badge */}
           <span
             className={`inline-flex items-center justify-center ml-2 px-3 py-1 rounded-full text-[12px] tracking-wide font-semibold uppercase shadow-sm
@@ -164,11 +165,10 @@ export function EventsCard({
             {eventTabs.map((tab) => (
               <button
                 key={tab.id || tab.title}
-                className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${
-                  activeTab === tab.title
+                className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${activeTab === tab.title
                     ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md transform scale-105'
                     : 'border border-gray-300 text-gray-700 hover:bg-gradient-to-r hover:from-pink-100 hover:to-purple-100 hover:border-purple-300'
-                }`}
+                  }`}
                 onClick={() => setActiveTab(tab.title)}
                 aria-selected={activeTab === tab.title}
                 role="tab"
