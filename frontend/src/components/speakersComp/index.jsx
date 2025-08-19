@@ -322,7 +322,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                   {/* The inner container is counter-skewed to keep content straight */}
                   <div className="flex flex-col gap-4 bg-white overflow-hidden border-none transition-all duration-300 h-full shadow-md hover:shadow-lg  !rounded-none">
                     <div
-                      className="relative w-full md:w-[120%] md:-ml-[10%] h-84 bg-contain bg-auto no-repeat md:transform md:skew-x-[15deg]"
+                      className="relative w-full md:w-[120%] md:-ml-[10%] h-84 bg-contain bg-auto no-repeat md:transform md:skew-x-[15deg] pointer-events-none"
                       style={{
                         backgroundImage: `url(${speaker?.carouselUrl})`,
                       }}
