@@ -96,7 +96,7 @@ export const Header = () => {
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-          <div className='flex items-center gap-3'>
+            <div className="flex items-center gap-3">
               <img
                 src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106862/bitsathyindia_fvkxxf.png"
                 alt=""
@@ -115,7 +115,7 @@ export const Header = () => {
                 className="h-[66px]"
                 loading="lazy"
               />
-              <div className='h-16 flex items-center pb-[9px] '>
+              <div className="h-16 flex items-center pb-[9px] ">
                 <img
                   src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755575691/IMG-20250814-WA0005_1_-removebg-preview_fuxmeh.png"
                   alt=""
@@ -123,8 +123,7 @@ export const Header = () => {
                   loading="lazy"
                 />
               </div>
-
-          </div>
+            </div>
 
             {/* Logo with enhanced hover effect */}
 

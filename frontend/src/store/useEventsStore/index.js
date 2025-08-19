@@ -15,7 +15,8 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755446916/WhatsApp_Image_2025-08-17_at_21.35.26_f3b7650e_n2djqo.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
           highlight: true,
           tabs: [
             {
@@ -50,7 +51,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -137,7 +138,8 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236014/InnoVisionImg_r2umgq.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1xEhTtOuqf0u93K5_dJtfb87jmbyrE3XY',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1xEhTtOuqf0u93K5_dJtfb87jmbyrE3XY',
           highlight: true,
           tabs: [
             {
@@ -165,7 +167,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -258,7 +260,8 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/BreakThroughImg_z0jjf9.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=13iWqZyk9qgn_mj18umZV1c3Q1WWUtpG_',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=13iWqZyk9qgn_mj18umZV1c3Q1WWUtpG_',
           highlight: true,
           tabs: [
             {
@@ -293,7 +296,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -388,7 +391,8 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236008/CreovateImg_igr4zp.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1_4ndeCfA39eoY6VGBKhda44WHgOqKJet',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1_4ndeCfA39eoY6VGBKhda44WHgOqKJet',
           highlight: true,
           tabs: [
             {
@@ -417,7 +421,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -492,7 +496,8 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/GuessInGlanceImg_zxtfq5.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=11mQUgy5wm-nFdtjrKmp43m2pEuNZ1_hN',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=11mQUgy5wm-nFdtjrKmp43m2pEuNZ1_hN',
           highlight: true,
           tabs: [
             {
@@ -508,7 +513,8 @@ export const useEventsStore = create(() => ({
                 {
                   id: '1',
                   title: 'Round 1',
-                  content: 'Teams compete in the first round and best performers will be shortlisted.',
+                  content:
+                    'Teams compete in the first round and best performers will be shortlisted.',
                 },
                 {
                   id: '2',
@@ -525,7 +531,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -609,7 +615,8 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236014/TalkShowImg_hevk1s.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
           highlight: true,
           tabs: [
             {
@@ -647,7 +654,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -729,7 +736,8 @@ export const useEventsStore = create(() => ({
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755446896/ChatGPT_Image_Aug_14__2025__11_46_10_AM_1_i90vu5.png',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1N1dPZccfe98wYlJHanYtMj4vN1FewWDI',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1N1dPZccfe98wYlJHanYtMj4vN1FewWDI',
           highlight: true,
           tabs: [
             {
@@ -770,7 +778,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -851,7 +859,8 @@ export const useEventsStore = create(() => ({
           date: 'September 11, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/VisionHackImg_ntfdbg.jpg',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1OmXxEo7JImawGBr9NrxqogMpM86fLYiu',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1OmXxEo7JImawGBr9NrxqogMpM86fLYiu',
           highlight: true,
           tabs: [
             {
@@ -879,7 +888,7 @@ export const useEventsStore = create(() => ({
                   id: '1',
                   title: 'Rule 1',
                   content:
-                    "Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.",
+                    'Team: Teams of up to 4-5 members are welcome. All members can be from other colleges (4 or 5). For 4 members: Max 1 BIT student + 3 from other colleges. For 5 members: Max 2 BIT students + 3 from other colleges.',
                 },
                 {
                   id: '2',
@@ -986,7 +995,8 @@ export const useEventsStore = create(() => ({
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/WorkShop1Img_rekco2.jpg',
           date: 'September 09, 2025',
           venue: 'BIT Campus',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1p1zoVgGq30k_8IQwt88hR9djsMP5ur9Q',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1p1zoVgGq30k_8IQwt88hR9djsMP5ur9Q',
           highlight: true,
           tabs: [
             {
@@ -1047,7 +1057,8 @@ export const useEventsStore = create(() => ({
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkShop2Img_x9plwz.jpg',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          brochureLink: 'https://drive.google.com/uc?export=download&id=1cIzoRqwOhblHYvIggZLBhQ9_HuUFmtAD',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1cIzoRqwOhblHYvIggZLBhQ9_HuUFmtAD',
           highlight: true,
           tabs: [
             {

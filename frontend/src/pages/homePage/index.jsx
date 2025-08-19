@@ -505,7 +505,6 @@ export const HomePage = () => {
                 In-Associated With
               </h3>
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
-                
                 {/* StartupTN Logo */}
                 <div className="flex flex-col items-center">
                   <img
@@ -535,7 +534,9 @@ export const HomePage = () => {
                     alt="IIC"
                     className="h-16 scale-200"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">Institution's Innovation Council</span>
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Institution's Innovation Council
+                  </span>
                 </div>
 
                 {/** DNA Logo */}
@@ -545,10 +546,10 @@ export const HomePage = () => {
                     alt="DNA"
                     className="h-16 scale-125"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">Don't Build Alone</span>
+                  <span className="text-slate-700 mt-2 font-medium">
+                    Don't Build Alone
+                  </span>
                 </div>
-
-
               </div>
             </div>
             {/* Media Partner Card */}
@@ -581,7 +582,7 @@ export const HomePage = () => {
               <div className="flex gap-5 flex-wrap">
                 <a
                   href="https://www.instagram.com/lifeatbit?igsh=MW8wdjV1ZGloejV1MQ=="
-                  target='_blank'
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-tr from-pink-500 to-red-500 text-white p-4 rounded-full shadow-lg hover:shadow-pink-300 transition-all duration-300"
                 >
@@ -595,7 +596,7 @@ export const HomePage = () => {
                 </a> */}
                 <a
                   href="https://www.linkedin.com/school/bitsathyindia/posts/?feedView=all"
-                  target='_blank'
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-tr from-blue-700 to-indigo-900 text-white p-4 rounded-full shadow-lg hover:shadow-indigo-300 transition-all duration-300"
                 >

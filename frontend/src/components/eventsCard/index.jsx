@@ -13,7 +13,6 @@ export function EventsCard({
   eventVenue = 'Venue not specified',
   eventImage = '',
   brochureLink, // Fixed typo: was brouchreLink
-  eventType = "",
 }) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = React.useState(eventTabs[0]?.title || '');
@@ -87,7 +86,10 @@ export function EventsCard({
 
     // For Google Drive links, ensure proper download format
     let downloadUrl = brochureLink;
-    if (brochureLink.includes('drive.google.com') && !brochureLink.includes('export=download')) {
+    if (
+      brochureLink.includes('drive.google.com') &&
+      !brochureLink.includes('export=download')
+    ) {
       const fileId = brochureLink.match(/\/d\/([a-zA-Z0-9-_]+)/);
       if (fileId) {
         downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId[1]}`;
@@ -99,15 +101,16 @@ export function EventsCard({
       const link = document.createElement('a');
       link.href = downloadUrl;
       link.style.display = 'none';
-      
+
       // Set download attribute with a meaningful filename
       const fileName = `${eventTitle.replace(/[^a-z0-9]/gi, '_')}_Brochure.pdf`;
       link.download = fileName;
-      
+
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     } catch (error) {
+      console.error('Download failed:', error);
       // Fallback: open in same window if direct download fails
       window.location.href = downloadUrl;
     }
@@ -125,9 +128,10 @@ export function EventsCard({
           {/* Badge */}
           <span
             className={`inline-flex items-center justify-center ml-2 px-3 py-1 rounded-full text-[12px] tracking-wide font-semibold uppercase shadow-sm
-              ${eventType === "Technical"
-                ? "bg-gradient-to-r from-green-400 to-green-600 text-white"
-                : "bg-gradient-to-r from-yellow-400 to-yellow-600 text-white"
+              ${
+                eventType === 'Technical'
+                  ? 'bg-gradient-to-r from-green-400 to-green-600 text-white'
+                  : 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-white'
               }`}
           >
             {eventType}
@@ -165,10 +169,11 @@ export function EventsCard({
             {eventTabs.map((tab) => (
               <button
                 key={tab.id || tab.title}
-                className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${activeTab === tab.title
+                className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${
+                  activeTab === tab.title
                     ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md transform scale-105'
                     : 'border border-gray-300 text-gray-700 hover:bg-gradient-to-r hover:from-pink-100 hover:to-purple-100 hover:border-purple-300'
-                  }`}
+                }`}
                 onClick={() => setActiveTab(tab.title)}
                 aria-selected={activeTab === tab.title}
                 role="tab"
@@ -194,7 +199,7 @@ export function EventsCard({
           >
             Register Now
           </button>
-          
+
           {/* Updated brochure button with conditional rendering */}
           {brochureLink ? (
             <button

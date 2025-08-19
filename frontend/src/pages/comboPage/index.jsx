@@ -29,8 +29,7 @@ export function ComboPage() {
           <img
             // src={ComboImage || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
             src={
-              item.image 
-              ||
+              item.image ||
               'https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image'
             }
             alt="Combo Image"
