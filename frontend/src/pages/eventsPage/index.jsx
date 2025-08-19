@@ -382,6 +382,7 @@ export const EventsPage = () => {
                       eventDate={event.date}
                       eventVenue={event.venue}
                       eventImage={event.img}
+                      eventType={event.eventType}
                     />
                   </div>
                 ))

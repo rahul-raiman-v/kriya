@@ -352,7 +352,7 @@ export const useComboStore = create(() => ({
   ComboDeligatesData: [
     {
       id: 1,
-      combo: 'Delegate Registrations',
+      combo: 'Delegate Pass',
       events: 'Can visit all the events for a day',
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '1500.00',
@@ -405,7 +405,7 @@ export const useComboStore = create(() => ({
   ComboStallsData: [
     {
       id: 1,
-      combo: 'Startup Stalls',
+      combo: 'Stall Pass',
       events: 'Can showcase there stalls for three days',
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '5000.00',

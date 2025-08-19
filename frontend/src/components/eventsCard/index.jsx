@@ -11,6 +11,7 @@ export function EventsCard({
   eventDate = 'Date not specified',
   eventVenue = 'Venue not specified',
   eventImage = '',
+  eventType = "",
 }) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = React.useState(eventTabs[0]?.title || '');
@@ -83,7 +84,7 @@ export function EventsCard({
       {/* Left Side */}
       <div className="flex-1 flex flex-col">
         {/* Date & Location */}
-        <div className="flex flex-wrap gap-4 mb-4">
+        <div className="flex items-center flex-wrap gap-4 mb-4">
           <div className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 px-4 py-2 rounded-lg text-sm text-white shadow-sm">
             <CalendarDays size={16} />
             <span className="font-medium">{eventDate}</span>
@@ -91,6 +92,9 @@ export function EventsCard({
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <MapPin size={16} className="text-red-500" />
             <span>{eventVenue}</span>
+          </div>
+          <div className="flex items-center px-3 py-0 h-[25px] leading-none text-xs font-bold rounded-full bg-purple-100 text-purple-700">
+            <span>{eventType}</span>
           </div>
         </div>
 
@@ -117,11 +121,10 @@ export function EventsCard({
             {eventTabs.map((tab) => (
               <button
                 key={tab.id || tab.title}
-                className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${
-                  activeTab === tab.title
+                className={`px-4 py-2 rounded-lg cursor-pointer text-sm font-medium transition-all duration-300 ${activeTab === tab.title
                     ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md transform scale-105'
                     : 'border border-gray-300 text-gray-700 hover:bg-gradient-to-r hover:from-pink-100 hover:to-purple-100 hover:border-purple-300'
-                }`}
+                  }`}
                 onClick={() => setActiveTab(tab.title)}
                 aria-selected={activeTab === tab.title}
                 role="tab"
