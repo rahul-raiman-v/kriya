@@ -134,47 +134,59 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full border border-purple-200">
                   {selectedSpeaker.industry}
                 </span>
-                <div className='flex gap-2 md:gap-4'>
-                {selectedSpeaker.links.linkedin && (
-                  <a
-                    href={selectedSpeaker.links.linkedin}
-                    target="_blank"
-                    className="p-3 bg-blue-50 hover:bg-blue-100 rounded-full border border-blue-200 hover:border-blue-300 transition-all duration-300 group"
-                  >
-                    <Linkedin
-                      size={20}
-                      className="text-blue-600 group-hover:scale-110 transition-transform"
-                    />
-                  </a>
-                )}
-                {selectedSpeaker.links.twitter && (
-                  <a
-                    href={selectedSpeaker.links.twitter}
-                    target="_blank"
-                    className="p-3 bg-sky-50 hover:bg-sky-100 rounded-full border border-sky-200 hover:border-sky-300 transition-all duration-300 group"
-                  >
-                    <Twitter
-                      size={20}
-                      className="text-sky-600 group-hover:scale-110 transition-transform"
-                    />
-                  </a>
-                )}
-                {(selectedSpeaker.links.wikipedia ||
-                  selectedSpeaker.links.news) && (
-                  <a
-                    href={
-                      selectedSpeaker.links.wikipedia ||
-                      selectedSpeaker.links.news
-                    }
-                    target="_blank"
-                    className="p-3 bg-green-50 hover:bg-green-100 rounded-full border border-green-200 hover:border-green-300 transition-all duration-300 group"
-                  >
-                    <ExternalLink
-                      size={20}
-                      className="text-green-600 group-hover:scale-110 transition-transform"
-                    />
-                  </a>
-                )}
+                <div className="flex gap-2 md:gap-4">
+                  {selectedSpeaker.links.linkedin && (
+                    <a
+                      href={selectedSpeaker.links.linkedin}
+                      target="_blank"
+                      className="p-3 bg-blue-50 hover:bg-blue-100 rounded-full border border-blue-200 hover:border-blue-300 transition-all duration-300 group"
+                    >
+                      <Linkedin
+                        size={20}
+                        className="text-blue-600 group-hover:scale-110 transition-transform"
+                      />
+                    </a>
+                  )}
+                  {selectedSpeaker.links.twitter && (
+                    <a
+                      href={selectedSpeaker.links.twitter}
+                      target="_blank"
+                      className="p-3 bg-sky-50 hover:bg-sky-100 rounded-full border border-sky-200 hover:border-sky-300 transition-all duration-300 group"
+                    >
+                      <Twitter
+                        size={20}
+                        className="text-sky-600 group-hover:scale-110 transition-transform"
+                      />
+                    </a>
+                  )}
+                  {selectedSpeaker.links.facebook && (
+                    <a
+                      href={selectedSpeaker.links.facebook}
+                      target="_blank"
+                      className="p-3 bg-sky-50 hover:bg-sky-200 rounded-full border border-sky-200 hover:border-sky-400 transition-all duration-300 group"
+                    >
+                      <Facebook
+                        size={20}
+                        className="text-sky-700 group-hover:scale-110 transition-transform"
+                      />
+                    </a>
+                  )}  
+                  {(selectedSpeaker.links.wikipedia ||
+                    selectedSpeaker.links.news) && (
+                    <a
+                      href={
+                        selectedSpeaker.links.wikipedia ||
+                        selectedSpeaker.links.news
+                      }
+                      target="_blank"
+                      className="p-3 bg-green-50 hover:bg-green-100 rounded-full border border-green-200 hover:border-green-300 transition-all duration-300 group"
+                    >
+                      <ExternalLink
+                        size={20}
+                        className="text-green-600 group-hover:scale-110 transition-transform"
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

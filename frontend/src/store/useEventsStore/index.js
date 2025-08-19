@@ -113,6 +113,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Dr Haritha J',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 8072285633',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Mithunram SU',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -120,7 +128,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Thejashree C',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -235,6 +243,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Dr Kirupa Sankar M',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 9994624674',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Kowshika D',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -242,7 +258,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Sudharsan',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -366,6 +382,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Prathap M R',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 8344480485',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Mohanakrishna',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -373,7 +397,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Sudarsana',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -471,6 +495,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Dr Kalaiyarasi M',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 9842981160',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Madhesh Kumar',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -478,7 +510,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Priya dharshini',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -590,6 +622,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Kumaresan K',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 6374412828',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Himashree K',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -597,8 +637,8 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
-                  name: 'Abishek R',
+                  id: 'person3',
+                  name: 'Abishek R',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
                   phone: '+91 7448665599',
@@ -711,6 +751,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Dr Sakthiya Ram S',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 9443074586',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Lathika S',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -718,7 +766,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Aniruth JR',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -834,6 +882,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Nandhini K M',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 9788005115',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Pooja K',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -841,7 +897,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: ' Mariya Christy V',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -962,6 +1018,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Vaidhyanathan B',
+                  designation: 'Faculty Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 7395887646',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Surya Raj S',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -969,7 +1033,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Preethika S',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -1032,6 +1096,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Dr Dhanasekar R',
+                  designation: 'Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 8508457659',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Ahill pranav M',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -1039,7 +1111,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Eniya A',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
@@ -1094,6 +1166,14 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: 'person1',
+                  name: 'Dr Dhanasekar R',
+                  designation: 'Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 8508457659',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
                   name: 'Ahill pranav M',
                   designation: 'Co-Ordinator',
                   email: 'person1@example.com',
@@ -1101,7 +1181,7 @@ export const useEventsStore = create(() => ({
                   img: 'https://via.placeholder.com/150',
                 },
                 {
-                  id: 'person2',
+                  id: 'person3',
                   name: 'Eniya A',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',

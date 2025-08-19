@@ -92,97 +92,99 @@ export const TeamsPage = () => {
       phone: '+91 9865530099',
       email: 'bharathia@bitsathy.ac.in',
     },
+    
     {
-      id: 8,
-      name: 'Dr Prakash S P',
-      designation: '',
-      image: 'https://www.bitsathy.ac.in/wp-content/uploads/Prakash-S-P.jpg',
-      phone: '+91 9994926682',
-      email: 'prakashsp@bitsathy.ac.in',
-    },
-  ];
-
-  const faculties = [
-    {
-      id: 1,
-      name: 'Dr Kirupa Sankar M',
-      designation: 'IdeaForge',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Kirupa-Sankar-M.png',
-      phone: '+91 9994624674',
-      email: 'kirupasankarm@bitsathy.ac.in',
-    },
-    {
-      id: 2,
-      name: 'Vaidhyanathan B',
-      designation: 'VISIONHACK',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Vaidhyanathan-B.jpg',
-      phone: '+91 7395887646',
-      email: 'vaidhyanathan@bitsathy.ac.in',
-    },
-    {
-      id: 3,
+      id: 9,
       name: 'Prathap M R',
-      designation: 'BREAKTHRU',
+      designation: '',
       image: 'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Prathap-M-R.jpg',
       phone: '+91 8344480485',
       email: 'prathap@bitsathy.ac.in',
     },
-    {
-      id: 4,
-      name: 'Dr Kalaiyarasi M',
-      designation: 'CREOVATE',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Kalaiyarasi-M.png',
-      phone: '+91 9842981160',
-      email: 'kalaiyarasim@bitsathy.ac.in',
-    },
-    {
-      id: 5,
-      name: 'Dr Dhanasekar R',
-      designation: 'Workshop',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Dhanasekar-R.png',
-      phone: '+91 8508457659',
-      email: 'dhanasekar@bitsathy.ac.in',
-    },
-    {
-      id: 6,
-      name: 'Nandhini K M',
-      designation: 'QUIZXtreme',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Ms-Nandhini-K-M.png',
-      phone: '+91 9788005115',
-      email: 'nandhinikm@bitsathy.ac.in',
-    },
-    {
-      id: 7,
-      name: 'Dr Sakthiya Ram S',
-      designation: 'CONVO CLASH',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Sakthiya-Ram-S.jpg',
-      phone: '+91 9443074586',
-      email: 'sakthiyaram@bitsathy.ac.in',
-    },
-    {
-      id: 8,
-      name: 'Kumaresan K',
-      designation: 'Guess In Glance',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Prof.-Kumaresan-K.jpg',
-      phone: '+91 6374412828',
-      email: 'kumaresank@bitsathy.ac.in',
-    },
-    {
-      id: 9,
-      name: 'Dr Haritha J',
-      designation: 'BRAND ALCHEMY',
-      image: 'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Haritha-J.png',
-      phone: '+91 8072285633',
-      email: 'haritha@bitsathy.ac.in',
-    },
   ];
+
+  // const faculties = [
+  //   {
+  //     id: 1,
+  //     name: 'Dr Kirupa Sankar M',
+  //     designation: 'IdeaForge',
+  //     image:
+  //       'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Kirupa-Sankar-M.png',
+  //     phone: '+91 9994624674',
+  //     email: 'kirupasankarm@bitsathy.ac.in',
+  //   },
+  //   {
+  //     id: 2,
+  //     name: 'Vaidhyanathan B',
+  //     designation: 'VISION HACK',
+  //     image:
+  //       'https://www.bitsathy.ac.in/wp-content/uploads/Vaidhyanathan-B.jpg',
+  //     phone: '+91 7395887646',
+  //     email: 'vaidhyanathan@bitsathy.ac.in',
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'Prathap M R',
+  //     designation: 'BREAKTHRU',
+  //     image: 'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Prathap-M-R.jpg',
+  //     phone: '+91 8344480485',
+  //     email: 'prathap@bitsathy.ac.in',
+  //   },
+  //   {
+  //     id: 4,
+  //     name: 'Nandhini K M',
+  //     designation: 'QUIZXtreme',
+  //     image:
+  //       'https://www.bitsathy.ac.in/wp-content/uploads/Ms-Nandhini-K-M.png',
+  //     phone: '+91 9788005115',
+  //     email: 'nandhinikm@bitsathy.ac.in',
+  //   },
+  //   {
+  //     id: 5,
+  //     name: 'Dr Kalaiyarasi M',
+  //     designation: 'CREOVATE',
+  //     image:
+  //       'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Kalaiyarasi-M.png',
+  //     phone: '+91 9842981160',
+  //     email: 'kalaiyarasim@bitsathy.ac.in',
+  //   },
+  //   {
+  //     id: 6,
+  //     name: 'Dr Dhanasekar R',
+  //     designation: 'Workshop',
+  //     image:
+  //       'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Dhanasekar-R.png',
+  //     phone: '+91 8508457659',
+  //     email: 'dhanasekar@bitsathy.ac.in',
+  //   },
+
+  //   {
+  //     id: 7,
+  //     name: 'Dr Sakthiya Ram S',
+  //     designation: 'CONVO CLASH',
+  //     image:
+  //       'https://www.bitsathy.ac.in/wp-content/uploads/Mr-Sakthiya-Ram-S.jpg',
+  //     phone: '+91 9443074586',
+  //     email: 'sakthiyaram@bitsathy.ac.in',
+  //   },
+  //   {
+  //     id: 8,
+  //     name: 'Kumaresan K',
+  //     designation: 'Guess In Glance',
+  //     image:
+  //       'https://www.bitsathy.ac.in/wp-content/uploads/Prof.-Kumaresan-K.jpg',
+  //     phone: '+91 6374412828',
+  //     email: 'kumaresank@bitsathy.ac.in',
+  //   },
+  //   {
+  //     id: 9,
+  //     name: 'Dr Haritha J',
+  //     designation: 'BRAND ALCHEMY',
+  //     image: 'https://www.bitsathy.ac.in/wp-content/uploads/Mrs-Haritha-J.png',
+  //     phone: '+91 8072285633',
+  //     email: 'haritha@bitsathy.ac.in',
+  //   },
+  // ];
 
   const students = [
     {
@@ -238,12 +240,12 @@ export const TeamsPage = () => {
             Team KRIYA
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
-            {spocs.map((item) => {
+            {spocs.sort((a,b) => a.name.localeCompare(b.name)).map((item) => {
               return <TeamsCard key={item.id} {...item} variant={'chairman'} />;
             })}
           </div>
         </div>
-        <div className="flex flex-col gap-y-5">
+        {/* <div className="flex flex-col gap-y-5">
           <p className="text-gray-700 font-semibold text-3xl text-center">
             Faculty Co-ordinators
           </p>
@@ -252,13 +254,13 @@ export const TeamsPage = () => {
               return <TeamsCard key={item.id} {...item} />;
             })}
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-y-5">
           <p className="text-gray-700 font-semibold text-3xl text-center">
             Students Co-ordinators
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
-            {students.map((item) => {
+            {students.sort((a,b) => a.name.localeCompare(b.name)).map((item) => {
               return <TeamsCard key={item.id} {...item} variant={'code'} />;
             })}
           </div>
