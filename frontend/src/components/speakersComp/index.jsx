@@ -134,6 +134,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full border border-purple-200">
                   {selectedSpeaker.industry}
                 </span>
+                <div className='flex gap-2 md:gap-4'>
                 {selectedSpeaker.links.linkedin && (
                   <a
                     href={selectedSpeaker.links.linkedin}
@@ -174,15 +175,16 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                     />
                   </a>
                 )}
+                </div>
               </div>
             </div>
 
             {/* Scrollable Content */}
             <div
-              className="overflow-y-auto flex-1 custom-scrollbar !pb-14"
+              className="overflow-y-auto flex-1 custom-scrollbar"
               style={{ maxHeight: 'calc(90vh - 200px)' }}
             >
-              <div className="p-8">
+              <div className="p-8 md:pb-20">
                 {/* About Section */}
                 <div className="mb-8">
                   <div className="flex items-center mb-6 max-xs:mb-3">
@@ -193,7 +195,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                       About {selectedSpeaker.name.split(' ')[0]}
                     </h3>
                   </div>
-                  <p className="text-gray-600 leading-relaxed text-lg max-xs:text-base pl-16">
+                  <p className="text-gray-600 leading-relaxed text-lg max-xs:text-base pl-0 md:pl-16">
                     {selectedSpeaker.about}
                   </p>
                 </div>
@@ -201,7 +203,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 {/* Quote Section (if exists) */}
                 {selectedSpeaker.quote && (
                   <div className="mb-8">
-                    <blockquote className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-xl border border-purple-200 relative">
+                    <blockquote className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 md:p-8 rounded-xl border border-purple-200 relative">
                       <div className="absolute top-4 left-4 text-purple-300 text-6xl max-xs:text-5xl font-serif">
                         "
                       </div>
@@ -217,7 +219,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
 
                 {/* Expertise */}
                 <div className="mb-8">
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-4 md:mb-2">
                     <div className="w-12 h-12 max-xs:size-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
                       <TrendingUp className="text-white size-5 max-xs:size-4" />
                     </div>
@@ -225,7 +227,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                       Expertise
                     </h3>
                   </div>
-                  <div className="space-y-3 pl-16 max-xs:pl-12">
+                  <div className="space-y-3 pl-0 md:pl-16 max-xs:pl-12">
                     {selectedSpeaker.expertise.map((skill, index) => (
                       <div
                         key={index}
@@ -242,7 +244,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
 
                 {/* Achievements */}
                 <div className="mb-8">
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center mb-4 md:mb-2">
                     <div className="w-12 h-12 max-xs:size-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
                       <Award className="text-white size-5 max-xs:size-4" />
                     </div>
@@ -250,7 +252,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                       Achievements
                     </h3>
                   </div>
-                  <div className="space-y-4 pl-16 max-xs:pl-12">
+                  <div className="space-y-4 pl-0 md:pl-16 max-xs:pl-12">
                     {selectedSpeaker.achievements.map((achievement, index) => (
                       <div
                         key={index}
