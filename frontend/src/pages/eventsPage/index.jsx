@@ -378,11 +378,12 @@ export const EventsPage = () => {
                   >
                     <EventsCard
                       eventTabs={event.tabs}
+                      eventType={event.eventType}
                       eventTitle={event.eventTitle}
                       eventDate={event.date}
                       eventVenue={event.venue}
                       eventImage={event.img}
-                      eventType={event.eventType}
+                      brochureLink={event.brochureLink}
                     />
                   </div>
                 ))
@@ -402,10 +403,12 @@ export const EventsPage = () => {
                     >
                       <EventsCard
                         eventTabs={event.tabs}
+                        eventType={event.eventType}
                         eventTitle={event.eventTitle}
                         eventDate={event.date}
                         eventVenue={event.venue}
                         eventImage={event.img}
+                        brochureLink={event.brochureLink}
                       />
                     </div>
                   ))}
