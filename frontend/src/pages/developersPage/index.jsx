@@ -66,7 +66,7 @@ export const DevelopersPage = () => {
         </p>
         <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
           {developers.map((item) => {
-            return <TeamsCard key={item.id} {...item} variant={'code'} />;
+            return <TeamsCard key={item.id} {...item} variant={''} />;
           })}
         </div>
       </div>

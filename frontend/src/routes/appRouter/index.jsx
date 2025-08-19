@@ -11,8 +11,23 @@ import {
   DevelopersPage,
 } from '../../pages';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from 'react-router';
 import React from 'react';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null; // doesn't render anything
+};
 
 export const AppRouter = () => {
   return (

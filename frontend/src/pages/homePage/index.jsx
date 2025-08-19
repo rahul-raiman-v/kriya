@@ -512,7 +512,7 @@ export const HomePage = () => {
                     alt="StartupTN"
                     className="h-16 object-contain"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">
+                  <span className="text-slate-700 mt-3 font-medium">
                     StartupTN
                   </span>
                 </div>
@@ -524,7 +524,7 @@ export const HomePage = () => {
                     alt="ISBA"
                     className="h-16 object-contain"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">ISBA</span>
+                  <span className="text-slate-700 mt-3 font-medium">ISBA</span>
                 </div>
 
                 {/** IIC Logo */}
@@ -534,7 +534,7 @@ export const HomePage = () => {
                     alt="IIC"
                     className="h-16 scale-200"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">
+                  <span className="text-slate-700 mt-3 font-medium">
                     Institution's Innovation Council
                   </span>
                 </div>
@@ -546,8 +546,20 @@ export const HomePage = () => {
                     alt="DNA"
                     className="h-16 scale-125"
                   />
-                  <span className="text-slate-700 mt-2 font-medium">
+                  <span className="text-slate-700 mt-3 font-medium">
                     Don't Build Alone
+                  </span>
+                </div>
+
+                {/** Code Circle Logo */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="https://codecirclebitsathy.netlify.app/images/codecirclelogo.png"
+                    alt="Code Circle"
+                    className="h-16 scale-125 rounded-full"
+                  />
+                  <span className="text-slate-700 mt-3 font-medium">
+                    Code Circle
                   </span>
                 </div>
               </div>
@@ -602,7 +614,7 @@ export const HomePage = () => {
                 >
                   <Linkedin size={24} />
                 </a>
-                <a
+                <button
                   onClick={() => {
                     window.open(
                       'https://codecirclebitsathy.netlify.app/',
@@ -616,7 +628,7 @@ export const HomePage = () => {
                     alt=""
                     className="size-14 rounded-full"
                   />
-                </a>
+                </button>
               </div>
             </div>
           </div>
