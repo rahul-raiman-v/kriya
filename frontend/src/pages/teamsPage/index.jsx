@@ -264,11 +264,9 @@ export const TeamsPage = () => {
             Students Co-ordinators
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
-            {students
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map((item) => {
-                return <TeamsCard key={item.id} {...item} variant={'code'} />;
-              })}
+            {students.map((item) => {
+              return <TeamsCard key={item.id} {...item} variant={'code'} />;
+            })}
           </div>
         </div>
       </div>

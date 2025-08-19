@@ -57,11 +57,11 @@ export function ComboPage() {
             <p className="leading-relaxed">
               <span className="font-medium">Registration Fee: &#8377;</span>
               {item.fee}
-              {item.prize && ' per Person (excluding GST)'}
+              {item.prize && ' per Person (including GST)'}
               {!item.prize &&
                 item.isTrue &&
-                ' per Person / Day (excluding GST)'}
-              {!item.prize && !item.isTrue && ' for 3 days (excluding GST)'}
+                ' per Person / Day (including GST)'}
+              {!item.prize && !item.isTrue && ' for 3 days (including GST)'}
             </p>
           </div>
           {item.date && (
@@ -129,6 +129,7 @@ export function ComboPage() {
           <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">
             Stall Registration
           </h3>
+          <p className="text-transparent text-3xl">S</p>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {renderComboCards(ComboStallsData)}
           </div>

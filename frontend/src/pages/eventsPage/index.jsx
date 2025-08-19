@@ -128,7 +128,7 @@ export const EventsPage = () => {
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Discover exciting events, workshops, and guest lectures happening at
-          our institution
+          Kriya
         </p>
       </div>
 
@@ -370,34 +370,15 @@ export const EventsPage = () => {
 
           <div className="flex flex-col gap-8">
             {selectedCategory.id === 'all'
-              ? selectedCategory.events.map((event) => (
-                  <div
-                    key={`${event.categoryId}-${event.id}`}
-                    id={`event-${event.id}`}
-                    className="transform hover:scale-[1.02] transition-transform duration-300"
-                  >
-                    <EventsCard
-                      eventTabs={event.tabs}
-                      eventType={event.eventType}
-                      eventTitle={event.eventTitle}
-                      eventDate={event.date}
-                      eventVenue={event.venue}
-                      eventImage={event.img}
-                      brochureLink={event.brochureLink}
-                    />
-                  </div>
-                ))
-              : selectedCategory.id === 'guest-lecture'
-                ? selectedCategory.events.map((event) => (
+              ? selectedCategory.events
+                  .sort((a, b) => {
+                    const dateCompare = a.date.localeCompare(b.date);
+                    if (dateCompare !== 0) return dateCompare;
+                    return a.eventTitle.localeCompare(b.eventTitle);
+                  })
+                  .map((event) => (
                     <div
-                      key={event.id}
-                      id={`event-${event.id}`}
-                      className="transform hover:scale-[1.02] transition-transform duration-300"
-                    ></div>
-                  ))
-                : selectedCategory.events.map((event) => (
-                    <div
-                      key={event.id}
+                      key={`${event.categoryId}-${event.id}`}
                       id={`event-${event.id}`}
                       className="transform hover:scale-[1.02] transition-transform duration-300"
                     >
@@ -409,9 +390,42 @@ export const EventsPage = () => {
                         eventVenue={event.venue}
                         eventImage={event.img}
                         brochureLink={event.brochureLink}
+                        problemLink={event?.problemLink}
                       />
                     </div>
-                  ))}
+                  ))
+              : selectedCategory.id === 'guest-lecture'
+                ? selectedCategory.events.map((event) => (
+                    <div
+                      key={event.id}
+                      id={`event-${event.id}`}
+                      className="transform hover:scale-[1.02] transition-transform duration-300"
+                    />
+                  ))
+                : selectedCategory.events
+                    .sort((a, b) => {
+                      const dateCompare = a.date.localeCompare(b.date);
+                      if (dateCompare !== 0) return dateCompare;
+                      return a.eventTitle.localeCompare(b.eventTitle);
+                    })
+                    .map((event) => (
+                      <div
+                        key={event.id}
+                        id={`event-${event.id}`}
+                        className="transform hover:scale-[1.02] transition-transform duration-300"
+                      >
+                        <EventsCard
+                          eventTabs={event.tabs}
+                          eventType={event.eventType}
+                          eventTitle={event.eventTitle}
+                          eventDate={event.date}
+                          eventVenue={event.venue}
+                          eventImage={event.img}
+                          brochureLink={event.brochureLink}
+                          problemLink={event?.problemLink}
+                        />
+                      </div>
+                    ))}
           </div>
         </div>
       )}

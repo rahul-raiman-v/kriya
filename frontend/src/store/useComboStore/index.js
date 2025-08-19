@@ -353,7 +353,7 @@ export const useComboStore = create(() => ({
     {
       id: 1,
       combo: 'Delegate Pass',
-      events: 'Can visit all the events for a day',
+      events: 'Can visit all the events in a day',
       hostel: 'Accommodation, Food, and Refreshments are Included',
       fee: '1500.00',
       link: 'https://forms.gle/na9rUVbfzSYVtA2h7',

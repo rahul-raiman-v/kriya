@@ -13,6 +13,7 @@ export function EventsCard({
   eventVenue = 'Venue not specified',
   eventImage = '',
   brochureLink, // Fixed typo: was brouchreLink
+  problemLink,
 }) {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = React.useState(eventTabs[0]?.title || '');
@@ -65,8 +66,7 @@ export function EventsCard({
       <div className="prose prose-sm max-w-none">
         {typeof activeContent === 'string' ? (
           <div className="flex">
-            <p>"</p>
-            <p>{activeContent}"</p>
+            <p>{activeContent}</p>
           </div>
         ) : (
           <pre className="whitespace-pre-wrap text-sm">
@@ -91,6 +91,44 @@ export function EventsCard({
       !brochureLink.includes('export=download')
     ) {
       const fileId = brochureLink.match(/\/d\/([a-zA-Z0-9-_]+)/);
+      if (fileId) {
+        downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId[1]}`;
+      }
+    }
+
+    try {
+      // Try direct download first (works for most direct file links)
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.style.display = 'none';
+
+      // Set download attribute with a meaningful filename
+      const fileName = `${eventTitle.replace(/[^a-z0-9]/gi, '_')}_Brochure.pdf`;
+      link.download = fileName;
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Download failed:', error);
+      // Fallback: open in same window if direct download fails
+      window.location.href = downloadUrl;
+    }
+  };
+  // Function to handle problem download
+  const handleProblemDownload = () => {
+    if (!problemLink) {
+      alert('Problem not available for this event');
+      return;
+    }
+
+    // For Google Drive links, ensure proper download format
+    let downloadUrl = problemLink;
+    if (
+      problemLink.includes('drive.google.com') &&
+      !problemLink.includes('export=download')
+    ) {
+      const fileId = problemLink.match(/\/d\/([a-zA-Z0-9-_]+)/);
       if (fileId) {
         downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId[1]}`;
       }
@@ -217,6 +255,15 @@ export function EventsCard({
               Rulebook Unavailable
             </button>
           )}
+          {/* Updated problem button with conditional rendering */}
+          {problemLink && (
+            <button
+              onClick={handleProblemDownload}
+              className="bg-gradient-to-r cursor-pointer from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300 w-fit shadow-md"
+            >
+              Download Problem Statement
+            </button>
+          )}
         </div>
       </div>
 
@@ -252,4 +299,5 @@ EventsCard.propTypes = {
   eventVenue: PropTypes.string,
   eventImage: PropTypes.string,
   brochureLink: PropTypes.string, // Fixed typo here too
+  problemLink: PropTypes.string,
 };

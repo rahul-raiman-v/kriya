@@ -908,15 +908,177 @@ export const useEventsStore = create(() => ({
             },
           ],
         },
+      ],
+    },
+    {
+      id: 'workshop',
+      title: 'Workshop',
+      img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkshopLogo_ta3dgh.png',
+      highlight: false,
+      events: [
+        {
+          id: 'workshop-1',
+          eventTitle: 'BRAINSTROM TO BUSINESS',
+          eventType: 'Startup Workshop',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/WorkShop1Img_rekco2.jpg',
+          date: 'September 09, 2025',
+          venue: 'BIT Campus',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1p1zoVgGq30k_8IQwt88hR9djsMP5ur9Q',
+          highlight: true,
+          tabs: [
+            {
+              id: 'description',
+              title: 'Description',
+              content:
+                'Turning Sparks into succesful ventures, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.',
+            },
+            {
+              id: 'prerequisites',
+              title: 'Prerequisites',
+              content: [
+                'This workshop is open to anyone with a keen interest in startups and entrepreneurship. No prior experience is required — just curiosity, creativity, and a willingness to learn. Students, aspiring entrepreneurs, and professionals from any background are welcome to register and be part of this exciting learning experience.',
+              ],
+            },
+            {
+              id: 'speakers',
+              title: 'Speakers',
+              content: [
+                {
+                  id: '1',
+                  speakerName: 'Dr K Balakrishnan',
+                  designation: 'CEO of TBI',
+                },
+                {
+                  id: '2',
+                  speakerName: 'Mr Chezhiyan Bharathi',
+                  designation: 'IPR - Corporate Trainer',
+                },
+              ],
+            },
+            {
+              id: 'contact',
+              title: 'Contact',
+              content: [
+                {
+                  id: 'person1',
+                  name: 'Dr Dhanasekar R',
+                  designation: 'Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 8508457659',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
+                  name: 'Ahill pranav M',
+                  designation: 'Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 9940911411',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person3',
+                  name: 'Eniya A',
+                  designation: 'Co-Ordinator',
+                  email: 'person2@example.com',
+                  phone: '+91 7339197734',
+                  img: 'https://via.placeholder.com/150',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: 'workshop-2',
+          eventTitle: 'FROM IDEA TO MARKET',
+          eventType: 'Startup Workshop',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkShop2Img_x9plwz.jpg',
+          date: 'September 10, 2025',
+          venue: 'BIT Campus',
+          brochureLink:
+            'https://drive.google.com/uc?export=download&id=1cIzoRqwOhblHYvIggZLBhQ9_HuUFmtAD',
+          highlight: true,
+          tabs: [
+            {
+              id: 'description',
+              title: 'Description',
+              content:
+                'Turning Concepts into Customers,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.',
+            },
+            {
+              id: 'prerequisites',
+              title: 'Prerequisites',
+              content: [
+                'This workshop is open to anyone with a keen interest in startups and entrepreneurship. No prior experience is required — just curiosity, creativity, and a willingness to learn. Students, aspiring entrepreneurs, and professionals from any background are welcome to register and be part of this exciting learning experience.',
+              ],
+            },
+            {
+              id: 'speakers',
+              title: 'Speakers',
+              content: [
+                {
+                  id: '1',
+                  speakerName: 'Dr Prasad',
+                  designation: 'ISBA President',
+                },
+                {
+                  id: '2',
+                  speakerName: 'Mr Premkumar',
+                  designation: 'Campus Angel',
+                },
+              ],
+            },
+            {
+              id: 'contact',
+              title: 'Contact',
+              content: [
+                {
+                  id: 'person1',
+                  name: 'Dr Dhanasekar R',
+                  designation: 'Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 8508457659',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person2',
+                  name: 'Ahill pranav M',
+                  designation: 'Co-Ordinator',
+                  email: 'person1@example.com',
+                  phone: '+91 9940911411',
+                  img: 'https://via.placeholder.com/150',
+                },
+                {
+                  id: 'person3',
+                  name: 'Eniya A',
+                  designation: 'Co-Ordinator',
+                  email: 'person2@example.com',
+                  phone: '+91 7339197734',
+                  img: 'https://via.placeholder.com/150',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'hackathon',
+      title: 'Hackathon',
+      img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755598251/Data_extraction-rafiki_n0vcce.png',
+      highlight: false,
+      events: [
         {
           id: 'event-8',
-          eventTitle: 'VISION HACK',
+          eventTitle: 'VISIONHACK',
           eventType: 'Hackathon',
           date: 'September 11, 2025',
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/VisionHackImg_ntfdbg.jpg',
           brochureLink:
             'https://drive.google.com/uc?export=download&id=1OmXxEo7JImawGBr9NrxqogMpM86fLYiu',
+          problemLink:
+            'https://drive.google.com/uc?export=download&id=1qtL1Lcn_eVOlgIf4WI8bk0g5klGbW_Mc',
           highlight: true,
           tabs: [
             {
@@ -1038,154 +1200,6 @@ export const useEventsStore = create(() => ({
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
                   phone: '+91 6381878288',
-                  img: 'https://via.placeholder.com/150',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: 'workshop',
-      title: 'Workshop',
-      img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkshopLogo_ta3dgh.png',
-      highlight: false,
-      events: [
-        {
-          id: 'workshop-1',
-          eventTitle: 'BRAINSTROM TO BUSINESS',
-          eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/WorkShop1Img_rekco2.jpg',
-          date: 'September 09, 2025',
-          venue: 'BIT Campus',
-          brochureLink:
-            'https://drive.google.com/uc?export=download&id=1p1zoVgGq30k_8IQwt88hR9djsMP5ur9Q',
-          highlight: true,
-          tabs: [
-            {
-              id: 'description',
-              title: 'Description',
-              content:
-                'Turning Sparks into succesful ventures, Transforming innovative ideas into protected, market-ready businesses through design thinking and smart IP strategies.',
-            },
-            {
-              id: 'prerequisites',
-              title: 'Prerequisites',
-              content: [
-                'This workshop is open to anyone with a keen interest in startups and entrepreneurship. No prior experience is required — just curiosity, creativity, and a willingness to learn. Students, aspiring entrepreneurs, and professionals from any background are welcome to register and be part of this exciting learning experience.',
-              ],
-            },
-            {
-              id: 'speakers',
-              title: 'Speakers',
-              content: [
-                {
-                  id: '1',
-                  speakerName: 'Dr K Balakrishnan',
-                },
-                {
-                  id: '2',
-                  speakerName: 'Mr Chezhiyan Bharathi',
-                },
-              ],
-            },
-            {
-              id: 'contact',
-              title: 'Contact',
-              content: [
-                {
-                  id: 'person1',
-                  name: 'Dr Dhanasekar R',
-                  designation: 'Co-Ordinator',
-                  email: 'person1@example.com',
-                  phone: '+91 8508457659',
-                  img: 'https://via.placeholder.com/150',
-                },
-                {
-                  id: 'person2',
-                  name: 'Ahill pranav M',
-                  designation: 'Co-Ordinator',
-                  email: 'person1@example.com',
-                  phone: '+91 9940911411',
-                  img: 'https://via.placeholder.com/150',
-                },
-                {
-                  id: 'person3',
-                  name: 'Eniya A',
-                  designation: 'Co-Ordinator',
-                  email: 'person2@example.com',
-                  phone: '+91 7339197734',
-                  img: 'https://via.placeholder.com/150',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          id: 'workshop-2',
-          eventTitle: 'FROM IDEA TO MARKET',
-          eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkShop2Img_x9plwz.jpg',
-          date: 'September 10, 2025',
-          venue: 'BIT Campus',
-          brochureLink:
-            'https://drive.google.com/uc?export=download&id=1cIzoRqwOhblHYvIggZLBhQ9_HuUFmtAD',
-          highlight: true,
-          tabs: [
-            {
-              id: 'description',
-              title: 'Description',
-              content:
-                'Turning Concepts into Customers,  A practical roadmap for startups to refine their product, secure funding and croft winning go-to-market strategies thot connect ideas with the right audience.',
-            },
-            {
-              id: 'prerequisites',
-              title: 'Prerequisites',
-              content: [
-                'This workshop is open to anyone with a keen interest in startups and entrepreneurship. No prior experience is required — just curiosity, creativity, and a willingness to learn. Students, aspiring entrepreneurs, and professionals from any background are welcome to register and be part of this exciting learning experience.',
-              ],
-            },
-            {
-              id: 'speakers',
-              title: 'Speakers',
-              content: [
-                {
-                  id: '1',
-                  speakerName: 'Dr Prasad',
-                },
-                {
-                  id: '2',
-                  speakerName: 'Mr Premkumar',
-                },
-              ],
-            },
-            {
-              id: 'contact',
-              title: 'Contact',
-              content: [
-                {
-                  id: 'person1',
-                  name: 'Dr Dhanasekar R',
-                  designation: 'Co-Ordinator',
-                  email: 'person1@example.com',
-                  phone: '+91 8508457659',
-                  img: 'https://via.placeholder.com/150',
-                },
-                {
-                  id: 'person2',
-                  name: 'Ahill pranav M',
-                  designation: 'Co-Ordinator',
-                  email: 'person1@example.com',
-                  phone: '+91 9940911411',
-                  img: 'https://via.placeholder.com/150',
-                },
-                {
-                  id: 'person3',
-                  name: 'Eniya A',
-                  designation: 'Co-Ordinator',
-                  email: 'person2@example.com',
-                  phone: '+91 7339197734',
                   img: 'https://via.placeholder.com/150',
                 },
               ],

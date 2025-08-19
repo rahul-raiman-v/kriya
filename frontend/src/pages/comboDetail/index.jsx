@@ -76,13 +76,13 @@ export function ComboDetail() {
               <p className="leading-relaxed">
                 <span className="font-medium">Registration Fee: &#8377;</span>
                 {selectedCombo.fee}
-                {selectedCombo.prize && ' per Person (excluding GST)'}
+                {selectedCombo.prize && ' per Person (including GST)'}
                 {!selectedCombo.prize &&
                   selectedCombo.isTrue &&
-                  ' per Person / Day (excluding GST)'}
+                  ' per Person / Day (including GST)'}
                 {!selectedCombo.prize &&
                   !selectedCombo.isTrue &&
-                  'for a 3 days (excluding GST)'}
+                  'for a 3 days (including GST)'}
               </p>
             </div>
             {selectedCombo.date && (

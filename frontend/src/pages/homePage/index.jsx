@@ -15,6 +15,7 @@ import {
   Instagram,
   Twitter,
   Linkedin,
+  User,
 } from 'lucide-react';
 import { useNavigate } from 'react-router';
 
@@ -185,6 +186,25 @@ export const HomePage = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-sm:mt-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
+
+            <div className="flex items-start h-full justify-start">
+              <div className="relative w-full max-w-lg">
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
+                <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
+                    alt="Innovation and Technology"
+                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift bg-white"
+                    loading="lazy"
+                  />
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
+                    🚀
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content - Hero Image */}
             <div className="text-center lg:text-left space-y-8 animate-fadeInUp">
               <h1 className="text-5xl md:text-7xl font-extrabold leading-tight w-fit max-lg:mx-auto ">
                 <div className="flex items-center whitespace-nowrap ">
@@ -257,24 +277,6 @@ export const HomePage = () => {
                 </div> */}
               </div>
             </div>
-
-            {/* Right Content - Hero Image */}
-            <div className="flex items-start h-full lg:justify-end">
-              <div className="relative w-full max-w-lg">
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
-                <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
-                    alt="Innovation and Technology"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift bg-white"
-                    loading="lazy"
-                  />
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
-                    🚀
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -313,8 +315,14 @@ export const HomePage = () => {
               About KRIYA 1.0
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              An immersive entrepreneurial experience that enables participants
-              to explore the innovation journey from ideation to execution.
+              Kriya 1.0 is an immersive entrepreneurial experience designed to
+              inspire and empower future innovators. The event takes
+              participants on a dynamic journey from ideation to execution,
+              blending creativity, strategy, and real-world problem-solving.
+              Through engaging workshops, interactive sessions, and networking
+              opportunities, Kriya 1.0 provides a platform to transform bold
+              ideas into impactful ventures while fostering collaboration,
+              innovation, and entrepreneurial excellence.
             </p>
           </div>
 
@@ -327,9 +335,10 @@ export const HomePage = () => {
                 <p className="text-lg text-slate-600 leading-relaxed mb-6">
                   KRIYA 1.0 aims to cultivate a startup mindset, foster
                   cross-disciplinary collaboration, and encourage the launch of
-                  viable student-led ventures. We focus on sparking creativity
-                  through design thinking, team formation, and problem
-                  discovery.
+                  viable student-led ventures. By emphasizing design thinking,
+                  team formation, and problem discovery, the event inspires
+                  students to find innovative solutions to real-world challenges
+                  while transforming ideas into impactful opportunities.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -464,6 +473,12 @@ export const HomePage = () => {
               </h3>
               <div className="flex flex-col gap-y-3">
                 <div className="flex items-center gap-3 w-fit">
+                  <User className="text-indigo-600" size={22} />
+                  <p className="text-slate-700 text-lg sm:text-base">
+                    Surya Raj S
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 w-fit">
                   <Phone className="text-indigo-600" size={22} />
                   <a
                     href="tel:+918072137522"
@@ -473,7 +488,13 @@ export const HomePage = () => {
                   </a>
                 </div>
                 <div className="flex items-center gap-3 flex-wrap">
-                  <Mail className="text-purple-600" size={22} />
+                  <div className=" items-center w-full justify-center max-xs:flex hidden">
+                    <Mail className="text-purple-600 " size={22} />
+                  </div>
+                  <Mail
+                    className="text-purple-600 max-xs:hidden block"
+                    size={22}
+                  />
                   <span className="text-slate-700 text-lg sm:text-base break-all">
                     startuphub@bitsathy.ac.in
                   </span>
