@@ -128,7 +128,7 @@ export const EventsPage = () => {
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Discover exciting events, workshops, and guest lectures happening at
-          our institution
+          Kriya
         </p>
       </div>
 
