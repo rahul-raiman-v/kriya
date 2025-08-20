@@ -186,25 +186,6 @@ export const HomePage = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 max-sm:mt-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-
-            <div className="flex items-start h-full justify-start">
-              <div className="relative w-full max-w-lg">
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
-                <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
-                  <img
-                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
-                    alt="Innovation and Technology"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift bg-white"
-                    loading="lazy"
-                  />
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
-                    🚀
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Content - Hero Image */}
             <div className="text-center lg:text-left space-y-8 animate-fadeInUp">
               <h1 className="text-5xl md:text-7xl font-extrabold leading-tight w-fit max-lg:mx-auto ">
                 <div className="flex items-center whitespace-nowrap ">
@@ -275,6 +256,24 @@ export const HomePage = () => {
                   <Users className="text-pink-600" size={20} />
                   <span className="font-medium">500+ Participants</span>
                 </div> */}
+              </div>
+            </div>
+
+            {/* Right Content - Hero Image */}
+            <div className="flex items-start h-full lg:justify-end">
+              <div className="relative w-full max-w-lg">
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse" />
+                <div className="relative z-10 bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
+                  <img
+                    src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106864/kriya_xlaqej.jpg"
+                    alt="Innovation and Technology"
+                    className="w-full h-auto rounded-2xl shadow-2xl hover-lift bg-white"
+                    loading="lazy"
+                  />
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white p-3 rounded-full animate-bounce">
+                    🚀
+                  </div>
+                </div>
               </div>
             </div>
           </div>
