@@ -1077,8 +1077,8 @@ export const useEventsStore = create(() => ({
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/VisionHackImg_ntfdbg.jpg',
           brochureLink:
             'https://drive.google.com/uc?export=download&id=1OmXxEo7JImawGBr9NrxqogMpM86fLYiu',
-          problemLink:
-            'https://drive.google.com/uc?export=download&id=1qtL1Lcn_eVOlgIf4WI8bk0g5klGbW_Mc',
+          // problemLink:
+          //   'https://drive.google.com/uc?export=download&id=1qtL1Lcn_eVOlgIf4WI8bk0g5klGbW_Mc',
           highlight: true,
           tabs: [
             {
@@ -1112,41 +1112,47 @@ export const useEventsStore = create(() => ({
                   id: '2',
                   title: 'Rule 2',
                   content:
-                    'Solutions must align with the event’s given problem statements or themes.',
+                    'Problem statements will be provided at the start of the event, and teams must choose one to work on.',
                 },
                 {
                   id: '3',
                   title: 'Rule 3',
                   content:
-                    'All projects must be developed within the allotted hackathon duration of 8 hours.',
+                    'Solutions must align with the event’s given problem statements or themes.',
                 },
                 {
                   id: '4',
                   title: 'Rule 4',
                   content:
-                    'Solutions must align with the event’s given problem statements or themes.',
+                    'All projects must be developed within the allotted hackathon duration of 8 hours.',
                 },
                 {
                   id: '5',
                   title: 'Rule 5',
                   content:
-                    'Projects must be original; plagiarism or use of AI tool or pre-built solutions is prohibited.',
+                    'Solutions must align with the event’s given problem statements or themes.',
                 },
                 {
                   id: '6',
                   title: 'Rule 6',
                   content:
-                    'Open-source tools and libraries are allowed; licensed software must be used legall',
+                    'Projects must be original; plagiarism or use of AI tool or pre-built solutions is prohibited.',
                 },
                 {
                   id: '7',
                   title: 'Rule 7',
                   content:
-                    'Teams must submit source code, a brief documentation, and a final pitch/demo before the deadline.',
+                    'Open-source tools and libraries are allowed; licensed software must be used legall',
                 },
                 {
                   id: '8',
                   title: 'Rule 8',
+                  content:
+                    'Teams must submit source code, a brief documentation, and a final pitch/demo before the deadline.',
+                },
+                {
+                  id: '9',
+                  title: 'Rule 9',
                   content:
                     'Judging Criteria: Innovation, functionality, design, relevance to theme, and presentation quality.',
                 },
