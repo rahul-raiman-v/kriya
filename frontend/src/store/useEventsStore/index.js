@@ -914,7 +914,7 @@ export const useEventsStore = create(() => ({
           id: 'workshop-1',
           eventTitle: 'BRAINSTROM TO BUSINESS',
           eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/WorkShop1Img_rekco2.jpg',
+          img: 'https://res.cloudinary.com/dbyxgnjkw/image/upload/v1755747498/1_gafucv.jpg',
           date: 'September 09, 2025',
           venue: 'BIT Campus',
           brochureLink:
@@ -945,7 +945,7 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: '2',
-                  speakerName: 'Mr Chezhiyan Bharathi',
+                  speakerName: 'Mr Sezhiyan Bharathi',
                   designation: 'IPR - Corporate Trainer',
                 },
               ],
