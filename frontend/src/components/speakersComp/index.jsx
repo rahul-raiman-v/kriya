@@ -405,7 +405,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
         <div className="container mx-auto px-6 py-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {filteredSpeakers.map((speaker) => (
-              <div key={speaker.name} className="group">
+              <div key={speaker.name} className="group relative">
                 <div className="relative h-full bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-2xl">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -502,6 +502,10 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div className="absolute top-0 right-0 h-fit w-fit bg-purple-400 group-hover:bg-purple-500 text-[14px] font-medium z-10 px-3 py-1">
+                    {/* replace it with -> speaker.day */}
+                    Day 1
                   </div>
                 </div>
               </div>
