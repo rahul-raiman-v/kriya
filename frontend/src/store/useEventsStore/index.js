@@ -808,12 +808,6 @@ export const useEventsStore = create(() => ({
                   id: '2',
                   title: 'Round 2',
                   content:
-                    'Teams participate in the second round. Submissions must be on time.',
-                },
-                {
-                  id: '3',
-                  title: 'Round 3',
-                  content:
                     'Teams present in the final round. Adhere to preparation and presentation rules.',
                 },
               ],
@@ -850,7 +844,7 @@ export const useEventsStore = create(() => ({
                   id: '5',
                   title: 'Rule 5',
                   content:
-                    'Any disputes will be resolved by the judging panel, and their decision will be final.',
+                    'Any disputes will be resolved by the judging panel and their decision will be final.',
                 },
               ],
             },
