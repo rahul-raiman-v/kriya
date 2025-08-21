@@ -4,7 +4,7 @@
     "title": "Founder & CEO",
     "organization": "GUVI Geek Network",
     "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755075009/guvi_hoezb3.jpg",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755664265/guvi_pwnjyo.png",
     "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
     "expertise": [
       "EdTech Leadership",
@@ -24,7 +24,7 @@
       "linkedin": "https://www.linkedin.com/in/arunprakashm/?originalSubdomain=in",
       "twitter": "https://x.com/arunprakashguvi"
     },
-    "industry": "EdTech",
+    "industry": "Education & Learning",
     "isKeynote": true,
     "quote": "Technology should be accessible to everyone, regardless of language or background."
   },
@@ -309,7 +309,7 @@
       "linkedin": "https://www.linkedin.com/in/santhospremraj/",
       "facebook": "https://www.facebook.com/santhospremraj.in/"
     },
-    "industry": "Event Technology",
+    "industry": "Events & Media",
     "isKeynote": false,
     "quote": "Building a product with real scenes in SaaS is no small feat; it underscores the complexity and depth of the process!"
   },
@@ -337,7 +337,7 @@
       "linkedin": "",
       "twitter": "https://x.com/bipolarfactory"
     },
-    "industry": "Digital Media",
+    "industry": "Events & Media",
     "isKeynote": false,
     "quote": "The true future of healthcare lies at the intersection of compassion and cutting-edge technology."
   },
@@ -505,7 +505,7 @@
       "linkedin": "https://www.linkedin.com/in/iswaryaagp/?originalSubdomain=in",
       "wikipedia": "https://www.townscholar.com/"
     },
-    "industry": "Content Marketing",
+    "industry": "Events & Media",
     "isKeynote": false,
     "quote": "The skills that got you here might not be the ones that take you further."
   },
@@ -562,16 +562,44 @@
     "links": {
       "linkedin": "https://www.linkedin.com/in/vaishnavirajalaksmi/"
     },
-    "industry": "Business Consulting",
+    "industry": "Business & Strategy",
     "isKeynote": true,
     "quote": "Remember childrens do learn. but they copy us."
+  },
+  {
+    "name": "Srinath Ravichandran",
+    "title": "Co-Founder",
+    "organization": "Agnikul Cosmos",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFzbzKCpmJe6g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516330428340?e=1758153600&v=beta&t=18R8A5dYmro1W4XjvuJIB1NPP1VwlMSPVINLWvzEhJA",
+    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQENUqZ_nCcwOg/feedshare-shrink_800/feedshare-shrink_800/0/1724994019543?e=1758153600&v=beta&t=RRXZkNPQoecejqIZvpk7zIuSemwtMFJtbEqvi4ZFCSA",
+    "about": "Srinath is the Co-Founder of Agnikul Cosmos, a space-tech startup that designs and launches small satellite rockets from India. With a vision to make space more accessible, he focuses on developing affordable and scalable launch vehicles tailored for the growing global satellite market.",
+    "expertise": [
+      "Aerospace Engineering",
+      "Orbital Mechanics",
+      "Satellite Launch Vehicles",
+      "Space Technology Innovation"
+    ],
+    "achievements": [
+      "Co-founded Agnikul Cosmos, one of India’s leading private space-tech startups",
+      "Pioneered the development of India’s first 3D-printed semi-cryogenic rocket engine",
+      "Played a key role in designing Agnibaan, an innovative small satellite launch vehicle",
+      "Recognized for contributions to making space launches cost-effective and accessible"
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/AgniKul_Cosmos",
+      "linkedin": "https://www.linkedin.com/in/srinath-ravichandran-09679a7/",
+      "twitter": "https://x.com/srinathr155?lang=en"
+    },
+    "industry": "Technology & Engineering",
+    "isKeynote": false,
+    "quote": "Making space accessible is the next step in human progress."
   },
   {
     "name": "Deepak Rajmohan",
     "title": "Founder & CEO",
     "organization": "Greenpod Labs",
     "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQH6-jgtG9Bcqg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1646636960647?e=1758153600&v=beta&t=ga9EW3LPxHFswZ0jfBSdAJSlXrjDUoJ1sMWSey1BB0g",
-    "carouselUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl5afPauwGrCE3Xku3_oyQUZ4HfuPs4UicDtbZXXZyfRKavjva97dDLk2doF653agWy8g&usqp=CAU",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755664878/greenpods_jwyvrh.jpg",
     "about": "Deepak Rajmohan is the Founder & CEO of Greenpod Labs, an agri-biotech startup focused on extending the shelf life of fresh produce using natural plant-based solutions. With a vision to reduce food waste and improve supply chain efficiency, he drives innovation at the intersection of biotechnology and sustainability.",
     "expertise": ["Agri-Biotechnology", "Innovation & Product Development"],
     "achievements": [
@@ -584,7 +612,7 @@
       "wikipedia": "https://www.brighterfuture.studio/blog/origin-story-series-w-deepak-rajmohan-greenpod-labs",
       "linkedin": "https://www.linkedin.com/in/deepakrajmohan/?originalSubdomain=in"
     },
-    "industry": "AgriTech",
+    "industry": "Technology & Engineering",
     "isKeynote": false,
     "quote": "Sustainability in food begins with reducing waste at its source."
   },
@@ -613,7 +641,7 @@
       "linkedin": "https://www.linkedin.com/in/thiruppathy/?originalSubdomain=in",
       "twitter": ""
     },
-    "industry": "Automotive",
+    "industry": "Technology & Engineering",
     "isKeynote": false,
     "quote": "Accelerating innovation means bridging the gap between ideas and impact."
   },
@@ -642,9 +670,67 @@
       "linkedin": "https://www.linkedin.com/in/k-suresh-kumar-0b3ab29/",
       "twitter": ""
     },
-    "industry": "Startup Incubation",
+    "industry": "Startups & Growth",
     "isKeynote": false,
     "quote": "Empowering startups through mentorship, infrastructure, and innovation."
+  },
+  {
+    "name": "T. Sathish Kumar",
+    "title": "Founder & Managing Director",
+    "organization": "Milky Mist Dairy Food Limited",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQExTeG9zLokFQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680006930262?e=1758153600&v=beta&t=hsUjfUFXuSlNWnIEoGpy9Tkj_xcMzCd5p1GWgcDxR50",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755334535/milkymist_kqgern.jpg",
+    "about": "T. Sathish Kumar is the Founder & Managing Director of Milky Mist Dairy Food Limited, one of India’s leading dairy brands. With a vision to provide fresh, high-quality dairy products, he transformed Milky Mist from a small-scale venture into a household name. His commitment to innovation, quality, and customer trust has positioned the company as a key player in the dairy industry.",
+    "expertise": [
+      "Food Processing & Quality Assurance",
+      "Business Management",
+      "Business Development",
+      "Supply Chain Management & Brand Building"
+    ],
+    "achievements": [
+      "Founded and scaled Milky Mist into a nationally recognized dairy brand",
+      "Introduced innovative dairy products catering to modern consumer needs",
+      "Created employment opportunities and supported farmers through sustainable sourcing",
+      "Recognized as a leader in India’s dairy industry for quality and innovation"
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Milky_Mist_Dairy",
+      "linkedin": "https://www.linkedin.com/in/cmdmilkymist/?originalSubdomain=in",
+      "twitter": "https://x.com/cmdmilkymist"
+    },
+    "industry": "Food & Beverages",
+    "isKeynote": false,
+    "quote": "From a humble beginning to a dairy giant — it’s about innovation, sustainability, and a vision beyond milk."
+  },
+  {
+    "name": "Dr. Bijay Kumar Sahu",
+    "title": "Senior Regional Manager & Program Head (East)",
+    "organization": "National Research Development Corporation (NRDC), Govt. of India",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQH2oWPM2-mtFw/profile-displayphoto-shrink_400_400/B56Zb8C8Y3HgAg-/0/1747985355762?e=1758153600&v=beta&t=J5I2wOHkTeUoijC9N8kq-6SkC56clP1wKBjjs0VzC44",
+    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQGaADKmf8Oxqw/feedshare-shrink_2048_1536/B56ZiYyFAQHcAo-/0/1754909947383?e=1758153600&v=beta&t=zjk3BuTv2i3St0Tcf5bJGFiWyyJmuIS93OgVrMdUuWU",
+    "about": "Dr. Bijay Kumar Sahu is the Senior Regional Manager & Program Head (East), recognized for his leadership in driving regional development initiatives and fostering innovation-led programs. With extensive experience in managing projects and collaborating with industries, academia, and startups, he plays a pivotal role in enabling growth and strengthening ecosystems across the eastern region of India.",
+    "expertise": [
+      "Associate Editor-Invention Intelligence",
+      "Tech Assessment & Valuation",
+      "Industry-Academia Collaboration",
+      "Entrepreneurship Development",
+      "Leadership & Policy Implementation"
+    ],
+    "achievements": [
+      "Spearheaded multiple regional programs supporting startups and innovation ecosystems",
+      "Strengthened industry-academia partnerships for skill development and technology adoption",
+      "Played a key role in implementing development strategies in Eastern India",
+      "Mentored startups and entrepreneurs in scaling their ventures",
+      "Recognized for impactful leadership in regional innovation and growth initiatives"
+    ],
+    "links": {
+      "wikipedia": "https://www.bgu.ac.in/manage_faculty/dr-bijay-kumar-sahu/",
+      "linkedin": "https://in.linkedin.com/in/dr-bijay-kumar-sahu-07ba9423",
+      "twitter": ""
+    },
+    "industry": "Innovation & Research",
+    "isKeynote": false,
+    "quote": "Innovation thrives where intellectual property acts as a bridge between academia, industry, and societal impact."
   },
   {
     "name": "Kasiraja Thangapandian",
@@ -670,9 +756,37 @@
       "linkedin": "https://www.linkedin.com/in/kasiraja-thangapandian-2659671b/?originalSubdomain=in",
       "twitter": ""
     },
-    "industry": "Automotive",
+    "industry": "Technology & Engineering",
     "isKeynote": false,
     "quote": "Driving engineering excellence through automated, efficient, and reliable software delivery."
+  },
+  {
+    "name": "Poongumaran Panneerselvam",
+    "title": "Managing Director",
+    "organization": "TICEL Biopark Ltd",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQH7VfL9_f_YAQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680176282914?e=1758153600&v=beta&t=YP2Rs75C5ABs8yaR_Dr_cQfkmvPsuLotzoQl1V-aU-o",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755337579/Screenshot_2025-08-16_151500_yr6auf.png",
+    "about": "Poongumaran Panneerselvam is the Managing Director of TICEL Biopark Ltd, Chennai. With extensive experience in leadership and industrial development, he focuses on fostering biotechnology innovation and creating a strong ecosystem for research, startups, and enterprises in the life sciences sector.",
+    "expertise": [
+      "Intercultural Communication",
+      "Talent Management",
+      "Innovation Ecosystem Building",
+      "Leadership & Administration"
+    ],
+    "achievements": [
+      "Leading TICEL Biopark’s initiatives in biotechnology and life sciences",
+      "Played a key role in fostering an ecosystem for biotech startups and research institutions",
+      "Contributed to strengthening collaboration between industry, academia, and government",
+      "Directed infrastructure development projects supporting biotech innovation"
+    ],
+    "links": {
+      "wikipedia": "https://ticelbiopark.com/",
+      "linkedin": "https://www.linkedin.com/in/poongumaran-panneerselvam-5a21214b/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Innovation & Research",
+    "isKeynote": false,
+    "quote": ""
   },
   {
     "name": "Yuvarani Balakrishnan",
@@ -698,7 +812,7 @@
       "linkedin": "https://www.linkedin.com/in/yuvarani-balakrishnan-16578b28/?originalSubdomain=in",
       "twitter": ""
     },
-    "industry": "Business Management",
+    "industry": "Business & Strategy",
     "isKeynote": false,
     "quote": ""
   },
@@ -727,7 +841,36 @@
       "linkedin": "https://www.linkedin.com/in/krishnan-balasubramanian-534145157/",
       "twitter": ""
     },
-    "industry": "Startup Incubation",
+    "industry": "Startups & Growth",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Dinesh K Sundaravelu",
+    "title": "CEO",
+    "organization": "TN Research Parks Foundation (TIDCO)",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D4E03AQE8dLpmiz_7SQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729753102557?e=1758153600&v=beta&t=8tw1IzZeBxwnBitwL9q0UT4dQLvtWyjb2qRAO9PhhZk",
+    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQF0u0cWJv6QqA/feedshare-shrink_2048_1536/B56ZexmFOSHUAo-/0/1751031240064?e=1758153600&v=beta&t=tIZnBZ96yi7c4y_qPj4bMJwY-1eYwFUl_0__VXBt-5A",
+    "about": "Dinesh K Sundaravelu is the CEO of TN Research Parks Foundation (TIDCO). With a strong background in public service innovation and startup ecosystem development, he has played key roles in enabling research-driven growth and fostering entrepreneurship. As a Chevening CRISP Fellow 2025-26 and former leader at StartupTN, he brings global perspectives and strategic expertise to advancing research parks and innovation clusters in Tamil Nadu.",
+    "expertise": [
+      "Emerging Technologies in Governance ",
+      "Startup Ecosystem",
+      "Public Service Innovation",
+      "Leadership & Strategic Growth"
+    ],
+    "achievements": [
+      "Appointed CEO of TN Research Parks Foundation under TIDCO, driving innovation and research-led growth",
+      "Selected as Chevening CRISP Fellow 2025-26, representing India on a global leadership platform",
+      "Contributed significantly to building and strengthening Tamil Nadu’s startup ecosystem during his tenure at StartupTN",
+      "Recognized for fostering industry-academia collaboration to support entrepreneurs and innovators",
+      "Driving initiatives to position Tamil Nadu as a hub for research, innovation, and technology-based ventures"
+    ],
+    "links": {
+      "wikipedia": "https://theorg.com/org/startuptn/org-chart/dinesh-sundaravelu",
+      "linkedin": "https://www.linkedin.com/in/dinesh-sundaravelu-641b501a/",
+      "twitter": ""
+    },
+    "industry": "Innovation & Research",
     "isKeynote": false,
     "quote": ""
   },
@@ -755,9 +898,62 @@
       "linkedin": "",
       "twitter": ""
     },
-    "industry": "Architecture / Education",
+    "industry": "Startups & Growth",
     "isKeynote": false,
     "quote": ""
+  },
+  {
+  "name": "Dr. G.S. Mahalakshmi",
+  "title": "Director",
+  "organization": "Centre for Entrepreneurship Development, Anna University",
+  "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755662324/annaaa_cchwka.jpg",
+  "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755662237/anna_rmbtbn.jpg",
+  "about": "Dr. G.S. Mahalakshmi is an Associate Professor in the Department of Computer Science and Engineering (DCSE) at Anna University and serves as the Director of the Centre for Entrepreneurship Development. With a strong academic background (B.E., M.E., Ph.D.), she mentors AI/ML startups and plays a pivotal role in fostering entrepreneurial innovation within academia.",
+  "expertise": [
+    "AI StartUp Mentor",
+    "Entrepreneurship Development",
+    "Innovation Ecosystem Building"
+  ],
+  "achievements": [
+    "Serving as Director of the Centre for Entrepreneurship Development at Anna University",
+    "Associate Professor in DCSE, actively contributing to engineering education and research",
+    "Mentoring AI/ML startups through academic and innovation programs"
+  ],
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/dr-mahalakshmi-g-s-86685a16b/",
+    "wikipedia": "",
+    "twitter": ""
+  },
+  "industry": "Startups & Growth",
+  "isKeynote": false,
+  "quote": ""
+},
+{
+  "name": "Siranjeevi Ramdoss",
+  "title": "Chief executive officer",
+  "organization": "Pibi Info Technologies",
+  "avatarUrl":"https://media.licdn.com/dms/image/v2/D5603AQEniLiL2jTdhg/profile-displayphoto-shrink_400_400/B56ZZ7QWVMGUAg-/0/1745824606385?e=1758758400&v=beta&t=hZ5S6NCEaxr4zFyfzwGLJf29PeMXvzi4ZlYxXhfGufc",
+  "about": "Siranjeevi Ramdoss is a corporate leader active across multiple ventures in technology and general business domains. He holds leadership roles such as Director and Designated Partner in companies focused on digital solutions and brand development.",
+  "expertise": [
+    "Machine Learning (AI)",
+    "Business Analytics",
+    "SaaS & Application Development",
+    "Business Leadership",
+    "Technology Operations"
+  ],
+  "achievements": [
+    "Founded and scaled PiBi Technologies as a leading AI-driven solutions provider in Tamil Nadu.",
+    "Developed a unique 90-day AI adoption framework that ensures businesses achieve ROI rapidly.",
+    "Helped multiple companies automate workflows using intelligent agents, reducing operational costs significantly."
+    ],
+  "links": {
+    "linkedin": "",
+    "wikipedia": "",
+    "twitter": ""
+  },
+  "industry": "Startups & Growth",
+  "isKeynote": false,
+  "quote": ""
   },
   {
     "name": "Dr Mahalakshmi G S",
@@ -793,5 +989,5 @@
     "industry": "Education / Entrepreneurship",
     "isKeynote": false,
     "quote": ""
-  }
+}
 ]
