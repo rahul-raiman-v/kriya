@@ -261,7 +261,7 @@
     "name": "Kalai Kathiravan",
     "title": "Managing Partner | Founder, Director & CEO",
     "organization": "Lemurian Bazaar | Lemurian Ventures Private Limited",
-    "avatarUrl": "https://scontent-maa2-1.xx.fbcdn.net/v/t39.30808-1/428602920_10224498529923104_7991102416821069512_n.jpg?stp=c9.0.720.720a_dst-jpg_s240x240_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=I-QUoz-QNmAQ7kNvwEXyJIg&_nc_oc=AdkIRRTeXinUzbkDfTKgkZJux903uQqV6nme9MXBqybXYUzGzbA8pqmfsAP6jyFtvBw&_nc_zt=24&_nc_ht=scontent-maa2-1.xx&_nc_gid=3_wTjmLOSEmSTo_kA9W1vQ&oh=00_AfWKzJ0E_XqwZ09yZh6raKjs9eaHj-amYRd2KFAQX_56zA&oe=68A2770E",
+    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
     "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
     "about": "Kalai Kathiravan is the Managing Partner, Founder, Director, and CEO of Lemurian Bazaar and Lemurian Ventures Private Limited. With a strong vision for innovation and entrepreneurship, he focuses on building sustainable business ecosystems and creating growth opportunities across multiple sectors. His leadership emphasizes modern business strategies, cultural preservation, and global market expansion.",
     "expertise": [
@@ -756,6 +756,41 @@
       "twitter": ""
     },
     "industry": "Architecture / Education",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Dr Mahalakshmi G S",
+    "title": "Director at CED",
+    "organization": "Anna University",
+    "avatarUrl": "https://res.cloudinary.com/dbyxgnjkw/image/upload/v1755749165/gsmaha_cmzsrp.jpg",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755342246/tbi_dzijzf.jpg",
+    "about": "Dr. G. S. Mahalakshmi is an Associate Professor, DCSE, CEG, Anna University and Director, CED-AU, with expertise in AI/ML and Entrepreneurship Development. She has authored 2 textbooks, 149 research papers, and mentored several startups and innovation programs across Tamil Nadu. Founder of initiatives like STARTIFY Hackathon and PUTHULIR Challenge, she actively contributes to policy, industry collaborations, and grassroots entrepreneurship.",
+    "expertise": [
+      "Artificial Intelligence & Machine Learning Startup Mentor",
+      "Entrepreneurship Development",
+      "Innovation Management",
+      "Industry-Academia Collaboration",
+      "Research & Publications",
+      "Policy & Governance (Industry 4.0, e-Governance, Higher Education)",
+      "Hackathons & Innovation Challenges",
+      "Academic Leadership & Curriculum Development"
+    ],
+    "achievements": [
+      "Academic achievements (h-index, citations, books, research papers, Ph.D. scholars).",
+      "Leadership roles (Director, CED-AU; Hub Coordinator, IEDP Hub).",
+      "Initiatives founded (STARTIFY, PUTHULIR, CATALYSEED, MAHATI).",
+      "Mentorship roles (AI/ML startup mentor, guiding startups like TicketsHub & Redink Classroom).",
+      "Policy & committee memberships (Industry 4.0, DOTE, High Court of Madras, STAR 2.0 e-governance).",
+      "Entrepreneurship & innovation programs (CSR with HCL Foundation, StartupTN, iTNT Foundation, RUSA 4.0).",
+      "Academic councils & boards (Agni College of Tech, PSG iTech, CEGEN, Alumni Association)."
+    ],
+    "links": {
+      "wikipedia": "https://scholar.google.co.in/citations?user=k2EOtu0AAAAJ&hl=en",
+      "linkedin": "https://www.linkedin.com/in/dr-mahalakshmi-g-s-86685a16b/",
+      "twitter": ""
+    },
+    "industry": "Education / Entrepreneurship",
     "isKeynote": false,
     "quote": ""
   }
