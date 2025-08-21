@@ -200,11 +200,11 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                 {/* About Section */}
                 <div className="mb-8">
                   <div className="flex items-center mb-6 max-xs:mb-3">
-                    <div className="w-12 h-12 max-xs:size-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                    <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
                       <Users className="text-white size-5 max-xs:size-4" />
                     </div>
-                    <h3 className="text-2xl max-xs:text-xl font-bold text-gray-800">
-                      About {selectedSpeaker.name.split(' ')[0]}
+                    <h3 className="text-2xl max-xs:text-xl font-bold text-gray-800 truncate">
+                      {`About ${selectedSpeaker.name}`}
                     </h3>
                   </div>
                   <p className="text-gray-600 leading-relaxed text-lg max-xs:text-base pl-0 md:pl-16">

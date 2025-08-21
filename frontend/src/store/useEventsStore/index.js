@@ -808,12 +808,6 @@ export const useEventsStore = create(() => ({
                   id: '2',
                   title: 'Round 2',
                   content:
-                    'Teams participate in the second round. Submissions must be on time.',
-                },
-                {
-                  id: '3',
-                  title: 'Round 3',
-                  content:
                     'Teams present in the final round. Adhere to preparation and presentation rules.',
                 },
               ],
@@ -850,7 +844,7 @@ export const useEventsStore = create(() => ({
                   id: '5',
                   title: 'Rule 5',
                   content:
-                    'Any disputes will be resolved by the judging panel, and their decision will be final.',
+                    'Any disputes will be resolved by the judging panel and their decision will be final.',
                 },
               ],
             },
@@ -920,7 +914,7 @@ export const useEventsStore = create(() => ({
           id: 'workshop-1',
           eventTitle: 'BRAINSTROM TO BUSINESS',
           eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236015/WorkShop1Img_rekco2.jpg',
+          img: 'https://res.cloudinary.com/dbyxgnjkw/image/upload/v1755747498/1_gafucv.jpg',
           date: 'September 09, 2025',
           venue: 'BIT Campus',
           brochureLink:
@@ -951,7 +945,7 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: '2',
-                  speakerName: 'Mr Chezhiyan Bharathi',
+                  speakerName: 'Mr Sezhiyan Bharathi',
                   designation: 'IPR - Corporate Trainer',
                 },
               ],

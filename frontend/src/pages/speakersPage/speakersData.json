@@ -261,7 +261,7 @@
     "name": "Kalai Kathiravan",
     "title": "Managing Partner | Founder, Director & CEO",
     "organization": "Lemurian Bazaar | Lemurian Ventures Private Limited",
-    "avatarUrl": "https://scontent-maa2-1.xx.fbcdn.net/v/t39.30808-1/428602920_10224498529923104_7991102416821069512_n.jpg?stp=c9.0.720.720a_dst-jpg_s240x240_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=I-QUoz-QNmAQ7kNvwEXyJIg&_nc_oc=AdkIRRTeXinUzbkDfTKgkZJux903uQqV6nme9MXBqybXYUzGzbA8pqmfsAP6jyFtvBw&_nc_zt=24&_nc_ht=scontent-maa2-1.xx&_nc_gid=3_wTjmLOSEmSTo_kA9W1vQ&oh=00_AfWKzJ0E_XqwZ09yZh6raKjs9eaHj-amYRd2KFAQX_56zA&oe=68A2770E",
+    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
     "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
     "about": "Kalai Kathiravan is the Managing Partner, Founder, Director, and CEO of Lemurian Bazaar and Lemurian Ventures Private Limited. With a strong vision for innovation and entrepreneurship, he focuses on building sustainable business ecosystems and creating growth opportunities across multiple sectors. His leadership emphasizes modern business strategies, cultural preservation, and global market expansion.",
     "expertise": [
@@ -534,39 +534,11 @@
       "wikipedia": "",
       "twitter": ""
     },
-    "industry": "Business & Strategy",
+    "industry": "Corporate Development",
     "isKeynote": false,
     "quote": ""
   },
-  {
-    "name": "Sivaraja Ramanathan",
-    "title": "Chief Executive Officer",
-    "organization": "StartupTN",
-    "avatarUrl": "data:image/jpeg;base64,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",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755338869/startuptn_kz4clh.jpg",
-    "about": "Sivaraja Ramanathan is the Chief Executive Officer of StartupTN, an initiative by the Government of Tamil Nadu to foster and support the startup ecosystem across the state. With a strong background in entrepreneurship development and ecosystem building, he has been instrumental in creating policies, programs, and networks that empower startups and innovators in Tamil Nadu.",
-    "expertise": [
-      "Startup Ecosystem Development",
-      "Innovation & Entrepreneurship",
-      "Leadership & Strategic Planning",
-      "Public-Private Partnerships"
-    ],
-    "achievements": [
-      "Leading StartupTN to strengthen Tamil Nadu’s startup ecosystem and innovation culture",
-      "Played a key role in supporting and funding numerous startups across sectors",
-      "Spearheaded government initiatives to position Tamil Nadu as a leading startup hub",
-      "Actively engaged in creating collaborations between startups, investors, and industry",
-      "Recognized for contributions in fostering entrepreneurship and job creation"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "http://linkedin.com/in/sivarajahr/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Innovation & Research",
-    "isKeynote": false,
-    "quote": ""
-  },
+
   {
     "name": "Vaishnavi Rajalakshmi S",
     "title": "CEO & Managing Director",
@@ -982,5 +954,40 @@
   "industry": "Startups & Growth",
   "isKeynote": false,
   "quote": ""
+  },
+  {
+    "name": "Dr Mahalakshmi G S",
+    "title": "Director at CED",
+    "organization": "Anna University",
+    "avatarUrl": "https://res.cloudinary.com/dbyxgnjkw/image/upload/v1755749165/gsmaha_cmzsrp.jpg",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755342246/tbi_dzijzf.jpg",
+    "about": "Dr. G. S. Mahalakshmi is an Associate Professor, DCSE, CEG, Anna University and Director, CED-AU, with expertise in AI/ML and Entrepreneurship Development. She has authored 2 textbooks, 149 research papers, and mentored several startups and innovation programs across Tamil Nadu. Founder of initiatives like STARTIFY Hackathon and PUTHULIR Challenge, she actively contributes to policy, industry collaborations, and grassroots entrepreneurship.",
+    "expertise": [
+      "Artificial Intelligence & Machine Learning Startup Mentor",
+      "Entrepreneurship Development",
+      "Innovation Management",
+      "Industry-Academia Collaboration",
+      "Research & Publications",
+      "Policy & Governance (Industry 4.0, e-Governance, Higher Education)",
+      "Hackathons & Innovation Challenges",
+      "Academic Leadership & Curriculum Development"
+    ],
+    "achievements": [
+      "Academic achievements (h-index, citations, books, research papers, Ph.D. scholars).",
+      "Leadership roles (Director, CED-AU; Hub Coordinator, IEDP Hub).",
+      "Initiatives founded (STARTIFY, PUTHULIR, CATALYSEED, MAHATI).",
+      "Mentorship roles (AI/ML startup mentor, guiding startups like TicketsHub & Redink Classroom).",
+      "Policy & committee memberships (Industry 4.0, DOTE, High Court of Madras, STAR 2.0 e-governance).",
+      "Entrepreneurship & innovation programs (CSR with HCL Foundation, StartupTN, iTNT Foundation, RUSA 4.0).",
+      "Academic councils & boards (Agni College of Tech, PSG iTech, CEGEN, Alumni Association)."
+    ],
+    "links": {
+      "wikipedia": "https://scholar.google.co.in/citations?user=k2EOtu0AAAAJ&hl=en",
+      "linkedin": "https://www.linkedin.com/in/dr-mahalakshmi-g-s-86685a16b/",
+      "twitter": ""
+    },
+    "industry": "Education / Entrepreneurship",
+    "isKeynote": false,
+    "quote": ""
 }
 ]
