@@ -151,7 +151,7 @@ export const EventsPage = () => {
           >
             {allEvents.map((event) => (
               <SwiperSlide key={event.id}>
-                <div className="w-full border rounded-3xl border-grey-700 p-4 sm:p-6 lg:p-8 relative min-h-[400px] sm:min-h-[450px] lg:h-98 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex flex-col lg:flex-row items-center justify-center shadow-lg gap-4 sm:gap-6 lg:gap-8">
+                <div className="w-full border rounded-3xl border-grey-700 p-4 sm:p-6 lg:py-8 lg:px-16 relative min-h-[400px] sm:min-h-[450px] lg:h-98 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex flex-col lg:flex-row items-center justify-center shadow-lg gap-4 sm:gap-6 lg:gap-8">
                   {/* Image */}
                   <div className="w-full lg:w-1/3 h-48 sm:h-64 lg:h-80 flex-shrink-0 order-1 lg:order-1">
                     <img

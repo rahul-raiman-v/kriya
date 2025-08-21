@@ -32,6 +32,7 @@ const ScrollToTop = () => {
 export const AppRouter = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path={routes.home} element={<Layout />}>
           <Route index element={<HomePage />} />

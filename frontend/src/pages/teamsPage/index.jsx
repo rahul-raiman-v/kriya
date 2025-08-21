@@ -32,14 +32,13 @@ export const TeamsPage = () => {
   ];
 
   const faculty = {
-      id: 10,
-      name: 'Dr Murugappan S',
-      designation: '',
-      image:
-        'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Murugappan-S.jpg',
-      phone: '+91 8344480485',
-      email: 'murugappans@bitsathy.ac.in',
-    }
+    id: 10,
+    name: 'Dr Murugappan S',
+    designation: '',
+    image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Murugappan-S.jpg',
+    phone: '+91 8344480485',
+    email: 'murugappans@bitsathy.ac.in',
+  };
 
   const spocs = [
     {
@@ -111,7 +110,6 @@ export const TeamsPage = () => {
       phone: '+91 8344480485',
       email: 'prathap@bitsathy.ac.in',
     },
-    
   ];
 
   // const faculties = [
