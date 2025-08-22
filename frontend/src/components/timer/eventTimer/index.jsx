@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { TimeUnit } from '..';
 
 export const EventTimer = ({ targetDate }) => {
-
-    const calculateTimeLeft = React.useCallback(() => {
+  const calculateTimeLeft = React.useCallback(() => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {};
 
@@ -20,9 +19,9 @@ export const EventTimer = ({ targetDate }) => {
 
   const [timeLeft, setTimeLeft] = React.useState(calculateTimeLeft());
 
-  const hasTimeLeft = Object.values(timeLeft).some(value => value > 0);
+  const hasTimeLeft = Object.values(timeLeft).some((value) => value > 0);
 
-   React.useEffect(() => {
+  React.useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -36,9 +35,9 @@ export const EventTimer = ({ targetDate }) => {
       <p className="text-xl text-slate-600 max-w-3xl mx-auto">
         Join us for an exciting event! The countdown has begun. Don't miss out!
       </p>
-      
+
       {hasTimeLeft ? (
-        <div className='bg-white p-12 mt-8 rounded-lg'>
+        <div className="bg-white p-16 mt-8 rounded-lg w-fit mx-auto">
           <div className="flex justify-center items-center space-x-2 md:space-x-4">
             <TimeUnit value={timeLeft.days} label="Days" />
             <TimeUnit value={timeLeft.hours} label="Hours" />
@@ -47,13 +46,12 @@ export const EventTimer = ({ targetDate }) => {
           </div>
         </div>
       ) : (
-        <div className='bg-white p-12 mt-8 rounded-lg'> 
-          <div className=" bg-green-500 text-white font-bold py-4 px-8 rounded-lg shadow-xl mx-auto w-fit">
-            <h3 className="text-2xl">The Event Has Started! 🎉</h3>
+        <div className="bg-white py-16 px-44 mt-8 rounded-lg w-fit mx-auto">
+          <div className=" bg-gray-600 hover:opacity-75 cursor-pointer text-white font-bold py-4 px-8 rounded-lg shadow-xl mx-auto w-fit">
+            <h3 className="text-2xl">Registration Closed 🔒</h3>
           </div>
         </div>
       )}
     </div>
-  )
-}
-
+  );
+};

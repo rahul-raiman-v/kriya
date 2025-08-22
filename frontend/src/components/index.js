@@ -6,4 +6,4 @@ export * from './essentials';
 export * from './layout';
 export * from './teamCard';
 export * from './eventsSubCard';
-export * from "./timer";
+export * from './timer';

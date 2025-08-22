@@ -311,9 +311,8 @@ export const HomePage = () => {
 
       {/** Timer Section */}
       <section className="relative py-10 backdrop-blur-sm">
-        <EventTimer targetDate={targetDate}/>
+        <EventTimer targetDate={targetDate} />
       </section>
-
 
       {/* About Section */}
       <section id="about" className="relative py-20" ref={useScroll}>
@@ -594,13 +593,13 @@ export const HomePage = () => {
               </div>
             </div>
             {/* Media Partner Card */}
-            <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
+            {/* <div className="glass-morphism rounded-2xl p-8 shadow-xl hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">
                 Media Partner
               </h3>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
-                {/* Times of India Logo */}
-                <div className="flex flex-col items-center">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap"> */}
+            {/* Times of India Logo */}
+            {/* <div className="flex flex-col items-center">
                   <img
                     src="https://www.pngitem.com/pimgs/m/334-3344553_times-of-india-logo-png-transparent-png.png"
                     alt="Times of India"
@@ -611,7 +610,7 @@ export const HomePage = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* Social Links Card */}
             <div className="glass-morphism rounded-2xl p-8 shadow-xl  hover:scale-105 transition-transform duration-300 backdrop-blur-md border border-white/20 flex flex-col justify-center items-center">
               <h4 className="text-xl font-semibold text-slate-800 mb-4">

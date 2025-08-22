@@ -654,7 +654,7 @@ export const useEventsStore = create(() => ({
           eventType: 'Non-Technical Event',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236014/TalkShowImg_hevk1s.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755851256/file_00000000446c61f5a6754cf6f07091e1_1_ugvgdb.png',
           brochureLink:
             'https://drive.google.com/uc?export=download&id=1XGTo2JYwcNnPJOYmfv6Zvwoed2GqhNh8',
           highlight: true,
