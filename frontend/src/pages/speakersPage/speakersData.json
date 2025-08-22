@@ -954,40 +954,5 @@
   "industry": "Startups & Growth",
   "isKeynote": false,
   "quote": ""
-  },
-  {
-    "name": "Dr Mahalakshmi G S",
-    "title": "Director at CED",
-    "organization": "Anna University",
-    "avatarUrl": "https://res.cloudinary.com/dbyxgnjkw/image/upload/v1755749165/gsmaha_cmzsrp.jpg",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755342246/tbi_dzijzf.jpg",
-    "about": "Dr. G. S. Mahalakshmi is an Associate Professor, DCSE, CEG, Anna University and Director, CED-AU, with expertise in AI/ML and Entrepreneurship Development. She has authored 2 textbooks, 149 research papers, and mentored several startups and innovation programs across Tamil Nadu. Founder of initiatives like STARTIFY Hackathon and PUTHULIR Challenge, she actively contributes to policy, industry collaborations, and grassroots entrepreneurship.",
-    "expertise": [
-      "Artificial Intelligence & Machine Learning Startup Mentor",
-      "Entrepreneurship Development",
-      "Innovation Management",
-      "Industry-Academia Collaboration",
-      "Research & Publications",
-      "Policy & Governance (Industry 4.0, e-Governance, Higher Education)",
-      "Hackathons & Innovation Challenges",
-      "Academic Leadership & Curriculum Development"
-    ],
-    "achievements": [
-      "Academic achievements (h-index, citations, books, research papers, Ph.D. scholars).",
-      "Leadership roles (Director, CED-AU; Hub Coordinator, IEDP Hub).",
-      "Initiatives founded (STARTIFY, PUTHULIR, CATALYSEED, MAHATI).",
-      "Mentorship roles (AI/ML startup mentor, guiding startups like TicketsHub & Redink Classroom).",
-      "Policy & committee memberships (Industry 4.0, DOTE, High Court of Madras, STAR 2.0 e-governance).",
-      "Entrepreneurship & innovation programs (CSR with HCL Foundation, StartupTN, iTNT Foundation, RUSA 4.0).",
-      "Academic councils & boards (Agni College of Tech, PSG iTech, CEGEN, Alumni Association)."
-    ],
-    "links": {
-      "wikipedia": "https://scholar.google.co.in/citations?user=k2EOtu0AAAAJ&hl=en",
-      "linkedin": "https://www.linkedin.com/in/dr-mahalakshmi-g-s-86685a16b/",
-      "twitter": ""
-    },
-    "industry": "Education / Entrepreneurship",
-    "isKeynote": false,
-    "quote": ""
-}
+  }
 ]

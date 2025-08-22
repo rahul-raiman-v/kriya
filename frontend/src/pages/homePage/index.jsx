@@ -18,6 +18,7 @@ import {
   User,
 } from 'lucide-react';
 import { useNavigate } from 'react-router';
+import { EventTimer } from '../../components';
 
 // Floating particle component
 const FloatingParticle = ({ style }) => (
@@ -77,6 +78,8 @@ export const HomePage = () => {
   const [scrollY, setScrollY] = React.useState(0);
   const containerRef = React.useRef(null);
   const router = useNavigate();
+
+  const targetDate = new Date('2025-09-04T22:00:00');
 
   const useScroll = useRef();
 
@@ -306,6 +309,12 @@ export const HomePage = () => {
         </div>
       </section>
 
+      {/** Timer Section */}
+      <section className="relative py-10 backdrop-blur-sm">
+        <EventTimer targetDate={targetDate}/>
+      </section>
+
+
       {/* About Section */}
       <section id="about" className="relative py-20" ref={useScroll}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -386,7 +395,7 @@ export const HomePage = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-2 leading-relaxed">
               Event Highlights
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
