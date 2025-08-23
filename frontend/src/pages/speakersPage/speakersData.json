@@ -1,10 +1,39 @@
 [
   {
+    "name": "Arun Prakash",
+    "title": "Founder & CEO",
+    "organization": "GUVI Geek Network",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755664265/guvi_pwnjyo.png",
+    "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
+    "expertise": [
+      "EdTech Leadership",
+      "Technology Innovation",
+      "Vernacular Learning",
+      "Community Building"
+    ],
+    "achievements": [
+      "Led GUVI to achieve two Guinness World Records for AI coding lessons and online programming participation",
+      "Invited to Oxford University in 2024 to speak on 'How Vernacular learning is transforming Technology learning'",
+      "Recognized as a Youth Icon at the IYONS International Summit",
+      "Awarded Leading Social Entrepreneur Award by Action for India in 2019",
+      "GUVI awarded 'Most Trusted Vernacular EduTech Award' by ZEE Digital"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/arunprakashm/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Education & Learning",
+    "isKeynote": true,
+    "quote": "Technology should be accessible to everyone, regardless of language or background."
+  },
+  {
     "name": "Mr. Kandasamy S",
     "title": "District Collector",
     "organization": "Erode District, Government of Tamil Nadu",
     "avatarUrl": "https://pbs.twimg.com/profile_images/1943895943469776896/OhcGkXXp_400x400.jpg",
-    "carouselUrl": "https://pbs.twimg.com/profile_images/1943895943469776896/OhcGkXXp_400x400.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755922081/On_27.06.2025_Thiru._S._Kandasamy_I.A.S._officially_assumed_charge_as_the_District_Collector_o_x7otuh.jpg",
     "about": "Mr. Kandasamy S, IAS, is a dedicated civil servant with a distinguished career in public administration across Tamil Nadu. With academic qualifications in textile technology, computer science, Tamil literature, and public administration, he brings a rare blend of technical expertise and administrative acumen. Over the years, he has served in multiple key positions including Deputy Collector, RDO, DRO, Commissioner of Avadi Corporation, and State Programme Manager for the National Health Mission. Known for his hands-on governance, people-centric initiatives, and focus on effective service delivery, he assumed charge as the District Collector of Erode in June 2025, where he continues to work towards inclusive development, efficient governance, and social welfare.",
     "expertise": [
       "District Administration & Governance",
@@ -57,6 +86,541 @@
     "quote": ""
   },
   {
+    "name": "Poongumaran Panneerselvam",
+    "title": "Managing Director",
+    "organization": "TICEL Biopark Ltd",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQH7VfL9_f_YAQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680176282914?e=1758153600&v=beta&t=YP2Rs75C5ABs8yaR_Dr_cQfkmvPsuLotzoQl1V-aU-o",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755337579/Screenshot_2025-08-16_151500_yr6auf.png",
+    "about": "Poongumaran Panneerselvam is the Managing Director of TICEL Biopark Ltd, Chennai. With extensive experience in leadership and industrial development, he focuses on fostering biotechnology innovation and creating a strong ecosystem for research, startups, and enterprises in the life sciences sector.",
+    "expertise": [
+      "Intercultural Communication",
+      "Talent Management",
+      "Innovation Ecosystem Building",
+      "Leadership & Administration"
+    ],
+    "achievements": [
+      "Leading TICEL Biopark’s initiatives in biotechnology and life sciences",
+      "Played a key role in fostering an ecosystem for biotech startups and research institutions",
+      "Contributed to strengthening collaboration between industry, academia, and government",
+      "Directed infrastructure development projects supporting biotech innovation"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/poongumaran-panneerselvam-5a21214b/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Innovation Ecosystem",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Kannan Hari",
+    "title": "Founder",
+    "organization": "Palm Era Foods",
+    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755583528/asdasd_vz5eyb.jpg",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755075301/lampera_z2sp0y.jpg",
+    "about": "Kannan Hari is the Co-founder and Founder of Palm Era Foods, a company specializing in palm-based natural sweeteners and sustainable food products. With a focus on replacing refined sugar with healthier alternatives, he is driving innovation in the food sector while promoting sustainability and wellness for modern consumers.",
+    "expertise": [
+      "Social Entrepreneur",
+      "Sustainable Food Manufacturing",
+      "Consumer Health & Wellness Solutions",
+      "Entrepreneurship in F&B Sector"
+    ],
+    "achievements": [
+      "Developed palm-based natural sweetener products as a healthy sugar alternative",
+      "Introduced sustainable production methods in food processing",
+      "Built Palm Era Foods into a recognized brand in the health & wellness segment",
+      "Promoted awareness about sustainable and natural food choices through industry talks"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/kannan-hari-158b2757",
+      "twitter": ""
+    },
+    "industry": "Food & Beverages",
+    "isKeynote": true,
+    "quote": "The country's economy grows only when villages grow."
+  },
+  {
+    "name": "Umasankaran P",
+    "title": "Founder & CEO",
+    "organization": "Startup News Tamil & Free Famous Food",
+    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQqxOigPZqs-fQpoHei1edNoaFkHhNYqkXA&s",
+    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQEYyajV-i5Rpg/feedshare-shrink_2048_1536/B56ZWJ01BrHsAw-/0/1741774082950?e=1758153600&v=beta&t=_u4j2zrDCgqeTjJGQX8FkBGbH8vbaASBPfpJDXRN5Zw",
+    "about": "Umasankaran P is the Founder and CEO of Startup News Tamil and Free Famous Food. With a strong presence in both media and food ventures, he focuses on building impactful platforms that empower entrepreneurs and deliver authentic culinary experiences. His dual leadership reflects innovation, communication, and a vision for community-driven growth.",
+    "expertise": [
+      "Business Strategist",
+      "Branding & Marketing",
+      "Startup Mentor"
+    ],
+    "achievements": [
+      "Founded Startup News Tamil, a platform dedicated to covering and promoting startup stories in the Tamil ecosystem",
+      "Established Free Famous Food to deliver authentic and popular food experiences",
+      "Created a bridge between entrepreneurship and media through impactful storytelling",
+      "Contributed to promoting local businesses and emerging startups",
+      "Recognized as an entrepreneur balancing both digital media and F&B ventures"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/umasankaran2011/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Food & Beverages",
+    "isKeynote": false,
+    "quote": "Stories have the power to inspire change — Startup News Tamil is built to tell those stories in the language of the people."
+  },
+  {
+    "name": "Siranjeevi Ramdoss",
+    "title": "Chief executive officer",
+    "organization": "Pibi Info Technologies",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEniLiL2jTdhg/profile-displayphoto-shrink_400_400/B56ZZ7QWVMGUAg-/0/1745824606385?e=1758758400&v=beta&t=hZ5S6NCEaxr4zFyfzwGLJf29PeMXvzi4ZlYxXhfGufc",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755928333/image_10_lez9hd.jpg",
+    "about": "Siranjeevi Ramdoss is a corporate leader active across multiple ventures in technology and general business domains. He holds leadership roles such as Director and Designated Partner in companies focused on digital solutions and brand development.",
+    "expertise": [
+      "Machine Learning (AI)",
+      "Business Analytics",
+      "SaaS & Application Development",
+      "Business Leadership",
+      "Technology Operations"
+    ],
+    "achievements": [
+      "Founded and scaled PiBi Technologies as a leading AI-driven solutions provider in Tamil Nadu.",
+      "Developed a unique 90-day AI adoption framework that ensures businesses achieve ROI rapidly.",
+      "Helped multiple companies automate workflows using intelligent agents, reducing operational costs significantly."
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/siranjeevi-ramdass-5ba2a9362",
+      "wikipedia": "",
+      "twitter": ""
+    },
+    "industry": "Startups & Growth",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Mr. Vinoth Rajendran",
+    "title": "Chief Executive Officer (CEO)",
+    "organization": "TCE Technology Business Incubator (TCE TBI), Thiagarajar College of Engineering",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856744/image_12_od7jen.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755928474/cropped-image_12_od7jen_cysct5.jpg",
+    "about": "Mr. Vinoth Rajendran is the Chief Executive Officer of the TCE Technology Business Incubator (TCE TBI) at Thiagarajar College of Engineering. As an innovation enabler and ecosystem builder, he plays a pivotal role in nurturing and scaling early-stage startups, guiding them through ideation, incubation, and commercialisation. Known for his commitment to fostering entrepreneurial growth within academia, he frequently participates in seminars and institutions, empowering students and startups through strategic mentorship and incubation support.",
+    "expertise": [
+      "Startup Incubation & Acceleration",
+      "Innovation Ecosystem Development",
+      "Entrepreneurial Mentoring",
+      "Academic-Industry Collaboration",
+      "Strategic Program Leadership"
+    ],
+    "achievements": [
+      "Appointed CEO of TCE Technology Business Incubator (TCE TBI)",
+      "Active speaker at academic events nurturing startups and innovation",
+      "Key contributor to ecosystem-building initiatives at Thiagarajar College of Engineering"
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/vinothrajendranip/"
+    },
+    "industry": "Startup Incubation & Higher Education",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Dr. G.S. Mahalakshmi",
+    "title": "Director",
+    "organization": "Centre for Entrepreneurship Development, Anna University",
+    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755662324/annaaa_cchwka.jpg",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755662237/anna_rmbtbn.jpg",
+    "about": "Dr. G.S. Mahalakshmi is an Associate Professor in the Department of Computer Science and Engineering (DCSE) at Anna University and serves as the Director of the Centre for Entrepreneurship Development. With a strong academic background (B.E., M.E., Ph.D.), she mentors AI/ML startups and plays a pivotal role in fostering entrepreneurial innovation within academia.",
+    "expertise": [
+      "AI StartUp Mentor",
+      "Entrepreneurship Development",
+      "Innovation Ecosystem Building"
+    ],
+    "achievements": [
+      "Serving as Director of the Centre for Entrepreneurship Development at Anna University",
+      "Associate Professor in DCSE, actively contributing to engineering education and research",
+      "Mentoring AI/ML startups through academic and innovation programs"
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/dr-mahalakshmi-g-s-86685a16b/",
+      "wikipedia": "",
+      "twitter": ""
+    },
+    "industry": "Startups & Growth",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "K. Suresh Kumar",
+    "title": "Executive Director",
+    "organization": "PSG-STEP (PSG-Science & Technology Entrepreneurial Park)",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQFin96S9mv73Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718296272198?e=1758153600&v=beta&t=ynG8Rb7Fw5v7JIKNCtWZGuQT0EAhhlC1wQKjMwAalLA",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755333965/psgstep_zusgwl.jpg",
+    "about": "K. Suresh Kumar is the Executive Director of PSG-STEP (PSG-Science & Technology Entrepreneurial Park). He is a strong advocate of innovation, entrepreneurship, and technology-driven development, playing a vital role in nurturing startups and fostering entrepreneurial ecosystems in Tamil Nadu. His leadership has significantly contributed to enabling students, innovators, and entrepreneurs to convert ideas into successful ventures.",
+    "expertise": [
+      "Business Strategy",
+      "Entrepreneurship Development",
+      "Startup Incubation & Innovation Management",
+      "Technology Commercialization"
+    ],
+    "achievements": [
+      "Led PSG-STEP in supporting and incubating numerous startups across technology domains",
+      "Contributed to creating a sustainable entrepreneurial ecosystem in Tamil Nadu",
+      "Guided innovators and students to transform their ideas into scalable ventures",
+      "Recognized for promoting innovation and entrepreneurship at academic and industrial levels",
+      "Actively involved in mentoring, funding access, and networking opportunities for startups"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/k-suresh-kumar-0b3ab29/",
+      "twitter": ""
+    },
+    "industry": "Startups & Growth",
+    "isKeynote": false,
+    "quote": "Empowering startups through mentorship, infrastructure, and innovation."
+  },
+  {
+    "name": "Dhivya Bharathi",
+    "title": "Founder",
+    "organization": "Uzhamagal",
+    "avatarUrl": "https://www.uzhamagal.in/cdn/shop/files/1995C450-DE77-47AE-8727-CA3F18A05C8F.jpg?v=1752417366&width=533",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077973/uzhamagal_apv89n.jpg",
+    "about": "Dhivya Bharathi is the Founder of Uzhamagal, a venture focused on promoting traditional, cultural, and sustainable practices through innovative solutions. She is passionate about empowering communities and creating awareness about eco-conscious living and heritage preservation.",
+    "expertise": [
+      "Sustainable Entrepreneurship",
+      "Cultural Heritage Promotion",
+      "Community Engagement",
+      "Business Development",
+      "Women Leadership"
+    ],
+    "achievements": [
+      "Founded Uzhamagal to preserve and promote cultural and sustainable practices",
+      "Developed initiatives to support eco-friendly and traditional lifestyles",
+      "Built a platform that bridges heritage values with modern entrepreneurial approaches",
+      "Inspired awareness about sustainable living through innovative ventures"
+    ],
+    "links": {
+      "wikipedia": "https://www.instagram.com/dhivyah._/",
+      "twitter": ""
+    },
+    "industry": "Fashion",
+    "isKeynote": true,
+    "quote": "I grew up with the ideology to break it and overcome it."
+  },
+  {
+    "name": "Vinoth Kumar Chandran",
+    "title": "Director",
+    "organization": "Bipolar Factory Private Limited",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755340042/bipolar_bncrck.jpg",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEfE0lbqoqqIA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669297488292?e=1758153600&v=beta&t=WLe4_bDkWLKrFWikNmLKSf8UtyNUoIfLwYV_m6C2M1w",
+    "about": "Vinoth Kumar Chandran is the Director of Bipolar Factory Private Limited, a creative and technology-driven company specializing in innovative digital solutions. He focuses on bridging the gap between creativity and business by driving impactful projects that combine design, technology, and strategy. With his leadership, the company has positioned itself as a dynamic player in the digital and creative industries.",
+    "expertise": [
+      "Creative Direction",
+      "Business Strategy & Leadership",
+      "Digital Transformation",
+      "Innovation & Product Development"
+    ],
+    "achievements": [
+      "Directed growth initiatives that strengthened Bipolar Factory’s position in the market",
+      "Led innovative projects combining technology and creativity for diverse industries",
+      "Introduced new-age solutions driving business impact and brand visibility",
+      "Recognized for steering Bipolar Factory towards sustainable and scalable growth"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/vinothkumar-chandran-15768a25/",
+      "twitter": ""
+    },
+    "industry": "Events & Media",
+    "isKeynote": false,
+    "quote": "The true future of healthcare lies at the intersection of compassion and cutting-edge technology."
+  },
+  {
+    "name": "Kalai Kathiravan",
+    "title": "Managing Partner | Founder, Director & CEO",
+    "organization": "Lemurian Bazaar | Lemurian Ventures Private Limited",
+    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
+    "about": "Kalai Kathiravan is the Managing Partner, Founder, Director, and CEO of Lemurian Bazaar and Lemurian Ventures Private Limited. With a strong vision for innovation and entrepreneurship, he focuses on building sustainable business ecosystems and creating growth opportunities across multiple sectors. His leadership emphasizes modern business strategies, cultural preservation, and global market expansion.",
+    "expertise": [
+      "Venture Capital & Investments",
+      "E-commerce & Retail Innovation",
+      "Entrepreneurship & Business Strategy",
+      "Global Market Expansion"
+    ],
+    "achievements": [
+      "Founded Lemurian Bazaar, promoting cultural and traditional products in modern markets",
+      "Established Lemurian Ventures Pvt Ltd to support and scale innovative business ideas",
+      "Created opportunities for entrepreneurs and artisans through e-commerce platforms",
+      "Actively contributes to business networks and entrepreneurial ecosystem development"
+    ],
+    "links": {
+      "wikipedia": "",
+      "facebook": "https://www.facebook.com/kalairx",
+      "twitter": ""
+    },
+    "industry": "Food & Beverages",
+    "isKeynote": false,
+    "quote": "From a small village to national markets, my mission is to prove that traditional products can thrive in the modern economy without losing their authenticity."
+  },
+  {
+    "name": "Mr. R.K. Kanthimathinathan",
+    "title": "Founder",
+    "organization": "Theme Group of Companies",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755926276/image_9_yiqqp4.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755926516/R.K.-Kanthimathinathan_vvmnoh.avif",
+    "about": "Mr. R.K. Kanthimathinathan, fondly known as Kanthi, is the Founder of Theme Group of Companies and a dynamic entrepreneur with over 30 years of software industry experience. He was instrumental in conceptualizing, forming, and successfully operating Encore Theme since 2006 until its acquisition by Wipro in 2019. Within just five years of incorporation, he positioned Encore Theme as a trusted player in the Banking and Financial Services space, both in domestic and international markets. Today, Kanthi continues his entrepreneurial journey through ventures in retail, apparel exports, and food products while also serving as a social entrepreneur, heading Theme Champs Consulting Services and RKK Goshala. His vision remains focused on transforming Theme Group from a mid-sized company into a large, successful enterprise.",
+    "expertise": [
+      "Banking & Financial Services Solutions",
+      "Enterprise Software Development & Delivery",
+      "Sales & Marketing Strategy",
+      "Business Leadership & Scaling",
+      "Retail & Food Industry Ventures",
+      "Social Entrepreneurship"
+    ],
+    "achievements": [
+      "Founded Theme Group of Companies",
+      "Successfully led Encore Theme from inception (2006) to acquisition by Wipro (2019)",
+      "Built Encore Theme into an established BFSI solutions provider in 5 years",
+      "Recognized by Business India Magazine as one of the youngest successful executives",
+      "Guided Theme Group across Finance, Banking, Retail, Garments & Food sectors",
+      "Recognition from CEO Magazine – 'Top 25 Emerging Companies'",
+      "Recognition from CIO Review India – 'Top 20 Financial Solution Providers of 2017'",
+      "Trophy awarded by SBI Chairman Arundhati Bhattacharya for fastest global trade finance solution implementation"
+    ],
+    "links": {
+      "linkedin": "",
+      "twitter": "",
+      "company": "https://www.themegroup.in"
+    },
+    "industry": "Technology, BFSI Solutions, Retail, Food & Social Entrepreneurship",
+    "isKeynote": false,
+    "quote": "Domain First – Customer First"
+  },
+  {
+    "name": "Santhos Premraj",
+    "title": "Co-Founder & Head of Product",
+    "organization": "Ticket9",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755075995/ticket9_orgete.jpg",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGZZcRLcwId-g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721149310630?e=1758153600&v=beta&t=86y32-_3Az42DYOjGSEfMTU7kqjEL3weGDQOxnloBkM",
+    "about": "Santhos Premraj is the Co-Founder and Head of Product at Ticket9, a platform dedicated to simplifying event ticketing and audience engagement. With a strong focus on product design, technology integration, and customer experience, he plays a key role in building innovative solutions for event organizers and participants. His leadership blends entrepreneurial drive with a passion for user-centric products.",
+    "expertise": [
+      "Business Development",
+      "Event Technology Solutions",
+      "Startup Growth & Innovation",
+      "Team Leadership & Collaboration"
+    ],
+    "achievements": [
+      "Co-founded Ticket9, revolutionizing event ticketing and engagement solutions",
+      "Contributed to Ticket9’s recognition in the startup ecosystem",
+      "Played a vital role in expanding Ticket9’s reach across multiple events and industries",
+      "Known for integrating technology-driven solutions to simplify audience engagement"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/santhospremraj/",
+      "facebook": ""
+    },
+    "industry": "Events & Media",
+    "isKeynote": false,
+    "quote": "Building a product with real scenes in SaaS is no small feat; it underscores the complexity and depth of the process!"
+  },
+  {
+    "name": "Dinesh K Sundaravelu",
+    "title": "CEO",
+    "organization": "TN Research Parks Foundation (TIDCO)",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D4E03AQE8dLpmiz_7SQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729753102557?e=1758153600&v=beta&t=8tw1IzZeBxwnBitwL9q0UT4dQLvtWyjb2qRAO9PhhZk",
+    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQF0u0cWJv6QqA/feedshare-shrink_2048_1536/B56ZexmFOSHUAo-/0/1751031240064?e=1758153600&v=beta&t=tIZnBZ96yi7c4y_qPj4bMJwY-1eYwFUl_0__VXBt-5A",
+    "about": "Dinesh K Sundaravelu is the CEO of TN Research Parks Foundation (TIDCO). With a strong background in public service innovation and startup ecosystem development, he has played key roles in enabling research-driven growth and fostering entrepreneurship. As a Chevening CRISP Fellow 2025-26 and former leader at StartupTN, he brings global perspectives and strategic expertise to advancing research parks and innovation clusters in Tamil Nadu.",
+    "expertise": [
+      "Emerging Technologies in Governance ",
+      "Startup Ecosystem",
+      "Public Service Innovation",
+      "Leadership & Strategic Growth"
+    ],
+    "achievements": [
+      "Appointed CEO of TN Research Parks Foundation under TIDCO, driving innovation and research-led growth",
+      "Selected as Chevening CRISP Fellow 2025-26, representing India on a global leadership platform",
+      "Contributed significantly to building and strengthening Tamil Nadu’s startup ecosystem during his tenure at StartupTN",
+      "Recognized for fostering industry-academia collaboration to support entrepreneurs and innovators",
+      "Driving initiatives to position Tamil Nadu as a hub for research, innovation, and technology-based ventures"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/dinesh-sundaravelu-641b501a/",
+      "twitter": ""
+    },
+    "industry": "Research & Innovation",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Anusha V",
+    "title": "Founder and CEO",
+    "organization": "Narchuvai Foods",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077018/foods_ulhkg5.jpg",
+    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJ_NvjeE5j2Mn5FI7naChO_x3b1ugT_1tLA&s",
+    "about": "Anusha V is the Founder and CEO of Narchuvai Foods, a brand dedicated to offering authentic, healthy, and traditional food products. She focuses on bringing back native flavors with a modern approach, ensuring quality, taste, and nutrition in every product. Her entrepreneurial journey reflects a passion for food innovation and sustainable business practices in the food industry.",
+    "expertise": [
+      "Digital Marketing",
+      "E-Commerce",
+      "International Team Coordination"
+    ],
+    "achievements": [
+      "Founded Narchuvai Foods with a mission to preserve and promote traditional flavors",
+      "Developed a range of healthy and authentic food products catering to modern consumers",
+      "Built a brand identity centered around trust, quality, and innovation",
+      "Established Narchuvai Foods as a growing name in the healthy food industry"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/anusha-v-715817203/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Food & Beverages",
+    "isKeynote": true,
+    "quote": "Narchuvai, a name that shows my deep love for preserving age-old culinary wisdom. I picked this name to share the richness of taste and bring people closer to our traditional flavors!"
+  },
+  {
+    "name": "Iswaryaa G P",
+    "title": "Chief Content & Growth Strategist | Content Creator",
+    "organization": "TownScholar",
+    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTacc-FO7lIo-UGiNVvayGRNTA9G-DR36Og&s",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755583881/is_htfihc.jpg",
+    "about": "Iswaryaa G P is the Chief Content & Growth Strategist at TownScholar. With expertise in content creation, brand storytelling, and growth strategies, she focuses on developing impactful content that drives brand engagement, community growth, and thought leadership in the digital space.",
+    "expertise": [
+      "Growth Strategy",
+      "Delegation & Team Management",
+      "Content Creation (YouTube, Scriptwriting)",
+      "Content Marketing (Instagram, Audience Building)",
+      "Personal Development & Career Guidance"
+    ],
+    "achievements": [
+      "Spearheaded strategic growth initiatives at TownScholar, resulting in improved user engagement and platform visibility.",
+      "Created high-impact content for digital platforms that increased audience retention and brand recall.",
+      "Collaborated with cross-functional teams to align content initiatives with overall business goals.",
+      "Recognized for thought leadership in brand storytelling and innovative approaches to content-driven growth."
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/iswaryaagp/?originalSubdomain=in",
+      "wikipedia": ""
+    },
+    "industry": "Events & Media",
+    "isKeynote": false,
+    "quote": "The skills that got you here might not be the ones that take you further."
+  },
+  {
+    "name": "Yuvarani Balakrishnan",
+    "title": "Chief Executive Officer",
+    "organization": "Dailikart Soft Tech",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFFlqCjWVVqZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1645258809158?e=1758153600&v=beta&t=tYGVyQwINQjaxzjGhSoIGV5N-IszhKg4ETVc_y4-7tM",
+    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5616AQFQNo4ruoCqWw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1693465807377?e=1758153600&v=beta&t=FLe1Tbqp_UicYmSHgf5TksgR3ms42X4fD6vLGu3IUD0",
+    "about": "Yuvarani Balakrishnan is the Chief Executive Officer of Dailikart Soft Tech. With a strong background in technology and management, she focuses on driving digital transformation, business growth, and innovative solutions in the IT services sector.",
+    "expertise": [
+      "Business Strategy & Leadership",
+      "Digital Transformation",
+      "IT Services & Solutions",
+      "Team Building & Management"
+    ],
+    "achievements": [
+      "Founded and scaled Dailikart Soft Tech into a growing technology services company",
+      "Led multiple successful digital transformation projects for clients",
+      "Recognized for leadership in combining technology with business growth",
+      "Contributed to creating sustainable IT-based solutions for enterprises"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/yuvarani-balakrishnan-16578b28/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Business & Strategy",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Sreeja Mohan",
+    "title": "Founder and CEO",
+    "organization": "My Peeli",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEVfVls75tuqA/profile-displayphoto-shrink_800_800/B4DZbPHZTbG8Ag-/0/1747231545210?e=1758153600&v=beta&t=DzqrDMrssuJuZ5NGUkZRG4lWl_F6kASKXsHqWEkGM58",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755340233/mypeeli_kjznju.jpg",
+    "about": "Sreeja Mohan is the Founder and CEO of My Peeli, a brand dedicated to promoting sustainable and eco-friendly products. With a passion for innovation and conscious consumerism, she leads the company in creating solutions that blend sustainability, design, and everyday utility.",
+    "expertise": [
+      "Digital Content Specialist",
+      "Digital Content Coach",
+      "Sustainable Product Development",
+      "Eco-friendly Business Models",
+      "Brand Building & Strategy"
+    ],
+    "achievements": [
+      "Founded My Peeli to promote eco-conscious and sustainable living",
+      "Introduced innovative products designed with a focus on environmental responsibility",
+      "Recognized as a leader driving eco-friendly initiatives in consumer goods",
+      "Built a growing brand that aligns business with sustainability goals"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/sreeja-mohan-376532129/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "EdTech",
+    "isKeynote": false,
+    "quote": "Creativity is not just an art—it’s a strategy. At My Peeli, we turn stories into experiences that outlive campaigns."
+  },
+  {
+    "name": "Vaishnavi Rajalakshmi S",
+    "title": "CEO & Managing Director",
+    "organization": "The Gaia Sustainable Solutions Pvt Ltd & Zorg Corp Business consultation Pvt Ltd",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQFf3KJ1sBn-iw/profile-displayphoto-shrink_400_400/B4DZbjSo2NH8Ag-/0/1747570038720?e=1758758400&v=beta&t=uLiKRh0H5vtWebLro-4gU4rK20Oitj-C4naSdShLqa0",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755342991/vis2_wkqihb.jpg",
+    "about": "Vaishnavi Rajalakshmi S is the CEO & Managing Director of The Gaia Sustainable Solutions Pvt Ltd and Zorg Corp Business Consultation Pvt Ltd. With a strong commitment to sustainability and business innovation, she leads initiatives that promote eco-friendly solutions, sustainable business practices, and strategic consulting to help organizations thrive responsibly.",
+    "expertise": [
+      "Executive Management",
+      "Entrepreneurial Organizations",
+      "Corporate Strategy & Consulting",
+      "Leadership & Business Development",
+      "Sustainable Business Practices"
+    ],
+    "achievements": [
+      "Founded and scaled The Gaia Sustainable Solutions Pvt Ltd with a focus on eco-friendly initiatives",
+      "Established Zorg Corp Business Consultation Pvt Ltd to provide strategic guidance for business growth",
+      "Promoted sustainability-driven innovation in corporate and entrepreneurial ecosystems",
+      "Empowered startups and enterprises with consultation on growth and sustainability models"
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/vaishnavirajalaksmi/"
+    },
+    "industry": "Business & Strategy",
+    "isKeynote": true,
+    "quote": "Remember childrens do learn. but they copy us."
+  },
+  {
+    "name": "Kasiraja Thangapandian",
+    "title": "Global Director, Software Engineering",
+    "organization": "Visteon Corporation",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFgdcqcveycSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1643039372710?e=1758153600&v=beta&t=eUyJ8q8ahF9f90PP96x6k3DEHZYwh0fU9s3zGF_XYxs",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755335624/vis_ndjfip.jpg",
+    "about": "Kasiraja Thangapandian serves as the Global Director of Engineering IT Software at Visteon Corporation. With a proven track record in engineering leadership, he specializes in developing scalable software solutions, driving global IT initiatives, and leading high-performance teams to deliver next-generation automotive technology solutions.",
+    "expertise": [
+      "Machine Learning - Gen AI",
+      "Digital Transformation",
+      "Automotive Software Development",
+      "Global IT Operations"
+    ],
+    "achievements": [
+      "Led global engineering IT software initiatives across multiple regions",
+      "Played a pivotal role in advancing digital transformation strategies within Visteon",
+      "Managed large-scale engineering IT operations with global teams",
+      "Recognized for leadership in building scalable and efficient IT systems"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/kasiraja-thangapandian-2659671b/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Technology & Engineering",
+    "isKeynote": false,
+    "quote": "Driving engineering excellence through automated, efficient, and reliable software delivery."
+  },
+  {
     "name": "K. T. Srinivasa Raja",
     "title": "Managing Director",
     "organization": "Adyar Ananda Bhavan (A2B)",
@@ -84,6 +648,40 @@
     "industry": "Food & Beverages",
     "isKeynote": false,
     "quote": "From humble beginnings to a global brand, it’s about preserving tradition while embracing innovation."
+  },
+  {
+    "name": "Prof. Krishnan Balasubramanian",
+    "title": "Institute Professor & Professor-in-Charge, GDC",
+    "organization": "Indian Institute of Technology Madras",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856385/image_lpacvg.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755928036/KrishnanBalasubramanian-Detail_bdmntz.png",
+    "about": "Prof. Krishnan Balasubramanian is an eminent mechanical engineering scholar and innovation leader at IIT Madras. With a Ph.D. from Drexel University and extensive prior experience at Mississippi State University, he has served as head of the Centre for Nondestructive Evaluation since its inception in 2001 and currently leads the Gopalakrishnan-Deshpande Centre for Innovation & Entrepreneurship (GDC). A distinguished researcher in ultrasonics, non-destructive evaluation, structural health monitoring, and materials characterization, Prof. Balasubramanian has authored hundreds of publications and guided numerous graduate scholars. His leadership extends to mentoring deep-tech startups, fostering startup incubation, and serving on editorial boards of prominent NDE journals.",
+    "expertise": [
+      "Non-Destructive Evaluation & Structural Health Monitoring",
+      "Ultrasonics, Acoustics & Wave Propagation",
+      "Materials Characterization & Micro/Nano Imaging",
+      "Innovation & Deep-Tech Commercialisation",
+      "Academic Leadership & Research Mentorship",
+      "Startup Incubation & Technology Transfer"
+    ],
+    "achievements": [
+      "Founder & Head – Centre for Nondestructive Evaluation (CNDE), IIT Madras (since 2001)",
+      "Professor-in-Charge – Gopalakrishnan-Deshpande Centre for Innovation & Entrepreneurship (GDC)",
+      "Over 250 technical publications; hundreds of MS & PhD mentees",
+      "Awards include Roy Sharpe Prize, Abdul Kalam Technology Innovation Fellowship, and Lifetime Achievement Award from IIT Madras",
+      "Incubated ~10 startups employing 1,100+ professionals across 12 countries",
+      "Former Dean of Industrial Consulting & Sponsored Research (2012-18)"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/krishnan-balasubramanian-534145157/",
+      "twitter": "",
+      "iit_profile": "https://mech.iitm.ac.in/profile.php?fname=balas",
+      "gdc_profile": "https://gdciitm.org/teams/prof-krishnan-balasubramanian/"
+    },
+    "industry": "Academia, Research & Deep-Tech Innovation",
+    "isKeynote": false,
+    "quote": ""
   },
   {
     "name": "Dr. Bijay Kumar Sahu",
@@ -120,7 +718,7 @@
     "title": "Co founder & CMD",
     "organization": "Naturals Salon & Spa",
     "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755853138/kumaravel_c7to6h.jpg",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755853138/kumaravel_c7to6h.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755922638/1732852570609_jezwz5.jpg",
     "about": "Mr. C K Kumaravel stands as a transformative figure in India's beauty and wellness industry, having co-founded Naturals Salon & Spa in 2000 with his wife K Veena. Starting from a single salon in Chennai with an investment of ₹30 lakhs, he has built India's No.1 salon chain with over 750 outlets across the country and internationally in UAE, Sri Lanka, and Singapore. His vision extends beyond business success to women empowerment, having created over 500 financially independent women entrepreneurs and generated 15,000+ direct jobs. Kumaravel's journey from facing a ₹5 crore debt from his previous venture to building a ₹270 crore turnover company exemplifies resilience and entrepreneurial spirit. His mission is to make Naturals the world's No.1 salon chain by 2029 while creating 1,000 women entrepreneurs, 3,000 salons globally, and 50,000 jobs.",
     "expertise": [
       "Franchise Development & Management",
@@ -147,35 +745,6 @@
     "industry": "Beauty & Wellness",
     "isKeynote": true,
     "quote": "The future belongs to those who believe in the beauty of their own dreams"
-  },
-  {
-    "name": "Arun Prakash",
-    "title": "Founder & CEO",
-    "organization": "GUVI Geek Network",
-    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/fl_preserve_transparency/v1754885255/Screenshot_2025-08-11_093510_tmsbh5.jpg?_s=public-apps",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755664265/guvi_pwnjyo.png",
-    "about": "Arun Prakash, widely known as 'T-Man' for his deep passion for technology, is the Founder & CEO of GUVI Geek Network. With over 20 years of experience in top tech companies like Honeywell, PayPal, Kalido, and Symantec, he has been instrumental in democratizing tech skills globally through GUVI. Under his leadership, GUVI evolved over a decade of dedicated work, inspired by the late co-founder Ms. Sridevi Arunprakash, to become a leading startup in the EdTech industry.",
-    "expertise": [
-      "EdTech Leadership",
-      "Technology Innovation",
-      "Vernacular Learning",
-      "Community Building"
-    ],
-    "achievements": [
-      "Led GUVI to achieve two Guinness World Records for AI coding lessons and online programming participation",
-      "Invited to Oxford University in 2024 to speak on 'How Vernacular learning is transforming Technology learning'",
-      "Recognized as a Youth Icon at the IYONS International Summit",
-      "Awarded Leading Social Entrepreneur Award by Action for India in 2019",
-      "GUVI awarded 'Most Trusted Vernacular EduTech Award' by ZEE Digital"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/arunprakashm/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Education & Learning",
-    "isKeynote": true,
-    "quote": "Technology should be accessible to everyone, regardless of language or background."
   },
   {
     "name": "T. Sathish Kumar",
@@ -206,152 +775,11 @@
     "quote": "From a humble beginning to a dairy giant — it’s about innovation, sustainability, and a vision beyond milk."
   },
   {
-    "name": "Poongumaran Panneerselvam",
-    "title": "Managing Director",
-    "organization": "TICEL Biopark Ltd",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQH7VfL9_f_YAQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680176282914?e=1758153600&v=beta&t=YP2Rs75C5ABs8yaR_Dr_cQfkmvPsuLotzoQl1V-aU-o",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755337579/Screenshot_2025-08-16_151500_yr6auf.png",
-    "about": "Poongumaran Panneerselvam is the Managing Director of TICEL Biopark Ltd, Chennai. With extensive experience in leadership and industrial development, he focuses on fostering biotechnology innovation and creating a strong ecosystem for research, startups, and enterprises in the life sciences sector.",
-    "expertise": [
-      "Intercultural Communication",
-      "Talent Management",
-      "Innovation Ecosystem Building",
-      "Leadership & Administration"
-    ],
-    "achievements": [
-      "Leading TICEL Biopark’s initiatives in biotechnology and life sciences",
-      "Played a key role in fostering an ecosystem for biotech startups and research institutions",
-      "Contributed to strengthening collaboration between industry, academia, and government",
-      "Directed infrastructure development projects supporting biotech innovation"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/poongumaran-panneerselvam-5a21214b/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Innovation Ecosystem",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Dinesh K Sundaravelu",
-    "title": "CEO",
-    "organization": "TN Research Parks Foundation (TIDCO)",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D4E03AQE8dLpmiz_7SQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729753102557?e=1758153600&v=beta&t=8tw1IzZeBxwnBitwL9q0UT4dQLvtWyjb2qRAO9PhhZk",
-    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQF0u0cWJv6QqA/feedshare-shrink_2048_1536/B56ZexmFOSHUAo-/0/1751031240064?e=1758153600&v=beta&t=tIZnBZ96yi7c4y_qPj4bMJwY-1eYwFUl_0__VXBt-5A",
-    "about": "Dinesh K Sundaravelu is the CEO of TN Research Parks Foundation (TIDCO). With a strong background in public service innovation and startup ecosystem development, he has played key roles in enabling research-driven growth and fostering entrepreneurship. As a Chevening CRISP Fellow 2025-26 and former leader at StartupTN, he brings global perspectives and strategic expertise to advancing research parks and innovation clusters in Tamil Nadu.",
-    "expertise": [
-      "Emerging Technologies in Governance ",
-      "Startup Ecosystem",
-      "Public Service Innovation",
-      "Leadership & Strategic Growth"
-    ],
-    "achievements": [
-      "Appointed CEO of TN Research Parks Foundation under TIDCO, driving innovation and research-led growth",
-      "Selected as Chevening CRISP Fellow 2025-26, representing India on a global leadership platform",
-      "Contributed significantly to building and strengthening Tamil Nadu’s startup ecosystem during his tenure at StartupTN",
-      "Recognized for fostering industry-academia collaboration to support entrepreneurs and innovators",
-      "Driving initiatives to position Tamil Nadu as a hub for research, innovation, and technology-based ventures"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/dinesh-sundaravelu-641b501a/",
-      "twitter": ""
-    },
-    "industry": "Research & Innovation",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Kannan Hari",
-    "title": "Founder",
-    "organization": "Palm Era Foods",
-    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755583528/asdasd_vz5eyb.jpg",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755075301/lampera_z2sp0y.jpg",
-    "about": "Kannan Hari is the Co-founder and Founder of Palm Era Foods, a company specializing in palm-based natural sweeteners and sustainable food products. With a focus on replacing refined sugar with healthier alternatives, he is driving innovation in the food sector while promoting sustainability and wellness for modern consumers.",
-    "expertise": [
-      "Social Entrepreneur",
-      "Sustainable Food Manufacturing",
-      "Consumer Health & Wellness Solutions",
-      "Entrepreneurship in F&B Sector"
-    ],
-    "achievements": [
-      "Developed palm-based natural sweetener products as a healthy sugar alternative",
-      "Introduced sustainable production methods in food processing",
-      "Built Palm Era Foods into a recognized brand in the health & wellness segment",
-      "Promoted awareness about sustainable and natural food choices through industry talks"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/kannan-hari-158b2757",
-      "twitter": ""
-    },
-    "industry": "Food & Beverages",
-    "isKeynote": true,
-    "quote": "The country's economy grows only when villages grow."
-  },
-  {
-    "name": "Kalai Kathiravan",
-    "title": "Managing Partner | Founder, Director & CEO",
-    "organization": "Lemurian Bazaar | Lemurian Ventures Private Limited",
-    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755330176/Screenshot_2025-08-16_131207_tsnt8e.png",
-    "about": "Kalai Kathiravan is the Managing Partner, Founder, Director, and CEO of Lemurian Bazaar and Lemurian Ventures Private Limited. With a strong vision for innovation and entrepreneurship, he focuses on building sustainable business ecosystems and creating growth opportunities across multiple sectors. His leadership emphasizes modern business strategies, cultural preservation, and global market expansion.",
-    "expertise": [
-      "Venture Capital & Investments",
-      "E-commerce & Retail Innovation",
-      "Entrepreneurship & Business Strategy",
-      "Global Market Expansion"
-    ],
-    "achievements": [
-      "Founded Lemurian Bazaar, promoting cultural and traditional products in modern markets",
-      "Established Lemurian Ventures Pvt Ltd to support and scale innovative business ideas",
-      "Created opportunities for entrepreneurs and artisans through e-commerce platforms",
-      "Actively contributes to business networks and entrepreneurial ecosystem development"
-    ],
-    "links": {
-      "wikipedia": "",
-      "facebook": "https://www.facebook.com/kalairx",
-      "twitter": ""
-    },
-    "industry": "Food & Beverages",
-    "isKeynote": false,
-    "quote": "From a small village to national markets, my mission is to prove that traditional products can thrive in the modern economy without losing their authenticity."
-  },
-  {
-    "name": "Santhos Premraj",
-    "title": "Co-Founder & Head of Product",
-    "organization": "Ticket9",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755075995/ticket9_orgete.jpg",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQGZZcRLcwId-g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721149310630?e=1758153600&v=beta&t=86y32-_3Az42DYOjGSEfMTU7kqjEL3weGDQOxnloBkM",
-    "about": "Santhos Premraj is the Co-Founder and Head of Product at Ticket9, a platform dedicated to simplifying event ticketing and audience engagement. With a strong focus on product design, technology integration, and customer experience, he plays a key role in building innovative solutions for event organizers and participants. His leadership blends entrepreneurial drive with a passion for user-centric products.",
-    "expertise": [
-      "Business Development",
-      "Event Technology Solutions",
-      "Startup Growth & Innovation",
-      "Team Leadership & Collaboration"
-    ],
-    "achievements": [
-      "Co-founded Ticket9, revolutionizing event ticketing and engagement solutions",
-      "Contributed to Ticket9’s recognition in the startup ecosystem",
-      "Played a vital role in expanding Ticket9’s reach across multiple events and industries",
-      "Known for integrating technology-driven solutions to simplify audience engagement"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/santhospremraj/",
-      "facebook": ""
-    },
-    "industry": "Events & Media",
-    "isKeynote": false,
-    "quote": "Building a product with real scenes in SaaS is no small feat; it underscores the complexity and depth of the process!"
-  },
-  {
     "name": "Mr. Prasad Menon",
     "title": "President",
     "organization": "Indian STEPs and Business Incubators Association (ISBA), Mumbai Chapter",
     "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856551/image_7_canuzs.jpg",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856551/image_7_canuzs.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755923022/maxresdefault_grvibh.jpg",
     "about": "Mr. Prasad Menon is a seasoned leader in India's startup incubation ecosystem, currently serving as President of ISBA (Indian STEPs and Business Incubators Association), Mumbai Chapter. As CEO of CIBA (Centre for Incubation and Business Acceleration), he brings over two decades of experience in scaling incubation programs, empowering entrepreneurs, and driving innovation. His leadership at ISBA catalyzes collaboration across STEPs and incubators nationwide, amplifying impact and fostering startup growth in cutting-edge technology domains.",
     "expertise": [
       "Startup Incubation & Acceleration",
@@ -378,234 +806,6 @@
     "industry": "Startup Ecosystem & Business Incubation",
     "isKeynote": false,
     "quote": ""
-  },
-  {
-    "name": "Mr. Vinoth Rajendran",
-    "title": "Chief Executive Officer (CEO)",
-    "organization": "TCE Technology Business Incubator (TCE TBI), Thiagarajar College of Engineering",
-    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856744/image_12_od7jen.jpg",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856744/image_12_od7jen.jpg",
-    "about": "Mr. Vinoth Rajendran is the Chief Executive Officer of the TCE Technology Business Incubator (TCE TBI) at Thiagarajar College of Engineering. As an innovation enabler and ecosystem builder, he plays a pivotal role in nurturing and scaling early-stage startups, guiding them through ideation, incubation, and commercialisation. Known for his commitment to fostering entrepreneurial growth within academia, he frequently participates in seminars and institutions, empowering students and startups through strategic mentorship and incubation support.",
-    "expertise": [
-      "Startup Incubation & Acceleration",
-      "Innovation Ecosystem Development",
-      "Entrepreneurial Mentoring",
-      "Academic-Industry Collaboration",
-      "Strategic Program Leadership"
-    ],
-    "achievements": [
-      "Appointed CEO of TCE Technology Business Incubator (TCE TBI)",
-      "Active speaker at academic events nurturing startups and innovation",
-      "Key contributor to ecosystem-building initiatives at Thiagarajar College of Engineering"
-    ],
-    "links": {
-      "linkedin": "https://www.linkedin.com/in/vinothrajendranip/"
-    },
-    "industry": "Startup Incubation & Higher Education",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Prof. Krishnan Balasubramanian",
-    "title": "Institute Professor & Professor-in-Charge, GDC",
-    "organization": "Indian Institute of Technology Madras",
-    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856385/image_lpacvg.jpg",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856385/image_lpacvg.jpg",
-    "about": "Prof. Krishnan Balasubramanian is an eminent mechanical engineering scholar and innovation leader at IIT Madras. With a Ph.D. from Drexel University and extensive prior experience at Mississippi State University, he has served as head of the Centre for Nondestructive Evaluation since its inception in 2001 and currently leads the Gopalakrishnan-Deshpande Centre for Innovation & Entrepreneurship (GDC). A distinguished researcher in ultrasonics, non-destructive evaluation, structural health monitoring, and materials characterization, Prof. Balasubramanian has authored hundreds of publications and guided numerous graduate scholars. His leadership extends to mentoring deep-tech startups, fostering startup incubation, and serving on editorial boards of prominent NDE journals.",
-    "expertise": [
-      "Non-Destructive Evaluation & Structural Health Monitoring",
-      "Ultrasonics, Acoustics & Wave Propagation",
-      "Materials Characterization & Micro/Nano Imaging",
-      "Innovation & Deep-Tech Commercialisation",
-      "Academic Leadership & Research Mentorship",
-      "Startup Incubation & Technology Transfer"
-    ],
-    "achievements": [
-      "Founder & Head – Centre for Nondestructive Evaluation (CNDE), IIT Madras (since 2001)",
-      "Professor-in-Charge – Gopalakrishnan-Deshpande Centre for Innovation & Entrepreneurship (GDC)",
-      "Over 250 technical publications; hundreds of MS & PhD mentees",
-      "Awards include Roy Sharpe Prize, Abdul Kalam Technology Innovation Fellowship, and Lifetime Achievement Award from IIT Madras",
-      "Incubated ~10 startups employing 1,100+ professionals across 12 countries",
-      "Former Dean of Industrial Consulting & Sponsored Research (2012-18)"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/krishnan-balasubramanian-534145157/",
-      "twitter": "",
-      "iit_profile": "https://mech.iitm.ac.in/profile.php?fname=balas",
-      "gdc_profile": "https://gdciitm.org/teams/prof-krishnan-balasubramanian/"
-    },
-    "industry": "Academia, Research & Deep-Tech Innovation",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Vinoth Kumar Chandran",
-    "title": "Director",
-    "organization": "Bipolar Factory Private Limited",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755340042/bipolar_bncrck.jpg",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEfE0lbqoqqIA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669297488292?e=1758153600&v=beta&t=WLe4_bDkWLKrFWikNmLKSf8UtyNUoIfLwYV_m6C2M1w",
-    "about": "Vinoth Kumar Chandran is the Director of Bipolar Factory Private Limited, a creative and technology-driven company specializing in innovative digital solutions. He focuses on bridging the gap between creativity and business by driving impactful projects that combine design, technology, and strategy. With his leadership, the company has positioned itself as a dynamic player in the digital and creative industries.",
-    "expertise": [
-      "Creative Direction",
-      "Business Strategy & Leadership",
-      "Digital Transformation",
-      "Innovation & Product Development"
-    ],
-    "achievements": [
-      "Directed growth initiatives that strengthened Bipolar Factory’s position in the market",
-      "Led innovative projects combining technology and creativity for diverse industries",
-      "Introduced new-age solutions driving business impact and brand visibility",
-      "Recognized for steering Bipolar Factory towards sustainable and scalable growth"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/vinothkumar-chandran-15768a25/",
-      "twitter": ""
-    },
-    "industry": "Events & Media",
-    "isKeynote": false,
-    "quote": "The true future of healthcare lies at the intersection of compassion and cutting-edge technology."
-  },
-  {
-    "name": "Anusha V",
-    "title": "Founder and CEO",
-    "organization": "Narchuvai Foods",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077018/foods_ulhkg5.jpg",
-    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJ_NvjeE5j2Mn5FI7naChO_x3b1ugT_1tLA&s",
-    "about": "Anusha V is the Founder and CEO of Narchuvai Foods, a brand dedicated to offering authentic, healthy, and traditional food products. She focuses on bringing back native flavors with a modern approach, ensuring quality, taste, and nutrition in every product. Her entrepreneurial journey reflects a passion for food innovation and sustainable business practices in the food industry.",
-    "expertise": [
-      "Digital Marketing",
-      "E-Commerce",
-      "International Team Coordination"
-    ],
-    "achievements": [
-      "Founded Narchuvai Foods with a mission to preserve and promote traditional flavors",
-      "Developed a range of healthy and authentic food products catering to modern consumers",
-      "Built a brand identity centered around trust, quality, and innovation",
-      "Established Narchuvai Foods as a growing name in the healthy food industry"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/anusha-v-715817203/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Food & Beverages",
-    "isKeynote": true,
-    "quote": "Narchuvai, a name that shows my deep love for preserving age-old culinary wisdom. I picked this name to share the richness of taste and bring people closer to our traditional flavors!"
-  },
-  {
-    "name": "Umasankaran P",
-    "title": "Founder & CEO",
-    "organization": "Startup News Tamil & Free Famous Food",
-    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQqxOigPZqs-fQpoHei1edNoaFkHhNYqkXA&s",
-    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQEYyajV-i5Rpg/feedshare-shrink_2048_1536/B56ZWJ01BrHsAw-/0/1741774082950?e=1758153600&v=beta&t=_u4j2zrDCgqeTjJGQX8FkBGbH8vbaASBPfpJDXRN5Zw",
-    "about": "Umasankaran P is the Founder and CEO of Startup News Tamil and Free Famous Food. With a strong presence in both media and food ventures, he focuses on building impactful platforms that empower entrepreneurs and deliver authentic culinary experiences. His dual leadership reflects innovation, communication, and a vision for community-driven growth.",
-    "expertise": [
-      "Business Strategist",
-      "Branding & Marketing",
-      "Startup Mentor"
-    ],
-    "achievements": [
-      "Founded Startup News Tamil, a platform dedicated to covering and promoting startup stories in the Tamil ecosystem",
-      "Established Free Famous Food to deliver authentic and popular food experiences",
-      "Created a bridge between entrepreneurship and media through impactful storytelling",
-      "Contributed to promoting local businesses and emerging startups",
-      "Recognized as an entrepreneur balancing both digital media and F&B ventures"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/umasankaran2011/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Food & Beverages",
-    "isKeynote": false,
-    "quote": "Stories have the power to inspire change — Startup News Tamil is built to tell those stories in the language of the people."
-  },
-  {
-    "name": "Sreeja Mohan",
-    "title": "Founder and CEO",
-    "organization": "My Peeli",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQEVfVls75tuqA/profile-displayphoto-shrink_800_800/B4DZbPHZTbG8Ag-/0/1747231545210?e=1758153600&v=beta&t=DzqrDMrssuJuZ5NGUkZRG4lWl_F6kASKXsHqWEkGM58",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755340233/mypeeli_kjznju.jpg",
-    "about": "Sreeja Mohan is the Founder and CEO of My Peeli, a brand dedicated to promoting sustainable and eco-friendly products. With a passion for innovation and conscious consumerism, she leads the company in creating solutions that blend sustainability, design, and everyday utility.",
-    "expertise": [
-      "Digital Content Specialist",
-      "Digital Content Coach",
-      "Sustainable Product Development",
-      "Eco-friendly Business Models",
-      "Brand Building & Strategy"
-    ],
-    "achievements": [
-      "Founded My Peeli to promote eco-conscious and sustainable living",
-      "Introduced innovative products designed with a focus on environmental responsibility",
-      "Recognized as a leader driving eco-friendly initiatives in consumer goods",
-      "Built a growing brand that aligns business with sustainability goals"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/sreeja-mohan-376532129/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "EdTech",
-    "isKeynote": false,
-    "quote": "Creativity is not just an art—it’s a strategy. At My Peeli, we turn stories into experiences that outlive campaigns."
-  },
-  {
-    "name": "Dhivya Bharathi",
-    "title": "Founder",
-    "organization": "Uzhamagal",
-    "avatarUrl": "https://www.uzhamagal.in/cdn/shop/files/1995C450-DE77-47AE-8727-CA3F18A05C8F.jpg?v=1752417366&width=533",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077973/uzhamagal_apv89n.jpg",
-    "about": "Dhivya Bharathi is the Founder of Uzhamagal, a venture focused on promoting traditional, cultural, and sustainable practices through innovative solutions. She is passionate about empowering communities and creating awareness about eco-conscious living and heritage preservation.",
-    "expertise": [
-      "Sustainable Entrepreneurship",
-      "Cultural Heritage Promotion",
-      "Community Engagement",
-      "Business Development",
-      "Women Leadership"
-    ],
-    "achievements": [
-      "Founded Uzhamagal to preserve and promote cultural and sustainable practices",
-      "Developed initiatives to support eco-friendly and traditional lifestyles",
-      "Built a platform that bridges heritage values with modern entrepreneurial approaches",
-      "Inspired awareness about sustainable living through innovative ventures"
-    ],
-    "links": {
-      "wikipedia": "https://www.instagram.com/dhivyah._/",
-      "twitter": ""
-    },
-    "industry": "Fashion",
-    "isKeynote": true,
-    "quote": "I grew up with the ideology to break it and overcome it."
-  },
-  {
-    "name": "Iswaryaa G P",
-    "title": "Chief Content & Growth Strategist | Content Creator",
-    "organization": "TownScholar",
-    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTacc-FO7lIo-UGiNVvayGRNTA9G-DR36Og&s",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755583881/is_htfihc.jpg",
-    "about": "Iswaryaa G P is the Chief Content & Growth Strategist at TownScholar. With expertise in content creation, brand storytelling, and growth strategies, she focuses on developing impactful content that drives brand engagement, community growth, and thought leadership in the digital space.",
-    "expertise": [
-      "Growth Strategy",
-      "Delegation & Team Management",
-      "Content Creation (YouTube, Scriptwriting)",
-      "Content Marketing (Instagram, Audience Building)",
-      "Personal Development & Career Guidance"
-    ],
-    "achievements": [
-      "Spearheaded strategic growth initiatives at TownScholar, resulting in improved user engagement and platform visibility.",
-      "Created high-impact content for digital platforms that increased audience retention and brand recall.",
-      "Collaborated with cross-functional teams to align content initiatives with overall business goals.",
-      "Recognized for thought leadership in brand storytelling and innovative approaches to content-driven growth."
-    ],
-    "links": {
-      "linkedin": "https://www.linkedin.com/in/iswaryaagp/?originalSubdomain=in",
-      "wikipedia": ""
-    },
-    "industry": "Events & Media",
-    "isKeynote": false,
-    "quote": "The skills that got you here might not be the ones that take you further."
   },
   {
     "name": "Sezhian Bharathi",
@@ -635,34 +835,6 @@
     "industry": "Corporate Development",
     "isKeynote": false,
     "quote": ""
-  },
-
-  {
-    "name": "Vaishnavi Rajalakshmi S",
-    "title": "CEO & Managing Director",
-    "organization": "The Gaia Sustainable Solutions Pvt Ltd & Zorg Corp Business consultation Pvt Ltd",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQFf3KJ1sBn-iw/profile-displayphoto-shrink_400_400/B4DZbjSo2NH8Ag-/0/1747570038720?e=1758758400&v=beta&t=uLiKRh0H5vtWebLro-4gU4rK20Oitj-C4naSdShLqa0",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755342991/vis2_wkqihb.jpg",
-    "about": "Vaishnavi Rajalakshmi S is the CEO & Managing Director of The Gaia Sustainable Solutions Pvt Ltd and Zorg Corp Business Consultation Pvt Ltd. With a strong commitment to sustainability and business innovation, she leads initiatives that promote eco-friendly solutions, sustainable business practices, and strategic consulting to help organizations thrive responsibly.",
-    "expertise": [
-      "Executive Management",
-      "Entrepreneurial Organizations",
-      "Corporate Strategy & Consulting",
-      "Leadership & Business Development",
-      "Sustainable Business Practices"
-    ],
-    "achievements": [
-      "Founded and scaled The Gaia Sustainable Solutions Pvt Ltd with a focus on eco-friendly initiatives",
-      "Established Zorg Corp Business Consultation Pvt Ltd to provide strategic guidance for business growth",
-      "Promoted sustainability-driven innovation in corporate and entrepreneurial ecosystems",
-      "Empowered startups and enterprises with consultation on growth and sustainability models"
-    ],
-    "links": {
-      "linkedin": "https://www.linkedin.com/in/vaishnavirajalaksmi/"
-    },
-    "industry": "Business & Strategy",
-    "isKeynote": true,
-    "quote": "Remember childrens do learn. but they copy us."
   },
   {
     "name": "Deepak Rajmohan",
@@ -714,144 +886,5 @@
     "industry": "Technology & Engineering",
     "isKeynote": false,
     "quote": "Accelerating innovation means bridging the gap between ideas and impact."
-  },
-  {
-    "name": "K. Suresh Kumar",
-    "title": "Executive Director",
-    "organization": "PSG-STEP (PSG-Science & Technology Entrepreneurial Park)",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQFin96S9mv73Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718296272198?e=1758153600&v=beta&t=ynG8Rb7Fw5v7JIKNCtWZGuQT0EAhhlC1wQKjMwAalLA",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755333965/psgstep_zusgwl.jpg",
-    "about": "K. Suresh Kumar is the Executive Director of PSG-STEP (PSG-Science & Technology Entrepreneurial Park). He is a strong advocate of innovation, entrepreneurship, and technology-driven development, playing a vital role in nurturing startups and fostering entrepreneurial ecosystems in Tamil Nadu. His leadership has significantly contributed to enabling students, innovators, and entrepreneurs to convert ideas into successful ventures.",
-    "expertise": [
-      "Business Strategy",
-      "Entrepreneurship Development",
-      "Startup Incubation & Innovation Management",
-      "Technology Commercialization"
-    ],
-    "achievements": [
-      "Led PSG-STEP in supporting and incubating numerous startups across technology domains",
-      "Contributed to creating a sustainable entrepreneurial ecosystem in Tamil Nadu",
-      "Guided innovators and students to transform their ideas into scalable ventures",
-      "Recognized for promoting innovation and entrepreneurship at academic and industrial levels",
-      "Actively involved in mentoring, funding access, and networking opportunities for startups"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/k-suresh-kumar-0b3ab29/",
-      "twitter": ""
-    },
-    "industry": "Startups & Growth",
-    "isKeynote": false,
-    "quote": "Empowering startups through mentorship, infrastructure, and innovation."
-  },
-  {
-    "name": "Kasiraja Thangapandian",
-    "title": "Global Director, Software Engineering",
-    "organization": "Visteon Corporation",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFgdcqcveycSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1643039372710?e=1758153600&v=beta&t=eUyJ8q8ahF9f90PP96x6k3DEHZYwh0fU9s3zGF_XYxs",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755335624/vis_ndjfip.jpg",
-    "about": "Kasiraja Thangapandian serves as the Global Director of Engineering IT Software at Visteon Corporation. With a proven track record in engineering leadership, he specializes in developing scalable software solutions, driving global IT initiatives, and leading high-performance teams to deliver next-generation automotive technology solutions.",
-    "expertise": [
-      "Machine Learning - Gen AI",
-      "Digital Transformation",
-      "Automotive Software Development",
-      "Global IT Operations"
-    ],
-    "achievements": [
-      "Led global engineering IT software initiatives across multiple regions",
-      "Played a pivotal role in advancing digital transformation strategies within Visteon",
-      "Managed large-scale engineering IT operations with global teams",
-      "Recognized for leadership in building scalable and efficient IT systems"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/kasiraja-thangapandian-2659671b/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Technology & Engineering",
-    "isKeynote": false,
-    "quote": "Driving engineering excellence through automated, efficient, and reliable software delivery."
-  },
-  {
-    "name": "Yuvarani Balakrishnan",
-    "title": "Chief Executive Officer",
-    "organization": "Dailikart Soft Tech",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFFlqCjWVVqZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1645258809158?e=1758153600&v=beta&t=tYGVyQwINQjaxzjGhSoIGV5N-IszhKg4ETVc_y4-7tM",
-    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5616AQFQNo4ruoCqWw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1693465807377?e=1758153600&v=beta&t=FLe1Tbqp_UicYmSHgf5TksgR3ms42X4fD6vLGu3IUD0",
-    "about": "Yuvarani Balakrishnan is the Chief Executive Officer of Dailikart Soft Tech. With a strong background in technology and management, she focuses on driving digital transformation, business growth, and innovative solutions in the IT services sector.",
-    "expertise": [
-      "Business Strategy & Leadership",
-      "Digital Transformation",
-      "IT Services & Solutions",
-      "Team Building & Management"
-    ],
-    "achievements": [
-      "Founded and scaled Dailikart Soft Tech into a growing technology services company",
-      "Led multiple successful digital transformation projects for clients",
-      "Recognized for leadership in combining technology with business growth",
-      "Contributed to creating sustainable IT-based solutions for enterprises"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/yuvarani-balakrishnan-16578b28/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Business & Strategy",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Dr. G.S. Mahalakshmi",
-    "title": "Director",
-    "organization": "Centre for Entrepreneurship Development, Anna University",
-    "avatarUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755662324/annaaa_cchwka.jpg",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755662237/anna_rmbtbn.jpg",
-    "about": "Dr. G.S. Mahalakshmi is an Associate Professor in the Department of Computer Science and Engineering (DCSE) at Anna University and serves as the Director of the Centre for Entrepreneurship Development. With a strong academic background (B.E., M.E., Ph.D.), she mentors AI/ML startups and plays a pivotal role in fostering entrepreneurial innovation within academia.",
-    "expertise": [
-      "AI StartUp Mentor",
-      "Entrepreneurship Development",
-      "Innovation Ecosystem Building"
-    ],
-    "achievements": [
-      "Serving as Director of the Centre for Entrepreneurship Development at Anna University",
-      "Associate Professor in DCSE, actively contributing to engineering education and research",
-      "Mentoring AI/ML startups through academic and innovation programs"
-    ],
-    "links": {
-      "linkedin": "https://www.linkedin.com/in/dr-mahalakshmi-g-s-86685a16b/",
-      "wikipedia": "",
-      "twitter": ""
-    },
-    "industry": "Startups & Growth",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Siranjeevi Ramdoss",
-    "title": "Chief executive officer",
-    "organization": "Pibi Info Technologies",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQEniLiL2jTdhg/profile-displayphoto-shrink_400_400/B56ZZ7QWVMGUAg-/0/1745824606385?e=1758758400&v=beta&t=hZ5S6NCEaxr4zFyfzwGLJf29PeMXvzi4ZlYxXhfGufc",
-    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5603AQEniLiL2jTdhg/profile-displayphoto-shrink_400_400/B56ZZ7QWVMGUAg-/0/1745824606385?e=1758758400&v=beta&t=hZ5S6NCEaxr4zFyfzwGLJf29PeMXvzi4ZlYxXhfGufc",
-    "about": "Siranjeevi Ramdoss is a corporate leader active across multiple ventures in technology and general business domains. He holds leadership roles such as Director and Designated Partner in companies focused on digital solutions and brand development.",
-    "expertise": [
-      "Machine Learning (AI)",
-      "Business Analytics",
-      "SaaS & Application Development",
-      "Business Leadership",
-      "Technology Operations"
-    ],
-    "achievements": [
-      "Founded and scaled PiBi Technologies as a leading AI-driven solutions provider in Tamil Nadu.",
-      "Developed a unique 90-day AI adoption framework that ensures businesses achieve ROI rapidly.",
-      "Helped multiple companies automate workflows using intelligent agents, reducing operational costs significantly."
-    ],
-    "links": {
-      "linkedin": "https://www.linkedin.com/in/siranjeevi-ramdass-5ba2a9362",
-      "wikipedia": "",
-      "twitter": ""
-    },
-    "industry": "Startups & Growth",
-    "isKeynote": false,
-    "quote": ""
   }
 ]

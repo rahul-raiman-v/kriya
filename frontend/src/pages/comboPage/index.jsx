@@ -70,7 +70,9 @@ export function ComboPage() {
                 size={24}
                 className="text-blue-500 flex-shrink-0 mt-1"
               />
-              <p className="leading-relaxed">Date: {item.date}</p>
+              <p className="leading-relaxed font-bold text-gray-800">
+                Date: {item.date}
+              </p>
             </div>
           )}
           <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
