@@ -11,7 +11,7 @@
   border-radius: 1.5rem;
 }
 
-.swiper-button-next::after,
+g.swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 14px;
   font-weight: bold;
