@@ -29,16 +29,16 @@ export const EventTimer = ({ targetDate }) => {
   }, [calculateTimeLeft, targetDate]);
   return (
     <div className="text-center ">
-      <h2 className="text-4xl md:text-5xl font-bold text-gradient leading-relaxed mb-2">
+      <h2 className="text-3xl md:text-5xl font-bold text-gradient leading-relaxed mb-2">
         Registration Ends In
       </h2>
-      <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+      <p className="md:text-xl text-lg text-slate-600 max-w-3xl md:mx-auto mx-3">
         Join us for an exciting event! The countdown has begun. Don't miss out!
       </p>
 
       {hasTimeLeft ? (
-        <div className="bg-white p-16 mt-8 rounded-lg w-fit mx-auto">
-          <div className="flex justify-center items-center space-x-2 md:space-x-4">
+        <div className="bg-white md:p-16 mt-8 rounded-lg w-fit md:mx-auto p-6 mx-6">
+          <div className="flex justify-center items-center gap-4 md:gap-4 flex-wrap">
             <TimeUnit value={timeLeft.days} label="Days" />
             <TimeUnit value={timeLeft.hours} label="Hours" />
             <TimeUnit value={timeLeft.minutes} label="Minutes" />

@@ -112,10 +112,10 @@ export const Header = () => {
               <img
                 src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755106865/tbi_c9c0ao.png"
                 alt=""
-                className="h-16 xl:scale-125"
+                className="h-16 xl:scale-125 mb-[2.5px]"
                 loading="lazy"
               />
-              <div className="h-16 flex items-center pb-2.5 ml-6">
+              <div className="h-16 flex items-center pb-[10.05px] ml-1 md:ml-6">
                 <img
                   src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755575691/IMG-20250814-WA0005_1_-removebg-preview_fuxmeh.png"
                   alt=""
@@ -128,7 +128,7 @@ export const Header = () => {
             {/* Logo with enhanced hover effect */}
 
             {/* Desktop Navigation with enhanced styling */}
-            <nav className="hidden xl:flex flex-grow justify-center items-center space-x-8">
+            <nav className="hidden xxl:flex flex-grow justify-center items-center space-x-8">
               {navLinks.map((link) => (
                 <button
                   key={link.name}
@@ -152,7 +152,7 @@ export const Header = () => {
             </nav>
 
             {/* Enhanced Registration Button for Desktop */}
-            <div className="hidden xl:flex items-center gap-x-4  ">
+            <div className="hidden xxl:flex items-center gap-x-4  ">
               <button
                 onClick={handleRegistration}
                 className="cursor-pointer bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -177,7 +177,7 @@ export const Header = () => {
             </div>
 
             {/* Mobile menu button with soft colors */}
-            <div className="xl:hidden">
+            <div className="xxl:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="cursor-pointer relative w-12 h-12 flex flex-col items-center justify-center focus:outline-none group rounded-xl hover:bg-pink-50 transition-colors duration-300"
@@ -199,7 +199,7 @@ export const Header = () => {
 
           {/* Enhanced Mobile menu with beautiful styling */}
           <div
-            className={`xl:hidden overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] rounded-3xl ${
+            className={`xxl:hidden overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] rounded-3xl ${
               isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             }`}
           >

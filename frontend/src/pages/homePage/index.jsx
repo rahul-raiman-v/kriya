@@ -476,44 +476,50 @@ export const HomePage = () => {
 
           <div className="grid md:grid-cols-2 grid-col-1 gap-10">
             {/* Contact Info Card */}
-            <div className="glass-morphism rounded-2xl p-8 shadow-xl lg:hover:scale-105 lg:transition-transform lg:duration-300 backdrop-blur-md border border-white/20">
+            <div className="glass-morphism rounded-2xl max-sm:p-6 p-8 shadow-xl lg:hover:scale-105 lg:transition-transform lg:duration-300 backdrop-blur-md border border-white/20">
               <h3 className="text-2xl max-sm:text-xl font-bold text-slate-800 mb-6 w-fit">
                 Contact Information
               </h3>
               <div className="flex flex-col gap-y-3">
                 <div className="flex items-center gap-3 w-fit">
-                  <User className="text-indigo-600" size={22} />
-                  <p className="text-slate-700 text-lg sm:text-base">
+                  <User
+                    className="text-indigo-600 max-sm:size-[18px]"
+                    size={22}
+                  />
+                  <p className="text-slate-700 text-lg sm:text-base max-sm:text-sm font-medium">
                     Surya Raj S
                   </p>
                 </div>
                 <div className="flex items-center gap-3 w-fit">
-                  <Phone className="text-indigo-600" size={22} />
+                  <Phone
+                    className="text-indigo-600 max-sm:size-[18px]"
+                    size={22}
+                  />
                   <a
                     href="tel:+918072137522"
-                    className="text-slate-700 text-lg sm:text-base hover:text-blue-600"
+                    className="text-slate-700 text-lg sm:text-base hover:text-blue-600 max-sm:text-sm font-medium"
                   >
                     +91 80721 37522
                   </a>
                 </div>
-                <div className="flex items-center gap-3 flex-wrap">
-                  <div className=" items-center w-full justify-center max-xs:flex hidden">
-                    <Mail className="text-purple-600 " size={22} />
-                  </div>
+                <div className="flex items-center gap-3">
                   <Mail
-                    className="text-purple-600 max-xs:hidden block"
+                    className="text-purple-600 max-sm:size-[18px]"
                     size={22}
                   />
-                  <span className="text-slate-700 text-lg sm:text-base break-all">
+                  <span className="text-slate-700 text-lg sm:text-base break-all max-sm:text-sm font-medium">
                     startuphub@bitsathy.ac.in
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin className="text-purple-600" size={24} />
-                  <span className="text-slate-600 text-lg sm:text-base leading-relaxed">
+                  <MapPin
+                    className="text-purple-600 max-sm:size-5 shrink-0 "
+                    size={24}
+                  />
+                  <p className="text-slate-600 text-lg sm:text-base leading-relaxed max-sm:text-sm font-medium">
                     Bannari Amman Institute of Technology, Sathyamangalam, Tamil
                     Nadu
-                  </span>
+                  </p>
                 </div>
               </div>
             </div>

@@ -986,7 +986,7 @@ export const useEventsStore = create(() => ({
           id: 'workshop-2',
           eventTitle: 'FROM IDEA TO MARKET',
           eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236016/WorkShop2Img_x9plwz.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755931028/IMG-20250823-WA0007_1_ajqrt3.jpg',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           brochureLink:
@@ -1017,8 +1017,8 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: '2',
-                  speakerName: 'Mr Premkumar',
-                  designation: 'Campus Angel',
+                  speakerName: 'Premkumar Manavazhi',
+                  designation: 'Caterpillar Inc.',
                 },
               ],
             },
