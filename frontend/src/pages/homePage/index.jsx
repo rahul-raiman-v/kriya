@@ -246,12 +246,14 @@ export const HomePage = () => {
               {/* Event Details */}
               <div className="flex flex-col sm:flex-row gap-6 text-slate-600 pt-8">
                 <div className="flex items-center gap-2 min-w-[250px]">
-                  <Calendar className="text-indigo-600" size={20} />
-                  <span className="font-medium">September 09-11, 2025</span>
+                  <Calendar className="text-indigo-600" size={24} />
+                  <span className="font-bold text-gray-800 text-lg">
+                    September 09-11, 2025
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 min-w-[250px]">
-                  <MapPin className="text-purple-600" size={20} />
-                  <span className="font-medium">
+                  <MapPin className="text-purple-600" size={24} />
+                  <span className="font-medium text-lg">
                     BIT Campus, Sathyamangalam
                   </span>
                 </div>

@@ -914,7 +914,7 @@ export const useEventsStore = create(() => ({
           id: 'workshop-1',
           eventTitle: 'BRAINSTROM TO BUSINESS',
           eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dbyxgnjkw/image/upload/v1755747498/1_gafucv.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755919224/0_mdg2su.jpg',
           date: 'September 09, 2025',
           venue: 'BIT Campus',
           brochureLink:
