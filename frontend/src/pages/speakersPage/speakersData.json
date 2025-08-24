@@ -29,34 +29,6 @@
     "quote": "Technology should be accessible to everyone, regardless of language or background."
   },
   {
-    "name": "Mr. Kandasamy S",
-    "title": "District Collector",
-    "organization": "Erode District, Government of Tamil Nadu",
-    "avatarUrl": "https://pbs.twimg.com/profile_images/1943895943469776896/OhcGkXXp_400x400.jpg",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755922081/On_27.06.2025_Thiru._S._Kandasamy_I.A.S._officially_assumed_charge_as_the_District_Collector_o_x7otuh.jpg",
-    "about": "Mr. Kandasamy S, IAS, is a dedicated civil servant with a distinguished career in public administration across Tamil Nadu. With academic qualifications in textile technology, computer science, Tamil literature, and public administration, he brings a rare blend of technical expertise and administrative acumen. Over the years, he has served in multiple key positions including Deputy Collector, RDO, DRO, Commissioner of Avadi Corporation, and State Programme Manager for the National Health Mission. Known for his hands-on governance, people-centric initiatives, and focus on effective service delivery, he assumed charge as the District Collector of Erode in June 2025, where he continues to work towards inclusive development, efficient governance, and social welfare.",
-    "expertise": [
-      "District Administration & Governance",
-      "Public Policy Implementation",
-      "Revenue & Land Management",
-      "Program Management (Health, Infrastructure)",
-      "Multi-Department Coordination"
-    ],
-    "achievements": [
-      "Managed multiple key administrative positions across Tamil Nadu",
-      "Recognized for contributions to effective district-level governance",
-      "Coordinated public welfare and development programs in various districts"
-    ],
-    "links": {
-      "wikipedia": "https://www.instagram.com/collectorerode/",
-      "linkedin": "",
-      "twitter": ""
-    },
-    "industry": "Research & Innovation",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
     "name": "Sivaraja Ramanathan",
     "title": "Chief Executive Officer",
     "organization": "StartupTN",
@@ -79,6 +51,34 @@
     "links": {
       "wikipedia": "",
       "linkedin": "http://linkedin.com/in/sivarajahr/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Research & Innovation",
+    "isKeynote": false,
+    "quote": ""
+  },
+  {
+    "name": "Mr. Kandasamy S",
+    "title": "District Collector",
+    "organization": "Erode District, Government of Tamil Nadu",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/1943895943469776896/OhcGkXXp_400x400.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755922081/On_27.06.2025_Thiru._S._Kandasamy_I.A.S._officially_assumed_charge_as_the_District_Collector_o_x7otuh.jpg",
+    "about": "Mr. Kandasamy S, IAS, is a dedicated civil servant with a distinguished career in public administration across Tamil Nadu. With academic qualifications in textile technology, computer science, Tamil literature, and public administration, he brings a rare blend of technical expertise and administrative acumen. Over the years, he has served in multiple key positions including Deputy Collector, RDO, DRO, Commissioner of Avadi Corporation, and State Programme Manager for the National Health Mission. Known for his hands-on governance, people-centric initiatives, and focus on effective service delivery, he assumed charge as the District Collector of Erode in June 2025, where he continues to work towards inclusive development, efficient governance, and social welfare.",
+    "expertise": [
+      "District Administration & Governance",
+      "Public Policy Implementation",
+      "Revenue & Land Management",
+      "Program Management (Health, Infrastructure)",
+      "Multi-Department Coordination"
+    ],
+    "achievements": [
+      "Managed multiple key administrative positions across Tamil Nadu",
+      "Recognized for contributions to effective district-level governance",
+      "Coordinated public welfare and development programs in various districts"
+    ],
+    "links": {
+      "wikipedia": "https://www.instagram.com/collectorerode/",
+      "linkedin": "",
       "twitter": ""
     },
     "industry": "Research & Innovation",
@@ -142,34 +142,6 @@
     "quote": "The country's economy grows only when villages grow."
   },
   {
-    "name": "Umasankaran P",
-    "title": "Founder & CEO",
-    "organization": "Startup News Tamil & Free Famous Food",
-    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQqxOigPZqs-fQpoHei1edNoaFkHhNYqkXA&s",
-    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQEYyajV-i5Rpg/feedshare-shrink_2048_1536/B56ZWJ01BrHsAw-/0/1741774082950?e=1758153600&v=beta&t=_u4j2zrDCgqeTjJGQX8FkBGbH8vbaASBPfpJDXRN5Zw",
-    "about": "Umasankaran P is the Founder and CEO of Startup News Tamil and Free Famous Food. With a strong presence in both media and food ventures, he focuses on building impactful platforms that empower entrepreneurs and deliver authentic culinary experiences. His dual leadership reflects innovation, communication, and a vision for community-driven growth.",
-    "expertise": [
-      "Business Strategist",
-      "Branding & Marketing",
-      "Startup Mentor"
-    ],
-    "achievements": [
-      "Founded Startup News Tamil, a platform dedicated to covering and promoting startup stories in the Tamil ecosystem",
-      "Established Free Famous Food to deliver authentic and popular food experiences",
-      "Created a bridge between entrepreneurship and media through impactful storytelling",
-      "Contributed to promoting local businesses and emerging startups",
-      "Recognized as an entrepreneur balancing both digital media and F&B ventures"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/umasankaran2011/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Food & Beverages",
-    "isKeynote": false,
-    "quote": "Stories have the power to inspire change — Startup News Tamil is built to tell those stories in the language of the people."
-  },
-  {
     "name": "Siranjeevi Ramdoss",
     "title": "Chief executive officer",
     "organization": "Pibi Info Technologies",
@@ -222,6 +194,34 @@
     "industry": "Startup Incubation & Higher Education",
     "isKeynote": false,
     "quote": ""
+  },
+  {
+    "name": "Umasankaran P",
+    "title": "Founder & CEO",
+    "organization": "Startup News Tamil & Free Famous Food",
+    "avatarUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQqxOigPZqs-fQpoHei1edNoaFkHhNYqkXA&s",
+    "carouselUrl": "https://media.licdn.com/dms/image/v2/D5622AQEYyajV-i5Rpg/feedshare-shrink_2048_1536/B56ZWJ01BrHsAw-/0/1741774082950?e=1758153600&v=beta&t=_u4j2zrDCgqeTjJGQX8FkBGbH8vbaASBPfpJDXRN5Zw",
+    "about": "Umasankaran P is the Founder and CEO of Startup News Tamil and Free Famous Food. With a strong presence in both media and food ventures, he focuses on building impactful platforms that empower entrepreneurs and deliver authentic culinary experiences. His dual leadership reflects innovation, communication, and a vision for community-driven growth.",
+    "expertise": [
+      "Business Strategist",
+      "Branding & Marketing",
+      "Startup Mentor"
+    ],
+    "achievements": [
+      "Founded Startup News Tamil, a platform dedicated to covering and promoting startup stories in the Tamil ecosystem",
+      "Established Free Famous Food to deliver authentic and popular food experiences",
+      "Created a bridge between entrepreneurship and media through impactful storytelling",
+      "Contributed to promoting local businesses and emerging startups",
+      "Recognized as an entrepreneur balancing both digital media and F&B ventures"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/umasankaran2011/?originalSubdomain=in",
+      "twitter": ""
+    },
+    "industry": "Food & Beverages",
+    "isKeynote": false,
+    "quote": "Stories have the power to inspire change — Startup News Tamil is built to tell those stories in the language of the people."
   },
   {
     "name": "Dr. G.S. Mahalakshmi",
@@ -279,32 +279,33 @@
     "quote": "Empowering startups through mentorship, infrastructure, and innovation."
   },
   {
-    "name": "Dhivya Bharathi",
-    "title": "Founder",
-    "organization": "Uzhamagal",
-    "avatarUrl": "https://www.uzhamagal.in/cdn/shop/files/1995C450-DE77-47AE-8727-CA3F18A05C8F.jpg?v=1752417366&width=533",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077973/uzhamagal_apv89n.jpg",
-    "about": "Dhivya Bharathi is the Founder of Uzhamagal, a venture focused on promoting traditional, cultural, and sustainable practices through innovative solutions. She is passionate about empowering communities and creating awareness about eco-conscious living and heritage preservation.",
+    "name": "Sezhian Bharathi",
+    "title": "Corporate Trainer",
+    "organization": "Cromulents Academy for Realistic Education",
+    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFqBmX5w7pbiA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1596882049309?e=1758758400&v=beta&t=kXCW70Mmu5WDa6IEGrUgI-aIVdsMs5FJzHlrZGGXkwA",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755857734/image_8_ahxevb.jpg",
+    "about": "Sezhian Bharathi is a philosopher and corporate trainer who specializes in relationship coaching. As a co-founder of the Cromulents Academy for Realistic Education based in Coimbatore, he works to bridge analytical thinking with practical life skills, empowering individuals and organizations through coaching and philosophical insight.",
     "expertise": [
-      "Sustainable Entrepreneurship",
-      "Cultural Heritage Promotion",
-      "Community Engagement",
-      "Business Development",
-      "Women Leadership"
+      "Philosophy & Thought Leadership",
+      "Corporate Training",
+      "Relationship Coaching",
+      "Personal & Professional Development",
+      "Educational Entrepreneurship"
     ],
     "achievements": [
-      "Founded Uzhamagal to preserve and promote cultural and sustainable practices",
-      "Developed initiatives to support eco-friendly and traditional lifestyles",
-      "Built a platform that bridges heritage values with modern entrepreneurial approaches",
-      "Inspired awareness about sustainable living through innovative ventures"
+      "Co-founded the Cromulents Academy for Realistic Education to offer transformative coaching and training",
+      "Delivered corporate training and workshops rooted in philosophical frameworks and practical application",
+      "Recognized for combining philosophical depth with actionable strategies in personal and professional growth",
+      "Championed realistic, education-based approaches to self-awareness and interpersonal development"
     ],
     "links": {
-      "wikipedia": "https://www.instagram.com/dhivyah._/",
+      "linkedin": "https://www.linkedin.com/in/sezhian-bharathi-759032179/?originalSubdomain=in",
+      "wikipedia": "",
       "twitter": ""
     },
-    "industry": "Fashion",
-    "isKeynote": true,
-    "quote": "I grew up with the ideology to break it and overcome it."
+    "industry": "Corporate Development",
+    "isKeynote": false,
+    "quote": ""
   },
   {
     "name": "Vinoth Kumar Chandran",
@@ -397,6 +398,40 @@
     "quote": "Domain First – Customer First"
   },
   {
+    "name": "Senthil Kumar Murugesan",
+    "title": "CEO & Co-Founder",
+    "organization": "JioVio Healthcare (Savemom Pvt Ltd)",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1756014890/senthil-murugesan-1_yequ6s.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1756014845/hq720_mq0zvu.jpg",
+    "about": "Senthil Kumar Murugesan is a visionary entrepreneur and CEO & Co-Founder of JioVio Healthcare (Savemom Pvt Ltd), based in Madurai, Tamil Nadu, India. With over 13 years of experience in the tech industry, he is a passionate innovator dedicated to leveraging technology to solve real-life problems. A prolific technology inventor, Senthil holds more than 10 granted patents and has pioneered AI-enabled IoT solutions to tackle maternal and infant healthcare challenges.",
+    "expertise": [
+      "Entrepreneurship",
+      "Healthcare Technology",
+      "AI & IoT Solutions",
+      "Innovation Strategy",
+      "Public Speaking",
+      "Open Source Contribution"
+    ],
+    "achievements": [
+      "Founded JioVio Healthcare (Savemom Pvt Ltd), creating AI-enabled IoT kits to reduce maternal and infant mortality",
+      "Innovation featured as a design thinking case study at Harvard Business School",
+      "Holds 10+ granted patents in technology and healthcare",
+      "Named among the Top 5 Technology Explorers in India by NASSCOM",
+      "Represented India at the Battlemesh Research Programme in Europe",
+      "Delivered 180+ guest lectures across higher education institutes in India",
+      "Winner of multiple national and international hackathons",
+      "Worked at Fortune 500 companies Samsung and Qualcomm before founding his startup"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "https://www.linkedin.com/in/senthilkumar-murugesan",
+      "twitter": ""
+    },
+    "industry": "HealthTech & Innovation",
+    "isKeynote": true,
+    "quote": "Innovation is not just about solving problems — it’s about creating sustainable impact for generations to come."
+  },
+  {
     "name": "Santhos Premraj",
     "title": "Co-Founder & Head of Product",
     "organization": "Ticket9",
@@ -423,6 +458,40 @@
     "industry": "Events & Media",
     "isKeynote": false,
     "quote": "Building a product with real scenes in SaaS is no small feat; it underscores the complexity and depth of the process!"
+  },
+  {
+    "name": "Premkumar M",
+    "title": "Industry Expert, Leadership Thinker & Mentor, Angel Investor",
+    "organization": "",
+    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1756015121/Premkumar_p3k8tn.jpg",
+    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1756015235/maxresdefault_x9vvcp.jpg",
+    "about": "Premkumar M is a seasoned leader, mentor, and angel investor with over 35 years of corporate experience across India, the USA, and Thailand. Known for his expertise in strategy, operations, supply chain, lean transformation, and leadership, Prem has played pivotal roles in guiding startups and enterprises. He is deeply committed to fostering entrepreneurship through mentorship, angel investing, and thought leadership.",
+    "expertise": [
+      "Strategy & Operations",
+      "Supply Chain Management",
+      "Lean Transformation",
+      "Leadership & Mentorship",
+      "Entrepreneurship Development",
+      "Angel Investing"
+    ],
+    "achievements": [
+      "Over 35 years of leadership experience in India, USA, and Thailand",
+      "Member of Campus Angels Network, Chennai",
+      "Charter Member of TiE Coimbatore, actively mentoring Startups & MSMEs",
+      "Certified Lean Coach and global mentor with TiE",
+      "Visiting faculty at reputed management institutes",
+      "Alumnus of Madras Institute of Technology – Anna University",
+      "Alumnus of IIM Bangalore with multiple gold medals",
+      "Recognized for blending cultural insights with leadership and coaching expertise"
+    ],
+    "links": {
+      "wikipedia": "",
+      "linkedin": "",
+      "twitter": ""
+    },
+    "industry": "Leadership, Strategy & Entrepreneurship",
+    "isKeynote": true,
+    "quote": "True leadership lies in mentoring others and enabling sustainable growth through strategy, culture, and innovation."
   },
   {
     "name": "Dinesh K Sundaravelu",
@@ -593,6 +662,34 @@
     "quote": "Remember childrens do learn. but they copy us."
   },
   {
+    "name": "Dhivya Bharathi",
+    "title": "Founder",
+    "organization": "Uzhamagal",
+    "avatarUrl": "https://www.uzhamagal.in/cdn/shop/files/1995C450-DE77-47AE-8727-CA3F18A05C8F.jpg?v=1752417366&width=533",
+    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755077973/uzhamagal_apv89n.jpg",
+    "about": "Dhivya Bharathi is the Founder of Uzhamagal, a venture focused on promoting traditional, cultural, and sustainable practices through innovative solutions. She is passionate about empowering communities and creating awareness about eco-conscious living and heritage preservation.",
+    "expertise": [
+      "Sustainable Entrepreneurship",
+      "Cultural Heritage Promotion",
+      "Community Engagement",
+      "Business Development",
+      "Women Leadership"
+    ],
+    "achievements": [
+      "Founded Uzhamagal to preserve and promote cultural and sustainable practices",
+      "Developed initiatives to support eco-friendly and traditional lifestyles",
+      "Built a platform that bridges heritage values with modern entrepreneurial approaches",
+      "Inspired awareness about sustainable living through innovative ventures"
+    ],
+    "links": {
+      "wikipedia": "https://www.instagram.com/dhivyah._/",
+      "twitter": ""
+    },
+    "industry": "Fashion",
+    "isKeynote": true,
+    "quote": "I grew up with the ideology to break it and overcome it."
+  },
+  {
     "name": "Kasiraja Thangapandian",
     "title": "Global Director, Software Engineering",
     "organization": "Visteon Corporation",
@@ -712,179 +809,5 @@
     "industry": "Research & Innovation",
     "isKeynote": false,
     "quote": "Innovation thrives where intellectual property acts as a bridge between academia, industry, and societal impact."
-  },
-  {
-    "name": "Mr. C K Kumaravel",
-    "title": "Co founder & CMD",
-    "organization": "Naturals Salon & Spa",
-    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755853138/kumaravel_c7to6h.jpg",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755922638/1732852570609_jezwz5.jpg",
-    "about": "Mr. C K Kumaravel stands as a transformative figure in India's beauty and wellness industry, having co-founded Naturals Salon & Spa in 2000 with his wife K Veena. Starting from a single salon in Chennai with an investment of ₹30 lakhs, he has built India's No.1 salon chain with over 750 outlets across the country and internationally in UAE, Sri Lanka, and Singapore. His vision extends beyond business success to women empowerment, having created over 500 financially independent women entrepreneurs and generated 15,000+ direct jobs. Kumaravel's journey from facing a ₹5 crore debt from his previous venture to building a ₹270 crore turnover company exemplifies resilience and entrepreneurial spirit. His mission is to make Naturals the world's No.1 salon chain by 2029 while creating 1,000 women entrepreneurs, 3,000 salons globally, and 50,000 jobs.",
-    "expertise": [
-      "Franchise Development & Management",
-      "Women Empowerment & Entrepreneurship",
-      "Beauty Industry Innovation",
-      "Business Strategy & Scaling",
-      "Brand Building & Marketing",
-      "Leadership & Mentoring"
-    ],
-    "achievements": [
-      "Built India's No.1 Salon Chain",
-      "Created 500+ Women Entrepreneurs",
-      "Generated 15,000+ Direct Jobs",
-      "Revenue Milestone",
-      "International Expansion",
-      "Industry Leadership",
-      "Women Empowerment Recognition"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://in.linkedin.com/in/ckknaturals",
-      "twitter": ""
-    },
-    "industry": "Beauty & Wellness",
-    "isKeynote": true,
-    "quote": "The future belongs to those who believe in the beauty of their own dreams"
-  },
-  {
-    "name": "T. Sathish Kumar",
-    "title": "Founder & Managing Director",
-    "organization": "Milky Mist Dairy Food Limited",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/D5603AQExTeG9zLokFQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680006930262?e=1758153600&v=beta&t=hsUjfUFXuSlNWnIEoGpy9Tkj_xcMzCd5p1GWgcDxR50",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755334535/milkymist_kqgern.jpg",
-    "about": "T. Sathish Kumar is the Founder & Managing Director of Milky Mist Dairy Food Limited, one of India’s leading dairy brands. With a vision to provide fresh, high-quality dairy products, he transformed Milky Mist from a small-scale venture into a household name. His commitment to innovation, quality, and customer trust has positioned the company as a key player in the dairy industry.",
-    "expertise": [
-      "Food Processing & Quality Assurance",
-      "Business Management",
-      "Business Development",
-      "Supply Chain Management & Brand Building"
-    ],
-    "achievements": [
-      "Founded and scaled Milky Mist into a nationally recognized dairy brand",
-      "Introduced innovative dairy products catering to modern consumer needs",
-      "Created employment opportunities and supported farmers through sustainable sourcing",
-      "Recognized as a leader in India’s dairy industry for quality and innovation"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/cmdmilkymist/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Food & Beverages",
-    "isKeynote": false,
-    "quote": "From a humble beginning to a dairy giant — it’s about innovation, sustainability, and a vision beyond milk."
-  },
-  {
-    "name": "Mr. Prasad Menon",
-    "title": "President",
-    "organization": "Indian STEPs and Business Incubators Association (ISBA), Mumbai Chapter",
-    "avatarUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755856551/image_7_canuzs.jpg",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755923022/maxresdefault_grvibh.jpg",
-    "about": "Mr. Prasad Menon is a seasoned leader in India's startup incubation ecosystem, currently serving as President of ISBA (Indian STEPs and Business Incubators Association), Mumbai Chapter. As CEO of CIBA (Centre for Incubation and Business Acceleration), he brings over two decades of experience in scaling incubation programs, empowering entrepreneurs, and driving innovation. His leadership at ISBA catalyzes collaboration across STEPs and incubators nationwide, amplifying impact and fostering startup growth in cutting-edge technology domains.",
-    "expertise": [
-      "Startup Incubation & Acceleration",
-      "Entrepreneurship Development",
-      "Innovation Ecosystem Building",
-      "Strategic Leadership in Tech Commercialisation",
-      "Stakeholder Engagement & Network Development",
-      "Scaling Incubator Programs"
-    ],
-    "achievements": [
-      "President, ISBA Mumbai – leading India’s pan-India network of incubators",
-      "CEO, CIBA – spearheading incubation initiatives for multiple startups",
-      "Elected to lead new ISBA governing board to boost national startup ecosystem",
-      "Over 20 years of leadership in technology business incubation",
-      "Keynote speaker and thought leader across ISBA and incubation events"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/menonprasad/",
-      "twitter": "",
-      "ciba_profile": "",
-      "news_coverage": ""
-    },
-    "industry": "Startup Ecosystem & Business Incubation",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Sezhian Bharathi",
-    "title": "Corporate Trainer",
-    "organization": "Cromulents Academy for Realistic Education",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQFqBmX5w7pbiA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1596882049309?e=1758758400&v=beta&t=kXCW70Mmu5WDa6IEGrUgI-aIVdsMs5FJzHlrZGGXkwA",
-    "carouselUrl": "https://res.cloudinary.com/dsz2br3qg/image/upload/v1755857734/image_8_ahxevb.jpg",
-    "about": "Sezhian Bharathi is a philosopher and corporate trainer who specializes in relationship coaching. As a co-founder of the Cromulents Academy for Realistic Education based in Coimbatore, he works to bridge analytical thinking with practical life skills, empowering individuals and organizations through coaching and philosophical insight.",
-    "expertise": [
-      "Philosophy & Thought Leadership",
-      "Corporate Training",
-      "Relationship Coaching",
-      "Personal & Professional Development",
-      "Educational Entrepreneurship"
-    ],
-    "achievements": [
-      "Co-founded the Cromulents Academy for Realistic Education to offer transformative coaching and training",
-      "Delivered corporate training and workshops rooted in philosophical frameworks and practical application",
-      "Recognized for combining philosophical depth with actionable strategies in personal and professional growth",
-      "Championed realistic, education-based approaches to self-awareness and interpersonal development"
-    ],
-    "links": {
-      "linkedin": "https://www.linkedin.com/in/sezhian-bharathi-759032179/?originalSubdomain=in",
-      "wikipedia": "",
-      "twitter": ""
-    },
-    "industry": "Corporate Development",
-    "isKeynote": false,
-    "quote": ""
-  },
-  {
-    "name": "Deepak Rajmohan",
-    "title": "Founder & CEO",
-    "organization": "Greenpod Labs",
-    "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQH6-jgtG9Bcqg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1646636960647?e=1758153600&v=beta&t=ga9EW3LPxHFswZ0jfBSdAJSlXrjDUoJ1sMWSey1BB0g",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755664878/greenpods_jwyvrh.jpg",
-    "about": "Deepak Rajmohan is the Founder & CEO of Greenpod Labs, an agri-biotech startup focused on extending the shelf life of fresh produce using natural plant-based solutions. With a vision to reduce food waste and improve supply chain efficiency, he drives innovation at the intersection of biotechnology and sustainability.",
-    "expertise": ["Agri-Biotechnology", "Innovation & Product Development"],
-    "achievements": [
-      "Founded Greenpod Labs, a pioneering agri-biotech company tackling food waste",
-      "Developed natural solutions to extend the shelf life of fruits and vegetables",
-      "Recipient of multiple awards in agritech and innovation domains",
-      "Advocated for sustainability-driven entrepreneurship in agriculture"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/deepakrajmohan/?originalSubdomain=in"
-    },
-    "industry": "Technology & Engineering",
-    "isKeynote": false,
-    "quote": "Sustainability in food begins with reducing waste at its source."
-  },
-  {
-    "name": "Thiruppathy Srinivasan",
-    "title": "CEO",
-    "organization": "Centre of Excellence in Advanced Automotive Research (CAAR)",
-    "avatarUrl": "https://www.motoroids.com/wp-content/uploads/2017/06/Thiruppathy-Srinivasan-2.jpg",
-    "carouselUrl": "https://res.cloudinary.com/doko35o8e/image/upload/v1755333524/caar_itwwrb.jpg",
-    "about": "Thiruppathy Srinivasan is the CEO of the Centre of Excellence in Advanced Automotive Research (CAAR). He is dedicated to advancing automotive innovation, with a focus on electric mobility, sustainable transportation, and cutting-edge automotive technologies. His leadership drives research collaborations between industry and academia to accelerate the future of mobility.",
-    "expertise": [
-      "eMobility and Auto Technology advisor",
-      "evangelist",
-      "Sustainable Transportation",
-      "Innovation Leadership",
-      "Industry-Academia Collaboration"
-    ],
-    "achievements": [
-      "Leading CAAR as a hub for advanced automotive research and innovation",
-      "Driving projects in electric and sustainable mobility",
-      "Promoted strong collaboration between industry and academic institutions",
-      "Contributed to developing future-ready technologies in the automotive sector"
-    ],
-    "links": {
-      "wikipedia": "",
-      "linkedin": "https://www.linkedin.com/in/thiruppathy/?originalSubdomain=in",
-      "twitter": ""
-    },
-    "industry": "Technology & Engineering",
-    "isKeynote": false,
-    "quote": "Accelerating innovation means bridging the gap between ideas and impact."
   }
 ]
