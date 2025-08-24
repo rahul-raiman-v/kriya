@@ -278,7 +278,7 @@ export const Header = () => {
                   className="cursor-pointer bg-gradient-to-r w-full  from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300  shadow-md flex justify-center items-center"
                   onClick={() =>
                     window.open(
-                      'https://drive.google.com/uc?export=download&id=1WSCwZFmU-CYQJM7_uYrEbtlr3YLcyQnd',
+                      'https://drive.google.com/uc?export=download&id=1tMlLhWWiiGdR7iWgtxzn2x03H8ER-Oyz',
                       '_blank'
                     )
                   }

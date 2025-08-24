@@ -134,7 +134,7 @@ export function ComboDetail() {
           <button
             onClick={() =>
               window.open(
-                'https://drive.google.com/uc?export=download&id=1WSCwZFmU-CYQJM7_uYrEbtlr3YLcyQnd',
+                'https://drive.google.com/uc?export=download&id=1tMlLhWWiiGdR7iWgtxzn2x03H8ER-Oyz',
                 '_blank'
               )
             }

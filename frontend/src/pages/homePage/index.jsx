@@ -444,7 +444,7 @@ export const HomePage = () => {
               <ArrowRight className="inline-block ml-2" size={20} />
             </button>
             <a
-              href="https://drive.google.com/uc?export=download&id=1WSCwZFmU-CYQJM7_uYrEbtlr3YLcyQnd"
+              href="https://drive.google.com/uc?export=download&id=1tMlLhWWiiGdR7iWgtxzn2x03H8ER-Oyz"
               className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300"
             >
               Download Brochure
