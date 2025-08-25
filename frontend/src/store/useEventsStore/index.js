@@ -785,7 +785,7 @@ export const useEventsStore = create(() => ({
           venue: 'BIT Campus',
           img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755446896/ChatGPT_Image_Aug_14__2025__11_46_10_AM_1_i90vu5.png',
           brochureLink:
-            'https://drive.google.com/uc?export=download&id=1N1dPZccfe98wYlJHanYtMj4vN1FewWDI',
+            'https://drive.google.com/uc?export=download&id=1acv64um2fJ1_ysYnXmkUOHA0QUFDy4Hl',
           highlight: true,
           tabs: [
             {
