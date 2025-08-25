@@ -892,10 +892,10 @@ export const useEventsStore = create(() => ({
                 },
                 {
                   id: 'person3',
-                  name: ' Mariya Christy V',
+                  name: ' Hari Hara Sudhan N',
                   designation: 'Co-Ordinator',
                   email: 'person2@example.com',
-                  phone: '+91 9344265121',
+                  phone: '+91 8870731577',
                   img: 'https://via.placeholder.com/150',
                 },
               ],

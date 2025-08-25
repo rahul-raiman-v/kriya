@@ -505,7 +505,7 @@ const EntrepreneurSpeakersPage = ({ speakers }) => {
                   </div>
                   <div className="absolute top-0 right-0 h-fit w-fit bg-purple-400 group-hover:bg-purple-500 text-[14px] font-medium z-10 px-3 py-1">
                     {/* replace it with -> speaker.day */}
-                    Day 1
+                    {speaker.day}
                   </div>
                 </div>
               </div>

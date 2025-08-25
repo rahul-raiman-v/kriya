@@ -79,7 +79,7 @@ export const HomePage = () => {
   const containerRef = React.useRef(null);
   const router = useNavigate();
 
-  const targetDate = new Date('2025-09-04T22:00:00');
+  const targetDate = new Date('2025-09-02T22:00:00');
 
   const useScroll = useRef();
 
@@ -162,6 +162,12 @@ export const HomePage = () => {
       title: 'Networking Session',
       description: 'Connect with peers and industry professionals',
       icon: '🤝',
+    },
+    {
+      title: 'Best College Award',
+      description:
+        'Recognizing the college with outstanding performance and participation',
+      icon: '🏆',
     },
   ];
 
@@ -405,7 +411,7 @@ export const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 3xl:grid-cols-5 gap-8">
             {events.map((event, index) => (
               <div
                 key={index}
