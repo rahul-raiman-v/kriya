@@ -83,6 +83,9 @@ export function ComboDetail() {
                 {!selectedCombo.prize &&
                   !selectedCombo.isTrue &&
                   'for a 3 days (including GST)'}
+                {selectedCombo.combo === 'Classic Combo' && (
+                  <p>+ &#8377;50 (if Accommodation needed)</p>
+                )}
               </p>
             </div>
             {selectedCombo.date && (

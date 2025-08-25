@@ -291,7 +291,7 @@ export const useComboStore = create(() => ({
       id: 6,
       combo: 'Classic Combo',
       events: 'Hackathon',
-      hostel: 'Accommodation, Food, and Refreshments are Included',
+      hostel: 'Food, and Refreshments are Included',
       prize: 'Exciting Prizes!',
       // ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '400.00',
@@ -300,6 +300,10 @@ export const useComboStore = create(() => ({
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage6_wr2iu6.png',
       date: 'Sep 11',
       rulesData: [
+        {
+          id: 0,
+          rule: 'For Accommodation additional charges ₹50 may apply.',
+        },
         {
           id: 1,
           rule: 'No ticket for star night (culturals) will be included.',

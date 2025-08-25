@@ -62,6 +62,9 @@ export function ComboPage() {
                 item.isTrue &&
                 ' per Person / Day (including GST)'}
               {!item.prize && !item.isTrue && ' for 3 days (including GST)'}
+              {item.combo === 'Classic Combo' && (
+                <p>+ &#8377;50 (if Accommodation needed)</p>
+              )}
             </p>
           </div>
           {item.date && (
