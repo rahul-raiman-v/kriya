@@ -914,7 +914,7 @@ export const useEventsStore = create(() => ({
           id: 'workshop-1',
           eventTitle: 'BRAINSTROM TO BUSINESS',
           eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755919224/0_mdg2su.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1756193537/WhatsApp_Image_2025-08-26_at_12.26.16_ee54a18b_xbdoah.jpg',
           date: 'September 09, 2025',
           venue: 'BIT Campus',
           brochureLink:
@@ -940,13 +940,13 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: '1',
-                  speakerName: 'Dr K Balakrishnan',
-                  designation: 'CEO of TBI',
+                  speakerName: 'Dr. G.S. Mahalakshmi',
+                  designation: 'Director - Anna University',
                 },
                 {
                   id: '2',
-                  speakerName: 'Mr Sezhiyan Bharathi',
-                  designation: 'IPR - Corporate Trainer',
+                  speakerName: 'K. Suresh Kumar',
+                  designation: 'Executive Director - PSG-STEP',
                 },
               ],
             },
@@ -986,7 +986,7 @@ export const useEventsStore = create(() => ({
           id: 'workshop-2',
           eventTitle: 'FROM IDEA TO MARKET',
           eventType: 'Startup Workshop',
-          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755931028/IMG-20250823-WA0007_1_ajqrt3.jpg',
+          img: 'https://res.cloudinary.com/dsz2br3qg/image/upload/v1756188412/WhatsApp_Image_2025-08-26_at_11.34.39_3ba6dec7_cxskvs.jpg',
           date: 'September 10, 2025',
           venue: 'BIT Campus',
           brochureLink:
@@ -1012,13 +1012,8 @@ export const useEventsStore = create(() => ({
               content: [
                 {
                   id: '1',
-                  speakerName: 'Dr Prasad',
-                  designation: 'ISBA President',
-                },
-                {
-                  id: '2',
-                  speakerName: 'Premkumar Manavazhi',
-                  designation: 'Caterpillar Inc.',
+                  speakerName: 'Sezhian Bharathi',
+                  designation: 'IPR - Corporate Trainer',
                 },
               ],
             },

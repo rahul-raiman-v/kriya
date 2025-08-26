@@ -169,6 +169,12 @@ export function ComboDetail() {
             Terms and Conditions
           </p>
           <ul className="bg-gray-100 p-4 rounded-xl mb-4 list-disc list-outside pl-8 space-y-2 text-sm sm:text-base text-gray-600">
+            {selectedCombo.prize && (
+              <li className="font-semibold text-gray-800">
+                Team members must select the same combo. Different combos for
+                team members will not be allowed.
+              </li>
+            )}
             {Array.isArray(selectedCombo.rulesData) &&
               selectedCombo.rulesData.map((item) => (
                 <li key={item.id}>{item.rule}</li>
