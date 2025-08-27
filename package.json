@@ -6,10 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run dev --prefix frontend",
-    "build":"npm run build --prefix frontend"
+    "build": "npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "lucide-react": "^0.542.0"
+  }
 }

@@ -2,7 +2,7 @@ import { Layout } from '../../components';
 import { routes } from '..';
 import {
   HomePage,
-  SpeakersPage,
+  // SpeakersPage,
   EventsPage,
   PageNotFound,
   TeamsPage,
@@ -37,7 +37,7 @@ export const AppRouter = () => {
         <Route path={routes.home} element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path={routes.events} element={<EventsPage />} />
-          <Route path={routes.speakers} element={<SpeakersPage />} />
+          {/* <Route path={routes.speakers} element={<SpeakersPage />} /> */}
           <Route path={routes.teams} element={<TeamsPage />} />
           <Route path={routes.combo} element={<ComboPage />} />
           <Route path={routes.comboDetail} element={<ComboDetail />} />

@@ -18,6 +18,7 @@ export function ComboDetail() {
     useShallow((state) => state.selectedCombo)
   );
   const [isCheck, setIsCheck] = React.useState(false);
+  const isBrochure = false;
 
   // If no combo is selected, show fallback message
   if (!selectedCombo) {
@@ -97,13 +98,21 @@ export function ComboDetail() {
                 </p>
               </div>
             )}
-            <div className="flex items-start gap-3 text-base sm:text-lg">
-              <Hotel size={24} className="text-indigo-600 flex-shrink-0 mt-1" />
-              <p className="leading-relaxed">
-                {/* <span className="font-medium">Accommodation: </span> */}
-                {selectedCombo.hostel}
-              </p>
-            </div>
+            {selectedCombo.hostel && (
+              <div className="flex items-start gap-3 text-base sm:text-lg">
+                <Hotel
+                  size={24}
+                  className="text-indigo-600 flex-shrink-0 mt-1"
+                />
+                <p className="leading-relaxed">
+                  {/* <span className="font-medium">Accommodation: </span> */}
+                  {selectedCombo.hostel}{' '}
+                  <span className="leading-relaxed font-bold text-gray-800">
+                    {selectedCombo.accommodation}
+                  </span>
+                </p>
+              </div>
+            )}
 
             {selectedCombo.prize && (
               <div className="flex items-start gap-3 text-base sm:text-lg">
@@ -138,7 +147,14 @@ export function ComboDetail() {
                 '_blank'
               )
             }
-            className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg max-sm:w-full hover:shadow-xl transform hover:-translate-y-0.5"
+            disabled={!isBrochure}
+            // className="bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg max-sm:w-full hover:shadow-xl transform hover:-translate-y-0.5"
+            className={cn(
+              'inline-block bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white font-bold py-3 px-8 sm:px-12 rounded-lg shadow-lg transition-all duration-300 cursor-pointer',
+              isBrochure
+                ? 'hover:bg-indigo-700 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300'
+                : 'opacity-50 cursor-not-allowed'
+            )}
           >
             Download Brochure
           </button>
