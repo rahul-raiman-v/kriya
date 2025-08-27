@@ -22,72 +22,94 @@ export function ComboPage() {
   const renderComboCards = (data) => {
     return data.map((item) => (
       <div
-        className="bg-white rounded-3xl border border-blue-100 p-6 sm:p-8 w-full max-w-sm md:max-w-md shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+        className="bg-white rounded-3xl border border-blue-100 p-6 sm:p-8 w-full max-w-sm md:max-w-md shadow-lg transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col justify-between"
         key={item.id}
       >
-        <div className="rounded-2xl overflow-hidden mb-6">
-          <img
-            // src={ComboImage || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
-            src={
-              item.image ||
-              'https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image'
-            }
-            alt="Combo Image"
-            className="w-full h-[200px] object-cover transform transition-transform duration-300 hover:scale-110 bg-blue-50"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src =
-                'https://placehold.co/380x200/F0F8FF/000000?text=Image+Error';
-            }}
-          />
-        </div>
-        <h3 className="text-2xl sm:text-3xl font-extrabold text-indigo-600 text-center mb-6">
-          {item.combo}
-        </h3>
-        <div className="flex flex-col gap-4 sm:gap-4 text-gray-600">
-          <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
-            <Ticket size={24} className="text-blue-500 flex-shrink-0 mt-1" />
-            <p className="leading-relaxed">{item.events}</p>
-          </div>
-          <div className="flex items-start gap-3 text-base sm:text-lg">
-            <IndianRupee
-              size={24}
-              className="text-indigo-600 flex-shrink-0 mt-1"
+        <div>
+          <div className="rounded-2xl overflow-hidden mb-6">
+            <img
+              // src={ComboImage || "https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image"}
+              src={
+                item.image ||
+                'https://placehold.co/380x200/F0F8FF/000000?text=Combo+Image'
+              }
+              alt="Combo Image"
+              className="w-full h-[200px] object-cover transform transition-transform duration-300 hover:scale-110 bg-blue-50"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src =
+                  'https://placehold.co/380x200/F0F8FF/000000?text=Image+Error';
+              }}
             />
-            <p className="leading-relaxed">
-              <span className="font-medium">Registration Fee: &#8377;</span>
-              {item.fee}
-              {item.prize && ' per Person (including GST)'}
-              {!item.prize &&
-                item.isTrue &&
-                ' per Person / Day (including GST)'}
-              {!item.prize && !item.isTrue && ' for 3 days (including GST)'}
-              {item.combo === 'Classic Combo' && (
-                <p>+ &#8377;50 (if Accommodation needed)</p>
-              )}
-            </p>
+//             <p className="leading-relaxed">
+//               <span className="font-medium">Registration Fee: &#8377;</span>
+//               {item.fee}
+//               {item.prize && ' per Person (including GST)'}
+//               {!item.prize &&
+//                 item.isTrue &&
+//                 ' per Person / Day (including GST)'}
+//               {!item.prize && !item.isTrue && ' for 3 days (including GST)'}
+//               {item.combo === 'Classic Combo' && (
+//                 <p>+ &#8377;50 (if Accommodation needed)</p>
+//               )}
+//             </p>
           </div>
-          {item.date && (
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-indigo-600 text-center mb-6">
+            {item.combo}
+          </h3>
+          <div className="flex flex-col gap-4 sm:gap-4 text-gray-600">
             <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
-              <Calendar
+              <Ticket size={24} className="text-blue-500 flex-shrink-0 mt-1" />
+              <p className="leading-relaxed">{item.events}</p>
+            </div>
+            <div className="flex items-start gap-3 text-base sm:text-lg">
+              <IndianRupee
                 size={24}
-                className="text-blue-500 flex-shrink-0 mt-1"
+                className="text-indigo-600 flex-shrink-0 mt-1"
               />
-              <p className="leading-relaxed font-bold text-gray-800">
-                Date: {item.date}
+              <p className="leading-relaxed">
+                <span className="font-medium">Registration Fee: &#8377;</span>
+                {item.fee}
+                {item.prize && ' per Person (including GST)'}
+                {!item.prize &&
+                  item.isTrue &&
+                  ' per Person / Day (including GST)'}
+                {!item.prize && !item.isTrue && ' for 3 days (including GST)'}
               </p>
             </div>
-          )}
-          <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
-            <Hotel size={24} className="text-blue-500 flex-shrink-0 mt-1" />
-            <p className="leading-relaxed">{item.hostel}</p>
+            {item.date && (
+              <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
+                <Calendar
+                  size={24}
+                  className="text-blue-500 flex-shrink-0 mt-1"
+                />
+                <p className="leading-relaxed font-bold text-gray-800">
+                  Date: {item.date}
+                </p>
+              </div>
+            )}
+            {item.hostel && (
+              <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
+                <Hotel size={24} className="text-blue-500 flex-shrink-0 mt-1" />
+                <p className="leading-relaxed">
+                  {item.hostel}{' '}
+                  <span className="leading-relaxed font-bold text-gray-800">
+                    {item.accommodation}
+                  </span>
+                </p>
+              </div>
+            )}
+
+            {item.prize && (
+              <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
+                <Trophy
+                  size={24}
+                  className="text-blue-500 flex-shrink-0 mt-1"
+                />
+                <p className="leading-relaxed">{item.prize}</p>
+              </div>
+            )}
           </div>
-          {item.prize && (
-            <div className="flex items-start gap-3 sm:gap-3 text-base sm:text-lg">
-              <Trophy size={24} className="text-blue-500 flex-shrink-0 mt-1" />
-              <p className="leading-relaxed">{item.prize}</p>
-            </div>
-          )}
         </div>
         <div className="text-center mt-8 sm:mt-4">
           <button
@@ -119,7 +141,7 @@ export function ComboPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="mb-12">
           <h3 className="text-3xl font-bold text-blue-700 mb-6 text-center">
             Delegates (Researchers, Innovators, Incubatees, Startups and
@@ -139,7 +161,7 @@ export function ComboPage() {
             {renderComboCards(ComboStallsData)}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

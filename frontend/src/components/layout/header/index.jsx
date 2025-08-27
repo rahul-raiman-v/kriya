@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router';
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Events', path: '/events' },
-  { name: 'Speakers', path: '/speakers' },
+  // { name: 'Speakers', path: '/speakers' },
   { name: 'Combos', path: '/combo' },
   { name: 'Team', path: '/teams' },
 ];

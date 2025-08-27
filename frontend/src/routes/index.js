@@ -2,7 +2,7 @@ export * from './appRouter';
 
 export const routes = {
   home: '/',
-  speakers: '/speakers',
+  // speakers: '/speakers',
   timeline: '/timeline',
   events: '/events',
   teams: '/teams',
