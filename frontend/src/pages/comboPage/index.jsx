@@ -41,6 +41,18 @@ export function ComboPage() {
                   'https://placehold.co/380x200/F0F8FF/000000?text=Image+Error';
               }}
             />
+//             <p className="leading-relaxed">
+//               <span className="font-medium">Registration Fee: &#8377;</span>
+//               {item.fee}
+//               {item.prize && ' per Person (including GST)'}
+//               {!item.prize &&
+//                 item.isTrue &&
+//                 ' per Person / Day (including GST)'}
+//               {!item.prize && !item.isTrue && ' for 3 days (including GST)'}
+//               {item.combo === 'Classic Combo' && (
+//                 <p>+ &#8377;50 (if Accommodation needed)</p>
+//               )}
+//             </p>
           </div>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-indigo-600 text-center mb-6">
             {item.combo}

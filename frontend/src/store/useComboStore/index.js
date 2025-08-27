@@ -487,6 +487,10 @@ export const useComboStore = create(() => ({
       date: 'Sep 10',
       rulesData: [
         {
+          id: 0,
+          rule: 'For Accommodation additional charges ₹50 may apply.',
+        },
+        {
           id: 1,
           rule: 'No ticket for star night (culturals) will be included.',
         },

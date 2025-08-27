@@ -84,6 +84,9 @@ export function ComboDetail() {
                 {!selectedCombo.prize &&
                   !selectedCombo.isTrue &&
                   'for a 3 days (including GST)'}
+                {selectedCombo.combo === 'Classic Combo' && (
+                  <p>+ &#8377;50 (if Accommodation needed)</p>
+                )}
               </p>
             </div>
             {selectedCombo.date && (
@@ -143,7 +146,7 @@ export function ComboDetail() {
           <button
             onClick={() =>
               window.open(
-                'https://drive.google.com/uc?export=download&id=1WSCwZFmU-CYQJM7_uYrEbtlr3YLcyQnd',
+                'https://drive.google.com/uc?export=download&id=1tMlLhWWiiGdR7iWgtxzn2x03H8ER-Oyz',
                 '_blank'
               )
             }
@@ -182,6 +185,12 @@ export function ComboDetail() {
             Terms and Conditions
           </p>
           <ul className="bg-gray-100 p-4 rounded-xl mb-4 list-disc list-outside pl-8 space-y-2 text-sm sm:text-base text-gray-600">
+            {selectedCombo.prize && (
+              <li className="font-semibold text-gray-800">
+                Team members must select the same combo. Different combos for
+                team members will not be allowed.
+              </li>
+            )}
             {Array.isArray(selectedCombo.rulesData) &&
               selectedCombo.rulesData.map((item) => (
                 <li key={item.id}>{item.rule}</li>
