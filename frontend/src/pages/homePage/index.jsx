@@ -449,12 +449,18 @@ export const HomePage = () => {
               Register Now{' '}
               <ArrowRight className="inline-block ml-2" size={20} />
             </button>
-            <a
-              href="https://drive.google.com/uc?export=download&id=1tMlLhWWiiGdR7iWgtxzn2x03H8ER-Oyz"
+            <button
+              onClick={() =>
+                window.open(
+                  'https://drive.google.com/uc?export=download&id=1tMlLhWWiiGdR7iWgtxzn2x03H8ER-Oyz',
+                  '_blank'
+                )
+              }
+              disabled
               className="cursor-pointer border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-300"
             >
               Download Brochure
-            </a>
+            </button>
           </div>
         </div>
       </section>
