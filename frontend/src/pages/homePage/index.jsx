@@ -79,7 +79,7 @@ export const HomePage = () => {
   const containerRef = React.useRef(null);
   const router = useNavigate();
 
-  const targetDate = new Date('2025-09-02T22:00:00');
+  const targetDate = new Date('2025-09-07T22:00:00');
 
   const useScroll = useRef();
 
@@ -142,34 +142,34 @@ export const HomePage = () => {
     return () => window.removeEventListener('resize', generateParticles);
   }, []);
 
-  const events = [
-    {
-      title: 'Innovation Workshop',
-      description: 'Hands-on workshop exploring cutting-edge technologies',
-      icon: '🚀',
-    },
-    {
-      title: 'Tech Talks',
-      description: 'Industry experts sharing insights and trends',
-      icon: '💡',
-    },
-    {
-      title: 'Startup Pitch',
-      description: 'Students present their innovative startup ideas',
-      icon: '🎯',
-    },
-    {
-      title: 'Networking Session',
-      description: 'Connect with peers and industry professionals',
-      icon: '🤝',
-    },
-    {
-      title: 'Best College Award',
-      description:
-        'Recognizing the college with outstanding performance and participation',
-      icon: '🏆',
-    },
-  ];
+  // const events = [
+  //   {
+  //     title: 'Innovation Workshop',
+  //     description: 'Hands-on workshop exploring cutting-edge technologies',
+  //     icon: '🚀',
+  //   },
+  //   {
+  //     title: 'Tech Talks',
+  //     description: 'Industry experts sharing insights and trends',
+  //     icon: '💡',
+  //   },
+  //   {
+  //     title: 'Startup Pitch',
+  //     description: 'Students present their innovative startup ideas',
+  //     icon: '🎯',
+  //   },
+  //   {
+  //     title: 'Networking Session',
+  //     description: 'Connect with peers and industry professionals',
+  //     icon: '🤝',
+  //   },
+  //   {
+  //     title: 'Best College Award',
+  //     description:
+  //       'Recognizing the college with outstanding performance and participation',
+  //     icon: '🏆',
+  //   },
+  // ];
 
   return (
     <div
@@ -297,21 +297,25 @@ export const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
-                <AnimatedCounter end={30} suffix="+" />
+                <AnimatedCounter end={10} suffix="+" />
               </div>
-              <div className="text-slate-600 font-medium">Events</div>
+              <div className="text-slate-600 font-medium md:text-2xl">
+                Events
+              </div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">
-                <AnimatedCounter end={30} suffix="+" />
+                <AnimatedCounter end={1} />
               </div>
-              <div className="text-slate-600 font-medium">Speakers</div>
+              <div className="text-slate-600 font-medium md:text-2xl">
+                Hackathon
+              </div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-green-600 mb-2">
-                <AnimatedCounter end={3} />
+                <AnimatedCounter end={1} />
               </div>
-              <div className="text-slate-600 font-medium">Days</div>
+              <div className="text-slate-600 font-medium md:text-2xl">Days</div>
             </div>
           </div>
         </div>
@@ -396,7 +400,7 @@ export const HomePage = () => {
       </section>
 
       {/* Events Section */}
-      <section
+      {/* <section
         id="events"
         className="relative py-20 bg-gradient-to-br from-indigo-50 to-purple-50"
       >
@@ -428,7 +432,7 @@ export const HomePage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="relative py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
@@ -554,7 +558,7 @@ export const HomePage = () => {
               </h3>
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 flex-wrap">
                 {/* StartupTN Logo */}
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   <img
                     src="https://images.indianexpress.com/2023/09/Wma5uL7U_400x400.jpg"
                     alt="StartupTN"
@@ -563,17 +567,17 @@ export const HomePage = () => {
                   <span className="text-slate-700 mt-3 font-medium">
                     StartupTN
                   </span>
-                </div>
+                </div> */}
 
                 {/** ISBA Logo */}
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   <img
                     src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755240080/isba_t4ehjo.png"
                     alt="ISBA"
                     className="h-16 object-contain"
                   />
                   <span className="text-slate-700 mt-3 font-medium">ISBA</span>
-                </div>
+                </div> */}
 
                 {/** IIC Logo */}
                 <div className="flex flex-col items-center">
@@ -588,7 +592,7 @@ export const HomePage = () => {
                 </div>
 
                 {/** DNA Logo */}
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   <img
                     src="https://res.cloudinary.com/dsz2br3qg/image/upload/v1755577737/dna_ongpwu.png"
                     alt="DNA"
@@ -597,7 +601,7 @@ export const HomePage = () => {
                   <span className="text-slate-700 mt-3 font-medium">
                     Don't Build Alone
                   </span>
-                </div>
+                </div> */}
 
                 {/** Code Circle Logo */}
                 <div className="flex flex-col items-center">

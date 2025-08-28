@@ -31,14 +31,14 @@ export const TeamsPage = () => {
     },
   ];
 
-  // const faculty = {
-  //   id: 10,
-  //   name: 'Dr Murugappan S',
-  //   designation: '',
-  //   image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Murugappan-S.jpg',
-  //   phone: '+91 8344480485',
-  //   email: 'murugappans@bitsathy.ac.in',
-  // };
+  const faculty = {
+    id: 10,
+    name: 'Dr Murugappan S',
+    designation: '',
+    image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Murugappan-S.jpg',
+    phone: '+91 8344480485',
+    email: 'murugappans@bitsathy.ac.in',
+  };
 
   const spocs = [
     {
@@ -50,31 +50,31 @@ export const TeamsPage = () => {
       phone: '+91 9443719535',
       email: 'murugappans@bitsathy.ac.in',
     },
-    // {
-    //   id: 2,
-    //   name: 'Dr Sasikumar C',
-    //   designation: '',
-    //   image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Sasikumar-C.png',
-    //   phone: '+91 9443579022',
-    //   email: 'sasikumarc@bitsathy.ac.in',
-    // },
-    // {
-    //   id: 3,
-    //   name: 'Dr Sivaraman P',
-    //   designation: '',
-    //   image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Sivaraman-P.png',
-    //   phone: '+91 9842818251',
-    //   email: 'sivaramanpsr@bitsathy.ac.in',
-    // },
-    // {
-    //   id: 4,
-    //   name: 'Dr Jegadheeswaran S',
-    //   designation: '',
-    //   image:
-    //     'https://www.bitsathy.ac.in/wp-content/uploads/2022/09/Dr-Jegadheeswaran-S.png',
-    //   phone: '+91 8508857666',
-    //   email: 'jegadheeswarans@bitsathy.ac.in',
-    // },
+    {
+      id: 2,
+      name: 'Dr Sasikumar C',
+      designation: '',
+      image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Sasikumar-C.png',
+      phone: '+91 9443579022',
+      email: 'sasikumarc@bitsathy.ac.in',
+    },
+    {
+      id: 3,
+      name: 'Dr Sivaraman P',
+      designation: '',
+      image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Sivaraman-P.png',
+      phone: '+91 9842818251',
+      email: 'sivaramanpsr@bitsathy.ac.in',
+    },
+    {
+      id: 4,
+      name: 'Dr Jegadheeswaran S',
+      designation: '',
+      image:
+        'https://www.bitsathy.ac.in/wp-content/uploads/2022/09/Dr-Jegadheeswaran-S.png',
+      phone: '+91 8508857666',
+      email: 'jegadheeswarans@bitsathy.ac.in',
+    },
     {
       id: 5,
       name: 'Dr Ganesh Babu C',
@@ -93,14 +93,14 @@ export const TeamsPage = () => {
       phone: '+91 9047172554',
       email: 'swathypriyadharsini@bitsathy.ac.in',
     },
-    // {
-    //   id: 7,
-    //   name: 'Dr Bharathi A',
-    //   designation: '',
-    //   image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Bharathi-A.png',
-    //   phone: '+91 9865530099',
-    //   email: 'bharathia@bitsathy.ac.in',
-    // },
+    {
+      id: 7,
+      name: 'Dr Bharathi A',
+      designation: '',
+      image: 'https://www.bitsathy.ac.in/wp-content/uploads/Dr-Bharathi-A.png',
+      phone: '+91 9865530099',
+      email: 'bharathia@bitsathy.ac.in',
+    },
     {
       id: 9,
       name: 'Prathap M R',
@@ -305,7 +305,7 @@ export const TeamsPage = () => {
             Team KRIYA
           </p>
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
-            {/* <TeamsCard {...faculty} variant={'chairman'} /> */}
+            <TeamsCard {...faculty} variant={'chairman'} />
             {spocs
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((item) => {

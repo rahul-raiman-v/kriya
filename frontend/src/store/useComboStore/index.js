@@ -10,7 +10,7 @@ export const useComboStore = create(() => ({
     //   prize: 'Exciting Prizes!',
     //   ticket: 'Tickets for Star Night (Culturals) are included!',
     //   fee: '499.00',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+    //   link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
     //   image:
     //     'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236018/comboImage1_fonz4q.png',
     //   date: 'Sep 09 - 10',
@@ -67,7 +67,7 @@ export const useComboStore = create(() => ({
     //   prize: 'Exciting Prizes!',
     //   ticket: 'Tickets for Star Night (Culturals) are included!',
     //   fee: '499.00',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+    //   link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
     //   image:
     //     'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236010/comboImage2_t6fxoa.png',
     //   date: 'Sep 09 - 10',
@@ -82,7 +82,7 @@ export const useComboStore = create(() => ({
     //     },
     //     {
     //       id: 3,
-    //       rule: 'Both technical events will be held on Day 2, participants must manage their schedule to avoid overlaps.',
+    //       rule: 'Both technical events will be held on 2 Days, participants must manage their schedule to avoid overlaps.',
     //     },
     //     {
     //       id: 4,
@@ -124,18 +124,18 @@ export const useComboStore = create(() => ({
     //   prize: 'Exciting Prizes!',
     //   ticket: 'Tickets for Star Night (Culturals) are included!',
     //   fee: '555.00',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+    //   link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
     //   image:
     //     'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage3_uaftkh.png',
     //   date: 'Sep 10 - 11',
     //   rulesData: [
     //     {
     //       id: 1,
-    //       rule: 'Day 2 events must be completed before joining the Day 3 Hackathon.',
+    //       rule: '2 Days events must be completed before joining the Day 3 Hackathon.',
     //     },
     //     {
     //       id: 2,
-    //       rule: 'Hackathon team details must be submitted before Day 2 ends.',
+    //       rule: 'Hackathon team details must be submitted before 2 Days ends.',
     //     },
     //     {
     //       id: 3,
@@ -181,18 +181,18 @@ export const useComboStore = create(() => ({
     //   prize: 'Exciting Prizes!',
     //   ticket: 'Tickets for Star Night (Culturals) are included!',
     //   fee: '555.00',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+    //   link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
     //   image:
     //     'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236017/comboImage4_xi6kb3.png',
     //   date: 'Sep 10 - 11',
     //   rulesData: [
     //     {
     //       id: 1,
-    //       rule: 'Both technical events will be scheduled on Day 2, participants must ensure they can attend both.',
+    //       rule: 'Both technical events will be scheduled on 2 Days, participants must ensure they can attend both.',
     //     },
     //     {
     //       id: 2,
-    //       rule: 'Hackathon teams must be finalized and registered by the end of Day 2.',
+    //       rule: 'Hackathon teams must be finalized and registered by the end of 2 Days.',
     //     },
     //     {
     //       id: 3,
@@ -238,18 +238,18 @@ export const useComboStore = create(() => ({
     //   prize: 'Exciting Prizes!',
     //   ticket: 'Tickets for Star Night (Culturals) are included!',
     //   fee: '599.00',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+    //   link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
     //   image:
     //     'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236013/comboImage5_wghokk.png',
     //   date: 'Sep 10 - 11',
     //   rulesData: [
     //     {
     //       id: 1,
-    //       rule: 'Workshop and technical event may be on the same day (Day 2), participants must manage time accordingly.',
+    //       rule: 'Workshop and technical event may be on the same day (2 Days), participants must manage time accordingly.',
     //     },
     //     {
     //       id: 2,
-    //       rule: 'Hackathon team details must be confirmed by Day 2 evening.',
+    //       rule: 'Hackathon team details must be confirmed by 2 Days .',
     //     },
     //     {
     //       id: 3,
@@ -295,7 +295,7 @@ export const useComboStore = create(() => ({
     //   prize: 'Exciting Prizes!',
     //   // ticket: 'Tickets for Star Night (Culturals) are included!',
     //   fee: '400.00',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+    //   link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
     //   image:
     //     'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage6_wr2iu6.png',
     //   date: 'Sep 11',
@@ -310,7 +310,7 @@ export const useComboStore = create(() => ({
     //     },
     //     {
     //       id: 3,
-    //       rule: 'Team registration must be completed before Day 2 evening.',
+    //       rule: 'Team registration must be completed before 2 Days .',
     //     },
     //     {
     //       id: 4,
@@ -357,22 +357,14 @@ export const useComboStore = create(() => ({
       prize: 'Exciting Prizes!',
       // ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '450.00',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+      link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236017/comboImage4_xi6kb3.png',
       date: 'Sep 10',
       rulesData: [
         {
-          id: 1,
-          rule: 'No ticket for star night (culturals) will be included.',
-        },
-        {
-          id: 2,
-          rule: 'Only hackathon-related facilities and certificates are included.',
-        },
-        {
           id: 3,
-          rule: 'Team registration must be completed before Day 2 evening.',
+          rule: 'Team registration must be completed before 2 Days .',
         },
         {
           id: 4,
@@ -419,22 +411,14 @@ export const useComboStore = create(() => ({
       prize: 'Exciting Prizes!',
       // ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '450.00',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+      link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236013/comboImage5_wghokk.png',
       date: 'Sep 10',
       rulesData: [
         {
-          id: 1,
-          rule: 'No ticket for star night (culturals) will be included.',
-        },
-        {
-          id: 2,
-          rule: 'Only hackathon-related facilities and certificates are included.',
-        },
-        {
           id: 3,
-          rule: 'Team registration must be completed before Day 2 evening.',
+          rule: 'Team registration must be completed before 2 Days .',
         },
         {
           id: 4,
@@ -481,26 +465,14 @@ export const useComboStore = create(() => ({
       prize: 'Exciting Prizes!',
       // ticket: 'Tickets for Star Night (Culturals) are included!',
       fee: '450.00',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfMtR-gcxIM_dRfCHT9Wo54zTvYuJ0uYA0UAFAQ94kknBflLg/viewform?usp=sharing&ouid=107739413345558944539',
+      link: 'https://forms.gle/27ts8Y3EMrCZ2m9g9',
       image:
         'https://res.cloudinary.com/dsz2br3qg/image/upload/v1755236006/comboImage6_wr2iu6.png',
       date: 'Sep 10',
       rulesData: [
         {
-          id: 0,
-          rule: 'For Accommodation additional charges ₹50 may apply.',
-        },
-        {
-          id: 1,
-          rule: 'No ticket for star night (culturals) will be included.',
-        },
-        {
-          id: 2,
-          rule: 'Only hackathon-related facilities and certificates are included.',
-        },
-        {
           id: 3,
-          rule: 'Team registration must be completed before Day 2 evening.',
+          rule: 'Team registration must be completed before 2 Days .',
         },
         {
           id: 4,

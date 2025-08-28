@@ -127,8 +127,7 @@ export const EventsPage = () => {
           Events & Activities
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Discover exciting events, workshops, and guest lectures happening at
-          Kriya
+          Discover exciting events , Hackathon happening at Kriya
         </p>
       </div>
 
@@ -232,7 +231,7 @@ export const EventsPage = () => {
         </div>
 
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-6 lg:gap-8 justify-items-center"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 sm:gap-6 lg:gap-8 justify-items-center"
           role="tablist"
           aria-label="Event categories"
         >
