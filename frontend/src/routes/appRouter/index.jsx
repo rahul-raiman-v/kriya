@@ -1,5 +1,5 @@
 import { Layout } from '../../components';
-import { routes } from '..';
+// import { routes } from '..';
 import {
   HomePage,
   // SpeakersPage,
@@ -9,6 +9,7 @@ import {
   ComboPage,
   ComboDetail,
   DevelopersPage,
+  ClosedPage,
 } from '../../pages';
 
 import {
@@ -34,15 +35,17 @@ export const AppRouter = () => {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path={routes.home} element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path={routes.events} element={<EventsPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<ClosedPage />} />
+          <Route path="*" element={<ClosedPage />} />
+          {/* <Route path={routes.home} element={<HomePage />} />
+          <Route path={routes.events} element={<EventsPage />} /> */}
           {/* <Route path={routes.speakers} element={<SpeakersPage />} /> */}
-          <Route path={routes.teams} element={<TeamsPage />} />
+          {/* <Route path={routes.teams} element={<TeamsPage />} />
           <Route path={routes.combo} element={<ComboPage />} />
           <Route path={routes.comboDetail} element={<ComboDetail />} />
-          <Route path={routes.developers} element={<DevelopersPage />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path={routes.developers} element={<DevelopersPage />} /> */}
+          {/* <Route path="*" element={<PageNotFound />} /> */}
         </Route>
       </Routes>
     </Router>

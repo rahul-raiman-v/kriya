@@ -1,8 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
 
 export const Footer = () => {
-  const router = useNavigate();
+  // const router = useNavigate();
   return (
     <footer className="relative py-6 bg-slate-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,14 +14,14 @@ export const Footer = () => {
             {' '}
             Empowering Future Innovators
           </span>{' '}
-          |
+          {/* |
           <span
             className="text-white cursor-pointer font-medium hover:underline"
             onClick={() => router('/developers')}
           >
             {' '}
             Developers Team
-          </span>
+          </span> */}
         </p>
         {/* </div> */}
       </div>

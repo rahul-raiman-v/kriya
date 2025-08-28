@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router';
+import { useNavigate } from 'react-router';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -13,7 +13,7 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
 
   // Handle scroll effect for header background
   React.useEffect(() => {
@@ -62,10 +62,10 @@ export const Header = () => {
     };
   }, [isMenuOpen]);
 
-  const handleNavigate = (path) => {
-    navigate(path);
-    setIsMenuOpen(false);
-  };
+  // const handleNavigate = (path) => {
+  //   navigate(path);
+  //   setIsMenuOpen(false);
+  // };
 
   const handleRegistration = () => {
     // You can navigate to a registration page or open a modal
@@ -73,17 +73,17 @@ export const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const isActive = (path) => {
-    // Handle exact match for home page
-    if (path === '/' && location.pathname === '/') {
-      return true;
-    }
-    // Handle other routes (including nested routes)
-    if (path !== '/' && location.pathname.startsWith(path)) {
-      return true;
-    }
-    return false;
-  };
+  // const isActive = (path) => {
+  //   // Handle exact match for home page
+  //   if (path === '/' && location.pathname === '/') {
+  //     return true;
+  //   }
+  //   // Handle other routes (including nested routes)
+  //   if (path !== '/' && location.pathname.startsWith(path)) {
+  //     return true;
+  //   }
+  //   return false;
+  // };
 
   return (
     <>
@@ -128,7 +128,7 @@ export const Header = () => {
             {/* Logo with enhanced hover effect */}
 
             {/* Desktop Navigation with enhanced styling */}
-            <nav className="hidden xxl:flex flex-grow justify-center items-center space-x-8">
+            {/* <nav className="hidden xxl:flex flex-grow justify-center items-center space-x-8">
               {navLinks.map((link) => (
                 <button
                   key={link.name}
@@ -141,7 +141,6 @@ export const Header = () => {
                   aria-current={isActive(link.path) ? 'page' : undefined}
                 >
                   {link.name}
-                  {/* Enhanced animated underline */}
                   <span
                     className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 transition-all duration-300 ${
                       isActive(link.path) ? 'w-3/4' : 'group-hover:w-3/4'
@@ -149,15 +148,16 @@ export const Header = () => {
                   ></span>
                 </button>
               ))}
-            </nav>
+            </nav> */}
 
             {/* Enhanced Registration Button for Desktop */}
             <div className="hidden xxl:flex items-center gap-x-4  ">
               <button
                 onClick={handleRegistration}
-                className="cursor-pointer bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                disabled
+                className="cursor-pointer bg-gradient-to-r  from-pink-400 via-purple-500 to-indigo-500 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-opacity-60 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                <span className="flex items-center whitespace-nowrap">
+                <span className="flex items-center whitespace-nowrap opacity-50">
                   Register Now
                   <svg
                     className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"
@@ -204,7 +204,7 @@ export const Header = () => {
             }`}
           >
             <nav className="mt-6 rounded-3xl p-6 bg-gradient-to-br from-white/95 via-pink-50/80 to-purple-50/80 border border-pink-200/60 shadow-xl backdrop-blur-sm">
-              <div className="space-y-3">
+              {/* <div className="space-y-3">
                 {navLinks.map((link, index) => (
                   <button
                     key={link.name}
@@ -242,12 +242,13 @@ export const Header = () => {
                     </div>
                   </button>
                 ))}
-              </div>
+              </div> */}
 
               {/* Enhanced Mobile Registration Button */}
               <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:space-y-4 flex-row gap-x-4 mt-4">
                 <button
                   onClick={handleRegistration}
+                  disabled
                   className="cursor-pointer bg-gradient-to-r w-full from-pink-400 via-purple-500 to-indigo-500 text-white py-4 px-6 rounded-2xl font-bold hover:from-pink-500 hover:via-purple-600 hover:to-indigo-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-200 shadow-lg hover:shadow-xl active:scale-95 transform hover:-translate-y-0.5"
                   style={{
                     animation: isMenuOpen
@@ -255,7 +256,7 @@ export const Header = () => {
                       : 'none',
                   }}
                 >
-                  <span className="flex items-center justify-center">
+                  <span className="flex items-center justify-center opacity-50">
                     Register Now
                     <span className="ml-2 inline-block animate-bounce">
                       <svg
@@ -275,7 +276,7 @@ export const Header = () => {
                   </span>
                 </button>
                 <button
-                  className="cursor-pointer bg-gradient-to-r w-full  from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300  shadow-md flex justify-center items-center"
+                  className="cursor-pointer opacity-50 hover:opacity-50 bg-gradient-to-r w-full  from-orange-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold  hover:scale-105 transition-all duration-300  shadow-md flex justify-center items-center"
                   disabled
                   onClick={() =>
                     window.open(

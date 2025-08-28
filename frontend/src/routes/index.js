@@ -1,7 +1,7 @@
 export * from './appRouter';
 
 export const routes = {
-  home: '/',
+  home: '/home',
   // speakers: '/speakers',
   timeline: '/timeline',
   events: '/events',
